@@ -5,10 +5,15 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title></title>
-
+	
+	<title>mese.es</title>
+	<link rel="icon" type="image/jpg" href="images/icon.png">
+	<link rel="stylesheet" type="text/css" href="css/component.css" />
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/style.css">
+	<meta name="p:domain_verify" content="010c67b82d18bca303e35e8b40011654"/>
+
+	<script src="js/modernizr.custom.js"></script>
 </head>
 
 <body>
@@ -35,11 +40,28 @@
 				*Antes de nada decirte que en cualquier momento puedes pinchar en esta @ para ponerte en contacto conmigo (para concertar una entrevista, por ejemplo =) ).
 			</h3>
 		</section> -->
-		<p class="email"><a href="mailto:japimes@gmail.com">@</a></p>
-		<span class="email_tip">pincha para ponerte en contacto conmigo</span>
+		<p class="email">@</p>
+		<span class="email_tip"><a href="mailto:japimes@gmail.com">pincha para ponerte en contacto conmigo</a></span>
 		<div class="pagina mail_content">
-			<p class="yo-parr">¿Quedamos para un café entonces?</p>
-			<p class="dato-sm">Vale</p>
+			<form id="nl-form" class="nl-form yo-big">
+				¿Quieres
+					<select>
+						<option value="1" selected>tomar un cafe</option>
+						<option value="2">llamarme</option>
+						<option value="3">escribirme</option>
+					</select>, 
+				para
+					<select>
+						<option value="1" selected>hablarme de un trabajo</option>
+						<option value="2">darme tu opinión constructiva sobre mi web</option>
+						<option value="3">comentarme otra cosa</option>
+					</select>
+				?
+				<div class="nl-submit-wrap">
+					<button class="nl-submit display-sm" type="submit">Perfecto</button>
+				</div>
+				<div class="nl-overlay"></div>
+			</form>
 		</div>
 		<!-- <section class="pagina cuatro">
 			<h3 class="yo-big">
@@ -56,7 +78,7 @@
 		</section>
 		<section class="porfolio" id="porfo">
 			<span class="cerrar">x</span>
-			<div class="trabajo">
+			<div class="trabajo ic-reloj">
 				<h2 class="display-big">Reloj mundi</h2>
 				<div class="contenido reloj">
 					<p class="yo-parr">
@@ -72,7 +94,7 @@
 					<span class="nav">_</span>
 				</div>
 			</div>
-			<div class="trabajo">
+			<div class="trabajo ic-abb">
 				<h2 class="display-big">Appuela</h2>
 				<div class="contenido appuela">
 					<p class="yo-parr">
@@ -108,7 +130,7 @@
 					<span class="nav">_</span>
 				</div>
 			</div>
-			<div class="trabajo">
+			<div class="trabajo ic-up">
 				<h2 class="display-big">UCIPlus</h2>
 				<div class="contenido uciplus">
 					<p  class="dato-sm">
@@ -140,7 +162,7 @@
 					<span class="nav">_</span>
 				</div>
 			</div>
-			<div class="trabajo">
+			<div class="trabajo ic-mus">
 				<h2 class="display-big">Música</h2>
 				<div class="contenido musica">
 					<p class="yo-parr">
@@ -163,7 +185,13 @@
 
 	</script>
 	<script src="js/jquery-2.2.4.min.js"></script>
+	<script src="js/nlform.js"></script>
+	<script>
+		var nlform = new NLForm( document.getElementById( 'nl-form' ) );
+	</script>
+
 	<script type="text/javascript" src="js/main.js"></script>
+
 </body>
 </html>
 
