@@ -1,0 +1,752 @@
+/*********************  GRID *****************************/
+/*********************** colores ***********************/
+/*********************** fuentes ***********************/
+/********************** resoluciones ********************/
+/********************** mixines *************************/
+/***transiciones **/
+/** animaciones **/
+/*// scale*/
+/*// translate*/
+/*// skew*/
+@import url(../fonts/fonts.css);
+/*************************************************** BASE MINIMA ************************************************/
+* html {
+  font-size: 100%;
+  line-height: inherit; }
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+@media only screen and (max-width: 767px) {
+  body {
+    -webkit-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+    width: 100%;
+    min-width: 0; } }
+html, body {
+  height: 100%; }
+
+body {
+  background-color: white;
+  overflow-x: hidden !important;
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none !important;
+  color: inherit;
+  cursor: pointer; }
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+html {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+q, blockquote {
+  quotes: none; }
+
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none; }
+
+a img {
+  border: none; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block; }
+
+.pull_right {
+  float: right; }
+
+.pull_left {
+  float: left; }
+
+::selection {
+  background: rgba(255, 119, 79, 0.5);
+  /* WebKit/Blink Browsers */ }
+
+::-moz-selection {
+  background: #4871D1;
+  /* Gecko Browsers */ }
+
+.pagina {
+  position: relative;
+  width: 95vw;
+  height: 95vh;
+  margin: 2.5vh 2.5vw 15vh;
+  border: 5px solid #009444;
+  padding: 8%; }
+
+.yo-big {
+  font-family: "Calluna", "Times New Roman", Times, serif;
+  color: #009444;
+  font-size: 4vw;
+  line-height: 1.29em; }
+
+.yo-parr {
+  font-family: "Calluna", "Times New Roman", Times, serif;
+  color: #009444;
+  font-size: 1.72vw;
+  line-height: 1.74em; }
+
+.dato-big {
+  font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;
+  color: #009444;
+  font-size: 3vw;
+  line-height: 1.5em;
+  font-weight: 100; }
+
+.dato-sm {
+  font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;
+  color: #009444;
+  font-size: 2vw;
+  line-height: 1.5em;
+  font-weight: 300; }
+
+.display-big {
+  font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;
+  color: #009444;
+  font-size: 5vw;
+  font-weight: 900; }
+
+.display-sm {
+  font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;
+  color: #009444;
+  font-size: 3vw;
+  line-height: 1.5em;
+  font-weight: 500; }
+
+.nota-us {
+  font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;
+  color: #009444;
+  font-size: 2vw;
+  font-weight: 300; }
+
+small {
+  font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;
+  color: #009444;
+  font-size: 1.4vw;
+  font-style: italic;
+  line-height: 1.2em;
+  font-weight: 300; }
+
+em {
+  font-size: 1.2em; }
+
+b {
+  font-weight: bold;
+  font-size: 1.1em; }
+
+@media (max-width: 768px) {
+  .yo-big {
+    font-size: calc(15px + 3vw); }
+
+  .yo-parr {
+    font-size: calc(10px + 1.5vw); }
+
+  .dato-sm {
+    font-size: calc(10px + 2vw); }
+
+  .display-big {
+    font-size: calc(15px + 4vw); }
+
+  .display-sm {
+    font-size: calc(15px + 3vw); }
+
+  .nota-us {
+    font-size: calc(10px + 1.5vw); }
+
+  small {
+    font-size: calc(10px + 1vw); } }
+.email {
+  background-color: #009444;
+  font-family: "helvetica neue";
+  color: white;
+  font-size: 3vw;
+  float: left;
+  padding: 0.5% 2% 0.5% 3%;
+  position: relative;
+  top: -10vh;
+  z-index: 300;
+  -webkit-transition: left 0.5s ease;
+  -moz-transition: left 0.5s ease;
+  -ms-transition: left 0.5s ease;
+  -o-transition: left 0.5s ease;
+  transition: left 0.5s ease;
+  cursor: pointer; }
+  @media (max-width: 768px) {
+    .email {
+      font-size: calc(15px + 3vw); } }
+
+.email_tip {
+  font-family: "helvetica neue";
+  color: #009444;
+  font-size: 1.5vw;
+  position: relative;
+  top: -9vh;
+  left: 2%;
+  float: left; }
+  @media (max-width: 768px) {
+    .email_tip {
+      font-size: calc(10px + 1.5vw); } }
+
+.email_fixed, .mail-click {
+  position: fixed;
+  top: 50vh;
+  left: 0; }
+  .email_fixed:hover:after, .mail-click:hover:after {
+    content: "pincha para ponerte en contacto conmigo";
+    font-family: "helvetica neue";
+    color: #009444;
+    font-size: 1.2vw;
+    line-height: 1.5vw;
+    position: absolute;
+    top: -120%;
+    width: 170%;
+    padding: 4px;
+    background-color: white;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px; }
+
+.mail-click {
+  left: 90vw !important; }
+
+.mail_content {
+  position: fixed;
+  background-color: #009444;
+  top: 0;
+  left: -100vw;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
+
+.mail_content-click {
+  left: -7vw !important;
+  z-index: 15; }
+
+.dos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  resize: vertical;
+  text-align: center; }
+  .dos h3 {
+    margin-top: -10vh; }
+  .dos em {
+    font-size: 1.5em; }
+  .dos .nota-us {
+    position: relative;
+    top: 40%;
+    -webkit-animation: aparecer 10s;
+    -moz-animation: aparecer 10s;
+    -ms-animation: aparecer 10s;
+    -o-animation: aparecer 10s;
+    animation: aparecer 10s; }
+@-webkit-keyframes aparecer {
+  0% {
+    opacity: 0; }
+  30% {
+    opacity: 0; }
+  40% {
+    opacity: 1; } }
+@-moz-keyframes aparecer {
+  0% {
+    opacity: 0; }
+  30% {
+    opacity: 0; }
+  40% {
+    opacity: 1; } }
+@-ms-keyframes aparecer {
+  0% {
+    opacity: 0; }
+  30% {
+    opacity: 0; }
+  40% {
+    opacity: 1; } }
+@-o-keyframes aparecer {
+  0% {
+    opacity: 0; }
+  30% {
+    opacity: 0; }
+  40% {
+    opacity: 1; } }
+@keyframes aparecer {
+  0% {
+    opacity: 0; }
+  30% {
+    opacity: 0; }
+  40% {
+    opacity: 1; } }
+.cinco a {
+  -webkit-animation: tililar 7s infinite;
+  -moz-animation: tililar 7s infinite;
+  -ms-animation: tililar 7s infinite;
+  -o-animation: tililar 7s infinite;
+  animation: tililar 7s infinite; }
+@-webkit-keyframes tililar {
+  0% {
+    color: inherit; }
+  33% {
+    color: inherit; }
+  66% {
+    color: #004821; }
+  100% {
+    color: inherit; } }
+@-moz-keyframes tililar {
+  0% {
+    color: inherit; }
+  33% {
+    color: inherit; }
+  66% {
+    color: #004821; }
+  100% {
+    color: inherit; } }
+@-ms-keyframes tililar {
+  0% {
+    color: inherit; }
+  33% {
+    color: inherit; }
+  66% {
+    color: #004821; }
+  100% {
+    color: inherit; } }
+@-o-keyframes tililar {
+  0% {
+    color: inherit; }
+  33% {
+    color: inherit; }
+  66% {
+    color: #004821; }
+  100% {
+    color: inherit; } }
+@keyframes tililar {
+  0% {
+    color: inherit; }
+  33% {
+    color: inherit; }
+  66% {
+    color: #004821; }
+  100% {
+    color: inherit; } }
+  .cinco a:hover {
+    text-shadow: 0.03em 0 #fff, -0.03em 0 #fff, 0 0.03em #fff, 0 -0.03em #fff, 0.06em 0 #fff, -0.06em 0 #fff, 0.09em 0 #fff, -0.09em 0 #fff, 0.12em 0 #fff, -0.12em 0 #fff, 0.15em 0 #fff, -0.15em 0 #fff;
+    background-image: linear-gradient(#009444, #009444);
+    background-size: 3px 3px;
+    background-repeat: repeat-x;
+    background-position: 0% 92%;
+    color: #009444;
+    text-decoration: none; }
+    .cinco a:hover::selection {
+      text-shadow: 0.03em 0 #4871D1, -0.03em 0 #4871D1, 0 0.03em #4871D1, 0 -0.03em #4871D1, 0.06em 0 #4871D1, -0.06em 0 #4871D1, 0.09em 0 #4871D1, -0.09em 0 #4871D1, 0.12em 0 #4871D1, -0.12em 0 #4871D1, 0.15em 0 #4871D1, -0.15em 0 #4871D1;
+      background: #4871D1; }
+    .cinco a:hover::-moz-selection {
+      text-shadow: 0.03em 0 #4871D1, -0.03em 0 #4871D1, 0 0.03em #4871D1, 0 -0.03em #4871D1, 0.06em 0 #4871D1, -0.06em 0 #4871D1, 0.09em 0 #4871D1, -0.09em 0 #4871D1, 0.12em 0 #4871D1, -0.12em 0 #4871D1, 0.15em 0 #4871D1, -0.15em 0 #4871D1;
+      background: #4871D1; }
+    .cinco a:hover *,
+    .cinco a:hover *:after, .cinco a:hover:after,
+    .cinco a:hover *:before, .cinco a:hover:before {
+      text-shadow: none; }
+    .cinco a:hover:visited {
+      color: #009444; }
+
+.porfolio {
+  position: relative;
+  width: 95vw;
+  height: 95vh;
+  margin: 2.5vh 2.5vw;
+  padding: 5%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  align-content: flex-start;
+  overflow-x: auto;
+  cursor: initial !important; }
+  .porfolio .ic-reloj {
+    background-image: url(../images/spain.gif); }
+    .porfolio .ic-reloj:hover {
+      background: linear-gradient(rgba(0, 148, 68, 0.5), rgba(0, 148, 68, 0.5)), url(../images/spain.gif); }
+  .porfolio .ic-abb {
+    background-image: url(../images/abuelapp.png); }
+    .porfolio .ic-abb:hover {
+      background: linear-gradient(rgba(0, 148, 68, 0.5), rgba(0, 148, 68, 0.5)), url(../images/abuelapp.png); }
+  .porfolio .ic-up {
+    background-image: url(../images/uciplus.png); }
+    .porfolio .ic-up:hover {
+      background: linear-gradient(rgba(0, 148, 68, 0.5), rgba(0, 148, 68, 0.5)), url(../images/uciplus.png); }
+  .porfolio .ic-mus {
+    background-image: url(../images/musica.png); }
+    .porfolio .ic-mus:hover {
+      background: linear-gradient(rgba(0, 148, 68, 0.5), rgba(0, 148, 68, 0.5)), url(../images/musica.png); }
+  .porfolio .trabajo {
+    position: relative;
+    border: 3px solid #009444;
+    width: 30%;
+    height: 40%;
+    margin-right: 3%;
+    margin-bottom: 3%;
+    z-index: 10;
+    background-color: white;
+    cursor: pointer;
+    background-size: 105%;
+    background-position: center;
+    background-repeat: no-repeat; }
+    .porfolio .trabajo > h2 {
+      text-align: center;
+      margin-top: 10vh;
+      font-size: 4vw;
+      opacity: 0; }
+    .porfolio .trabajo:hover {
+      background-blend-mode: multiply;
+      background-size: 95%;
+      background-position: center;
+      border-color: rgba(0, 148, 68, 0.2); }
+      .porfolio .trabajo:hover > h2 {
+        opacity: 1;
+        color: white; }
+    .porfolio .trabajo .contenido {
+      display: none; }
+  .porfolio .selected {
+    width: auto;
+    height: 90%;
+    border: 3px solid #009444;
+    position: absolute;
+    left: 10vw;
+    top: 5%;
+    z-index: 100;
+    background: none;
+    overflow-x: initial;
+    cursor: -webkit-grab;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.3);
+    -webkit-animation: ampliar 2s;
+    -moz-animation: ampliar 2s;
+    -ms-animation: ampliar 2s;
+    -o-animation: ampliar 2s;
+    animation: ampliar 2s; }
+    .porfolio .selected:hover {
+      background: none; }
+@-webkit-keyframes ampliar {
+  0% {
+    height: 30%;
+    width: 30%;
+    position: relative; }
+  50% {
+    height: 80%;
+    width: 120%; }
+  55% {
+    height: 80%;
+    width: auto; }
+  90% {
+    position: absolute; } }
+@-moz-keyframes ampliar {
+  0% {
+    height: 30%;
+    width: 30%;
+    position: relative; }
+  50% {
+    height: 80%;
+    width: 120%; }
+  55% {
+    height: 80%;
+    width: auto; }
+  90% {
+    position: absolute; } }
+@-ms-keyframes ampliar {
+  0% {
+    height: 30%;
+    width: 30%;
+    position: relative; }
+  50% {
+    height: 80%;
+    width: 120%; }
+  55% {
+    height: 80%;
+    width: auto; }
+  90% {
+    position: absolute; } }
+@-o-keyframes ampliar {
+  0% {
+    height: 30%;
+    width: 30%;
+    position: relative; }
+  50% {
+    height: 80%;
+    width: 120%; }
+  55% {
+    height: 80%;
+    width: auto; }
+  90% {
+    position: absolute; } }
+@keyframes ampliar {
+  0% {
+    height: 30%;
+    width: 30%;
+    position: relative; }
+  50% {
+    height: 80%;
+    width: 120%; }
+  55% {
+    height: 80%;
+    width: auto; }
+  90% {
+    position: absolute; } }
+    .porfolio .selected h2 {
+      position: relative;
+      margin-bottom: -12vh;
+      text-align: left; }
+    .porfolio .selected > p {
+      float: left; }
+    .porfolio .selected .contenido {
+      -webkit-animation: ampliarC 3s;
+      -moz-animation: ampliarC 3s;
+      -ms-animation: ampliarC 3s;
+      -o-animation: ampliarC 3s;
+      animation: ampliarC 3s;
+      display: flex;
+      margin-top: 0;
+      padding: 3vh 5vw;
+      height: auto; }
+@-webkit-keyframes ampliarC {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 0; }
+  90% {
+    opacity: 1; } }
+@-moz-keyframes ampliarC {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 0; }
+  90% {
+    opacity: 1; } }
+@-ms-keyframes ampliarC {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 0; }
+  90% {
+    opacity: 1; } }
+@-o-keyframes ampliarC {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 0; }
+  90% {
+    opacity: 1; } }
+@keyframes ampliarC {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 0; }
+  90% {
+    opacity: 1; } }
+      .porfolio .selected .contenido > :first-child {
+        margin-top: 15vh;
+        margin-left: 5%;
+        width: 55vw; }
+      .porfolio .selected .contenido > * {
+        float: left;
+        width: 80vw; }
+        .porfolio .selected .contenido > *:not(:last-child) {
+          margin-right: 20vw; }
+      .porfolio .selected .contenido > div {
+        height: 100%;
+        margin-top: -3vh; }
+      .porfolio .selected .contenido .br {
+        line-height: 2em; }
+      @media (max-width: 768px) {
+        .porfolio .selected .contenido > :first-child {
+          width: 70vw !important;
+          margin-left: 3% !important; } }
+    .porfolio .selected .reloj {
+      height: 100%; }
+      .porfolio .selected .reloj .yo-parr em {
+        font-family: "arabella", "Times New Roman", Times, serif;
+        color: #009444;
+        font-size: 3.5vw;
+        line-height: 1.05em;
+        display: inline-block;
+        width: 59%;
+        margin: 5% 0;
+        margin-left: -5%; }
+      .porfolio .selected .reloj .yo-parr span {
+        font-weight: 300;
+        font-size: 1.6vw;
+        line-height: 1.3em;
+        display: inline-block;
+        width: 44%;
+        margin: 5% -10% 5% 10%; }
+      .porfolio .selected .reloj .mapa1 {
+        width: 62vw;
+        height: 100%;
+        background-image: url("../images/relojmundi.gif");
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-top: 1%;
+        margin-right: 15vw; }
+    .porfolio .selected .appuela {
+      height: auto;
+      padding-right: 30vh; }
+      .porfolio .selected .appuela > p {
+        width: 60vw !important; }
+        .porfolio .selected .appuela > p em {
+          margin-left: 2em;
+          display: block; }
+      .porfolio .selected .appuela .appuela_ex {
+        position: absolute;
+        margin-left: -5%;
+        top: 2%; }
+      .porfolio .selected .appuela > div {
+        position: relative;
+        margin-top: 23vh;
+        width: 20vw;
+        height: auto; }
+        .porfolio .selected .appuela > div img {
+          height: 30vh;
+          margin-bottom: 15%; }
+        .porfolio .selected .appuela > div small {
+          margin-top: 15%; }
+        .porfolio .selected .appuela > div:not(:nth-last-child(2)):after {
+          content: "";
+          background-image: url(../images/flecha.png);
+          background-size: cover;
+          position: absolute;
+          top: 18vh;
+          right: -18vh;
+          width: 50px;
+          height: 10px; }
+    .porfolio .selected .uciplus .mockup {
+      height: 70vh;
+      width: 60vw;
+      position: relative;
+      top: 10vh; }
+      .porfolio .selected .uciplus .mockup .mockup_frente {
+        height: 90%;
+        width: 95%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 5; }
+      .porfolio .selected .uciplus .mockup .mockup_fondo {
+        overflow-y: scroll;
+        height: 64.5%;
+        width: 70.5%;
+        position: absolute;
+        top: 12.5%;
+        left: 12.5%;
+        z-index: 20; }
+        .porfolio .selected .uciplus .mockup .mockup_fondo img {
+          width: 100%; }
+      .porfolio .selected .uciplus .mockup ul {
+        position: absolute;
+        right: 6%;
+        top: 7%;
+        z-index: 20; }
+        .porfolio .selected .uciplus .mockup ul li {
+          display: block;
+          cursor: pointer !important;
+          font-family: "Calluna", "Times New Roman", Times, serif;
+          color: #009444;
+          font-size: 5rem;
+          margin-bottom: 30%; }
+    .porfolio .selected .uciplus .uciplus_ex {
+      display: flex;
+      align-self: center; }
+    .porfolio .selected .musica .yo-parr {
+      width: 70vw; }
+    .porfolio .selected .musica b {
+      display: block;
+      margin: 1.2em 0; }
+    @media (max-width: 768px) {
+      .porfolio .selected {
+        left: 5vw; }
+        .porfolio .selected .reloj .yo-parr em {
+          font-size: calc(10px + 5vw);
+          width: 120%; }
+        .porfolio .selected .reloj .yo-parr span {
+          font-size: calc(10px + 1.5vw);
+          width: 100%;
+          margin-bottom: 10%; }
+        .porfolio .selected .reloj .mapa1 {
+          width: 200vw; }
+        .porfolio .selected .appuela .appuela_ex {
+          margin-left: -2%; }
+        .porfolio .selected .appuela > div {
+          width: 80vw; }
+        .porfolio .selected .uciplus .mockup {
+          height: 90vh;
+          width: 125vw;
+          margin-top: 5vh; }
+          .porfolio .selected .uciplus .mockup .mockup_canal {
+            right: 2%; } }
+  .porfolio .cerrar {
+    display: none;
+    cursor: pointer;
+    position: fixed;
+    top: 1%;
+    right: 2%;
+    font-size: 2em;
+    font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;
+    color: #009444;
+    font-size: 2rem; }
+
+.mail_content * {
+  color: white !important; }
+
+.nav {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;
+  color: #009444;
+  font-size: 2vw;
+  font-weight: bold; }
+  .contenido .nav {
+    position: fixed;
+    bottom: 10%;
+    font-size: 3vw; }
+  @media (max-width: 768px) {
+    .nav {
+      font-size: calc(10px + 1.5vw); } }
+
+/*# sourceMappingURL=style.css.map */
