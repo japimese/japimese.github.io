@@ -692,7 +692,7 @@ b {
       font-size: calc(15px + 3vw); } }
 
 .email_tip {
-  font-family: "helvetica neue";
+  font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;
   color: #009444;
   font-size: 1.5vw;
   position: relative;
@@ -712,6 +712,7 @@ b {
     font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;
     color: #009444;
     font-size: 1.2vw;
+    font-weight: 300;
     line-height: 1.5vw;
     position: absolute;
     top: -120%;
