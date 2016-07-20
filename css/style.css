@@ -183,83 +183,13 @@ b {
 
   small {
     font-size: calc(10px + 1vw); } }
-.email {
-  background-color: #009444;
-  font-family: "helvetica neue";
-  color: white;
-  font-size: 3vw;
-  float: left;
-  padding: 0.5% 2% 0.5% 3%;
-  position: relative;
-  top: -10vh;
-  z-index: 300;
-  -webkit-transition: left 0.5s ease;
-  -moz-transition: left 0.5s ease;
-  -ms-transition: left 0.5s ease;
-  -o-transition: left 0.5s ease;
-  transition: left 0.5s ease;
-  cursor: pointer; }
-  @media (max-width: 768px) {
-    .email {
-      font-size: calc(15px + 3vw); } }
-
-.email_tip {
-  font-family: "helvetica neue";
-  color: #009444;
-  font-size: 1.5vw;
-  position: relative;
-  top: -9vh;
-  left: 2%;
-  float: left; }
-  @media (max-width: 768px) {
-    .email_tip {
-      font-size: calc(10px + 1.5vw); } }
-
-.email_fixed, .mail-click {
-  position: fixed;
-  top: 50vh;
-  left: 0; }
-  .email_fixed:hover:after, .mail-click:hover:after {
-    content: "pincha para ponerte en contacto conmigo";
-    font-family: "helvetica neue";
-    color: #009444;
-    font-size: 1.2vw;
-    line-height: 1.5vw;
-    position: absolute;
-    top: -120%;
-    width: 170%;
-    padding: 4px;
-    background-color: white;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-    border-radius: 5px; }
-
-.mail-click {
-  left: 90vw !important; }
-
-.mail_content {
-  position: fixed;
-  background-color: #009444;
-  top: 0;
-  left: -100vw;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease; }
-
-.mail_content-click {
-  left: -7vw !important;
-  z-index: 15; }
-
 .dos {
   display: flex;
   flex-direction: column;
   justify-content: center;
   resize: vertical;
-  text-align: center; }
+  text-align: center;
+  border: none; }
   .dos h3 {
     margin-top: -10vh; }
   .dos em {
@@ -365,13 +295,14 @@ b {
     background-repeat: repeat-x;
     background-position: 0% 92%;
     color: #009444;
-    text-decoration: none; }
+    text-decoration: none;
+    color: #14437D; }
     .cinco a:hover::selection {
-      text-shadow: 0.03em 0 #4871D1, -0.03em 0 #4871D1, 0 0.03em #4871D1, 0 -0.03em #4871D1, 0.06em 0 #4871D1, -0.06em 0 #4871D1, 0.09em 0 #4871D1, -0.09em 0 #4871D1, 0.12em 0 #4871D1, -0.12em 0 #4871D1, 0.15em 0 #4871D1, -0.15em 0 #4871D1;
-      background: #4871D1; }
+      text-shadow: 0.03em 0 rgba(255, 119, 79, 0.5), -0.03em 0 rgba(255, 119, 79, 0.5), 0 0.03em rgba(255, 119, 79, 0.5), 0 -0.03em rgba(255, 119, 79, 0.5), 0.06em 0 rgba(255, 119, 79, 0.5), -0.06em 0 rgba(255, 119, 79, 0.5), 0.09em 0 rgba(255, 119, 79, 0.5), -0.09em 0 rgba(255, 119, 79, 0.5), 0.12em 0 rgba(255, 119, 79, 0.5), -0.12em 0 rgba(255, 119, 79, 0.5), 0.15em 0 rgba(255, 119, 79, 0.5), -0.15em 0 rgba(255, 119, 79, 0.5);
+      background: rgba(255, 119, 79, 0.5); }
     .cinco a:hover::-moz-selection {
-      text-shadow: 0.03em 0 #4871D1, -0.03em 0 #4871D1, 0 0.03em #4871D1, 0 -0.03em #4871D1, 0.06em 0 #4871D1, -0.06em 0 #4871D1, 0.09em 0 #4871D1, -0.09em 0 #4871D1, 0.12em 0 #4871D1, -0.12em 0 #4871D1, 0.15em 0 #4871D1, -0.15em 0 #4871D1;
-      background: #4871D1; }
+      text-shadow: 0.03em 0 rgba(255, 119, 79, 0.5), -0.03em 0 rgba(255, 119, 79, 0.5), 0 0.03em rgba(255, 119, 79, 0.5), 0 -0.03em rgba(255, 119, 79, 0.5), 0.06em 0 rgba(255, 119, 79, 0.5), -0.06em 0 rgba(255, 119, 79, 0.5), 0.09em 0 rgba(255, 119, 79, 0.5), -0.09em 0 rgba(255, 119, 79, 0.5), 0.12em 0 rgba(255, 119, 79, 0.5), -0.12em 0 rgba(255, 119, 79, 0.5), 0.15em 0 rgba(255, 119, 79, 0.5), -0.15em 0 rgba(255, 119, 79, 0.5);
+      background: rgba(255, 119, 79, 0.5); }
     .cinco a:hover *,
     .cinco a:hover *:after, .cinco a:hover:after,
     .cinco a:hover *:before, .cinco a:hover:before {
@@ -394,9 +325,9 @@ b {
   overflow-x: auto;
   cursor: initial !important; }
   .porfolio .ic-reloj {
-    background-image: url(../images/spain.gif); }
+    background-image: url(../images/reloj_sm.gif); }
     .porfolio .ic-reloj:hover {
-      background: linear-gradient(rgba(0, 148, 68, 0.5), rgba(0, 148, 68, 0.5)), url(../images/spain.gif); }
+      background: linear-gradient(rgba(0, 148, 68, 0.5), rgba(0, 148, 68, 0.5)), url(../images/reloj_sm.gif); }
   .porfolio .ic-abb {
     background-image: url(../images/abuelapp.png); }
     .porfolio .ic-abb:hover {
@@ -419,9 +350,14 @@ b {
     z-index: 10;
     background-color: white;
     cursor: pointer;
-    background-size: 105%;
+    background-size: 110%;
     background-position: center;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease; }
     .porfolio .trabajo > h2 {
       text-align: center;
       margin-top: 10vh;
@@ -429,9 +365,14 @@ b {
       opacity: 0; }
     .porfolio .trabajo:hover {
       background-blend-mode: multiply;
-      background-size: 95%;
+      background-size: 90%;
       background-position: center;
-      border-color: rgba(0, 148, 68, 0.2); }
+      border-color: rgba(0, 148, 68, 0.2);
+      -webkit-transition: background 1s ease-in;
+      -moz-transition: background 1s ease-in;
+      -ms-transition: background 1s ease-in;
+      -o-transition: background 1s ease-in;
+      transition: background 1s ease-in; }
       .porfolio .trabajo:hover > h2 {
         opacity: 1;
         color: white; }
@@ -730,8 +671,81 @@ b {
     color: #009444;
     font-size: 2rem; }
 
-.mail_content * {
-  color: white !important; }
+.email {
+  background-color: #009444;
+  font-family: "helvetica neue";
+  color: white;
+  font-size: 3vw;
+  float: left;
+  padding: 0.5% 2% 0.5% 3%;
+  position: relative;
+  top: -10vh;
+  z-index: 300;
+  -webkit-transition: left 0.5s ease;
+  -moz-transition: left 0.5s ease;
+  -ms-transition: left 0.5s ease;
+  -o-transition: left 0.5s ease;
+  transition: left 0.5s ease;
+  cursor: pointer; }
+  @media (max-width: 768px) {
+    .email {
+      font-size: calc(15px + 3vw); } }
+
+.email_tip {
+  font-family: "helvetica neue";
+  color: #009444;
+  font-size: 1.5vw;
+  position: relative;
+  top: -9vh;
+  left: 2%;
+  float: left; }
+  @media (max-width: 768px) {
+    .email_tip {
+      font-size: calc(10px + 1.5vw); } }
+
+.email_fixed, .mail-click {
+  position: fixed;
+  top: 50vh;
+  left: 0; }
+  .email_fixed:hover:after, .mail-click:hover:after {
+    content: "pincha para ponerte en contacto conmigo";
+    font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;
+    color: #009444;
+    font-size: 1.2vw;
+    line-height: 1.5vw;
+    position: absolute;
+    top: -120%;
+    width: 170%;
+    padding: 4px;
+    background-color: white;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px; }
+
+.mail-click {
+  left: 90vw !important; }
+
+.mail_content {
+  position: fixed;
+  background-color: white;
+  top: 0;
+  left: -100vw;
+  padding: 5%;
+  z-index: 200;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
+  .mail_content .yo-big {
+    width: 85%;
+    text-align: center; }
+
+.mail_content-click {
+  left: -7vw !important;
+  z-index: 15; }
 
 .nav {
   position: absolute;
