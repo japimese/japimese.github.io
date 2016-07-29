@@ -18,29 +18,30 @@
 
 <body>
 	<div class="container">
-		<!-- <section class="pagina uno">
-			<h3><a href="#" class="esp">Hola</a> / <a>Hello</a></p>
-		</section> -->
-
-		<section class="pagina dos">
-			<h3 class="yo-big">
-				<em>Hola</em><br/>
-				otra vez
-			</h3>
-			<span class="nota-us">SCROLL | CLICK</span>
-			<small>*web en construcción, con servicios mínimos</small>
-			<span class="nav">|</span>
-		</section>
-		
-		<!-- <section class="section pagina tres">
-			<h3 class="yo-big">
-				¿eres de recursos humanos, o un creativo?
-			</h3>
-			<h3 class="dato-big">
-				*Antes de nada decirte que en cualquier momento puedes pinchar en esta @ para ponerte en contacto conmigo (para concertar una entrevista, por ejemplo =) ).
-			</h3>
-		</section> -->
+		<div class="basic_intro">
+			<section class="pagina dos">
+				<h3 class="yo-big">
+					<em>Hola</em><br/>
+					me alegro de tenerte por aquí =)
+				</h3>
+				<span class="nota-us">SCROLL | CLICK</span>
+				<small>*web en construcción, con servicios mínimos</small>
+				<span class="nav">|</span>
+			</section>
+		</div>
+		<div class="email_intro">
+			<section class="pagina dos">
+				<h3 class="yo-big">
+					<em>Hola</em><br/>
+					otra vez
+				</h3>
+				<span class="nota-us">SCROLL | CLICK</span>
+				<small>*web en construcción, con servicios mínimos</small>
+				<span class="nav">|</span>
+			</section>
+		</div>
 		<p class="email"><a href="mailto:japimes@gmail.com">@</a></p>
+		<!-- <p class="email">@</p> -->
 		<span class="email_tip">pincha para ponerte en contacto conmigo</span>
 		<div class="pagina mail_content">
 			<form id="nl-form" class="nl-form yo-big">
@@ -50,7 +51,7 @@
 						<option value="2">llamarme</option>
 						<option value="3">escribirme</option>
 					</select>, 
-				para
+				para<br/>
 					<select>
 						<option value="1" selected>hablarme de un trabajo</option>
 						<option value="2">darme tu opinión constructiva sobre mi web</option>
@@ -63,16 +64,19 @@
 				<div class="nl-overlay"></div>
 			</form>
 		</div>
-		<!-- <section class="pagina cuatro">
-			<h3 class="yo-big">
-				¿buscas a un creativo majo, tremendamente flexible y con experiencia en diversos campos? ¿o más bien buscas a un diseñador de experiencias, o un músico, o un manager de producto, o un fotógrafo?
-			</h3>
-		</section> -->
-
+		<div class="basic_intro">
+			<section class="pagina cuatro">
+				<h3 class="yo-big-parr">
+					Soy Roberto Mesejo, un aspirante a <b>creativo multidisciplinar</b>, a caballo entre el arte y la tecnología.<br class="br">
+					Tengo conocimientos y experiencia en diseño y programación, y soy un apasionado de la innovación, la tecnología, la comunicación, el proceso creativo y un largo etcétera lleno de cosas sobre las que soy extremadamente curioso.
+				</h3>
+				<span class="nav">|</span>
+			</section>
+		</div>
 		<section class="pagina cinco">
-			<h3 class="yo-big">
+			<h3 class="yo-big-parr">
 				La verdad es que tengo más <a href="https://www.linkedin.com/in/robertomesejo" target="_blank">experiencia</a> que porfolio.<br><br>
-				Pero para que veais un poco mi estilo, he juntado <a href="#" onclick="$('html,body').animate({scrollTop: $('#porfo').offset().top}, 'slow');" >un par de ideas inacabadas</a>, <a href="http://www.flickr.com/japimes" target="_blank">algunas de mis fotos</a>, y <a href="http://www.pinterest.com/japimes" target="_blank">cosas que me inspiran</a>.
+				Aun así para que veais un poco mi estilo, he juntado <br><a href="#" onclick="$('html,body').animate({scrollTop: $('#porfo').offset().top}, 'slow');" >un par de ideas inacabadas</a>, <a href="http://www.flickr.com/japimes" target="_blank">algunas de mis fotos</a>, y <a href="http://www.pinterest.com/japimes" target="_blank">cosas que me inspiran</a>.
 			</h3>
 			<span class="nav">+</span>
 		</section>
@@ -88,9 +92,10 @@
 						El caso es que eran vísperas de fin de año, y estaba leyendo un artículo sobre las zonas horarias y sus curiosidades. Fue entonces cuando pensé en que no me sonaba que hubiera ningún mapa en el que poder ver simultáneamente la hora en todos los países del mundo a la vez. Así surgió el MAPDI.
 					</p>
 					<!-- <p class="yo-parr">No está acabado todavía, así que lo que os voy a enseñar es sólo un prototipo.</p> -->
-					<div class="mapa1">
-
-					</div>
+					<div class="mapa1"></div>
+					<!-- <p class="yo-parr">
+						En principio lo pensé como reloj de pared, pero podría usarse en otros ámbitos y dispositivos
+					</p> -->
 					<span class="nav">_</span>
 				</div>
 			</div>
@@ -107,33 +112,35 @@
 						</em>
 						Queremos que esta app sea como una abuela virtual (Appuela ;) ) que, usando datos metereológicos (algo menos certeros que el “supersentido abuelil”, pero bastante fiables), te aconseje como lo haría ella.
 					</p>
-					<span class="appuela_ex">
-						<h3 class="display-sm">¿Cómo funciona?</h3>
-						<p class="yo-parr">Principalmente a través de un widget que tendrías en el escritorio de tu móvil</p>
-					</span>
-					<div>
-						<img src="images/abb_1.png">
-						<small>Con el 1er click te despides de tu appuela</small>
-					</div>
-					<div>
-						<img src="images/abb_2.png">
-						<small>Mientras carga los datos la abuela te contesta con una Frase Típica de Abuela</small>
-					</div>
-					<div>
-						<img src="images/abb_3.png">
-						<small>Cuando se carga la información, la appuela te aconseja según los datos metereológicos del día</small>
-					</div>
-					<div>
-						<img src="images/abb_4.png">
-						<small>Si haces click nuevamente, te da otro consejo.</small>
-					</div>
+					<!-- <div class="appuela_ex"> -->
+						<span class="appuela_ex">
+							<h3 class="display-sm">¿Cómo funciona?</h3>
+							<p class="yo-parr">Principalmente a través de un widget que tendrías en el escritorio de tu móvil</p>
+						</span>
+						<div>
+							<img src="images/abb_1.png">
+							<small>Con el 1er click te despides de tu appuela</small>
+						</div>
+						<div>
+							<img src="images/abb_2.png">
+							<small>Mientras carga los datos la abuela te contesta con una Frase Típica de Abuela</small>
+						</div>
+						<div>
+							<img src="images/abb_3.png">
+							<small>Cuando se carga la información, la appuela te aconseja según los datos metereológicos del día</small>
+						</div>
+						<div>
+							<img src="images/abb_4.png">
+							<small>Si haces click nuevamente, te da otro consejo.</small>
+						</div>
+					<!-- </div> -->
 					<span class="nav">_</span>
 				</div>
 			</div>
 			<div class="trabajo ic-up">
 				<h2 class="display-big">UCIPlus</h2>
 				<div class="contenido uciplus">
-					<p  class="dato-sm">
+					<p  class="yo-parr">
 						UCIPlus es un programa de puntos para conseguir viajes exóticos y formativos.<br class="br">
 						 Para intentar refrescar la marca y hacerla más atractiva se planteó un rediseño de su imagen, comenzando por su web.<br><br>
 						Esta fue mi propuesta de diseño:
