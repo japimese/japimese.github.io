@@ -8,7 +8,7 @@ $(".esp").click(function() {
 	$('html,body').animate({scrollTop: unheight}, 'slow'); 
 });
 
-$(".dos, .tres, .cuatro").click(function() {
+$(".dos, .cuatro").click(function() {
 	var scrolltop = $(window).scrollTop();
 	$('html,body').animate({scrollTop: scrolltop + unheight*1.1}, 'slow'); 
 });
@@ -107,6 +107,42 @@ $(window).scroll(function () {
 // 		$(this).html("X");
 // 	} else {$(this).html("@");}
 // });
+
+
+
+//version email/no mail
+
+var getUrlParameter = function getUrlParameter(sParam) {
+    var sPageURL = decodeURIComponent(window.location.search.substring(1)),
+        sURLVariables = sPageURL.split('&'),
+        sParameterName,
+        i;
+
+    for (i = 0; i < sURLVariables.length; i++) {
+        sParameterName = sURLVariables[i].split('=');
+
+        if (sParameterName[0] === sParam) {
+            return sParameterName[1] === undefined ? true : sParameterName[1];
+        }
+    }
+};
+
+var origen = getUrlParameter('origen');
+
+if (origen==="email") {
+    $(".container").addClass("email_or");
+} else {
+    $(".container").removeClass("email_or");
+}
+
+
+
+
+
+
+
+
+
 
 
 
