@@ -94,6 +94,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   background: #4871D1;
   /* Gecko Browsers */ }
 
+.br {
+  line-height: 2.5em; }
+
 .pagina {
   position: relative;
   width: 95vw;
@@ -107,6 +110,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   color: #009444;
   font-size: 4vw;
   line-height: 1.29em; }
+
+.yo-big-parr {
+  font-family: "Calluna", "Times New Roman", Times, serif;
+  color: #009444;
+  font-size: 3vw;
+  line-height: 1.74em; }
 
 .yo-parr {
   font-family: "Calluna", "Times New Roman", Times, serif;
@@ -183,6 +192,27 @@ b {
 
   small {
     font-size: calc(10px + 1vw); } }
+@media (min-width: 1366px) {
+  .yo-big {
+    font-size: calc(30px + 1.5vw); }
+
+  .yo-parr {
+    font-size: calc(10px + 1.5vw); }
+
+  .dato-sm {
+    font-size: calc(10px + 2vw); }
+
+  .display-big {
+    font-size: calc(15px + 4vw); }
+
+  .display-sm {
+    font-size: calc(15px + 3vw); }
+
+  .nota-us {
+    font-size: calc(10px + 1.5vw); }
+
+  small {
+    font-size: calc(10px + 1vw); } }
 .dos {
   display: flex;
   flex-direction: column;
@@ -237,6 +267,11 @@ b {
     opacity: 0; }
   40% {
     opacity: 1; } }
+.cuatro, .cinco {
+  display: flex; }
+  .cuatro h3, .cinco h3 {
+    align-self: center; }
+
 .cinco a {
   -webkit-animation: tililar 7s infinite;
   -moz-animation: tililar 7s infinite;
@@ -472,8 +507,8 @@ b {
     position: absolute; } }
     .porfolio .selected h2 {
       position: relative;
-      margin-bottom: -12vh;
-      text-align: left; }
+      text-align: left;
+      margin-bottom: -12vh; }
     .porfolio .selected > p {
       float: left; }
     .porfolio .selected .contenido {
@@ -533,8 +568,6 @@ b {
       .porfolio .selected .contenido > div {
         height: 100%;
         margin-top: -3vh; }
-      .porfolio .selected .contenido .br {
-        line-height: 2em; }
       @media (max-width: 768px) {
         .porfolio .selected .contenido > :first-child {
           width: 70vw !important;
@@ -660,16 +693,21 @@ b {
           margin-top: 5vh; }
           .porfolio .selected .uciplus .mockup .mockup_canal {
             right: 2%; } }
+    @media (min-width: 1366px) {
+      .porfolio .selected .reloj .yo-parr em {
+        font-size: calc(25px + 1.5vw); }
+      .porfolio .selected .reloj .yo-parr span {
+        font-size: calc(12px + 1.4vw); } }
   .porfolio .cerrar {
     display: none;
     cursor: pointer;
     position: fixed;
     top: 1%;
-    right: 2%;
-    font-size: 2em;
+    right: 3%;
     font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;
     color: #009444;
-    font-size: 2rem; }
+    font-size: 3vw;
+    font-weight: bold; }
 
 .email {
   background-color: #009444;
@@ -731,6 +769,8 @@ b {
 .mail_content {
   position: fixed;
   background-color: white;
+  display: flex;
+  align-items: center;
   top: 0;
   left: -100vw;
   padding: 5%;
@@ -742,7 +782,8 @@ b {
   transition: all 0.5s ease; }
   .mail_content .yo-big {
     width: 85%;
-    text-align: center; }
+    text-align: center;
+    font-size: 3.5vw; }
 
 .mail_content-click {
   left: -7vw !important;
@@ -763,5 +804,13 @@ b {
   @media (max-width: 768px) {
     .nav {
       font-size: calc(10px + 1.5vw); } }
+
+.container .email_intro {
+  display: none; }
+
+.email_or .basic_intro {
+  display: none; }
+.email_or .email_intro {
+  display: block; }
 
 /*# sourceMappingURL=style.css.map */
