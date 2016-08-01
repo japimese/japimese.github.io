@@ -175,6 +175,9 @@ b {
   .yo-big {
     font-size: calc(15px + 3vw); }
 
+  .yo-big-parr {
+    font-size: calc(15px + 1vw); }
+
   .yo-parr {
     font-size: calc(10px + 1.5vw); }
 
@@ -195,6 +198,9 @@ b {
 @media (min-width: 1366px) {
   .yo-big {
     font-size: calc(30px + 1.5vw); }
+
+  .yo-big-parr {
+    font-size: calc(25px + 1.5vw); }
 
   .yo-parr {
     font-size: calc(10px + 1.5vw); }
