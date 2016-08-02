@@ -115,13 +115,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   font-family: "Calluna", "Times New Roman", Times, serif;
   color: #009444;
   font-size: 3vw;
-  line-height: 1.74em; }
+  line-height: 1.58; }
 
 .yo-parr {
   font-family: "Calluna", "Times New Roman", Times, serif;
   color: #009444;
   font-size: 1.72vw;
-  line-height: 1.74em; }
+  line-height: 1.58; }
 
 .dato-big {
   font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;
@@ -133,8 +133,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 .dato-sm {
   font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;
   color: #009444;
-  font-size: 2vw;
-  line-height: 1.5em;
+  font-size: 1.72vw;
+  line-height: 1.58em;
   font-weight: 300; }
 
 .display-big {
@@ -182,7 +182,7 @@ b {
     font-size: calc(10px + 1.5vw); }
 
   .dato-sm {
-    font-size: calc(10px + 2vw); }
+    font-size: calc(10px + 1.5vw); }
 
   .display-big {
     font-size: calc(15px + 4vw); }
@@ -200,19 +200,19 @@ b {
     font-size: calc(30px + 1.5vw); }
 
   .yo-big-parr {
-    font-size: calc(25px + 1.5vw); }
+    font-size: calc(25px + 1.2vw); }
 
   .yo-parr {
-    font-size: calc(10px + 1.5vw); }
+    font-size: calc(10px + 1.2vw); }
 
   .dato-sm {
-    font-size: calc(10px + 2vw); }
+    font-size: calc(10px + 1.2vw); }
 
   .display-big {
     font-size: calc(15px + 4vw); }
 
   .display-sm {
-    font-size: calc(15px + 3vw); }
+    font-size: calc(15px + 2vw); }
 
   .nota-us {
     font-size: calc(10px + 1.5vw); }
@@ -576,8 +576,8 @@ b {
         margin-top: -3vh; }
       @media (max-width: 768px) {
         .porfolio .selected .contenido > :first-child {
-          width: 70vw !important;
-          margin-left: 3% !important; } }
+          width: 80vw !important;
+          margin-left: 1% !important; } }
     .porfolio .selected .reloj {
       height: 100%; }
       .porfolio .selected .reloj .yo-parr em {
@@ -679,7 +679,10 @@ b {
       margin: 1.2em 0; }
     @media (max-width: 768px) {
       .porfolio .selected {
-        left: 5vw; }
+        left: 5vw;
+        overflow-y: scroll;
+        height: 95%;
+        top: 2.5%; }
         .porfolio .selected .reloj .yo-parr em {
           font-size: calc(10px + 5vw);
           width: 120%; }
@@ -710,10 +713,15 @@ b {
     position: fixed;
     top: 1%;
     right: 3%;
+    z-index: 300;
     font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;
     color: #009444;
     font-size: 3vw;
     font-weight: bold; }
+    @media (max-width: 768px) {
+      .porfolio .cerrar {
+        font-size: 25px;
+        top: 0; } }
 
 .email {
   background-color: #009444;
