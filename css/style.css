@@ -9,83 +9,7 @@
 /*// translate*/
 /*// skew*/
 @import url(../fonts/fonts.css);
-/*************************************************** BASE MINIMA ************************************************/
-* html {
-  font-size: 100%;
-  line-height: inherit; }
-
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
-
-body {
-  position: relative;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
-
-@media only screen and (max-width: 767px) {
-  body {
-    -webkit-text-size-adjust: none;
-    -ms-text-size-adjust: none;
-    width: 100%;
-    min-width: 0; } }
-html, body {
-  height: 100%; }
-
-body {
-  background-color: white;
-  overflow-x: hidden !important;
-  margin: 0;
-  padding: 0; }
-
-a {
-  text-decoration: none !important;
-  color: inherit;
-  cursor: pointer; }
-
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font: inherit;
-  font-size: 100%;
-  vertical-align: baseline; }
-
-html {
-  line-height: 1; }
-
-ol, ul {
-  list-style: none; }
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0; }
-
-caption, th, td {
-  text-align: left;
-  font-weight: normal;
-  vertical-align: middle; }
-
-q, blockquote {
-  quotes: none; }
-
-q:before, q:after, blockquote:before, blockquote:after {
-  content: "";
-  content: none; }
-
-a img {
-  border: none; }
-
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
-  display: block; }
-
-.pull_right {
-  float: right; }
-
-.pull_left {
-  float: left; }
-
+/*************************************************** Elementos globales ************************************************/
 ::selection {
   background: rgba(255, 119, 79, 0.5);
   /* WebKit/Blink Browsers */ }
@@ -219,6 +143,83 @@ b {
 
   small {
     font-size: calc(10px + 1vw); } }
+/*************************************************** BASE MINIMA ************************************************/
+* html {
+  font-size: 100%;
+  line-height: inherit; }
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+@media only screen and (max-width: 767px) {
+  body {
+    -webkit-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+    width: 100%;
+    min-width: 0; } }
+html, body {
+  height: 100%; }
+
+body {
+  background-color: white;
+  overflow-x: hidden !important;
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none !important;
+  color: inherit;
+  cursor: pointer; }
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+html {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+q, blockquote {
+  quotes: none; }
+
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none; }
+
+a img {
+  border: none; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block; }
+
+.pull_right {
+  float: right; }
+
+.pull_left {
+  float: left; }
+
 .dos {
   display: flex;
   flex-direction: column;
@@ -364,7 +365,7 @@ b {
   align-items: flex-start;
   align-content: flex-start;
   overflow-x: auto;
-  cursor: initial !important; }
+  cursor: url(images/grab1.png), auto; }
   .porfolio .ic-reloj {
     background-image: url(../images/reloj_sm.gif); }
     .porfolio .ic-reloj:hover {
@@ -429,7 +430,7 @@ b {
     z-index: 100;
     background: none;
     overflow-x: initial;
-    cursor: -webkit-grab;
+    cursor: url(images/grab1.png), auto;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -684,12 +685,14 @@ b {
         height: 95%;
         top: 2.5%; }
         .porfolio .selected .reloj .yo-parr em {
-          font-size: calc(10px + 5vw);
-          width: 120%; }
+          font-size: calc(20px + 2vw);
+          width: 105%;
+          text-align: center; }
         .porfolio .selected .reloj .yo-parr span {
           font-size: calc(10px + 1.5vw);
           width: 100%;
-          margin-bottom: 10%; }
+          margin: 2% 0 7%;
+          text-align: center; }
         .porfolio .selected .reloj .mapa1 {
           width: 200vw; }
         .porfolio .selected .appuela .appuela_ex {
@@ -825,6 +828,9 @@ b {
 .email_or .basic_intro {
   display: none; }
 .email_or .email_intro {
-  display: block; }
+  display: flex; }
+
+.form_11, .form_21 {
+  display: none; }
 
 /*# sourceMappingURL=style.css.map */
