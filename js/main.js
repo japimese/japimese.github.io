@@ -75,12 +75,12 @@ $(window).on({
     },
     'mouseup': function() {
         clicked = false;
-        $(".selected").css('cursor', '-webkit-grab');
+        $(".selected").css('cursor', 'url(images/grab1.png), auto');
     }
 });
 
 var updateScrollPos = function(e) {
-    $(".selected").css('cursor', '-webkit-grabbing');
+    $(".selected").css('cursor', 'url(images/grab2.png), auto');
     $(".porfolio").scrollLeft($(".porfolio").scrollLeft() + (clickX - e.pageX)*0.1);
 }
 
