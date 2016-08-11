@@ -384,6 +384,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
       background: linear-gradient(rgba(0, 148, 68, 0.5), rgba(0, 148, 68, 0.5)), url(../images/musica.png); }
   .porfolio .trabajo {
     position: relative;
+    display: flex;
     border: 3px solid #009444;
     width: 30%;
     height: 40%;
@@ -401,8 +402,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     -o-transition: all 1s ease;
     transition: all 1s ease; }
     .porfolio .trabajo > h2 {
-      text-align: center;
-      margin-top: 10vh;
+      margin: 0 auto;
+      align-self: center;
       font-size: 4vw;
       opacity: 0; }
     .porfolio .trabajo:hover {
