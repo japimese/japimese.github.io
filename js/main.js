@@ -2,167 +2,84 @@ var unheight = $(window).height();
 var unwidth = $(window).width();
 
 
-// SCROLL
+//FUNCIONES
 
-$(".esp").click(function() {
-	$('html,body').animate({scrollTop: unheight}, 'slow'); 
-});
+//deja fixed un elemento (elem) en una posicion (top)
+var quieto = function (elem, top) {
+	var elem_stop = elem.offset().top - (unheight*top/100); 
 
-$(".dos, .cuatro").click(function() {
-	var scrolltop = $(window).scrollTop();
-	$('html,body').animate({scrollTop: scrolltop + unheight*1.1}, 'slow'); 
-});
+	$(window).scroll(function () {
+		
+		
+	    if ( $(window).scrollTop() > elem_stop ) {
+	  //   	console.log(elem_stop + ", " + elem.offset().top + ", " + unheight + ", " + top);
+			// console.log(elem.offset().top - unheight/2);
 
-
-    // if ($(window).scroll()) {
-    // 	var top = $(window).scrollTop();
-    //     console.log($(window).scrollTop());
-    // 	// console.log(($(window).scrollTop()/unheight) - (parseInt($(window).scrollTop()/unheight)));
-    // 	// if ( ((top/unheight) - (parseInt(top/unheight))) > 0.8) {
-    // 		// console.log("subiendo: " + ((top/unheight) - (parseInt(top/unheight))));
-    // 		// $('html,body').animate({scrollTop: $("section").offset()}, 'slow'); 
-
-    // 	// } else if ( ((top/unheight) - (parseInt(top/unheight))) < 0.2) {
-    // 	// 	console.log("bajando: " + ((top/unheight) - (parseInt(top/unheight))));
-    // 	// 	$('html,body').animate({scrollTop: (parseInt(top/unheight)*unheight - unheight)}, 'slow'); 
-    //  //    }
-    // }
-
-
-
-
-
-
-// PORFOLIO
-
-
-$(".trabajo").click(function() {
-	$(this).addClass("selected");
-    $(this).removeClass("trabajo");
-	$(this).siblings().hide();
-	$(".cerrar").show();
-});
-
-$(".cerrar").click(function() {
-    $(".selected").addClass("trabajo");
-	$(".selected").removeClass("selected");
-	$(this).hide();
-	$(".trabajo").show();
-});
-
-//UCIPLUS MOCKUP
-
-$(".mockup_canal li").click(function() {
-	var up = $(this).data("img");
-
-	$(".mockup_fondo img").attr("src", "images/nueva_uciplus_" + up + ".jpg");
-    $(".mockup_fondo").scrollTop(0);
-	$(this).html("&#9702;").siblings().html("&#8226;");
-});
-
-
-
-
-var clicked = false, clickX;
-$(window).on({
-    'mousemove': function(e) {
-        clicked && updateScrollPos(e);
-        //console.log(clickX);
-    },
-    'mousedown': function(e) {
-        clicked = true;
-        clickX = e.pageX;
-    },
-    'mouseup': function() {
-        clicked = false;
-        $(".selected").css('cursor', 'url(images/grab1.png), auto');
-    }
-});
-
-var updateScrollPos = function(e) {
-    $(".selected").css('cursor', 'url(images/grab2.png), auto');
-    $(".porfolio").scrollLeft($(".porfolio").scrollLeft() + (clickX - e.pageX)*0.1);
+	        elem.addClass("fixed");
+	        elem.css("top", top + "vh");
+	    } else {
+	    	elem.removeClass("fixed");
+	      	elem.css("top", "initial");
+	    }
+	})
 }
 
+//deja fixed un elemento (elem) en una posicion (top)
+var parao = function (elem, top, duration) {
+	var elem_stop = elem.offset().top - unheight*top/100; 
+	var elem_play = elem_stop + duration; 
 
+	$(window).scroll(function () {
+	    if ( (elem_stop < $(window).scrollTop()) && ($(window).scrollTop() < elem_play) ) {
+	        elem.addClass("fixed");
+	        elem.css("top", top + "vh");
+	    } else {
+	    	elem.removeClass("fixed");
+	      	elem.css("top", "initial");
+	    }
+	})
+}
 
+//minimokup de detalles
 
-// MAIL
+$(".puntos ul li").click(function() {
+	var mok = "#" + $(this).data("image");
 
+	$(mok).addClass("active");
+	$(mok).siblings().removeClass("active");
+	$(this).addClass("active");
+	$(this).siblings().removeClass("active");
 
-var mailtop = $(".email").offset().top - unheight*0.50;
+});
+
+//fondo amarillo de propuesta UCIP
+
+var propuesta = $(".propuesta_color").offset().top - unheight*0.60;
 
 $(window).scroll(function () {
-    if ( $(window).scrollTop() > mailtop ) {
-        $(".email").addClass("email_fixed");
+    if ( $(window).scrollTop() > propuesta) {
+        $("#uciplus").addClass("fondo-verde");
     } else {
-      	$(".email").removeClass("email_fixed");
+      	$("#uciplus").removeClass("fondo-verde");
     }
 })
 
-// $(".email").click(function() {
-// 	$(this).toggleClass("mail-click");
-// 	$(".mail_content").toggleClass("mail_content-click");
-// 	if ($(this).html() === "@") {
-// 		$(this).html("X");
-// 	} else {$(this).html("@");}
-// });
+//gif del mockup en la home de ucip
+
+$(window).scroll(function () {
+	//var frame = 900/232;
+	var i = parseInt($(window).scrollTop() / 4);
+	if ($(window).scrollTop() < 900 ) {
+		$("#mok_1").attr("src", "images/nar/nar_"+ i +".jpg");
+	} else {
+		$("#mok_1").attr("src", "images/nar/nar_0.jpg");
+	}
+    
+})
+
+quieto($("#mock_detalles"), 12);
+
+//parao($("#frontmok img"), 10, 300);
 
 
 
-//version email/no mail
-
-var getUrlParameter = function getUrlParameter(sParam) {
-    var sPageURL = decodeURIComponent(window.location.search.substring(1)),
-        sURLVariables = sPageURL.split('&'),
-        sParameterName,
-        i;
-
-    for (i = 0; i < sURLVariables.length; i++) {
-        sParameterName = sURLVariables[i].split('=');
-
-        if (sParameterName[0] === sParam) {
-            return sParameterName[1] === undefined ? true : sParameterName[1];
-        }
-    }
-};
-
-var origen = getUrlParameter('origen');
-
-if (origen==="email") {
-    $(".container").addClass("email_or");
-} else {
-    $(".container").removeClass("email_or");
-}
-
-
-
-
-
-
-
-
-
-
-
-
-//apuela
-
-// $(".appuela > div").click(function() {
-
-// 	$(this).hide().next().show();
-// });
-
-
-
-
-
-
-
-// function isElementVisible(elementToBeChecked, delay) {
-//     var TopView = $(window).scrollTop();
-//     var BotView = TopView + $(window).height();
-//     var TopElement = $(elementToBeChecked).offset().top + delay;
-//     var BotElement = TopElement + $(elementToBeChecked).height();
-//     return ((BotElement <= BotView) && (TopElement >= TopView));
-// }
