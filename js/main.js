@@ -70,7 +70,8 @@ $(window).scroll(function () {
 	//var frame = 900/232;
 	var i = parseInt($(window).scrollTop() / 4);
 	if ($(window).scrollTop() < 900 ) {
-		$("#mok_1").attr("src", "images/nar/nar_"+ i +".jpg");
+		//$("#mok_1").attr("src", "images/nar/nar_"+ i +".jpg");
+		$("#mok_1").parent().append("<img class='mockup_in' src='images/nar/nar_" + i + ".jpg' />");
 	} else {
 		$("#mok_1").attr("src", "images/nar/nar_0.jpg");
 	}
