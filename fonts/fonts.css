@@ -150,3 +150,10 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'akzidenz';
+    src: url('AkzidenzGrotesk-Bold.otf') format('otf');
+    font-weight: bold;
+    font-style: normal;
+}
+
