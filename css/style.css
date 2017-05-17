@@ -1444,8 +1444,8 @@ img[src=""] {
     position: relative;
     color: #0862C2; }
   .container.uciplus #uciplus .resum img {
-    width: 50vw;
-    margin: 5em 25vw; }
+    width: 50%;
+    margin: 5em 25%; }
   .container.uciplus #uciplus .contexto {
     margin: 5vh auto; }
     .container.uciplus #uciplus .contexto .dato-big {
@@ -1467,35 +1467,37 @@ img[src=""] {
         margin-top: 0;
         width: 123%;
         margin-left: -24%; }
-  .container.uciplus #uciplus .propuesta > img {
-    width: 30vw;
-    display: block;
-    margin: 0 auto 5em; }
-  .container.uciplus #uciplus .propuesta .propuesta_gris {
-    position: relative;
-    margin: 25vh auto 40vh; }
-    .container.uciplus #uciplus .propuesta .propuesta_gris p, .container.uciplus #uciplus .propuesta .propuesta_gris img {
+  .container.uciplus #uciplus .propuesta {
+    overflow-x: hidden; }
+    .container.uciplus #uciplus .propuesta > img {
+      width: 30vw;
+      display: block;
+      margin: 0 auto 5em; }
+    .container.uciplus #uciplus .propuesta .propuesta_gris {
+      position: relative;
+      margin: 25vh auto 40vh; }
+      .container.uciplus #uciplus .propuesta .propuesta_gris p, .container.uciplus #uciplus .propuesta .propuesta_gris img {
+        position: relative;
+        z-index: 2; }
+      .container.uciplus #uciplus .propuesta .propuesta_gris img {
+        top: -4em; }
+      .container.uciplus #uciplus .propuesta .propuesta_gris .fondo {
+        position: absolute;
+        width: 120%;
+        top: -3%;
+        left: -10%;
+        height: 66%;
+        background-color: #E4E5E6;
+        z-index: 0; }
+    .container.uciplus #uciplus .propuesta .propuesta_color .yo-parr {
+      color: #FF0098;
+      font-weight: 600; }
+    .container.uciplus #uciplus .propuesta .propuesta_color img {
+      width: 65vw;
+      display: block;
+      margin: 0 auto -27%;
       position: relative;
       z-index: 2; }
-    .container.uciplus #uciplus .propuesta .propuesta_gris img {
-      top: -4em; }
-    .container.uciplus #uciplus .propuesta .propuesta_gris .fondo {
-      position: absolute;
-      width: 120%;
-      top: -3%;
-      left: -10%;
-      height: 66%;
-      background-color: #E4E5E6;
-      z-index: 0; }
-  .container.uciplus #uciplus .propuesta .propuesta_color .yo-parr {
-    color: #FF0098;
-    font-weight: 600; }
-  .container.uciplus #uciplus .propuesta .propuesta_color img {
-    width: 65vw;
-    display: block;
-    margin: 0 auto -27%;
-    position: relative;
-    z-index: 2; }
   .container.uciplus #uciplus .detalles {
     background-color: white;
     padding-top: 20%;
