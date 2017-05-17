@@ -1432,6 +1432,8 @@ img[src=""] {
       left: 25.5%;
       top: 36%;
       z-index: 1; }
+      .container.uciplus #uciplus .front .mockup_in > img {
+        opacity: 0; }
     .container.uciplus #uciplus .front .fondo {
       position: absolute;
       top: 0;
