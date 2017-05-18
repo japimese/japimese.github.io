@@ -1126,7 +1126,7 @@ a {
 
 .pagina {
   position: relative;
-  width: 100vw;
+  width: 100%;
   min-height: 100vh;
   padding: 4% 8%; }
 
@@ -1134,8 +1134,16 @@ a {
   position: relative;
   display: block;
   padding: 4% 8%;
-  width: 100vw;
+  width: 100%;
   margin: 20vh auto; }
+  @media (max-width: 768px) {
+    .seccion {
+      padding: 4% 15px; } }
+
+.full-page, .container.uciplus #uciplus .front .fondo, .container.uciplus #uciplus .propuesta .propuesta_gris .fondo {
+  position: absolute;
+  width: 200vw;
+  margin-left: -100vw; }
 
 .yo-big {
   font-family: "Calluna", "Times New Roman", Times, serif;
@@ -1212,7 +1220,7 @@ b {
     font-size: calc(10px + 1.5vw); }
 
   .display-big {
-    font-size: calc(15px + 4vw); }
+    font-size: calc(19px + 4vw); }
 
   .display-sm {
     font-size: calc(15px + 3vw); }
@@ -1401,153 +1409,190 @@ img[src=""] {
     bottom: 5vh;
     right: 2vw; }
 
-.container.uciplus #uciplus {
-  -webkit-transition: background-color 1s ease;
-  -moz-transition: background-color 1s ease;
-  -ms-transition: background-color 1s ease;
-  -o-transition: background-color 1s ease;
-  transition: background-color 1s ease; }
-  .container.uciplus #uciplus .front {
-    position: relative;
-    height: 120vh;
-    padding-top: 1px; }
-    .container.uciplus #uciplus .front .dato-big {
-      text-align: center;
-      margin: 15% auto -.2%;
+.container.uciplus {
+  position: relative;
+  width: 100vw;
+  overflow: hidden; }
+  .container.uciplus #uciplus {
+    -webkit-transition: background-color 1s ease;
+    -moz-transition: background-color 1s ease;
+    -ms-transition: background-color 1s ease;
+    -o-transition: background-color 1s ease;
+    transition: background-color 1s ease;
+    max-width: 1366px;
+    margin: 0 auto; }
+    .container.uciplus #uciplus .front {
       position: relative;
-      z-index: 2;
-      font-size: calc(8vw + 20px);
-      font-family: lato;
-      font-weight: 800; }
-      .container.uciplus #uciplus .front .dato-big span {
-        font-weight: normal; }
-    .container.uciplus #uciplus .front img {
-      width: 70%;
-      position: absolute;
-      left: 15%;
-      z-index: 2;
-      top: 30%; }
-    .container.uciplus #uciplus .front .mockup_in {
-      width: 50%;
-      left: 25.5%;
-      top: 36%;
-      z-index: 1; }
-      .container.uciplus #uciplus .front .mockup_in > img {
-        opacity: 0; }
-    .container.uciplus #uciplus .front .fondo {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 70%;
-      background-color: #E4E5E6;
-      z-index: 0; }
-  .container.uciplus #uciplus .resum .display-big {
-    position: relative;
-    color: #0862C2; }
-  .container.uciplus #uciplus .resum img {
-    width: 50%;
-    margin: 5em 25%; }
-  .container.uciplus #uciplus .contexto {
-    margin: 5vh auto; }
-    .container.uciplus #uciplus .contexto .dato-big {
-      color: #E4E5E6;
-      -moz-transform: rotate(-90deg);
-      -o-transform: rotate(-90deg);
-      -ms-transform: rotate(-90deg);
-      -webkit-transform: rotate(-90deg);
-      transform: rotate(-90deg);
-      transform-origin: left;
-      position: absolute;
-      margin-left: -1%;
-      bottom: 8vw;
-      font-size: 3vw; }
-      .container.uciplus #uciplus .contexto .dato-big hr {
-        height: .15em;
-        border: none;
+      height: 120vh;
+      padding-top: 1px; }
+      .container.uciplus #uciplus .front .dato-big {
+        text-align: center;
+        margin: 15% auto -.2%;
+        position: relative;
+        z-index: 2;
+        font-size: calc(8vw + 20px);
+        font-family: lato;
+        font-weight: 800; }
+        .container.uciplus #uciplus .front .dato-big span {
+          font-weight: normal; }
+      .container.uciplus #uciplus .front img {
+        width: 70%;
+        position: absolute;
+        left: 15%;
+        z-index: 2;
+        top: 36vh; }
+      .container.uciplus #uciplus .front .mockup_in {
+        width: 50%;
+        left: 25.5%;
+        top: 42vh;
+        z-index: 1; }
+        .container.uciplus #uciplus .front .mockup_in > img {
+          opacity: 0; }
+      .container.uciplus #uciplus .front .fondo {
+        position: absolute;
+        top: 0;
+        height: 70%;
         background-color: #E4E5E6;
-        margin-top: 0;
-        width: 123%;
-        margin-left: -24%; }
-  .container.uciplus #uciplus .propuesta > img {
-    width: 30vw;
-    display: block;
-    margin: 0 auto 5em; }
-  .container.uciplus #uciplus .propuesta .propuesta_gris {
-    position: relative;
-    margin: 25vh auto 40vh; }
-    .container.uciplus #uciplus .propuesta .propuesta_gris p, .container.uciplus #uciplus .propuesta .propuesta_gris img {
+        z-index: 0; }
+      @media (max-width: 768px) {
+        .container.uciplus #uciplus .front .dato-big {
+          margin-top: 70%; }
+        .container.uciplus #uciplus .front img {
+          top: 67vh;
+          left: 0;
+          width: 100%; }
+        .container.uciplus #uciplus .front .mockup_in {
+          top: 70vh;
+          left: 15%;
+          width: 71%; }
+        .container.uciplus #uciplus .front .fondo {
+          height: 80%; } }
+    .container.uciplus #uciplus .resum .display-big {
       position: relative;
-      z-index: 2; }
-    .container.uciplus #uciplus .propuesta .propuesta_gris img {
-      top: -4em; }
-    .container.uciplus #uciplus .propuesta .propuesta_gris .fondo {
-      position: absolute;
-      width: 100vw;
-      top: -3%;
-      left: -10%;
-      height: 66%;
-      background-color: #E4E5E6;
-      z-index: 0; }
-  .container.uciplus #uciplus .propuesta .propuesta_color .yo-parr {
-    color: #FF0098;
-    font-weight: 600; }
-  .container.uciplus #uciplus .propuesta .propuesta_color img {
-    width: 65vw;
-    display: block;
-    margin: 0 auto -27%;
-    position: relative;
-    z-index: 2; }
-  .container.uciplus #uciplus .detalles {
-    background-color: white;
-    padding-top: 20%;
-    margin-bottom: 0; }
-    .container.uciplus #uciplus .detalles > .dato-big {
-      color: #0862C2;
-      text-decoration: underline;
-      text-align: center;
-      margin-bottom: 2em; }
-    .container.uciplus #uciplus .detalles #mock_detalles {
+      color: #0862C2; }
+    .container.uciplus #uciplus .resum img {
+      width: 50%;
+      margin: 5em 25%; }
+    @media (max-width: 768px) {
+      .container.uciplus #uciplus .resum img {
+        width: 100%;
+        margin: 3em 0 4em; } }
+    .container.uciplus #uciplus .contexto {
+      margin: 5vh auto; }
+      .container.uciplus #uciplus .contexto .dato-big {
+        color: #E4E5E6;
+        -moz-transform: rotate(-90deg);
+        -o-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+        -webkit-transform: rotate(-90deg);
+        transform: rotate(-90deg);
+        transform-origin: left;
+        position: absolute;
+        margin-left: -1%;
+        bottom: 8vw;
+        font-size: 3vw; }
+        .container.uciplus #uciplus .contexto .dato-big hr {
+          height: .15em;
+          border: none;
+          background-color: #E4E5E6;
+          margin-top: 0;
+          width: 123%;
+          margin-left: -24%; }
+      @media (max-width: 768px) {
+        .container.uciplus #uciplus .contexto .dato-big {
+          transform: initial;
+          top: -1em;
+          font-size: 1.4em; } }
+    .container.uciplus #uciplus .propuesta > img {
+      width: 30%;
+      display: block;
+      margin: 0 auto 5em; }
+    .container.uciplus #uciplus .propuesta .propuesta_gris {
       position: relative;
-      background-color: #E4E5E6;
-      width: 48vw; }
-      .container.uciplus #uciplus .detalles #mock_detalles > img {
+      margin: 25vh auto 40vh; }
+      .container.uciplus #uciplus .propuesta .propuesta_gris p, .container.uciplus #uciplus .propuesta .propuesta_gris img {
         position: relative;
         z-index: 2; }
-      .container.uciplus #uciplus .detalles #mock_detalles .mockup_cont {
+      .container.uciplus #uciplus .propuesta .propuesta_gris img {
+        top: -4em; }
+      .container.uciplus #uciplus .propuesta .propuesta_gris .fondo {
         position: absolute;
-        top: 9%;
-        left: 9%;
-        width: 81%;
-        height: 62%;
-        z-index: 1; }
-        .container.uciplus #uciplus .detalles #mock_detalles .mockup_cont img {
-          display: none; }
-        .container.uciplus #uciplus .detalles #mock_detalles .mockup_cont img.active {
-          display: initial; }
-    .container.uciplus #uciplus .detalles .puntos {
-      padding: 1em;
-      border: 2px solid #494949;
-      min-height: 80vh;
-      margin-bottom: 10%; }
-      .container.uciplus #uciplus .detalles .puntos .dato-big {
-        color: #494949;
-        margin-bottom: 1em; }
-      .container.uciplus #uciplus .detalles .puntos .yo-parr {
-        color: #494949;
-        cursor: pointer;
-        margin-bottom: .8em; }
-      .container.uciplus #uciplus .detalles .puntos .active {
-        text-decoration: underline; }
-  .container.uciplus #uciplus .footer {
-    background-color: white;
-    padding: 4em;
-    border-top: 10px solid black;
-    position: relative; }
-    .container.uciplus #uciplus .footer a {
-      color: black !important;
-      text-align: center;
-      display: block; }
+        top: -3%;
+        height: 66%;
+        background-color: #E4E5E6;
+        z-index: 0; }
+    .container.uciplus #uciplus .propuesta .propuesta_color .yo-parr {
+      color: #FF0098;
+      font-weight: 600; }
+    .container.uciplus #uciplus .propuesta .propuesta_color img {
+      width: 65vw;
+      display: block;
+      margin: 0 auto -27%;
+      position: relative;
+      z-index: 2; }
+    @media (max-width: 768px) {
+      .container.uciplus #uciplus .propuesta > img {
+        width: 100%; }
+      .container.uciplus #uciplus .propuesta .propuesta_gris {
+        padding: 0; }
+        .container.uciplus #uciplus .propuesta .propuesta_gris img {
+          top: 0; }
+        .container.uciplus #uciplus .propuesta .propuesta_gris .fondo {
+          height: 95%; }
+      .container.uciplus #uciplus .propuesta .propuesta_color {
+        padding: 0; }
+        .container.uciplus #uciplus .propuesta .propuesta_color img {
+          width: 100%;
+          margin-bottom: -60%; } }
+    .container.uciplus #uciplus .detalles {
+      background-color: white;
+      padding-top: 20%;
+      margin-bottom: 0; }
+      .container.uciplus #uciplus .detalles > .dato-big {
+        color: #0862C2;
+        text-decoration: underline;
+        text-align: center;
+        margin-bottom: 2em; }
+      .container.uciplus #uciplus .detalles #mock_detalles {
+        position: relative;
+        background-color: #E4E5E6; }
+        .container.uciplus #uciplus .detalles #mock_detalles > img {
+          position: relative;
+          z-index: 2; }
+        .container.uciplus #uciplus .detalles #mock_detalles .mockup_cont {
+          position: absolute;
+          top: 9%;
+          left: 9%;
+          width: 81%;
+          height: 62%;
+          z-index: 1; }
+          .container.uciplus #uciplus .detalles #mock_detalles .mockup_cont img {
+            display: none; }
+          .container.uciplus #uciplus .detalles #mock_detalles .mockup_cont img.active {
+            display: initial; }
+      .container.uciplus #uciplus .detalles .puntos {
+        padding: 1em;
+        border: 2px solid #494949;
+        min-height: 80vh;
+        margin-bottom: 10%; }
+        .container.uciplus #uciplus .detalles .puntos .dato-big {
+          color: #494949;
+          margin-bottom: 1em; }
+        .container.uciplus #uciplus .detalles .puntos .yo-parr {
+          color: #494949;
+          cursor: pointer;
+          margin-bottom: .8em; }
+        .container.uciplus #uciplus .detalles .puntos .active {
+          text-decoration: underline; }
+    .container.uciplus #uciplus .footer {
+      background-color: white;
+      padding: 4em;
+      border-top: 10px solid black;
+      position: relative; }
+      .container.uciplus #uciplus .footer a {
+        color: black !important;
+        text-align: center;
+        display: block; }
 
 .fondo-verde {
   background: #FEF2B5 !important;

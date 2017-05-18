@@ -7,10 +7,9 @@ var unwidth = $(window).width();
 //deja fixed un elemento (elem) en una posicion (top)
 var quieto = function (elem, top) {
 	var elem_stop = elem.offset().top - (unheight*top/100); 
-
 	$(window).scroll(function () {
-		
-		
+		// var elem_stop = elem.offset().top - (unheight*top/100); 
+
 	    if ( $(window).scrollTop() > elem_stop ) {
 	  //   	console.log(elem_stop + ", " + elem.offset().top + ", " + unheight + ", " + top);
 			// console.log(elem.offset().top - unheight/2);
@@ -90,6 +89,9 @@ $(window).scroll(function () {
 quieto($("#mock_detalles"), 12);
 
 //parao($("#frontmok img"), 10, 300);
+
+
+
 
 
 
