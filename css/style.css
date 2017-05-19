@@ -1369,9 +1369,9 @@ img[src=""] {
       .container.index ul a[href^="#"] li:hover::after {
         color: black;
         font-size: 1.3vw;
-        content: "proximamente";
+        content: "proximamente, click para echarle un ojo";
         position: absolute;
-        top: 1.3em;
+        top: 2.3em;
         left: 26em;
         background: white;
         padding: .1em .5em;
@@ -1396,6 +1396,22 @@ img[src=""] {
           display: none;
           width: 100%; }
         .container.index ul a .mock_app :nth-child(2) {
+          display: initial; }
+      .container.index ul a .mock_mun {
+        display: none;
+        position: absolute;
+        background-color: white;
+        border: .2em solid black;
+        width: 35vw;
+        top: 0.3em;
+        left: 22.5em; }
+        .container.index ul a .mock_mun p {
+          text-align: center;
+          color: black; }
+        .container.index ul a .mock_mun img {
+          display: none;
+          width: 100%; }
+        .container.index ul a .mock_mun :nth-child(2) {
           display: initial; }
   .container.index small {
     display: block;

@@ -22,7 +22,7 @@
 			<a href="ucipplus.html"><li>-diseño+programación web y rebranding de UCIPlus</li></a>
 			<a href="#" id="abuelapp">
 				<li>
-					-concepto y dirección creativa y de desarrolo de la App "Abuelapp - wisdom weather"
+					-concepto, dirección creativa y desarrollo de la App "Abuelapp - wisdom weather"
 				</li>
 				<span class="mock_app">
 					<p>PREVIEW</p>
@@ -32,7 +32,13 @@
 					<img src="images/app_4.png">
 				</span>
 			</a>
-			<a href="#"><li>-concepto, diseño y desarrollo de la infografía "Mundi"</li></a>
+			<a href="#" id="mundi">
+				<li>-concepto, diseño y desarrollo de la infografía "Mundi"</li>
+				<span class="mock_mun">
+					<p>PREVIEW</p>
+					<img src="images/relojmundi.gif" id="mundi">
+				</span>
+			</a>
 		</ul>
 		<small>*(estoy siendo brutalista que no vago, eh! ;)</small>
 		<aside>
@@ -71,6 +77,11 @@
 		        $(this).hide().next().show();
 		    }
 		    //$(".mock_app:after").css("content", "Mientras carga los datos la abuela te contesta con una Frase Típica de Abuela")
+		});
+
+		//mundi
+		$("#mundi").click(function(){
+			$(".mock_mun").toggle();
 		});
 	</script>
 
