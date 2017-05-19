@@ -1504,7 +1504,7 @@ img[src=""] {
           top: -1em;
           font-size: 1.4em; } }
     .container.uciplus #uciplus .propuesta > img {
-      width: 30%;
+      width: 45%;
       display: block;
       margin: 0 auto 5em; }
     .container.uciplus #uciplus .propuesta .propuesta_gris {
@@ -1584,6 +1584,9 @@ img[src=""] {
           margin-bottom: .8em; }
         .container.uciplus #uciplus .detalles .puntos .active {
           text-decoration: underline; }
+      @media (max-width: 768px) {
+        .container.uciplus #uciplus .detalles {
+          padding-top: 30%; } }
     .container.uciplus #uciplus .footer {
       background-color: white;
       padding: 4em;
