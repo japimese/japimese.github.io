@@ -39,6 +39,15 @@ var parao = function (elem, top, duration) {
 	})
 }
 
+//titulo fixed
+$(window).scroll(function () {
+    if ( $(window).scrollTop() > unheight*0.6) {
+        $(".front .dato-big").hide();
+    } else {
+      	$(".front .dato-big").show();
+    }
+})
+
 //minimokup de detalles
 
 $(".puntos ul li").click(function() {

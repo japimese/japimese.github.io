@@ -1401,6 +1401,7 @@ img[src=""] {
         display: none;
         position: absolute;
         background-color: white;
+        cursor: help;
         border: .2em solid black;
         width: 35vw;
         top: 0.3em;
@@ -1444,9 +1445,10 @@ img[src=""] {
       padding-top: 1px; }
       .container.uciplus #uciplus .front .dato-big {
         text-align: center;
-        margin: 15% auto -.2%;
-        position: relative;
-        z-index: 2;
+        margin: 12% auto -.2%;
+        position: fixed;
+        z-index: 1;
+        left: 32%;
         font-size: calc(8vw + 20px);
         font-family: lato;
         font-weight: 800; }
