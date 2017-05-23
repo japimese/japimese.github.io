@@ -1610,6 +1610,8 @@ img[src=""] {
           color: #494949;
           cursor: pointer;
           margin-bottom: .8em; }
+          .container.uciplus #uciplus .detalles .puntos .yo-parr b {
+            font-weight: bold; }
         .container.uciplus #uciplus .detalles .puntos .active {
           text-decoration: underline; }
       @media (max-width: 768px) {
