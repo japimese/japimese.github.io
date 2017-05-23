@@ -1172,7 +1172,13 @@ a {
 .dato-big {
   font-family: "akzidenz", Helvetica, Arial, sans-serif;
   color: white;
-  font-size: 4vw;
+  font-size: 3vw;
+  font-weight: bold; }
+
+.dato-med {
+  font-family: "akzidenz", Helvetica, Arial, sans-serif;
+  color: white;
+  font-size: 1.5vw;
   font-weight: bold; }
 
 .dato-sm, .container.index ul a[href^="#"] li:hover::after {
@@ -1388,7 +1394,7 @@ img[src=""] {
         width: 18vw;
         top: 0.3em;
         left: 25.5em;
-        cursor: url(../images/cursor.png), auto; }
+        cursor: url(../images/cursor_app.png), auto; }
         .container.index ul a .mock_app p {
           text-align: center;
           color: black; }
@@ -1517,6 +1523,8 @@ img[src=""] {
           margin-top: 0;
           width: 123%;
           margin-left: -24%; }
+      .container.uciplus #uciplus .contexto b {
+        font-weight: bold; }
       @media (max-width: 768px) {
         .container.uciplus #uciplus .contexto .dato-big {
           transform: initial;
@@ -1528,22 +1536,25 @@ img[src=""] {
       margin: 0 auto 5em; }
     .container.uciplus #uciplus .propuesta .propuesta_gris {
       position: relative;
-      margin: 25vh auto 40vh; }
+      margin: 25vh auto 25vh; }
       .container.uciplus #uciplus .propuesta .propuesta_gris p, .container.uciplus #uciplus .propuesta .propuesta_gris img {
         position: relative;
         z-index: 2; }
       .container.uciplus #uciplus .propuesta .propuesta_gris img {
-        top: -4em; }
+        top: -6em; }
       .container.uciplus #uciplus .propuesta .propuesta_gris .fondo {
         position: absolute;
-        top: -3%;
+        top: -8%;
         height: 66%;
         background-color: #E4E5E6;
         z-index: 0; }
+    .container.uciplus #uciplus .propuesta .propuesta_color .logo_san {
+      width: 40%;
+      margin-bottom: 2em; }
     .container.uciplus #uciplus .propuesta .propuesta_color .yo-parr {
       color: #FF0098;
       font-weight: 600; }
-    .container.uciplus #uciplus .propuesta .propuesta_color img {
+    .container.uciplus #uciplus .propuesta .propuesta_color .mockup {
       width: 65vw;
       display: block;
       margin: 0 auto -27%;
@@ -1568,9 +1579,7 @@ img[src=""] {
       padding-top: 20%;
       margin-bottom: 0; }
       .container.uciplus #uciplus .detalles > .dato-big {
-        color: #0862C2;
-        text-decoration: underline;
-        text-align: center;
+        color: #494949;
         margin-bottom: 2em; }
       .container.uciplus #uciplus .detalles #mock_detalles {
         position: relative;
@@ -1594,7 +1603,7 @@ img[src=""] {
         border: 2px solid #494949;
         min-height: 80vh;
         margin-bottom: 10%; }
-        .container.uciplus #uciplus .detalles .puntos .dato-big {
+        .container.uciplus #uciplus .detalles .puntos .dato-med {
           color: #494949;
           margin-bottom: 1em; }
         .container.uciplus #uciplus .detalles .puntos .yo-parr {

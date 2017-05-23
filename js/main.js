@@ -6,6 +6,7 @@ var unwidth = $(window).width();
 
 //deja fixed un elemento (elem) en una posicion (top)
 var quieto = function (elem, top) {
+	unheight = $(window).height();
 	var elem_stop = elem.offset().top - (unheight*top/100); 
 	$(window).scroll(function () {
 		// var elem_stop = elem.offset().top - (unheight*top/100); 
@@ -94,6 +95,16 @@ $(window).scroll(function () {
 	}
     
 })
+// $(window).scroll(function () {
+// 	var i = parseInt($(window).scrollTop() / 4);
+// 	if ($(window).scrollTop() < $(".propuesta_color img").offset().top - unheight*0.3 ) {
+// 		$("#mok_1").attr("src", "images/nar/nar_"+ i +".jpg");
+// 		//$("#mok_1").parent().append("<img class='mockup_in' src='images/nar/nar_" + i + ".jpg' />");
+// 	} else {
+// 		$("#mok_1").attr("src", "images/nar/nar_0.jpg");
+// 	}
+    
+// })
 
 quieto($("#mock_detalles"), 12);
 
