@@ -1536,7 +1536,7 @@ img[src=""] {
       margin: 0 auto 5em; }
     .container.uciplus #uciplus .propuesta .propuesta_gris {
       position: relative;
-      margin: 25vh auto 25vh; }
+      margin: 25vh auto 2vh; }
       .container.uciplus #uciplus .propuesta .propuesta_gris p, .container.uciplus #uciplus .propuesta .propuesta_gris img {
         position: relative;
         z-index: 2; }
