@@ -1582,8 +1582,7 @@ img[src=""] {
         color: #494949;
         margin-bottom: 2em; }
       .container.uciplus #uciplus .detalles #mock_detalles {
-        position: relative;
-        background-color: #E4E5E6; }
+        position: relative; }
         .container.uciplus #uciplus .detalles #mock_detalles > img {
           position: relative;
           z-index: 2; }
@@ -1599,7 +1598,7 @@ img[src=""] {
           .container.uciplus #uciplus .detalles #mock_detalles .mockup_cont img.active {
             display: initial; }
       .container.uciplus #uciplus .detalles .puntos {
-        padding: 1em;
+        padding: 1.5em;
         border: 2px solid #494949;
         min-height: 80vh;
         margin-bottom: 10%; }
