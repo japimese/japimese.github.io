@@ -105,8 +105,13 @@ $(window).scroll(function () {
 // 	}
     
 // })
+if($(window).innerWidth() > 768) {
+   quieto($("#mock_detalles"), 12);
+} else {
+   quieto($("#mock_detalles"), 6);
+   quieto($(".puntos"), 50);
+}
 
-quieto($("#mock_detalles"), 12);
 
 //parao($("#frontmok img"), 10, 300);
 
