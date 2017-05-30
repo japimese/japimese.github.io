@@ -1143,10 +1143,26 @@ a {
     .seccion {
       padding: 4% 0; } }
 
-.full-page, .container.uciplus #uciplus .front .fondo, .container.uciplus #uciplus .propuesta .propuesta_gris .fondo {
+.full-page {
   position: absolute;
   width: 200vw;
   margin-left: -100vw; }
+
+.footer {
+  background-color: white;
+  padding: 4em;
+  border-top: 10px solid black;
+  position: relative; }
+  .footer a {
+    color: black !important;
+    text-align: center;
+    display: block; }
+
+.go_home {
+  position: fixed;
+  top: 2vh;
+  left: 2vw;
+  z-index: 200; }
 
 .yo-big {
   font-family: "Calluna", "Times New Roman", Times, serif;
@@ -1187,7 +1203,7 @@ a {
 .dato-sm, .container.index ul a[href^="#"] li:hover::after {
   font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;
   color: #009444;
-  font-size: 1.72vw;
+  font-size: 1.3vw;
   line-height: 1.58em;
   font-weight: 300; }
 
@@ -1232,7 +1248,7 @@ b {
     font-size: calc(13px + 1.5vw); }
 
   .dato-sm, .container.index ul a[href^="#"] li:hover::after {
-    font-size: calc(10px + 1.5vw); }
+    font-size: calc(13px + 1vw); }
 
   .display-big {
     font-size: calc(19px + 4vw); }
@@ -1362,12 +1378,6 @@ img[src=""] {
   min-height: 200px;
   margin: 0 auto; }
 
-.go_home {
-  position: fixed;
-  top: 2vh;
-  left: 2vw;
-  z-index: 200; }
-
 .container.index {
   padding: 5vh 2vw; }
   .container.index p, .container.index a {
@@ -1435,6 +1445,19 @@ img[src=""] {
           width: 100%; }
         .container.index ul a .mock_mun :nth-child(2) {
           display: initial; }
+      @media (max-width: 768px) {
+        .container.index ul a .mock_app {
+          position: fixed;
+          width: 80vw;
+          top: 15vh;
+          left: 10vw;
+          z-index: 5; }
+        .container.index ul a .mock_mun {
+          position: fixed;
+          width: 90vw;
+          top: 30vh;
+          left: 5vw;
+          z-index: 5; } }
   .container.index small {
     display: block;
     position: absolute;
@@ -1447,218 +1470,5 @@ img[src=""] {
     position: absolute;
     bottom: 5vh;
     right: 2vw; }
-
-.container.uciplus {
-  position: relative;
-  width: 100vw;
-  overflow: hidden; }
-  .container.uciplus #uciplus {
-    -webkit-transition: background-color 1s ease;
-    -moz-transition: background-color 1s ease;
-    -ms-transition: background-color 1s ease;
-    -o-transition: background-color 1s ease;
-    transition: background-color 1s ease;
-    max-width: 1366px;
-    margin: 0 auto; }
-    .container.uciplus #uciplus .front {
-      position: relative;
-      height: 120vh;
-      padding-top: 1px; }
-      .container.uciplus #uciplus .front .dato-big {
-        text-align: center;
-        margin: 12% auto -.2%;
-        position: fixed;
-        z-index: 1;
-        left: 32%;
-        font-size: calc(8vw + 20px);
-        font-family: lato;
-        font-weight: 800; }
-        .container.uciplus #uciplus .front .dato-big span {
-          font-weight: normal; }
-      .container.uciplus #uciplus .front img {
-        width: 70%;
-        position: absolute;
-        left: 15%;
-        z-index: 2;
-        top: 36vh; }
-      .container.uciplus #uciplus .front .mockup_in {
-        width: 50%;
-        left: 25.5%;
-        top: 42vh;
-        z-index: 1; }
-        .container.uciplus #uciplus .front .mockup_in > img {
-          opacity: 0; }
-      .container.uciplus #uciplus .front .fondo {
-        position: absolute;
-        top: 0;
-        height: 70%;
-        background-color: #E4E5E6;
-        z-index: 0; }
-      @media (max-width: 768px) {
-        .container.uciplus #uciplus .front .dato-big {
-          margin-top: 70%; }
-        .container.uciplus #uciplus .front img {
-          top: 67vh;
-          left: 0;
-          width: 100%; }
-        .container.uciplus #uciplus .front .mockup_in {
-          top: 70vh;
-          left: 15%;
-          width: 71%; }
-        .container.uciplus #uciplus .front .fondo {
-          height: 80%; } }
-    .container.uciplus #uciplus .resum .display-big {
-      position: relative;
-      color: #0862C2; }
-    .container.uciplus #uciplus .resum img {
-      width: 50%;
-      margin: 5em 25%; }
-    @media (max-width: 768px) {
-      .container.uciplus #uciplus .resum img {
-        width: 100%;
-        margin: 3em 0 4em; } }
-    .container.uciplus #uciplus .contexto {
-      margin: 5vh auto; }
-      .container.uciplus #uciplus .contexto .dato-big {
-        color: #E4E5E6;
-        -moz-transform: rotate(-90deg);
-        -o-transform: rotate(-90deg);
-        -ms-transform: rotate(-90deg);
-        -webkit-transform: rotate(-90deg);
-        transform: rotate(-90deg);
-        transform-origin: left;
-        position: absolute;
-        margin-left: -1%;
-        bottom: 8vw;
-        font-size: 3vw; }
-        .container.uciplus #uciplus .contexto .dato-big hr {
-          height: .15em;
-          border: none;
-          background-color: #E4E5E6;
-          margin-top: 0;
-          width: 123%;
-          margin-left: -24%; }
-      .container.uciplus #uciplus .contexto b {
-        font-weight: bold; }
-      @media (max-width: 768px) {
-        .container.uciplus #uciplus .contexto .dato-big {
-          transform: initial;
-          top: -1em;
-          font-size: 1.4em; } }
-    .container.uciplus #uciplus .propuesta > img {
-      width: 45%;
-      display: block;
-      margin: 0 auto 5em; }
-    .container.uciplus #uciplus .propuesta .propuesta_gris {
-      position: relative;
-      margin: 25vh auto 2vh; }
-      .container.uciplus #uciplus .propuesta .propuesta_gris p, .container.uciplus #uciplus .propuesta .propuesta_gris img {
-        position: relative;
-        z-index: 2; }
-      .container.uciplus #uciplus .propuesta .propuesta_gris img {
-        top: -6em; }
-      .container.uciplus #uciplus .propuesta .propuesta_gris .fondo {
-        position: absolute;
-        top: -8%;
-        height: 66%;
-        background-color: #E4E5E6;
-        z-index: 0; }
-    .container.uciplus #uciplus .propuesta .propuesta_color .logo_san {
-      width: 40%;
-      margin-bottom: 2em;
-      min-width: 200px; }
-    .container.uciplus #uciplus .propuesta .propuesta_color .yo-parr {
-      color: #FF0098;
-      font-weight: 600; }
-    .container.uciplus #uciplus .propuesta .propuesta_color .mockup {
-      width: 65vw;
-      display: block;
-      margin: 0 auto -27%;
-      position: relative;
-      z-index: 2; }
-    @media (max-width: 768px) {
-      .container.uciplus #uciplus .propuesta > img {
-        width: 100%; }
-      .container.uciplus #uciplus .propuesta .propuesta_gris {
-        padding: 0; }
-        .container.uciplus #uciplus .propuesta .propuesta_gris img {
-          top: 0; }
-        .container.uciplus #uciplus .propuesta .propuesta_gris .fondo {
-          height: 95%; }
-      .container.uciplus #uciplus .propuesta .propuesta_color {
-        padding: 0; }
-        .container.uciplus #uciplus .propuesta .propuesta_color .mockup {
-          width: 100%;
-          margin-bottom: -60%; } }
-    .container.uciplus #uciplus .detalles {
-      background-color: white;
-      padding-top: 20%;
-      margin-bottom: 0; }
-      .container.uciplus #uciplus .detalles > .dato-big {
-        color: #494949;
-        margin-bottom: 2em; }
-      .container.uciplus #uciplus .detalles #mock_detalles {
-        position: relative; }
-        .container.uciplus #uciplus .detalles #mock_detalles.fixed {
-          width: 52.5%; }
-        .container.uciplus #uciplus .detalles #mock_detalles > img {
-          position: relative;
-          z-index: 2;
-          width: 100%; }
-        .container.uciplus #uciplus .detalles #mock_detalles .mockup_cont {
-          position: absolute;
-          top: 9%;
-          left: 9%;
-          width: 81%;
-          height: 62%;
-          z-index: 1; }
-          .container.uciplus #uciplus .detalles #mock_detalles .mockup_cont img {
-            display: none; }
-          .container.uciplus #uciplus .detalles #mock_detalles .mockup_cont img.active {
-            display: initial; }
-      .container.uciplus #uciplus .detalles .puntos {
-        padding: 1.5em;
-        border: 2px solid #494949;
-        min-height: 80vh;
-        margin-bottom: 10%; }
-        .container.uciplus #uciplus .detalles .puntos .dato-med {
-          color: #494949;
-          margin-bottom: 1em; }
-        .container.uciplus #uciplus .detalles .puntos .yo-parr {
-          color: #494949;
-          cursor: pointer;
-          margin-bottom: .8em; }
-          .container.uciplus #uciplus .detalles .puntos .yo-parr b {
-            font-weight: bold; }
-        .container.uciplus #uciplus .detalles .puntos .active {
-          text-decoration: underline; }
-      @media (max-width: 768px) {
-        .container.uciplus #uciplus .detalles {
-          padding-top: 30%;
-          height: 125vh; }
-          .container.uciplus #uciplus .detalles #mock_detalles.fixed {
-            width: auto; }
-          .container.uciplus #uciplus .detalles .puntos {
-            min-height: 15vh;
-            height: 35%;
-            overflow: scroll;
-            margin-right: 15px; } }
-    .container.uciplus #uciplus .footer {
-      background-color: white;
-      padding: 4em;
-      border-top: 10px solid black;
-      position: relative; }
-      .container.uciplus #uciplus .footer a {
-        color: black !important;
-        text-align: center;
-        display: block; }
-
-.fondo-verde {
-  background: #FEF2B5 !important;
-  -webkit-transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -ms-transition: all 1s ease;
-  -o-transition: all 1s ease;
-  transition: all 1s ease; }
 
 /*# sourceMappingURL=style.css.map */

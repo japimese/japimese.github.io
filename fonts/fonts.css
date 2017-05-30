@@ -152,7 +152,27 @@
 
 @font-face {
     font-family: 'akzidenz';
-    src: url('AkzidenzGrotesk-Bold.otf') format('otf');
+    src: url('akzidenz/AkzidenzGrotesk-Medium.otf') format('otf'),
+    	 url('akzidenz/AkzidenzGrotesk-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'akzidenz';
+    src: url('akzidenz/AkzidenzGrotesk-Bold.otf') format('otf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'lato';
+    src: url('Lato/Lato-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'lato';
+    src: url('Lato/Lato-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
 }

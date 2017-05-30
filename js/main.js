@@ -60,17 +60,34 @@ $(".puntos ul li").click(function() {
 
 });
 
-//fondo amarillo de propuesta UCIP
+//fondo gris de propuesta UCIP
 
-var propuesta = $(".propuesta_color").offset().top - unheight*0.60;
+var propuesta_gris = $(".propuesta_gris").offset().top - unheight*0.30;
+var propuesta_color = $(".propuesta_color").offset().top - unheight*0.60;
 
 $(window).scroll(function () {
-    if ( $(window).scrollTop() > propuesta) {
-        $("#uciplus").addClass("fondo-verde");
+    if ( ($(window).scrollTop() > propuesta_gris) && ($(window).scrollTop() < propuesta_color) ) {
+        $("#uciplus").addClass("fondo_gris");
+    } else if ( $(window).scrollTop() > propuesta_color) {
+    	$("#uciplus").removeClass("fondo_gris");
+        $("#uciplus").addClass("fondo_amarillo");
     } else {
-      	$("#uciplus").removeClass("fondo-verde");
+      	$("#uciplus").removeClass("fondo_amarillo fondo_gris");
     }
 })
+
+
+//fondo amarillo de propuesta UCIP
+
+
+
+// $(window).scroll(function () {
+//     if ( $(window).scrollTop() > propuesta_color) {
+//         $("#uciplus").addClass("fondo_amarillo");
+//     } else {
+//       	$("#uciplus").removeClass("fondo_amarillo");
+//     }
+// })
 
 //gif del mockup en la home de ucip
 $(document).ready(function() {
