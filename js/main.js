@@ -5,8 +5,8 @@ var unwidth = $(window).width();
 //FUNCIONES
 
 //deja fixed un elemento (elem) en una posicion (top)
-var quieto = function (elem, top) {
-	var elem_stop = elem.offset().top - (unheight*top/100); 
+var quieto = function (cosa, top) {
+	var elem_stop = cosa.offset().top - (unheight*top/100); 
 	$(window).scroll(function () {
 		// var elem_stop = elem.offset().top - (unheight*top/100); 
 
@@ -14,27 +14,27 @@ var quieto = function (elem, top) {
 	  //   	console.log(elem_stop + ", " + elem.offset().top + ", " + unheight + ", " + top);
 			// console.log(elem.offset().top - unheight/2);
 
-	        elem.addClass("fixed");
-	        elem.css("top", top + "vh");
+	        cosa.addClass("fixed");
+	        cosa.css("top", top + "vh");
 	    } else {
-	    	elem.removeClass("fixed");
-	      	elem.css("top", "initial");
+	    	cosa.removeClass("fixed");
+	      	cosa.css("top", "initial");
 	    }
 	})
 }
 
 //deja fixed un elemento (elem) en una posicion (top)
-var parao = function (elem, top, duration) {
-	var elem_stop = elem.offset().top - unheight*top/100; 
+var parao = function (cosa, top, duration) {
+	var elem_stop = cosa.offset().top - unheight*top/100; 
 	var elem_play = elem_stop + duration; 
 
 	$(window).scroll(function () {
 	    if ( (elem_stop < $(window).scrollTop()) && ($(window).scrollTop() < elem_play) ) {
-	        elem.addClass("fixed");
-	        elem.css("top", top + "vh");
+	        cosa.addClass("fixed");
+	        cosa.css("top", top + "vh");
 	    } else {
-	    	elem.removeClass("fixed");
-	      	elem.css("top", "initial");
+	    	cosa.removeClass("fixed");
+	      	cosa.css("top", "initial");
 	    }
 	})
 }
@@ -48,17 +48,51 @@ $(window).scroll(function () {
     }
 })
 
-//minimokup de detalles
 
-$(".puntos ul li").click(function() {
-	var mok = "#" + $(this).data("image");
+
+//slider detalles
+
+$(".puntos .pos").click(function() {
+	// debugger;
+	var activo = $(".puntos .active");
+	var prox = $(".puntos .active").next();
+	var mok = "#" + prox.data("image");
+
+
+	if (activo.hasClass("ultimo")) {
+		$(".puntos .active").removeClass("active");
+		$(".puntos .primero").addClass("active");
+	} else {
+		$(".puntos .active").removeClass("active");
+		prox.addClass("active");
+	}
 
 	$(mok).addClass("active");
 	$(mok).siblings().removeClass("active");
-	$(this).addClass("active");
-	$(this).siblings().removeClass("active");
 
+	$(".puntos .pos span").text($(".puntos .active").data("car") + "/" + $(".ultimo").data("car"));
 });
+
+$(".puntos .prev").click(function() {
+	// debugger;
+	var activo = $(".puntos .active");
+	var prev = $(".puntos .active").prev();
+	var mok = "#" + prev.data("image");
+
+	if (activo.hasClass("primero")) {
+		$(".puntos .active").removeClass("active");
+		$(".puntos .ultimo").addClass("active");
+	} else {
+		$(".puntos .active").removeClass("active");
+		prev.addClass("active");
+	}
+
+	$(mok).addClass("active");
+	$(mok).siblings().removeClass("active");
+	$(".puntos .pos span").text($(".puntos .active").data("car") + "/" + $(".ultimo").data("car"));
+});
+
+
 
 //fondo gris de propuesta UCIP
 
@@ -122,12 +156,13 @@ $(window).scroll(function () {
 // 	}
     
 // })
-if($(window).innerWidth() > 768) {
-   quieto($("#mock_detalles"), 12);
-} else {
-   quieto($("#mock_detalles"), 6);
-   quieto($(".puntos"), 50);
-}
+// if($(window).innerWidth() > 768) {
+//    quieto($("#mock_detalles"), 12);
+//    quieto($(".caja"), 10);
+// } else {
+//    quieto($("#mock_detalles"), 6);
+//    quieto($(".puntos"), 50);
+// }
 
 
 //parao($("#frontmok img"), 10, 300);
