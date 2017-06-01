@@ -101,12 +101,12 @@ var propuesta_color = $(".propuesta_color").offset().top - unheight*0.60;
 
 $(window).scroll(function () {
     if ( ($(window).scrollTop() > propuesta_gris) && ($(window).scrollTop() < propuesta_color) ) {
-        $("#uciplus").addClass("fondo_gris");
+        $(".uciplus").addClass("fondo_gris");
     } else if ( $(window).scrollTop() > propuesta_color) {
-    	$("#uciplus").removeClass("fondo_gris");
-        $("#uciplus").addClass("fondo_amarillo");
+    	$(".uciplus").removeClass("fondo_gris");
+        $(".uciplus").addClass("fondo_amarillo");
     } else {
-      	$("#uciplus").removeClass("fondo_amarillo fondo_gris");
+      	$(".uciplus").removeClass("fondo_amarillo fondo_gris");
     }
 })
 
