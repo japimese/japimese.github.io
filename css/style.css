@@ -1378,20 +1378,24 @@ img[src=""] {
   min-height: 200px;
   margin: 0 auto; }
 
+body {
+  background-color: mediumseagreen; }
+
 .container.index {
   padding: 5vh 2vw; }
   .container.index p, .container.index a {
+    font-size: 3vw;
     line-height: 1.5em;
     font-family: arial;
-    color: black; }
+    color: white; }
   .container.index ul {
     display: inline-block;
     margin-top: .2em; }
     .container.index ul li {
       position: relative; }
     .container.index ul a {
-      position: relative;
-      color: #14437D; }
+      color: white;
+      font-weight: bold; }
       .container.index ul a:hover {
         text-decoration: underline !important;
         text-decoration-skip: ink; }
@@ -1412,13 +1416,18 @@ img[src=""] {
         content: "proximamente, click para mini teaser"; }
       .container.index ul a .mock_app {
         display: none;
+        -moz-transform: translate(0, -50%);
+        -o-transform: translate(0, -50%);
+        -ms-transform: translate(0, -50%);
+        -webkit-transform: translate(0, -50%);
+        transform: translate(0, -50%);
         position: absolute;
         background-color: white;
-        border-radius: 1em;
         border: .2em solid black;
-        width: 18vw;
-        top: 0.3em;
-        left: 25.5em;
+        width: 30vw;
+        top: 50vh;
+        left: 33vw;
+        z-index: 10;
         cursor: url(../images/cursor_app.png), auto; }
         .container.index ul a .mock_app p {
           text-align: center;
@@ -1430,13 +1439,18 @@ img[src=""] {
           display: initial; }
       .container.index ul a .mock_mun {
         display: none;
+        -moz-transform: translate(0, -50%);
+        -o-transform: translate(0, -50%);
+        -ms-transform: translate(0, -50%);
+        -webkit-transform: translate(0, -50%);
+        transform: translate(0, -50%);
         position: absolute;
         background-color: white;
         cursor: help;
         border: .2em solid black;
-        width: 35vw;
-        top: 0.3em;
-        left: 22.5em; }
+        width: 50vw;
+        top: 50vh;
+        left: 25vw; }
         .container.index ul a .mock_mun p {
           text-align: center;
           color: black; }
@@ -1470,5 +1484,8 @@ img[src=""] {
     position: absolute;
     bottom: 5vh;
     right: 2vw; }
+  .container.index a:hover {
+    text-decoration: underline !important;
+    text-decoration-skip: ink; }
 
 /*# sourceMappingURL=style.css.map */
