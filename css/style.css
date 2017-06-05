@@ -1176,7 +1176,7 @@ a {
   font-size: 3vw;
   line-height: 1.5; }
 
-.yo-med-parr, .container.index p, .container.index a {
+.yo-med-parr {
   font-family: "Calluna", "Times New Roman", Times, serif;
   color: #494949;
   font-size: 2vw;
@@ -1235,7 +1235,7 @@ b {
   .yo-big-parr {
     font-size: calc(15px + 1vw); }
 
-  .yo-med-parr, .container.index p, .container.index a {
+  .yo-med-parr {
     font-size: calc(12px + 1vw); }
 
   .yo-parr {
@@ -1268,7 +1268,7 @@ b {
   .yo-big-parr {
     font-size: calc(25px + 1.2vw); }
 
-  .yo-med-parr, .container.index p, .container.index a {
+  .yo-med-parr {
     font-size: calc(22px + 1vw); }
 
   .yo-parr {
@@ -1388,6 +1388,9 @@ body {
     line-height: 1.5em;
     font-family: arial;
     color: white; }
+    @media (max-width: 768px) {
+      .container.index p, .container.index a {
+        font-size: calc(18px + 1vw); } }
   .container.index ul {
     display: inline-block;
     margin-top: .2em; }
@@ -1461,17 +1464,11 @@ body {
           display: initial; }
       @media (max-width: 768px) {
         .container.index ul a .mock_app {
-          position: fixed;
           width: 80vw;
-          top: 15vh;
-          left: 10vw;
-          z-index: 5; }
+          left: 10vw; }
         .container.index ul a .mock_mun {
-          position: fixed;
           width: 90vw;
-          top: 30vh;
-          left: 5vw;
-          z-index: 5; } }
+          left: 5vw; } }
   .container.index small {
     display: block;
     position: absolute;
