@@ -125,7 +125,8 @@ $(window).scroll(function () {
 
 //gif del mockup en la home de ucip
 $(document).ready(function() {
-	for (var i =0; i<233; i++) {
+
+	for (var i =0; i<145; i++) {
 		$("#mok_1").append("<img class='mockup_in' src='images/nar/nar_" + i + ".jpg' />");	
 	}
 });
@@ -136,8 +137,11 @@ $(document).ready(function() {
 
 $(window).scroll(function () {
 	//var frame = 900/232;
-	var i = parseInt($(window).scrollTop() / 4);
-	if ($(window).scrollTop() < 900 ) {
+	var fin = $("#frontmok .mockup").offset().top + $("#frontmok .mockup").height();
+
+	var i = parseInt($(window).scrollTop() / 5);
+	
+	if ($(window).scrollTop() < fin ) {
 		$("#mok_1").attr("src", "images/nar/nar_"+ i +".jpg");
 		//$("#mok_1").parent().append("<img class='mockup_in' src='images/nar/nar_" + i + ".jpg' />");
 	} else {

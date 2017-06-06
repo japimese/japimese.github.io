@@ -1406,14 +1406,15 @@ body {
         text-decoration: none !important; }
       .container.index ul a[href^="#"] li:hover::after {
         color: black;
-        font-size: 1.3vw;
+        font-size: 2vw;
+        font-weight: bold;
         content: "proximamente, click para echarle un ojo";
         position: absolute;
         top: 2.3em;
-        left: 26em;
+        left: 30%;
         background: white;
         padding: .1em .5em;
-        border: 2px solid black;
+        border: .2em solid black;
         z-index: 1; }
       .container.index ul a#abuelapp li:hover::after {
         content: "proximamente, click para mini teaser"; }
