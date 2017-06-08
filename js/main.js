@@ -70,6 +70,12 @@ $(".puntos .pos").click(function() {
 	$(mok).addClass("active");
 	$(mok).siblings().removeClass("active");
 
+	if (activo.data("tit") === "acc") {
+		$(".puntos .titulo_med").show();
+	} else {
+		$(".puntos .titulo_med").hide();
+	}
+
 	$(".puntos .pos span").text($(".puntos .active").data("car") + "/" + $(".ultimo").data("car"));
 });
 
@@ -89,6 +95,13 @@ $(".puntos .prev").click(function() {
 
 	$(mok).addClass("active");
 	$(mok).siblings().removeClass("active");
+
+	if (activo.data("tit") === "acc") {
+		$(".puntos .titulo_med").show();
+	} else {
+		$(".puntos .titulo_med").hide();
+	}
+	
 	$(".puntos .pos span").text($(".puntos .active").data("car") + "/" + $(".ultimo").data("car"));
 });
 

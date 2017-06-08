@@ -1156,13 +1156,15 @@ a {
   .footer a {
     color: black !important;
     text-align: center;
-    display: block; }
+    display: block;
+    font-family: arial; }
 
 .go_home {
   position: fixed;
   top: 2vh;
   left: 2vw;
-  z-index: 200; }
+  z-index: 200;
+  font-family: arial; }
 
 .yo-big {
   font-family: "Calluna", "Times New Roman", Times, serif;
@@ -1408,7 +1410,7 @@ body {
         color: black;
         font-size: 2vw;
         font-weight: bold;
-        content: "proximamente, click para echarle un ojo";
+        content: "en desarrollo, click para echarle un ojo";
         position: absolute;
         top: 2.3em;
         left: 30%;
@@ -1417,7 +1419,7 @@ body {
         border: .2em solid black;
         z-index: 1; }
       .container.index ul a#abuelapp li:hover::after {
-        content: "proximamente, click para mini teaser"; }
+        content: "en desarrollo, click para mini teaser"; }
       .container.index ul a .mock_app {
         display: none;
         -moz-transform: translate(0, -50%);

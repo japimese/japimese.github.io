@@ -1156,13 +1156,15 @@ a {
   .footer a {
     color: black !important;
     text-align: center;
-    display: block; }
+    display: block;
+    font-family: arial; }
 
 .go_home {
   position: fixed;
   top: 2vh;
   left: 2vw;
-  z-index: 200; }
+  z-index: 200;
+  font-family: arial; }
 
 .yo-big {
   font-family: "Calluna", "Times New Roman", Times, serif;
@@ -1510,6 +1512,12 @@ img[src=""] {
           width: 123%;
           margin-left: -24%; }
       .container.uciplus #uciplus .contexto b {
+        font-weight: bold;
+        color: white;
+        background-color: #0862C2;
+        padding: 0 .1em; }
+      .container.uciplus #uciplus .contexto em {
+        color: #0862C2;
         font-weight: bold; }
       @media (max-width: 768px) {
         .container.uciplus #uciplus .contexto .titulo_gris {
@@ -1583,7 +1591,8 @@ img[src=""] {
       padding: 4% 0; }
       .container.uciplus #uciplus .detalles > .titulo_color {
         color: #494949;
-        margin-bottom: 2em; }
+        margin-bottom: .1em;
+        margin-left: 50%; }
       .container.uciplus #uciplus .detalles .caja {
         padding: 1.5em;
         height: 80vh;
@@ -1622,14 +1631,14 @@ img[src=""] {
           -ms-transform: translate(0, -50%);
           -webkit-transform: translate(0, -50%);
           transform: translate(0, -50%);
-          position: relative; }
+          position: relative;
+          z-index: 55; }
           .container.uciplus #uciplus .detalles .caja .puntos .titulo_med {
             color: #494949;
             margin-bottom: 1em; }
           .container.uciplus #uciplus .detalles .caja .puntos .parr_color {
             color: #494949;
             display: none;
-            cursor: pointer;
             margin-bottom: .8em;
             font-family: "Lato-Regular", Helvetica, Arial, sans-serif; }
             .container.uciplus #uciplus .detalles .caja .puntos .parr_color b {
