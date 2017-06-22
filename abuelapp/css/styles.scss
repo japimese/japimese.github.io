@@ -1,0 +1,114 @@
+header {position: fixed; display: none;}
+.container {
+	text-align: center;
+	.movil {
+		position: fixed;
+		width: 30vw;
+	    left: 35vw;
+	    img {
+		    position: fixed;
+	    }
+		.mob {
+		    width: 30vw;
+		    left: 35vw;
+		    display: none;
+		}
+		.ini {
+		    top: 3vw;
+		    width: 25vw;
+		    left: 37.5vw;
+		    box-shadow: 0px 5px 27px rgba(0,0,0,.5);
+		}
+		.ciudad {
+		    position: fixed;
+		    width: 11vw;
+		    left: 44vw;
+		    top: 67vh;
+		    input {border-radius: 1em;}
+		}
+		a {
+			position: fixed;
+		    top: 78vh;
+    		left: 44vw;
+    		width: 11vw;
+			display: block;
+		    padding: 6px 12px;
+		    font-size: 14px;
+		    line-height: 1.42857143;
+		    color: #fff;
+		    background-color: #364958;
+		    background-image: none;
+		    border: 1px solid #ccc;
+		    border-radius: 1em;
+		}
+	}
+	.datos {
+		display: block;
+		position: fixed;
+		top: 5vh;
+		left: 5vw;
+		width: 20vw;
+	}
+	.consejos {
+	    
+	    &>:first-child {
+		    width: 10vw;
+		    left: 45vw;
+		    height: 16vw;
+		    top: 9vw;
+		    &:after {
+		    	content: "va a llover mazo";
+		    	display: block!important;
+		    	position: fixed;
+		    	top: 36vw;
+		    	left: 48vw;
+		    	width: 13vw;
+		    	height: 10vw;
+		    	background-color: #364958;
+		    	color: white;
+		    	border-radius: 1em;
+		    	padding-top: 3vw;
+		    }
+	    }
+	    &>:nth-child(2) {
+	        width: 4vw;
+		    left: 43vw;
+		    height: 5vw;
+		    top: 28vw;
+	    }
+	    &>:nth-child(3) {
+	        width: 4vw;
+		    left: 48vw;
+		    height: 5vw;
+		    top: 28vw;
+	    } 
+	    &>:nth-child(4) {
+	        width: 4vw;
+		    left: 53vw;
+		    height: 5vw;
+		    top: 28vw;
+	    } 
+		.icons {
+			position: fixed;
+		    display: block;
+			background-image: url(../images/icons.png);
+			background-size: cover;
+			background-repeat: no-repeat; 
+			&:after {display: none;}
+			&.calor {
+				background-position-x: -41vw;
+				&:after { content: "lleva agua, que que calooh"; }
+			}
+			&.sol {
+				background-position-x: -60vw;
+				&:after { content: "solaco"; }
+			}
+			&.lluvia {
+				background-position-x: -1vw;
+				&:after { content: "va a llover mazo"; }
+			}
+		}
+	}
+
+	
+}
