@@ -6,35 +6,38 @@ days: <a href="#/consejo/1" ng-class="{'bg-primary': days === '1'}" >1</a> | <a 
 <hr> -->
 <div>
 	<div class="row">
+
 		<div class="movil">
 			<img src="images/consejos.png" class="ini">
-		</div>
-		<div class="" ng-repeat="w in weatherResult.list">
-			<div class="datos">
-				<p>
-					{{ convertToDate(w.dt) | date: "EEEE d" }} <br>
-					temperatura: {{ convertToC(w.temp.day) }}º <br>
-					lluvia: {{w.rain }}mm <br>
-					<!-- max: {{ convertToC(w.temp.max) }} <br>
-					min: {{ convertToC(w.temp.min) }} <br>
-					por la mañana: {{ convertToC(w.temp.morn) }} <br>
-					por la tarde: {{ convertToC(w.temp.eve) }} <br>
-					por la noche: {{ convertToC(w.temp.night) }} <br> -->
-					humedad: {{ w.humidity }}% <br>
-					nubes: {{ w.clouds }}% <br>
-				</p>
+			<div class="" ng-repeat="w in weatherResult.list">
+				
+				<ul class="consejos">
+					<li id="temp" ng-if="w.rain > 0.1" class="icons lluvia">
+					</li>
+					<li id="temp" ng-if="convertToC(w.temp.day) > 30" class="icons calor">
+					</li>
+					<!-- <li id="temp" ng-if="w.humidity > 50" class="icons lluvia">
+					</li -->>
+					<li id="temp" ng-if="w.clouds < 10" class="icons sol">
+					</li>
+				</ul>
+
+				<div class="datos">
+					<p>
+						{{ convertToDate(w.dt) | date: "EEEE d" }} <br>
+						temperatura: {{ convertToC(w.temp.day) }}º <br>
+						lluvia: {{w.rain }}mm <br>
+						<!-- max: {{ convertToC(w.temp.max) }} <br>
+						min: {{ convertToC(w.temp.min) }} <br>
+						por la mañana: {{ convertToC(w.temp.morn) }} <br>
+						por la tarde: {{ convertToC(w.temp.eve) }} <br>
+						por la noche: {{ convertToC(w.temp.night) }} <br> -->
+						humedad: {{ w.humidity }}% <br>
+						nubes: {{ w.clouds }}% <br>
+					</p>
+				</div>
+			
 			</div>
-			<ul class="consejos">
-				<li id="temp" ng-if="w.rain > 0.1" class="icons lluvia">
-				</li>
-				<li id="temp" ng-if="convertToC(w.temp.day) > 30" class="icons calor">
-				</li>
-				<!-- <li id="temp" ng-if="w.humidity > 50" class="icons lluvia">
-				</li -->>
-				<li id="temp" ng-if="w.clouds < 10" class="icons sol">
-				</li>
-			</ul>
-		
 		</div>
 	</div>
 	
