@@ -1110,10 +1110,6 @@ body {
 a {
   text–decoration–skip: ink; }
 
-::selection {
-  background: rgba(255, 119, 79, 0.5);
-  /* WebKit/Blink Browsers */ }
-
 ::-moz-selection {
   background: #4871D1;
   /* Gecko Browsers */ }
@@ -1202,7 +1198,7 @@ a {
   font-size: 1.5vw;
   font-weight: bold; }
 
-.dato-sm, .container.index ul a[href^="#"] li:hover::after {
+.dato-sm, .container.index .dos ul a[href^="#"] li:hover::after {
   font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;
   color: #009444;
   font-size: 1.3vw;
@@ -1249,7 +1245,7 @@ b {
   .dato-med {
     font-size: calc(13px + 1.5vw); }
 
-  .dato-sm, .container.index ul a[href^="#"] li:hover::after {
+  .dato-sm, .container.index .dos ul a[href^="#"] li:hover::after {
     font-size: calc(13px + 1vw); }
 
   .display-big {
@@ -1282,7 +1278,7 @@ b {
   .dato-med {
     font-size: calc(13px + 1.5vw); }
 
-  .dato-sm, .container.index ul a[href^="#"] li:hover::after {
+  .dato-sm, .container.index .dos ul a[href^="#"] li:hover::after {
     font-size: calc(10px + 1.2vw); }
 
   .display-big {
@@ -1381,10 +1377,13 @@ img[src=""] {
   margin: 0 auto; }
 
 body {
-  background-color: mediumseagreen; }
+  background-color: rgba(0, 0, 0, 0.8); }
 
 .container.index {
   padding: 5vh 2vw; }
+  .container.index span {
+    font-weight: bold;
+    cursor: pointer; }
   .container.index p, .container.index a {
     font-size: 3vw;
     line-height: 1.5em;
@@ -1393,98 +1392,123 @@ body {
     @media (max-width: 768px) {
       .container.index p, .container.index a {
         font-size: calc(18px + 1vw); } }
-  .container.index ul {
-    display: inline-block;
-    margin-top: .2em; }
-    .container.index ul li {
-      position: relative; }
-    .container.index ul a {
-      color: white;
-      font-weight: bold; }
-      .container.index ul a:hover {
-        text-decoration: underline !important;
-        text-decoration-skip: ink; }
-      .container.index ul a[href^="#"]:hover {
-        text-decoration: none !important; }
-      .container.index ul a[href^="#"] li:hover::after {
-        color: black;
-        font-size: 2vw;
-        font-weight: bold;
-        content: "en desarrollo, click para echarle un ojo";
-        position: absolute;
-        top: 2.3em;
-        left: 30%;
-        background: white;
-        padding: .1em .5em;
-        border: .2em solid black;
-        z-index: 1; }
-      .container.index ul a#abuelapp li:hover::after {
-        content: "en desarrollo, click para mini teaser"; }
-      .container.index ul a .mock_app {
-        display: none;
-        -moz-transform: translate(0, -50%);
-        -o-transform: translate(0, -50%);
-        -ms-transform: translate(0, -50%);
-        -webkit-transform: translate(0, -50%);
-        transform: translate(0, -50%);
-        position: absolute;
-        background-color: white;
-        border: .2em solid black;
-        width: 30vw;
-        top: 50vh;
-        left: 33vw;
-        z-index: 10;
-        cursor: url(../images/cursor_app.png), auto; }
-        .container.index ul a .mock_app p {
-          text-align: center;
-          color: black; }
-        .container.index ul a .mock_app img {
+  .container.index a {
+    text-decoration: underline;
+    text-decoration-skip: ink; }
+  .container.index .uno b {
+    font-weight: bold;
+    font-size: 2em; }
+  .container.index .dos {
+    display: none; }
+    .container.index .dos .areas img {
+      display: none; }
+    .container.index .dos .areas:hover img {
+      display: block;
+      background-color: white;
+      position: fixed;
+      -moz-transform: translate(0, -50%);
+      -o-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+      -webkit-transform: translate(0, -50%);
+      transform: translate(0, -50%);
+      top: 50%;
+      width: 65vw;
+      left: 17.5vw;
+      z-index: 20; }
+    .container.index .dos .activo {
+      text-decoration: underline; }
+    .container.index .dos ul {
+      display: none;
+      margin-top: .2em; }
+      .container.index .dos ul li {
+        position: relative; }
+      .container.index .dos ul a {
+        color: white;
+        font-weight: bold; }
+        .container.index .dos ul a .sm {
+          font-size: .7em;
+          font-weight: normal; }
+        .container.index .dos ul a:hover {
+          text-decoration: underline !important;
+          text-decoration-skip: ink; }
+        .container.index .dos ul a[href^="#"] {
+          font-weight: normal;
+          text-decoration: none !important; }
+          .container.index .dos ul a[href^="#"] li:hover::after {
+            color: black;
+            font-size: 2vw;
+            font-weight: bold;
+            content: "en desarrollo";
+            position: absolute;
+            top: 2.3em;
+            left: 30%;
+            background: white;
+            padding: .1em .5em;
+            border: .2em solid black;
+            z-index: 1; }
+        .container.index .dos ul a#abuelapp li:hover::after {
+          content: "en desarrollo, click para mini teaser"; }
+        .container.index .dos ul a#mundi li:hover::after {
+          content: "en desarrollo, click para echarle un ojo"; }
+        .container.index .dos ul a .mock_app {
           display: none;
-          width: 100%; }
-        .container.index ul a .mock_app :nth-child(2) {
-          display: initial; }
-      .container.index ul a .mock_mun {
-        display: none;
-        -moz-transform: translate(0, -50%);
-        -o-transform: translate(0, -50%);
-        -ms-transform: translate(0, -50%);
-        -webkit-transform: translate(0, -50%);
-        transform: translate(0, -50%);
-        position: absolute;
-        background-color: white;
-        cursor: help;
-        border: .2em solid black;
-        width: 50vw;
-        top: 50vh;
-        left: 25vw; }
-        .container.index ul a .mock_mun p {
-          text-align: center;
-          color: black; }
-        .container.index ul a .mock_mun img {
+          -moz-transform: translate(0, -50%);
+          -o-transform: translate(0, -50%);
+          -ms-transform: translate(0, -50%);
+          -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+          position: absolute;
+          background-color: white;
+          border: .2em solid black;
+          width: 30vw;
+          top: 50vh;
+          left: 33vw;
+          z-index: 10;
+          cursor: url(../images/cursor_app.png), auto; }
+          .container.index .dos ul a .mock_app p {
+            text-align: center;
+            color: black; }
+          .container.index .dos ul a .mock_app img {
+            display: none;
+            width: 100%; }
+          .container.index .dos ul a .mock_app :nth-child(2) {
+            display: initial; }
+        .container.index .dos ul a .mock_mun {
           display: none;
-          width: 100%; }
-        .container.index ul a .mock_mun :nth-child(2) {
-          display: initial; }
-      @media (max-width: 768px) {
-        .container.index ul a .mock_app {
-          width: 80vw;
-          left: 10vw; }
-        .container.index ul a .mock_mun {
-          width: 90vw;
-          left: 5vw; } }
-  .container.index small {
-    display: block;
-    position: absolute;
-    bottom: 5vh; }
-    @media (max-width: 768px) {
-      .container.index small {
-        opacity: 0; } }
+          -moz-transform: translate(0, -50%);
+          -o-transform: translate(0, -50%);
+          -ms-transform: translate(0, -50%);
+          -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+          position: absolute;
+          background-color: white;
+          cursor: help;
+          border: .2em solid black;
+          width: 50vw;
+          top: 50vh;
+          left: 25vw;
+          z-index: 10; }
+          .container.index .dos ul a .mock_mun p {
+            text-align: center;
+            color: black; }
+          .container.index .dos ul a .mock_mun img {
+            display: none;
+            width: 100%; }
+          .container.index .dos ul a .mock_mun :nth-child(2) {
+            display: initial; }
+        @media (max-width: 768px) {
+          .container.index .dos ul a .mock_app {
+            width: 80vw;
+            left: 10vw; }
+          .container.index .dos ul a .mock_mun {
+            width: 90vw;
+            left: 5vw; } }
   .container.index aside {
     display: block;
-    position: absolute;
+    position: fixed;
     bottom: 5vh;
     right: 2vw; }
-  .container.index a:hover {
+  .container.index a {
     text-decoration: underline !important;
     text-decoration-skip: ink; }
 

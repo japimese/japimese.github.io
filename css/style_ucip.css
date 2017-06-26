@@ -1110,10 +1110,6 @@ body {
 a {
   text–decoration–skip: ink; }
 
-::selection {
-  background: rgba(255, 119, 79, 0.5);
-  /* WebKit/Blink Browsers */ }
-
 ::-moz-selection {
   background: #4871D1;
   /* Gecko Browsers */ }
@@ -1433,6 +1429,10 @@ img[src=""] {
   position: relative;
   width: 100vw;
   overflow: hidden; }
+  .container.uciplus ::selection {
+    background-color: #0862C2;
+    /* WebKit/Blink Browsers */
+    color: white; }
   .container.uciplus #uciplus {
     -webkit-transition: background-color 1s ease;
     -moz-transition: background-color 1s ease;
@@ -1543,6 +1543,10 @@ img[src=""] {
         height: 66%;
         background-color: #E4E5E6;
         z-index: 0; }
+    .container.uciplus #uciplus .propuesta .propuesta_color ::selection {
+      background-color: #FF0098;
+      /* WebKit/Blink Browsers */
+      color: white; }
     .container.uciplus #uciplus .propuesta .propuesta_color .fondo_nar {
       background-image: url(../images/fondo_nar.jpg);
       background-size: cover;
@@ -1566,6 +1570,8 @@ img[src=""] {
         color: #FF0098;
         font-weight: 600;
         padding-top: 10%; }
+      .container.uciplus #uciplus .propuesta .propuesta_color .mundo > :first-child img {
+        width: 60%; }
     @media (max-width: 768px) {
       .container.uciplus #uciplus .propuesta > img {
         width: 100%; }
@@ -1589,6 +1595,10 @@ img[src=""] {
       margin-bottom: 0;
       height: 140vh;
       padding: 4% 0; }
+      .container.uciplus #uciplus .detalles ::selection {
+        background-color: #FF0098;
+        /* WebKit/Blink Browsers */
+        color: white; }
       .container.uciplus #uciplus .detalles > .titulo_color {
         color: #494949;
         margin-bottom: .1em;
@@ -1634,6 +1644,7 @@ img[src=""] {
           position: relative;
           z-index: 55; }
           .container.uciplus #uciplus .detalles .caja .puntos .titulo_med {
+            display: none;
             color: #494949;
             margin-bottom: 1em; }
           .container.uciplus #uciplus .detalles .caja .puntos .parr_color {
