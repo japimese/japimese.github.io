@@ -1395,11 +1395,15 @@ body {
   .container.index a {
     text-decoration: underline;
     text-decoration-skip: ink; }
-  .container.index .uno b {
-    font-weight: bold;
-    font-size: 2em; }
+  .container.index .uno {
+    height: 100vh;
+    display: block; }
+    .container.index .uno b {
+      font-weight: bold;
+      font-size: 2em; }
   .container.index .dos {
-    display: none; }
+    min-height: 100vh;
+    display: block; }
     .container.index .dos .areas img {
       display: none; }
     .container.index .dos .areas:hover img {
@@ -1418,10 +1422,12 @@ body {
     .container.index .dos .activo {
       text-decoration: underline; }
     .container.index .dos ul {
-      display: none;
-      margin-top: .2em; }
+      display: none; }
+      .container.index .dos ul p {
+        margin-top: 5em; }
       .container.index .dos ul li {
-        position: relative; }
+        position: relative;
+        margin-bottom: 0.5em; }
       .container.index .dos ul a {
         color: white;
         font-weight: bold; }
@@ -1447,9 +1453,9 @@ body {
             border: .2em solid black;
             z-index: 1; }
         .container.index .dos ul a#abuelapp li:hover::after {
-          content: "en desarrollo, click para mini teaser"; }
+          content: "click para mini teaser"; }
         .container.index .dos ul a#mundi li:hover::after {
-          content: "en desarrollo, click para echarle un ojo"; }
+          content: "click para echarle un ojo"; }
         .container.index .dos ul a .mock_app {
           display: none;
           -moz-transform: translate(0, -50%);
