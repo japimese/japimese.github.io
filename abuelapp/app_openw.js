@@ -15,7 +15,7 @@ abuelApp.config(function($routeProvider){
 	})
 
 	.when("/consejo", {
-		templateUrl: "pages/consejo.html",
+		templateUrl: "pages/consejo_openw.html",
 		controller: "consejoController"
 	})
 
