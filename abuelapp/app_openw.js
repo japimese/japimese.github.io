@@ -20,7 +20,7 @@ abuelApp.config(function($routeProvider){
 	})
 
 	.when("/consejo/:days", {
-		templateUrl: "pages/consejo.html",
+		templateUrl: "pages/consejo_openw.html",
 		controller: "consejoController"
 	})
 

@@ -12,7 +12,7 @@ days: <a href="#/consejo/1" ng-class="{'bg-primary': days === '1'}" >1</a> | <a 
 			<div>
 				
 				<ul class="consejos">
-					<li id="temp" ng-if='weatherResult.daily.data["0"].precipProbability > 1' class="icons lluvia">
+					<li id="temp" ng-if='weatherResult.daily.data["0"].precipProbability > 0.01' class="icons lluvia">
 					</li>
 					<li id="temp" ng-if='convertToC(weatherResult.daily.data["0"].temperatureMax) > 30' class="icons calor">
 					</li>
