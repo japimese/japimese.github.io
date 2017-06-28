@@ -1421,92 +1421,79 @@ body {
       z-index: 20; }
     .container.index .dos .activo {
       text-decoration: underline; }
-    .container.index .dos ul {
-      display: none; }
-      .container.index .dos ul p {
-        margin-top: 5em; }
-      .container.index .dos ul li {
-        position: relative;
-        margin-bottom: 0.5em; }
-      .container.index .dos ul a {
-        color: white;
-        font-weight: bold; }
-        .container.index .dos ul a .sm {
-          font-size: .7em;
-          font-weight: normal; }
-        .container.index .dos ul a:hover {
-          text-decoration: underline !important;
-          text-decoration-skip: ink; }
-        .container.index .dos ul a[href^="#"] {
-          font-weight: normal;
-          text-decoration: none !important; }
-          .container.index .dos ul a[href^="#"] li:hover::after {
-            color: black;
-            font-size: 2vw;
-            font-weight: bold;
-            content: "en desarrollo";
-            position: absolute;
-            top: 2.3em;
-            left: 30%;
-            background: white;
-            padding: .1em .5em;
-            border: .2em solid black;
-            z-index: 1; }
-        .container.index .dos ul a#abuelapp li:hover::after {
-          content: "click para mini teaser"; }
-        .container.index .dos ul a#mundi li:hover::after {
-          content: "click para echarle un ojo"; }
-        .container.index .dos ul a .mock_app {
-          display: none;
-          -moz-transform: translate(0, -50%);
-          -o-transform: translate(0, -50%);
-          -ms-transform: translate(0, -50%);
-          -webkit-transform: translate(0, -50%);
-          transform: translate(0, -50%);
+    .container.index .dos ul p {
+      margin-top: 3em; }
+    .container.index .dos ul li {
+      position: relative;
+      margin-bottom: 0.5em; }
+    .container.index .dos ul a {
+      color: white;
+      font-weight: bold; }
+      .container.index .dos ul a .sm {
+        font-size: .7em;
+        font-weight: normal; }
+      .container.index .dos ul a:hover {
+        text-decoration: underline !important;
+        text-decoration-skip: ink; }
+      .container.index .dos ul a[href^="ucipplus.html"]:hover {
+        color: red;
+        cursor: url(../images/cursor_case.png), auto; }
+      .container.index .dos ul a[target^="blank"]:hover {
+        cursor: url(../images/cursor_blank.png), auto; }
+      .container.index .dos ul a[href^="#"] {
+        font-weight: normal;
+        text-decoration: none !important; }
+        .container.index .dos ul a[href^="#"] li:hover::after {
+          color: black;
+          font-size: 2vw;
+          font-weight: bold;
+          content: "en desarrollo";
           position: absolute;
-          background-color: white;
+          top: 2.3em;
+          left: 30%;
+          background: white;
+          padding: .1em .5em;
           border: .2em solid black;
+          z-index: 1; }
+      .container.index .dos ul a#abuelapp li:hover::after {
+        content: "click para mini teaser"; }
+      .container.index .dos ul a#mundi li:hover::after {
+        content: "click para echarle un ojo"; }
+      .container.index .dos ul a .mock {
+        display: none;
+        -moz-transform: translate(0, -50%);
+        -o-transform: translate(0, -50%);
+        -ms-transform: translate(0, -50%);
+        -webkit-transform: translate(0, -50%);
+        transform: translate(0, -50%);
+        position: fixed;
+        background-color: white;
+        border: .2em solid black;
+        z-index: 10; }
+        .container.index .dos ul a .mock p {
+          text-align: center;
+          color: black; }
+        .container.index .dos ul a .mock img {
+          display: none;
+          width: 100%; }
+        .container.index .dos ul a .mock :nth-child(2) {
+          display: initial; }
+        .container.index .dos ul a .mock.mock_app {
           width: 30vw;
+          height: 80vh;
           top: 50vh;
           left: 33vw;
-          z-index: 10;
           cursor: url(../images/cursor_app.png), auto; }
-          .container.index .dos ul a .mock_app p {
-            text-align: center;
-            color: black; }
-          .container.index .dos ul a .mock_app img {
-            display: none;
-            width: 100%; }
-          .container.index .dos ul a .mock_app :nth-child(2) {
-            display: initial; }
-        .container.index .dos ul a .mock_mun {
-          display: none;
-          -moz-transform: translate(0, -50%);
-          -o-transform: translate(0, -50%);
-          -ms-transform: translate(0, -50%);
-          -webkit-transform: translate(0, -50%);
-          transform: translate(0, -50%);
-          position: absolute;
-          background-color: white;
+        .container.index .dos ul a .mock.mock_mun {
           cursor: help;
-          border: .2em solid black;
           width: 50vw;
           top: 50vh;
-          left: 25vw;
-          z-index: 10; }
-          .container.index .dos ul a .mock_mun p {
-            text-align: center;
-            color: black; }
-          .container.index .dos ul a .mock_mun img {
-            display: none;
-            width: 100%; }
-          .container.index .dos ul a .mock_mun :nth-child(2) {
-            display: initial; }
+          left: 25vw; }
         @media (max-width: 768px) {
-          .container.index .dos ul a .mock_app {
+          .container.index .dos ul a .mock .mock_app {
             width: 80vw;
             left: 10vw; }
-          .container.index .dos ul a .mock_mun {
+          .container.index .dos ul a .mock .mock_mun {
             width: 90vw;
             left: 5vw; } }
   .container.index aside {
