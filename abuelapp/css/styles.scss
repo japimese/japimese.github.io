@@ -1,6 +1,14 @@
-$Bigdesktop:"(min-width:1366px)";
-$mobile:"(max-width:768px)";
-
+@import "variables";
+@font-face {
+	font-family: 'Gotham';
+	src: url('fonts/gotham_medium.ttf');
+	font-weight: normal;
+}
+@font-face {
+	font-family: 'Gotham';
+	src: url('fonts/gotham_light.ttf');
+	font-weight: 200;
+}
 
 header {position: fixed; display: none;}
 .container {
@@ -24,13 +32,32 @@ header {position: fixed; display: none;}
 		    top: 0;
 		    left: 0;
 		    width: 100%;
+		    height: 100%;
 		    box-shadow: 0px 5px 27px rgba(0,0,0,.5);
+		}
+		.logo_home {
+			width: 50%;
+			left: 25%;
+			@include translate (0, -50%);
+			top: 53%;
+		}
+		.app_consejo {
+		    bottom: 3%;
+			height: 25%;
+			left: 5%;
+		}
+		.app_bocadillo {
+		    bottom: 3%;
+			height: 25%;
+			left: 35%;
 		}
 		.ciudad {
 		    position: absolute;
 		    bottom: 18%; 
 		    left: 20%;
 		    width: 60%;
+		    font-family: gotham, helvetica, sans-serif;
+		    font-weight: 200;
 		    
 		    input {
 				display: block;
@@ -48,12 +75,14 @@ header {position: fixed; display: none;}
 		}
 		a {
 			position: absolute;
-		    bottom: 8%;
+		    bottom: 15%;
     		left: 20%;
     		width: 60%;
 			display: block;
 		    padding: 6px 12px;
 		    font-size: 14px;
+		    font-family: gotham, helvetica, sans-serif;
+		    font-weight: normal;
 		    line-height: 1.42857143;
 		    color: #fff;
 		    background-color: #364958;
@@ -77,7 +106,7 @@ header {position: fixed; display: none;}
 		    height: 25%;
 		    top: 15%;
 		    &:after {
-		    	content: "va a llover mazo";
+		    	content: "pues no se que esta pasando";
 		    	display: block!important;
 		    	position: absolute;
 		    	top: 232%;
@@ -114,24 +143,26 @@ header {position: fixed; display: none;}
 			background-image: url(../images/icons.png);
 			background-size: cover;
 			background-repeat: no-repeat; 
+			font-family: gotham, helvetica, sans-serif;
+		    font-weight: 200;
 			&:after {display: none;}
 			&.calor {
 				background-position-x: 64%;
-				&:after { content: "lleva agua, que que calooh"; }
+				&:after { content: "el del tiempo siempre dice que hay que hidratarse!"; }
 				&:first-child {
 					background-position-x: 65%;
 				}
 			}
 			&.sol {
 				background-position-x: 93%;
-				&:after { content: "solaco"; }
+				&:after { content: "En junio si pica el sol, ni mujer ni caracol."; }
 				&:first-child {
 					background-position-x: 95%;
 				}
 			}
 			&.lluvia {
 				background-position-x: 5%;
-				&:after { content: "va a llover mazo"; }
+				&:after { content: "Si llueve a primeros de junio, el buen tiempo esta lejos"; }
 				&:first-child {
 					background-position-x: 4%;
 				}

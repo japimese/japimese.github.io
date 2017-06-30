@@ -1,3 +1,20 @@
+/*********************  fonts *****************************/
+@font-face {
+  font-family: 'Gotham';
+  src: url("fonts/gotham_medium.ttf");
+  font-weight: normal; }
+@font-face {
+  font-family: 'Gotham';
+  src: url("fonts/gotham_light.ttf");
+  font-weight: 200; }
+/*********************** colores ***********************/
+/********************** resoluciones ********************/
+/********************** mixines *************************/
+/***transiciones **/
+/** animaciones **/
+/*// scale*/
+/*// translate*/
+/*// skew*/
 @font-face {
   font-family: 'Gotham';
   src: url("fonts/gotham_medium.ttf");
@@ -32,6 +49,23 @@ header {
       width: 100%;
       height: 100%;
       box-shadow: 0px 5px 27px rgba(0, 0, 0, 0.5); }
+    .container .movil .logo_home {
+      width: 50%;
+      left: 25%;
+      -moz-transform: translate(0, -50%);
+      -o-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+      -webkit-transform: translate(0, -50%);
+      transform: translate(0, -50%);
+      top: 53%; }
+    .container .movil .app_consejo {
+      bottom: 3%;
+      height: 25%;
+      left: 5%; }
+    .container .movil .app_bocadillo {
+      bottom: 3%;
+      height: 25%;
+      left: 35%; }
     .container .movil .ciudad {
       position: absolute;
       bottom: 18%;
@@ -53,7 +87,7 @@ header {
         border-radius: 1em; }
     .container .movil a {
       position: absolute;
-      bottom: 8%;
+      bottom: 15%;
       left: 20%;
       width: 60%;
       display: block;
@@ -79,7 +113,7 @@ header {
     height: 25%;
     top: 15%; }
     .container .consejos > :first-child:after {
-      content: "va a llover mazo";
+      content: "pues no se que esta pasando";
       display: block !important;
       position: absolute;
       top: 232%;
@@ -118,19 +152,19 @@ header {
     .container .consejos .icons.calor {
       background-position-x: 64%; }
       .container .consejos .icons.calor:after {
-        content: "lleva agua, que que calooh"; }
+        content: "el del tiempo siempre dice que hay que hidratarse!"; }
       .container .consejos .icons.calor:first-child {
         background-position-x: 65%; }
     .container .consejos .icons.sol {
       background-position-x: 93%; }
       .container .consejos .icons.sol:after {
-        content: "solaco"; }
+        content: "En junio si pica el sol, ni mujer ni caracol."; }
       .container .consejos .icons.sol:first-child {
         background-position-x: 95%; }
     .container .consejos .icons.lluvia {
       background-position-x: 5%; }
       .container .consejos .icons.lluvia:after {
-        content: "va a llover mazo"; }
+        content: "Si llueve a primeros de junio, el buen tiempo esta lejos"; }
       .container .consejos .icons.lluvia:first-child {
         background-position-x: 4%; }
 
