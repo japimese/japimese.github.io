@@ -11,4 +11,18 @@ $(document).ready(function() {
 		}, 2000);
 	});
 	
+	if ($(window).width() <= 768) {  
+
+    	function calcVH() {
+	   		$('.movil').innerHeight( $(this).innerHeight() );
+		}
+
+		calcVH();
+
+		$(window).on('resize orientationchange', function() {
+			calcVH();
+		});
+	}     
+	
+
 });
