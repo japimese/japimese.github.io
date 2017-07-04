@@ -6,9 +6,9 @@ var unwidth = $(window).width();
 
 ////deja fixed un elemento (elem) en una posicion (top)
 // var quieto = function (cosa, top) {
-// 	var elem_stop = cosa.offset().top - (unheight*top/100); 
+// 	// var elem_stop = cosa.offset().top - (unheight*top/100); 
 // 	$(window).scroll(function () {
-// 		// var elem_stop = elem.offset().top - (unheight*top/100); 
+// 		var elem_stop = elem.offset().top - (unheight*top/100); 
 
 // 	    if ( $(window).scrollTop() > elem_stop ) {
 // 	  //   	console.log(elem_stop + ", " + elem.offset().top + ", " + unheight + ", " + top);
@@ -23,21 +23,22 @@ var unwidth = $(window).width();
 // 	})
 // }
 
-// //deja fixed un elemento (elem) en una posicion (top)
-// var parao = function (cosa, top, duration) {
-// 	var elem_stop = cosa.offset().top - unheight*top/100; 
-// 	var elem_play = elem_stop + duration; 
+//deja fixed un elemento (elem) en una posicion (top)
+var parao = function (cosa, top, duration) {
+	var elem_stop = cosa.offset().top - unheight*top/100; 
+	var elem_play = elem_stop + duration*unheight/100; 
 
-// 	$(window).scroll(function () {
-// 	    if ( (elem_stop < $(window).scrollTop()) && ($(window).scrollTop() < elem_play) ) {
-// 	        cosa.addClass("fixed");
-// 	        cosa.css("top", top + "vh");
-// 	    } else {
-// 	    	cosa.removeClass("fixed");
-// 	      	cosa.css("top", "initial");
-// 	    }
-// 	})
-// }
+	$(window).scroll(function () {
+	    if ( (elem_stop < $(window).scrollTop()) && ($(window).scrollTop() < elem_play) ) {
+	        cosa.addClass("fixed");
+	        cosa.css("top", top + "vh");
+	    } else {
+	    	cosa.removeClass("fixed");
+	      	cosa.css("top", "initial");
+	    }
+	})
+}
+parao($(".propuesta_color .mockup"), 7, 400 )
 
 //titulo fixed
 $(window).scroll(function () {
