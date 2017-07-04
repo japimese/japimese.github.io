@@ -14,7 +14,7 @@ $(document).ready(function() {
 	if ($(window).width() <= 768) {  
 
     	function calcVH() {
-	   		$('.movil').innerHeight( $(this).innerHeight() );
+	   		$('.movil').innerHeight( $(window).innerHeight() );
 		}
 
 		calcVH();

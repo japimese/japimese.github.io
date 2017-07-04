@@ -61,7 +61,7 @@ $(document).ready(function() {
 //avanzar gif en scroll
 $(window).scroll(function () {
 
-	var fin = $("#frontmok .mockup").offset().top + $("#frontmok .mockup").height();
+	var fin = $("#frontmok .mockup_mac").offset().top + $("#frontmok .mockup_mac").height();
 	var i = parseInt($(window).scrollTop() / 5);
 	
 	if ($(window).scrollTop() < fin ) {
