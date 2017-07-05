@@ -19,25 +19,21 @@
 		Soy un creativo/diseñador técnológico, y estos son "a grosso modo" las <span class="areas">áreas a las que me quiero dedicar<img src="images/areas.png" /></span></p> -->
 		<div class="uno">
 			<p><b>Hola</b><br class="br">
-			siento decirte que al porfolio le queda bastante para estar acabado (algún día incluso puede que la consiga :o).<br class="br">
-			Pero no te preocupes, que te dejaré con la información justa para que me conozcas un poco y ya me preguntes más detalladamente en la entrevista ;).</p>
+			Soy una especie de creativo/diseñador tecnológico muy versátil con un porfolio inacabado y un poco feo.<br class="br">
+			Pero bueno, espero parecerte honesto y majete y ya poder mejorar esta primera impresión en la entrevista ;)</p>
 		</div>
 		<div class="dos">
-			<p>.Soy una especie de creativo/diseñador tecnológico muy versátil<br>
-			.estas son "a grosso modo" las <span class="areas">áreas a las que me quiero dedicar<img src="images/areas.png" /></span>.<br class="br"></p>
-
-			<p>También puedes echarle un ojo a <a href="https://www.linkedin.com/in/robertomesejo">dónde he trabajado</a>, y a <span class="porfo">algunos trabajos que he hecho:</span></p>
+			<p>
+				Si quieres ir viendo un poco mi estilo y capacidades puedes echarle un ojo a este <a href="ucipplus.html">"case study" sobre el rediseño, programación y rebranding que hice para UCIPlus</a>.<br class="br">
+				Para esa misma empresa también participé en el diseño y programación de <a href="https://hipotecas.com/" target="blank">Hipotecas.com</a>, que quedó bastante bien.
+			</p>
+		</div>
+		<div class="tres">
+			<p>Soy bastante proactivo, así que también estoy desarrollando algunas de las ideas que se me van ocurriendo. Estas son algunas de ellas:</p>
 			<ul>
-				<p>ENCARGOS PROFESIONALES DESTACADOS:</p>
-				<a href="ucipplus.html"><li>.diseño,programación y rebranding de la web UCIPlus</li></a>
-				<a href="https://hipotecas.com/" target="blank"><li>.maquetación web, y colaboración en el diseño de Hipotecas.com</li></a>
-				<!-- <a href="http://spanishteachersmalaga.com/#inscripcion" target="blank" id="stim">
-					<li class="sm">.diseño, maquetación, y back-end (al parecer también hago eso) del formulario de inscripción y pago para STiM</li>
-				</a> -->
-				<p>PROYECTOS EN PROCESO:</p>
-				<a href="#" id="abuelapp">
+				<a id="abuelapp">
 					<li>
-						.concepto, dirección creativa y desarrollo de la App "Abuelapp - wisdom weather"
+						."Abuelapp - wisdom weather" <small>concepto, dirección creativa y desarrollo</small>
 					</li>
 					<span class="mock mock_app">
 						<p>PREVIEW</p>
@@ -47,15 +43,15 @@
 						<img src="images/app_4.png">
 					</span>
 				</a>
-				<a href="#" id="mundi">
-					<li>.concepto, diseño y desarrollo de la infografía "Mundi"</li>
+				<a  id="mundi">
+					<li>."Mundi" <small>concepto, diseño y desarrollo de la infografía</small></li>
 					<span class="mock mock_mun">
 						<p>PREVIEW</p>
 						<img src="images/relojmundi.gif" id="mundi">
 					</span>
 				</a>
 				<a href="https://invis.io/PZCC7ESJT#/240958124_1" target="blank" id="band">
-					<li class="sm">.concepto, diseño y desarrollo de la plataforma "montemosun.gr"</li>
+					<li>."montemosun.gr" <small>concepto, diseño y desarrollo de la plataforma</small></li>
 					<!-- <span class="mock_band">
 						<p>PREVIEW</p>
 						<img src="images/relojmundi.gif" id="mundi">
@@ -95,14 +91,14 @@
 		// }) 
 
 		//apuela
-		$("#abuelapp li").click(function(){
-			$(".mock_app").show();
-		});
+		// $("#abuelapp li").click(function(){
+		// 	$(".mock_app").show();
+		// });
 		$(".mock_app img").click(function() { 
 		    if($(this).attr("src") === "images/app_4.png") {
 		    	$("#app_1").show();
 		    	$(this).hide();
-		        $(".mock_app").hide();
+		        // $(".mock_app").hide();
 		        
 		    } else {
 		        $(this).hide().next().show();
@@ -111,9 +107,9 @@
 		});
 
 		//mundi
-		$("#mundi").click(function(){
-			$(".mock_mun").toggle();
-		});
+		// $("#mundi").click(function(){
+		// 	$(".mock_mun").toggle();
+		// });
 	</script>
 
 </body>
