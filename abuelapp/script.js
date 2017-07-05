@@ -11,18 +11,18 @@ $(document).ready(function() {
 		}, 2000);
 	});
 	
-	if ($(window).width() <= 768) {  
+	// if ($(window).width() <= 768) {  
 
-    	function calcVH() {
-	   		$('.movil').innerHeight( $(window).innerHeight() );
-		}
+ //    	function calcVH() {
+	//    		$('.movil').innerHeight( $(window).innerHeight() );
+	// 	}
 
-		calcVH();
+	// 	calcVH();
 
-		$(window).on('resize orientationchange', function() {
-			calcVH();
-		});
-	}     
+	// 	$(window).on('resize orientationchange', function() {
+	// 		calcVH();
+	// 	});
+	// }     
 	
 
 });
