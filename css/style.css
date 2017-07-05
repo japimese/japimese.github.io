@@ -1199,7 +1199,7 @@ a {
   font-size: 1.5vw;
   font-weight: bold; }
 
-.dato-sm, .container.index .dos ul a[href^=""] li:hover::after, .container.index .tres ul a[href^=""] li:hover::after {
+.dato-sm, .container.index a[href^=""] li:hover::after {
   font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;
   color: #009444;
   font-size: 1.3vw;
@@ -1246,7 +1246,7 @@ b {
   .dato-med {
     font-size: calc(13px + 1.5vw); }
 
-  .dato-sm, .container.index .dos ul a[href^=""] li:hover::after, .container.index .tres ul a[href^=""] li:hover::after {
+  .dato-sm, .container.index a[href^=""] li:hover::after {
     font-size: calc(13px + 1vw); }
 
   .display-big {
@@ -1279,7 +1279,7 @@ b {
   .dato-med {
     font-size: calc(13px + 1.5vw); }
 
-  .dato-sm, .container.index .dos ul a[href^=""] li:hover::after, .container.index .tres ul a[href^=""] li:hover::after {
+  .dato-sm, .container.index a[href^=""] li:hover::after {
     font-size: calc(10px + 1.2vw); }
 
   .display-big {
@@ -1382,9 +1382,6 @@ body {
 
 .container.index {
   padding: 5vh 2vw; }
-  .container.index span {
-    font-weight: bold;
-    cursor: pointer; }
   .container.index p, .container.index a {
     font-size: 3vw;
     line-height: 1.5em;
@@ -1393,88 +1390,95 @@ body {
     @media (max-width: 768px) {
       .container.index p, .container.index a {
         font-size: calc(18px + 1vw); } }
-  .container.index a {
-    text-decoration: underline;
-    text-decoration-skip: ink; }
-  .container.index .uno {
+  .container.index .uno, .container.index .dos {
     height: 100vh;
     display: block; }
-    .container.index .uno b {
+    .container.index .uno b, .container.index .dos b {
       font-weight: bold;
       font-size: 2em; }
-  .container.index .dos, .container.index .tres {
+    .container.index .uno a, .container.index .dos a {
+      font-weight: bold; }
+      .container.index .uno a[href^="ucipplus.html"], .container.index .dos a[href^="ucipplus.html"] {
+        text-decoration: underline !important; }
+        .container.index .uno a[href^="ucipplus.html"]:hover, .container.index .dos a[href^="ucipplus.html"]:hover {
+          cursor: url(../images/cursor_case.png), auto; }
+  .container.index .tres {
     min-height: 100vh;
     display: block; }
-    .container.index .dos ul, .container.index .tres ul {
+    .container.index .tres ul {
       margin: 2em; }
-      .container.index .dos ul li, .container.index .tres ul li {
+      .container.index .tres ul li {
         position: relative;
-        margin-bottom: 0.5em; }
-      .container.index .dos ul a, .container.index .tres ul a {
-        color: white;
+        margin-bottom: 0.5em;
         font-weight: bold; }
-        .container.index .dos ul a small, .container.index .tres ul a small {
+        .container.index .tres ul li small {
           font-size: .7em;
           font-weight: normal;
           text-decoration: none; }
-        .container.index .dos ul a:hover, .container.index .tres ul a:hover {
-          text-decoration: underline !important;
-          text-decoration-skip: ink; }
-        .container.index .dos ul a[href^="ucipplus.html"]:hover, .container.index .tres ul a[href^="ucipplus.html"]:hover {
-          cursor: url(../images/cursor_case.png), auto; }
-        .container.index .dos ul a[target^="blank"]:hover, .container.index .tres ul a[target^="blank"]:hover {
-          cursor: url(../images/cursor_blank.png), auto; }
-        .container.index .dos ul a[href^=""], .container.index .tres ul a[href^=""] {
-          font-weight: normal;
-          text-decoration: none !important; }
-          .container.index .dos ul a[href^=""] li:hover::after, .container.index .tres ul a[href^=""] li:hover::after {
-            color: black;
-            font-size: 2vw;
-            font-weight: bold;
-            content: "en desarrollo";
-            position: absolute;
-            top: 2.3em;
-            left: 30%;
-            background: white;
-            padding: .1em .5em;
-            border: .2em solid black;
-            z-index: 1; }
-        .container.index .dos ul a .mock, .container.index .tres ul a .mock {
+        .container.index .tres ul li#abuelapp a {
+          display: block;
+          text-align: center;
+          font-weight: normal; }
+        .container.index .tres ul li .mock {
           background-color: white;
-          border: .2em solid black;
+          display: block;
           z-index: 10; }
-          .container.index .dos ul a .mock p, .container.index .tres ul a .mock p {
+          .container.index .tres ul li .mock p {
             text-align: center;
             color: black;
             font-size: 2vw; }
-          .container.index .dos ul a .mock img, .container.index .tres ul a .mock img {
-            display: none;
-            width: 100%; }
-          .container.index .dos ul a .mock :nth-child(2), .container.index .tres ul a .mock :nth-child(2) {
+          .container.index .tres ul li .mock :nth-child(2) {
             display: initial; }
-          .container.index .dos ul a .mock.mock_app, .container.index .tres ul a .mock.mock_app {
-            display: block;
+          .container.index .tres ul li .mock.mock_app {
             width: 20%;
             margin-left: 40%;
             cursor: url(../images/cursor_app.png), auto; }
-          .container.index .dos ul a .mock.mock_mun, .container.index .tres ul a .mock.mock_mun {
-            display: block;
+            .container.index .tres ul li .mock.mock_app img {
+              display: none;
+              width: 100%; }
+              .container.index .tres ul li .mock.mock_app img#app_1 {
+                display: block; }
+          .container.index .tres ul li .mock.mock_mun {
             width: 50%;
             margin-left: 25%; }
+          .container.index .tres ul li .mock.mock_gr {
+            width: 50%;
+            margin-left: 25%;
+            margin-bottom: 15vh; }
           @media (max-width: 768px) {
-            .container.index .dos ul a .mock .mock_app, .container.index .tres ul a .mock .mock_app {
+            .container.index .tres ul li .mock .mock_app {
               width: 80vw;
               left: 10vw; }
-            .container.index .dos ul a .mock .mock_mun, .container.index .tres ul a .mock .mock_mun {
+            .container.index .tres ul li .mock .mock_mun {
               width: 90vw;
               left: 5vw; } }
+  .container.index a {
+    color: white;
+    font-weight: bold;
+    text-decoration-skip: ink; }
+    .container.index a[target^="blank"]:hover {
+      cursor: url(../images/cursor_blank.png), auto; }
+    .container.index a[href^=""] {
+      font-weight: normal;
+      text-decoration: none; }
+      .container.index a[href^=""] li:hover::after {
+        color: black;
+        font-size: 2vw;
+        font-weight: bold;
+        content: "en desarrollo";
+        position: absolute;
+        top: 2.3em;
+        left: 30%;
+        background: white;
+        padding: .1em .5em;
+        border: .2em solid black;
+        z-index: 1; }
   .container.index aside {
     display: block;
     position: fixed;
     bottom: 5vh;
     right: 2vw; }
-  .container.index a {
-    text-decoration: underline;
-    text-decoration-skip: ink; }
+    .container.index aside a {
+      font-weight: normal; }
 
 /*# sourceMappingURL=style.css.map */
