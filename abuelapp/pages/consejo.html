@@ -18,7 +18,7 @@ days: <a href="#/consejo/1" ng-class="{'bg-primary': days === '1'}" >1</a> | <a 
 					</li>
 					<li id="temp" ng-if='weatherResult.daily.data["0"].temperatureMax > 30' class="icons calor">
 					</li>
-					<li id="temp" ng-if='weatherResult.daily.data["0"].cloudCover < 5' class="icons sol">
+					<li id="temp" ng-if='weatherResult.daily.data["0"].cloudCover < 0.1' class="icons sol">
 					</li>
 				</ul>
 
