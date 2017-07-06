@@ -53,7 +53,7 @@ function($scope, $resource, $routeParams, cityService) {
 	$scope.longitude = cityService.longitude;
 	$scope.key = "859ba1bffcef388c78eaf50f570874c1";
 
-	$scope.weatherAPI = $resource("https://api.darksky.net/forecast/" + $scope.key + "/" +  $scope.latitude + "," + $scope.longitude , {callback: "JSON_CALLBACK"}, {get: {method: "JSONP"}});
+	$scope.weatherAPI = $resource("https://api.darksky.net/forecast/" + $scope.key + "/" +  $scope.latitude + "," + $scope.longitude + "?lang=es&units=si" , {callback: "JSON_CALLBACK"}, {get: {method: "JSONP"}});
 
 	$scope.weatherResult = $scope.weatherAPI.get(); 
 

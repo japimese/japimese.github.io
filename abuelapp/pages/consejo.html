@@ -26,7 +26,7 @@ days: <a href="#/consejo/1" ng-class="{'bg-primary': days === '1'}" >1</a> | <a 
 					<p>
 						temperatura: {{ convertToC(weatherResult.daily.data["0"].temperatureMax) }}º <br>
 						lluvia: {{weatherResult.daily.data["0"].precipProbability * 100 }}% <br>
-						nubes: {{ weatherResult.daily.data["0"].cloudCover}}% <br>
+						nubes: {{ weatherResult.daily.data["0"].cloudCover * 100}}% <br>
 						viento: {{ weatherResult.daily.data["0"].windGust}}m/h <br>
 					</p>
 				</div>
