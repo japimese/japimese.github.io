@@ -1424,13 +1424,36 @@ body {
         .container.index .tres ul li .mock {
           background-color: white;
           display: block;
+          position: relative;
           z-index: 10; }
           .container.index .tres ul li .mock p {
             text-align: center;
             color: black;
             font-size: 2vw; }
-          .container.index .tres ul li .mock :nth-child(2) {
-            display: initial; }
+          .container.index .tres ul li .mock .fyi {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            line-height: 1.3em;
+            background: rgba(0, 0, 0, 0.3);
+            color: white; }
+            .container.index .tres ul li .mock .fyi span {
+              display: block;
+              position: absolute;
+              -moz-transform: translate(0, -50%);
+              -o-transform: translate(0, -50%);
+              -ms-transform: translate(0, -50%);
+              -webkit-transform: translate(0, -50%);
+              transform: translate(0, -50%);
+              top: 49%;
+              margin: 1%;
+              border: 1px solid white;
+              background: rgba(0, 0, 0, 0.5); }
+          .container.index .tres ul li .mock:hover .fyi {
+            display: block; }
           .container.index .tres ul li .mock.mock_app {
             width: 20%;
             margin-left: 40%;
