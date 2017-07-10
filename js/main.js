@@ -38,7 +38,7 @@ var parao = function (cosa, top, duration) {
 	    }
 	})
 }
-parao($(".propuesta_color .mockup"), 7, 400 )
+parao($(".propuesta_color .mockup_gif"), 7, 400 )
 
 //titulo fixed
 $(window).scroll(function () {
@@ -71,6 +71,37 @@ $(window).scroll(function () {
 		$("#mok_1").attr("src", "images/nar/nar_0.jpg");
 	}  
 })
+
+//gif del mockup del mundo ucip
+
+//cargar imagenes al ppio
+$(document).ready(function() {
+	for (var i =0; i<12; i++) {
+		$("#mok_2").append("<img class='mockup_col' src='images/mundo_uciplus/mundo_uciplus_" + i + ".png' />");	
+	}
+});
+//avanzar gif en scroll
+$(document).ready(function () {
+	var ini = $("#mok_2").offset().top - unheight*0.5; 
+	var med = $("#mok_2").offset().top - unheight*0.1; 
+	var fin = $("#mok_2").offset().top + $(".mundo").height();
+	console.log("ini: " + ini + ", fin: " + fin);
+	
+	$(window).scroll(function () {
+		var i = parseInt(($(window).scrollTop() - ini) / 30);
+		if ( ($(window).scrollTop() > ini) && ($(window).scrollTop() < med) ) {
+			console.log(i);
+			$("#mok_2").attr("src", "images/mundo_uciplus/mundo_uciplus_"+ i +".png");
+		} else if ( ($(window).scrollTop() > med) && ($(window).scrollTop() < fin) ) {
+			console.log(i);
+			$("#mok_2").attr("src", "images/nar/nar_"+ i +".jpg");
+		} else {
+			console.log("else");
+			$("#mok_2").attr("src", "images//mundo_uciplus/mundo_uciplus_0.png");
+		}  
+	})
+});
+
 
 
 //slider detalles
