@@ -1393,6 +1393,14 @@ body {
   .container.index .uno, .container.index .dos {
     height: 100vh;
     display: block; }
+    .container.index .uno p, .container.index .dos p {
+      position: relative;
+      -moz-transform: translate(0, -50%);
+      -o-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+      -webkit-transform: translate(0, -50%);
+      transform: translate(0, -50%);
+      top: 35%; }
     .container.index .uno b, .container.index .dos b {
       font-weight: bold;
       font-size: 2em; }
