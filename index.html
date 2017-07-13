@@ -15,10 +15,8 @@
 
 <body>
 	<div class="container index">
-		<!-- <p>Hola, está web está en obras (algún día incluso puede que la acabe :o).<br><br>
-		Soy un creativo/diseñador técnológico, y estos son "a grosso modo" las <span class="areas">áreas a las que me quiero dedicar<img src="images/areas.png" /></span></p> -->
 		<div class="uno">
-			<p><b>Hola</b><br><br class="br">
+			<p><b>Hola <span id="origen"></span></b><br><br class="br">
 			Soy una especie de creativo/diseñador tecnológico muy versátil con un porfolio inacabado y un poco feo.</p>
 		</div>
 		<div class="dos">
@@ -83,20 +81,9 @@
 	</script>
 	<script src="js/jquery-2.2.4.min.js"></script>
 
-	<script type="text/javascript" src="js/main.js"></script>
 	<script>
 
 		
-		// $(".porfo").click(function() {
-		// 	$("ul").toggle();
-		// 	$(this).toggleClass("activo");
-
-		// }) 
-
-		//apuela
-		// $("#abuelapp li").click(function(){
-		// 	$(".mock_app").show();
-		// });
 		$(".mock_app img").click(function() { 
 		    if($(this).attr("src") === "images/app_4.png") {
 		    	$("#app_1").show();
@@ -109,10 +96,32 @@
 		    //$(".mock_app:after").css("content", "Mientras carga los datos la abuela te contesta con una Frase Típica de Abuela")
 		});
 
-		//mundi
-		// $("#mundi").click(function(){
-		// 	$(".mock_mun").toggle();
-		// });
+
+		var getUrlParameter = function getUrlParameter(sParam) {
+		    var sPageURL = decodeURIComponent(window.location.search.substring(1)),
+		        sURLVariables = sPageURL.split('&'),
+		        sParameterName,
+		        i;
+
+		    for (i = 0; i < sURLVariables.length; i++) {
+		        sParameterName = sURLVariables[i].split('=');
+
+		        if (sParameterName[0] === sParam) {
+		            return sParameterName[1] === undefined ? true : sParameterName[1];
+		        }
+		    }
+		};
+
+
+		//personalizar para email
+		
+		var origen = getUrlParameter('origen');
+
+		if (origen==="mail_bipolar") {
+		    $("#origen").html("Bipolar Agency");
+		} else {
+		    $("#origen").html("");
+		}
 	</script>
 
 </body>

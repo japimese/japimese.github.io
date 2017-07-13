@@ -178,28 +178,57 @@ $(window).scroll(function () {
 })
 
 
-// $(window).scroll(function () {
-// 	var i =  parseInt(($(window).scrollTop() - $(".propuesta_color img").offset().top - unheight*0.3) / 4);
-// 	if (($(window).scrollTop() > $(".propuesta_color img").offset().top - unheight*0.3 ) && ($(window).scrollTop() < $(".propuesta_color img").offset().top + unheight)) {
-// 		// debugger;
-// 		$("#mok_2").attr("src", "images/home/ucip"+ i +".jpg");
-// 		//$("#mok_2").parent().append("<img class='mockup_in' src='images/nar/nar_" + i + ".jpg' />");
+//version email/no mail
+
+// var getUrlParameter = function getUrlParameter(sParam) {
+//     var sPageURL = decodeURIComponent(window.location.search.substring(1)),
+//         sURLVariables = sPageURL.split('&'),
+//         sParameterName,
+//         i;
+
+//     for (i = 0; i < sURLVariables.length; i++) {
+//         sParameterName = sURLVariables[i].split('=');
+
+//         if (sParameterName[0] === sParam) {
+//             return sParameterName[1] === undefined ? true : sParameterName[1];
+//         }
+//     }
+// };
+
+
+// $(document).ready(function() {
+// 	var origen = getUrlParameter('origen');
+// 	console.log(origen);
+// 	if (origen==="mail_bipolar") {
+// 		debugger;
+// 	    $("#origen").html("Bipolar");
 // 	} else {
-// 		$("#mok_2").attr("src", "images/home/ucip0.jpg");
+// 	    $("#origen").html("");
 // 	}
-    
-// })
-// if($(window).innerWidth() > 768) {
-//    quieto($("#mock_detalles"), 12);
-//    quieto($(".caja"), 10);
-// } else {
-//    quieto($("#mock_detalles"), 6);
-//    quieto($(".puntos"), 50);
-// }
+// });
 
+var getUrlParameter = function getUrlParameter(sParam) {
+    var sPageURL = decodeURIComponent(window.location.search.substring(1)),
+        sURLVariables = sPageURL.split('&'),
+        sParameterName,
+        i;
 
+    for (i = 0; i < sURLVariables.length; i++) {
+        sParameterName = sURLVariables[i].split('=');
 
-//parao($("#frontmok img"), 10, 300);
+        if (sParameterName[0] === sParam) {
+            return sParameterName[1] === undefined ? true : sParameterName[1];
+        }
+    }
+};
+
+var origen = getUrlParameter('origen');
+
+if (origen==="email") {
+    $(".container").addClass("email_or");
+} else {
+    $(".container").removeClass("email_or");
+}
 
 
 
