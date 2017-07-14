@@ -156,13 +156,13 @@ header {
     .container .consejos .icons.calor {
       background-position-x: 64%; }
       .container .consejos .icons.calor:after {
-        content: "&iexcl;nii&ntilde;o, bebe mucho agua que te me vas a quedar seco&#33;"; }
+        content: "\00a1nii\00f1o, bebe mucho agua que te me vas a quedar seco!"; }
       .container .consejos .icons.calor:first-child {
         background-position-x: 65%; }
     .container .consejos .icons.sol {
       background-position-x: 93%; }
       .container .consejos .icons.sol:after {
-        content: "no seas tonto, ll&eacute;vate las gafas que si no no vas a ver nada"; }
+        content: "no seas tonto, ll\00e9vate las gafas que si no no vas a ver nada"; }
       .container .consejos .icons.sol:first-child {
         background-position-x: 95%; }
     .container .consejos .icons.lluvia {

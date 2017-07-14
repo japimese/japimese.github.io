@@ -153,14 +153,14 @@ header {position: fixed; display: none;}
 			&:after {display: none;}
 			&.calor {
 				background-position-x: 64%;
-				&:after { content: "&iexcl;nii&ntilde;o, bebe mucho agua que te me vas a quedar seco&#33;"; }
+				&:after { content: "\00a1nii\00f1o, bebe mucho agua que te me vas a quedar seco!"; }
 				&:first-child {
 					background-position-x: 65%;
 				}
 			}
 			&.sol {
 				background-position-x: 93%;
-				&:after { content: "no seas tonto, ll&eacute;vate las gafas que si no no vas a ver nada"; }
+				&:after { content: "no seas tonto, ll\00e9vate las gafas que si no no vas a ver nada"; }
 				&:first-child {
 					background-position-x: 95%;
 				}
