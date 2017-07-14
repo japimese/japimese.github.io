@@ -153,21 +153,21 @@ header {position: fixed; display: none;}
 			&:after {display: none;}
 			&.calor {
 				background-position-x: 64%;
-				&:after { content: "el del tiempo siempre dice que hay que hidratarse!"; }
+				&:after { content: "¡niiño, bebe mucho agua que te me vas a quedar seco!"; }
 				&:first-child {
 					background-position-x: 65%;
 				}
 			}
 			&.sol {
 				background-position-x: 93%;
-				&:after { content: "En junio si pica el sol, ni mujer ni caracol."; }
+				&:after { content: "no seas tonto, ll&eacute;vate las gafas que si no no vas a ver nada"; }
 				&:first-child {
 					background-position-x: 95%;
 				}
 			}
 			&.lluvia {
 				background-position-x: 5%;
-				&:after { content: "Si llueve a primeros de junio, el buen tiempo esta lejos"; }
+				&:after { content: "Mis huesos no mienten, coge el paraguas que va a caer una tromba"; }
 				&:first-child {
 					background-position-x: 4%;
 				}
