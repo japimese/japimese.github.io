@@ -231,6 +231,13 @@ header {
     font-weight: 200; }
     .container .consejos .icons:after {
       display: none; }
+    .container .consejos .icons.none {
+      display: none;
+      background: none; }
+      .container .consejos .icons.none:after {
+        content: "\00a1 Adi\00f3s!"; }
+      .container .consejos .icons.none:only-child {
+        display: block; }
     .container .consejos .icons.calor {
       background-position-x: 64%; }
       .container .consejos .icons.calor:after {

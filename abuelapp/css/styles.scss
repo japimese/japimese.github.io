@@ -241,6 +241,14 @@ header {position: fixed; display: none;}
 			font-family: gotham, helvetica, sans-serif;
 		    font-weight: 200;
 			&:after {display: none;}
+			&.none {
+				display: none;
+				background: none;
+				&:after { content: "\00a1 Adi\00f3s!"; }
+				&:only-child {
+					display: block;
+				}
+			}
 			&.calor {
 				background-position-x: 64%;
 				&:after { content: "\00a1nii\00f1o, bebe mucho agua que te me vas a quedar seco!"; }

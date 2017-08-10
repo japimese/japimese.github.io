@@ -1531,7 +1531,9 @@ img[src=""] {
         .container.uciplus #uciplus .contexto .titulo_gris {
           transform: initial;
           top: -1em;
-          font-size: 1.4em; } }
+          font-size: 1.4em; }
+        .container.uciplus #uciplus .contexto .problema > :first-child {
+          margin-bottom: 1.2em; } }
     .container.uciplus #uciplus .propuesta .mi_propuesta {
       text-align: center; }
       .container.uciplus #uciplus .propuesta .mi_propuesta .titulo_gris {
@@ -1578,6 +1580,13 @@ img[src=""] {
         text-align: center;
         color: #494949;
         margin-bottom: 1em; }
+      .container.uciplus #uciplus .propuesta .propuesta_gris .mockup:not(:first-child) {
+        display: none; }
+      .container.uciplus #uciplus .propuesta .propuesta_gris .sig {
+        position: relative;
+        left: 49%;
+        font-size: 1.7em;
+        cursor: pointer; }
       .container.uciplus #uciplus .propuesta .propuesta_gris .fondo {
         position: absolute;
         top: -8%;
@@ -1638,12 +1647,12 @@ img[src=""] {
         float: left;
         margin-left: -10vw;
         padding-left: 10vw;
-        background-color: rgba(36, 131, 57, 0.7); }
+        background-color: rgba(36, 131, 57, 0.8); }
       .container.uciplus #uciplus .propuesta .propuesta_color .mundo .dcha {
         float: right;
         margin-right: -10vw;
         padding-right: 10vw;
-        background-color: rgba(255, 0, 152, 0.7); }
+        background-color: rgba(255, 0, 152, 0.8); }
     @media (max-width: 768px) {
       .container.uciplus #uciplus .propuesta > img {
         width: 100%; }

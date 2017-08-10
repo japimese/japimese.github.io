@@ -177,6 +177,22 @@ $(window).scroll(function () {
     }
 })
 
+$(document).ready(function() {
+	$(".propuesta_gris .mockup").click(function(){
+		
+		if( $(this).hasClass("ulti")) {
+			$(this).hide().removeClass("active");;
+			$(".propuesta_gris .pri").show().addClass("active");
+		} else {
+			$(this).hide().next().show();
+			$(this).removeClass("active");
+			$(this).next().addClass("active");
+		}
+	});
+	$(".propuesta_gris .sig").click(function(){
+		$(".propuesta_gris .mockup.active").click();
+	});
+});
 
 //version email/no mail
 
