@@ -14,13 +14,13 @@ days: <a href="#/consejo/1" ng-class="{'bg-primary': days === '1'}" >1</a> | <a 
 			<div>
 				
 				<ul class="consejos">
-					<li id="temp" class="icons none">
-					</li>
 					<li id="temp" ng-if='weatherResult.daily.data["0"].precipProbability > 0.03' class="icons lluvia">
 					</li>
 					<li id="temp" ng-if='weatherResult.daily.data["0"].temperatureMax > 30' class="icons calor">
 					</li>
 					<li id="temp" ng-if='weatherResult.daily.data["0"].cloudCover < 0.1' class="icons sol">
+					</li>
+					<li id="temp" class="icons none">
 					</li>
 				</ul>
 
