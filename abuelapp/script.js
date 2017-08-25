@@ -1,5 +1,6 @@
 var latitud;
 var longitud;
+var alto;
 
 $(document).ready(function() {
 
@@ -11,18 +12,19 @@ $(document).ready(function() {
 		// }, 2000);
 	});
 	
-	// if ($(window).width() <= 768) {  
+	if ($(window).width() <= 768) {  
 
- //    	function calcVH() {
-	//    		$('.movil').innerHeight( $(window).innerHeight() );
-	// 	}
+    	function calcVH() {
+ 			alto = $(window).innerHeight();
+			console.log("js = " + alto);
+	   		$('.movil').css("height", alto);
+		}
+		calcVH();
 
-	// 	calcVH();
-
-	// 	$(window).on('resize orientationchange', function() {
-	// 		calcVH();
-	// 	});
-	// }     
+		$(window).on('resize orientationchange', function() {
+			calcVH();
+		});
+	}     
 	var izda;
 	var dcha;
 
@@ -38,10 +40,16 @@ $(document).ready(function() {
 			}
 			if (izda && dcha) {
 				window.setTimeout(function() {
+					$(".logo_home").attr("src", "images/app_consejo.png");
+					$(".salir").show();
+					$(".adios").hide();
+				}, 700);
+
+				window.setTimeout(function() {
 					window.location.replace("#/consejo");
 					$("#mano_click").click();
 					console.log("click");
-				}, 500);
+				}, 2500);
 				
 			}
 		});
