@@ -15,7 +15,7 @@ $(document).ready(function() {
 	if ($(window).width() <= 768) {  
 
     	function calcVH() {
- 			alto = $(window).innerHeight();
+ 			alto = document.documentElement.clientHeight;
 			console.log("js = " + alto);
 	   		$('.movil').css("height", alto);
 		}
