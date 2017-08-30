@@ -2,6 +2,12 @@ var latitud;
 var longitud;
 var alto;
 
+// function calcVH() {
+// 	alto = document.documentElement.clientHeight;
+// 	console.log("js = " + alto);
+// 	$('.movil').css("height", alto);
+// }
+
 $(document).ready(function() {
 
 	navigator.geolocation.getCurrentPosition(function(position) {
@@ -12,19 +18,13 @@ $(document).ready(function() {
 		// }, 2000);
 	});
 	
-	if ($(window).width() <= 768) {  
+	// if ($(window).width() <= 768) {  
+	// 	calcVH();
 
-    	function calcVH() {
- 			alto = document.documentElement.clientHeight;
-			console.log("js = " + alto);
-	   		$('.movil').css("height", alto);
-		}
-		calcVH();
-
-		$(window).on('resize orientationchange', function() {
-			calcVH();
-		});
-	}     
+	// 	$(window).on('resize orientationchange hashchange', function() {
+	// 		calcVH();
+	// 	});
+	// }     
 	var izda;
 	var dcha;
 
@@ -49,8 +49,8 @@ $(document).ready(function() {
 					window.location.replace("#/consejo");
 					$("#mano_click").click();
 					console.log("click");
+					calcVH();
 				}, 2500);
-				
 			}
 		});
 
