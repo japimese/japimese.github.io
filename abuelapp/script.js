@@ -39,18 +39,27 @@ $(document).ready(function() {
 				dcha = 1;
 			}
 			if (izda && dcha) {
+				var trans;
+				var cambio = function() {
+					window.setTimeout(function() {
+						window.location.replace("#/consejo");
+						$("#mano_click").click();
+						console.log("click");
+					}, 3000);
+				}
 				window.setTimeout(function() {
-					$(".logo_home").attr("src", "images/app_consejo.png");
-					$(".salir").show();
 					$(".adios").hide();
+					$(".salir").show();
+					$(".logo_home").attr("src", "images/app_consejo.png");
 				}, 700);
-
-				window.setTimeout(function() {
-					window.location.replace("#/consejo");
-					$("#mano_click").click();
-					console.log("click");
-					calcVH();
-				}, 2500);
+				trans = setTimeout(function(){
+					cambio();
+				}, 4000);
+				if (typeof latitud != 'undefined') {
+					console.log("cargado");
+					clearTimeout(trans);
+					cambio();
+				} else {console.log("cargando");}
 			}
 		});
 

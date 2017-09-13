@@ -53,7 +53,6 @@ function($scope, $resource, $routeParams, cityService) {
 
 	console.log("consejo controller!");
 	console.log("latitud: " + latitud);
-	console.log("cityService.latitude: " + cityService.latitude);
 
 
 	$scope.latitude = latitud;
