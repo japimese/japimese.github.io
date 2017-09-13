@@ -24,7 +24,7 @@ $(document).ready(function() {
 	// 	$(window).on('resize orientationchange hashchange', function() {
 	// 		calcVH();
 	// 	});
-	// }     
+	// }      
 	var izda;
 	var dcha;
 
@@ -55,3 +55,53 @@ $(document).ready(function() {
 		});
 
 });
+
+
+//geolocalizacion
+
+var apiGeolocationSuccess = function(position) {
+	latitud = position.coords.latitude;
+	longitud = position.coords.longitude;
+    console.log("API geolocation success!\n\nlat = " + latitud + "\nlng = " + longitud);
+};
+
+var tryAPIGeolocation = function() {
+    jQuery.post( "https://www.googleapis.com/geolocation/v1/geolocate?key=AIzaSyDCa1LUe1vOczX1hO_iGYgyo8p_jYuGOPU", function(success) {
+        apiGeolocationSuccess({coords: {latitude: success.location.lat, longitude: success.location.lng}});
+	})
+  .fail(function(err) {
+    console.log("API Geolocation error! \n\n"+err);
+  });
+};
+
+var browserGeolocationSuccess = function(position) {
+    console.log("Browser geolocation success!\n\nlat = " + position.coords.latitude + "\nlng = " + position.coords.longitude);
+};
+
+var browserGeolocationFail = function(error) {
+  switch (error.code) {
+    case error.TIMEOUT:
+      console.log("Browser geolocation error !\n\nTimeout.");
+      break;
+    case error.PERMISSION_DENIED:
+      if(error.message.indexOf("Only secure origins are allowed") == 0) {
+        tryAPIGeolocation();
+      }
+      break;
+    case error.POSITION_UNAVAILABLE:
+      console.log("Browser geolocation error !\n\nPosition unavailable.");
+      break;
+  }
+};
+
+var tryGeolocation = function() {
+  	if (navigator.geolocation) {
+		navigator.geolocation.getCurrentPosition(
+	        browserGeolocationSuccess,
+	      	browserGeolocationFail,
+	      	{maximumAge: 20000, timeout: 10000, enableHighAccuracy: false}
+	    );
+  	}
+};
+
+tryGeolocation();

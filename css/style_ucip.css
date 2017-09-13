@@ -1636,7 +1636,8 @@ img[src=""] {
         width: 40%;
         top: 15vh; }
     .container.uciplus #uciplus .propuesta .propuesta_color .mundo {
-      margin-top: 110vh; }
+      margin-top: 110vh;
+      margin-bottom: 40vh; }
       .container.uciplus #uciplus .propuesta .propuesta_color .mundo .parr_color {
         color: white;
         position: relative;

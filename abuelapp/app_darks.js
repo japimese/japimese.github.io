@@ -29,14 +29,16 @@ abuelApp.config(function($routeProvider){
 //SERVICES
 
 abuelApp.service("cityService", function() {
-	this.latitude = "40.416733";
-	this.longitude = "-3.703514";
+	// console.log("geolocation! + lat= " +  latitud);
+	// tryGeolocation();
+	// this.latitude = latitud;
+	// this.longitude = longitud;
 });
 
 //CONTROLLERS
 abuelApp.controller("homeController" , ["$scope", "cityService",
 function($scope, cityService) {
-
+	console.log("home controller!");
 	$scope.latitude = cityService.latitude;
 	$scope.longitude = cityService.longitude;
 
@@ -49,8 +51,13 @@ function($scope, cityService) {
 abuelApp.controller("consejoController" , ["$scope", "$resource", "$routeParams", "cityService",
 function($scope, $resource, $routeParams, cityService) {
 
-	$scope.latitude = cityService.latitude;
-	$scope.longitude = cityService.longitude;
+	console.log("consejo controller!");
+	console.log("latitud: " + latitud);
+	console.log("cityService.latitude: " + cityService.latitude);
+
+
+	$scope.latitude = latitud;
+	$scope.longitude = longitud;
 	$scope.key = "859ba1bffcef388c78eaf50f570874c1";
 
 	$scope.weatherAPI = $resource("https://api.darksky.net/forecast/" + $scope.key + "/" +  $scope.latitude + "," + $scope.longitude + "?lang=es&units=si" , {callback: "JSON_CALLBACK"}, {get: {method: "JSONP"}});

@@ -84,17 +84,22 @@ $(document).ready(function() {
 $(document).ready(function () {
 	var ini = $("#mok_2").offset().top - unheight*0.5; 
 	var med = $("#mok_2").offset().top - unheight*0.1; 
-	var fin = $("#mok_2").offset().top + $(".mundo").height();
-	console.log("ini: " + ini + ", fin: " + fin);
+	var med2 = $("#mok_2").offset().top + unheight*2.5; 
+	var fin = $("#mok_2").offset().top + $(".mundo").height() + unheight*0.5;
+	console.log("ini: " + ini + ", med2: " + med2 + ", fin: " + fin);
 	
 	$(window).scroll(function () {
 		var i = parseInt(($(window).scrollTop() - ini) / 30);
 		if ( ($(window).scrollTop() > ini) && ($(window).scrollTop() < med) ) {
 			console.log(i);
 			$("#mok_2").attr("src", "images/mundo_uciplus/mundo_uciplus_"+ i +".png");
-		} else if ( ($(window).scrollTop() > med) && ($(window).scrollTop() < fin) ) {
+		} else if ( ($(window).scrollTop() > med) && ($(window).scrollTop() < med2) ) {
 			console.log(i);
 			$("#mok_2").attr("src", "images/nar/nar_"+ i +".jpg");
+		} else if ( ($(window).scrollTop() > med2) && ($(window).scrollTop() < fin) ) {
+			console.log(i);
+			i -= 20;
+			$("#mok_2").attr("src", "images/gif_usuario/mundo_uciplus_"+ i +".png");
 		} else {
 			console.log("else");
 			$("#mok_2").attr("src", "images//mundo_uciplus/mundo_uciplus_0.png");
