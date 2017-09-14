@@ -1,0 +1,1485 @@
+@charset "UTF-8";
+/*********************  GRID *****************************/
+/*********************** colores ***********************/
+/*********************** fuentes ***********************/
+/********************** resoluciones ********************/
+/********************** mixines *************************/
+/***transiciones **/
+/** animaciones **/
+/*// scale*/
+/*// translate*/
+/*// skew*/
+/*********************  GRID *****************************/
+/*********************** colores ***********************/
+/*********************** fuentes ***********************/
+/********************** resoluciones ********************/
+/********************** mixines *************************/
+/***transiciones **/
+/** animaciones **/
+/*// scale*/
+/*// translate*/
+/*// skew*/
+@import url(../fonts/fonts.css);
+.row .pull_one.one.cols:first-child, .row .pull_one.two.cols:first-child, .row .pull_one.three.cols:first-child, .row .pull_one.four.cols:first-child, .row .pull_one.five.cols:first-child, .row .pull_one.six.cols:first-child, .row .pull_one.seven.cols:first-child, .row .pull_one.eight.cols:first-child, .row .pull_one.nine.cols:first-child, .row .pull_one.ten.cols:first-child, .row .pull_two.one.cols:first-child, .row .pull_two.two.cols:first-child, .row .pull_two.three.cols:first-child, .row .pull_two.four.cols:first-child, .row .pull_two.five.cols:first-child, .row .pull_two.six.cols:first-child, .row .pull_two.seven.cols:first-child, .row .pull_two.eight.cols:first-child, .row .pull_two.nine.cols:first-child, .row .pull_two.eleven.cols:first-child, .row .pull_three.one.cols:first-child, .row .pull_three.two.cols:first-child, .row .pull_three.three.cols:first-child, .row .pull_three.four.cols:first-child, .row .pull_three.five.cols:first-child, .row .pull_three.six.cols:first-child, .row .pull_three.seven.cols:first-child, .row .pull_three.eight.cols:first-child, .row .pull_three.ten.cols:first-child, .row .pull_three.eleven.cols:first-child, .row .pull_four.one.cols:first-child, .row .pull_four.two.cols:first-child, .row .pull_four.three.cols:first-child, .row .pull_four.four.cols:first-child, .row .pull_four.five.cols:first-child, .row .pull_four.six.cols:first-child, .row .pull_four.seven.cols:first-child, .row .pull_four.nine.cols:first-child, .row .pull_four.ten.cols:first-child, .row .pull_four.eleven.cols:first-child, .row .pull_five.one.cols:first-child, .row .pull_five.two.cols:first-child, .row .pull_five.three.cols:first-child, .row .pull_five.four.cols:first-child, .row .pull_five.five.cols:first-child, .row .pull_five.six.cols:first-child, .row .pull_five.eight.cols:first-child, .row .pull_five.nine.cols:first-child, .row .pull_five.ten.cols:first-child, .row .pull_five.eleven.cols:first-child, .row .pull_six.one.cols:first-child, .row .pull_six.two.cols:first-child, .row .pull_six.three.cols:first-child, .row .pull_six.four.cols:first-child, .row .pull_six.five.cols:first-child, .row .pull_six.seven.cols:first-child, .row .pull_six.eight.cols:first-child, .row .pull_six.nine.cols:first-child, .row .pull_six.ten.cols:first-child, .row .pull_six.eleven.cols:first-child, .row .pull_seven.one.cols:first-child, .row .pull_seven.two.cols:first-child, .row .pull_seven.three.cols:first-child, .row .pull_seven.four.cols:first-child, .row .pull_seven.six.cols:first-child, .row .pull_seven.seven.cols:first-child, .row .pull_seven.eight.cols:first-child, .row .pull_seven.nine.cols:first-child, .row .pull_seven.ten.cols:first-child, .row .pull_seven.eleven.cols:first-child, .row .pull_eight.one.cols:first-child, .row .pull_eight.two.cols:first-child, .row .pull_eight.three.cols:first-child, .row .pull_eight.five.cols:first-child, .row .pull_eight.six.cols:first-child, .row .pull_eight.seven.cols:first-child, .row .pull_eight.eight.cols:first-child, .row .pull_eight.nine.cols:first-child, .row .pull_eight.ten.cols:first-child, .row .pull_eight.eleven.cols:first-child, .row .pull_nine.one.cols:first-child, .row .pull_nine.two.cols:first-child, .row .pull_nine.four.cols:first-child, .row .pull_nine.five.cols:first-child, .row .pull_nine.six.cols:first-child, .row .pull_nine.seven.cols:first-child, .row .pull_nine.eight.cols:first-child, .row .pull_nine.nine.cols:first-child, .row .pull_nine.ten.cols:first-child, .row .pull_nine.eleven.cols:first-child, .row .pull_ten.one.cols:first-child, .row .pull_ten.three.cols:first-child, .row .pull_ten.four.cols:first-child, .row .pull_ten.five.cols:first-child, .row .pull_ten.six.cols:first-child, .row .pull_ten.seven.cols:first-child, .row .pull_ten.eight.cols:first-child, .row .pull_ten.nine.cols:first-child, .row .pull_ten.ten.cols:first-child, .row .pull_ten.eleven.cols:first-child, .row .pull_eleven.two.cols:first-child, .row .pull_eleven.three.cols:first-child, .row .pull_eleven.four.cols:first-child, .row .pull_eleven.five.cols:first-child, .row .pull_eleven.six.cols:first-child, .row .pull_eleven.seven.cols:first-child, .row .pull_eleven.eight.cols:first-child, .row .pull_eleven.nine.cols:first-child, .row .pull_eleven.ten.cols:first-child, .row .pull_eleven.eleven.cols:first-child, .sixteen.colgrid .row .pull_one.one.cols:first-child, .sixteen.colgrid .row .pull_one.two.cols:first-child, .sixteen.colgrid .row .pull_one.three.cols:first-child, .sixteen.colgrid .row .pull_one.four.cols:first-child, .sixteen.colgrid .row .pull_one.five.cols:first-child, .sixteen.colgrid .row .pull_one.six.cols:first-child, .sixteen.colgrid .row .pull_one.seven.cols:first-child, .sixteen.colgrid .row .pull_one.eight.cols:first-child, .sixteen.colgrid .row .pull_one.nine.cols:first-child, .sixteen.colgrid .row .pull_one.ten.cols:first-child, .sixteen.colgrid .row .pull_one.eleven.cols:first-child, .sixteen.colgrid .row .pull_one.twelve.cols:first-child, .sixteen.colgrid .row .pull_one.thirteen.cols:first-child, .sixteen.colgrid .row .pull_one.fourteen.cols:first-child, .sixteen.colgrid .row .pull_two.one.cols:first-child, .sixteen.colgrid .row .pull_two.two.cols:first-child, .sixteen.colgrid .row .pull_two.three.cols:first-child, .sixteen.colgrid .row .pull_two.four.cols:first-child, .sixteen.colgrid .row .pull_two.five.cols:first-child, .sixteen.colgrid .row .pull_two.six.cols:first-child, .sixteen.colgrid .row .pull_two.seven.cols:first-child, .sixteen.colgrid .row .pull_two.eight.cols:first-child, .sixteen.colgrid .row .pull_two.nine.cols:first-child, .sixteen.colgrid .row .pull_two.ten.cols:first-child, .sixteen.colgrid .row .pull_two.eleven.cols:first-child, .sixteen.colgrid .row .pull_two.twelve.cols:first-child, .sixteen.colgrid .row .pull_two.thirteen.cols:first-child, .sixteen.colgrid .row .pull_two.fifteen.cols:first-child, .sixteen.colgrid .row .pull_three.one.cols:first-child, .sixteen.colgrid .row .pull_three.two.cols:first-child, .sixteen.colgrid .row .pull_three.three.cols:first-child, .sixteen.colgrid .row .pull_three.four.cols:first-child, .sixteen.colgrid .row .pull_three.five.cols:first-child, .sixteen.colgrid .row .pull_three.six.cols:first-child, .sixteen.colgrid .row .pull_three.seven.cols:first-child, .sixteen.colgrid .row .pull_three.eight.cols:first-child, .sixteen.colgrid .row .pull_three.nine.cols:first-child, .sixteen.colgrid .row .pull_three.ten.cols:first-child, .sixteen.colgrid .row .pull_three.eleven.cols:first-child, .sixteen.colgrid .row .pull_three.twelve.cols:first-child, .sixteen.colgrid .row .pull_three.fourteen.cols:first-child, .sixteen.colgrid .row .pull_three.fifteen.cols:first-child, .sixteen.colgrid .row .pull_four.one.cols:first-child, .sixteen.colgrid .row .pull_four.two.cols:first-child, .sixteen.colgrid .row .pull_four.three.cols:first-child, .sixteen.colgrid .row .pull_four.four.cols:first-child, .sixteen.colgrid .row .pull_four.five.cols:first-child, .sixteen.colgrid .row .pull_four.six.cols:first-child, .sixteen.colgrid .row .pull_four.seven.cols:first-child, .sixteen.colgrid .row .pull_four.eight.cols:first-child, .sixteen.colgrid .row .pull_four.nine.cols:first-child, .sixteen.colgrid .row .pull_four.ten.cols:first-child, .sixteen.colgrid .row .pull_four.eleven.cols:first-child, .sixteen.colgrid .row .pull_four.thirteen.cols:first-child, .sixteen.colgrid .row .pull_four.fourteen.cols:first-child, .sixteen.colgrid .row .pull_four.fifteen.cols:first-child, .sixteen.colgrid .row .pull_five.one.cols:first-child, .sixteen.colgrid .row .pull_five.two.cols:first-child, .sixteen.colgrid .row .pull_five.three.cols:first-child, .sixteen.colgrid .row .pull_five.four.cols:first-child, .sixteen.colgrid .row .pull_five.five.cols:first-child, .sixteen.colgrid .row .pull_five.six.cols:first-child, .sixteen.colgrid .row .pull_five.seven.cols:first-child, .sixteen.colgrid .row .pull_five.eight.cols:first-child, .sixteen.colgrid .row .pull_five.nine.cols:first-child, .sixteen.colgrid .row .pull_five.ten.cols:first-child, .sixteen.colgrid .row .pull_five.twelve.cols:first-child, .sixteen.colgrid .row .pull_five.thirteen.cols:first-child, .sixteen.colgrid .row .pull_five.fourteen.cols:first-child, .sixteen.colgrid .row .pull_five.fifteen.cols:first-child, .sixteen.colgrid .row .pull_six.one.cols:first-child, .sixteen.colgrid .row .pull_six.two.cols:first-child, .sixteen.colgrid .row .pull_six.three.cols:first-child, .sixteen.colgrid .row .pull_six.four.cols:first-child, .sixteen.colgrid .row .pull_six.five.cols:first-child, .sixteen.colgrid .row .pull_six.six.cols:first-child, .sixteen.colgrid .row .pull_six.seven.cols:first-child, .sixteen.colgrid .row .pull_six.eight.cols:first-child, .sixteen.colgrid .row .pull_six.nine.cols:first-child, .sixteen.colgrid .row .pull_six.eleven.cols:first-child, .sixteen.colgrid .row .pull_six.twelve.cols:first-child, .sixteen.colgrid .row .pull_six.thirteen.cols:first-child, .sixteen.colgrid .row .pull_six.fourteen.cols:first-child, .sixteen.colgrid .row .pull_six.fifteen.cols:first-child, .sixteen.colgrid .row .pull_seven.one.cols:first-child, .sixteen.colgrid .row .pull_seven.two.cols:first-child, .sixteen.colgrid .row .pull_seven.three.cols:first-child, .sixteen.colgrid .row .pull_seven.four.cols:first-child, .sixteen.colgrid .row .pull_seven.five.cols:first-child, .sixteen.colgrid .row .pull_seven.six.cols:first-child, .sixteen.colgrid .row .pull_seven.seven.cols:first-child, .sixteen.colgrid .row .pull_seven.eight.cols:first-child, .sixteen.colgrid .row .pull_seven.ten.cols:first-child, .sixteen.colgrid .row .pull_seven.eleven.cols:first-child, .sixteen.colgrid .row .pull_seven.twelve.cols:first-child, .sixteen.colgrid .row .pull_seven.thirteen.cols:first-child, .sixteen.colgrid .row .pull_seven.fourteen.cols:first-child, .sixteen.colgrid .row .pull_seven.fifteen.cols:first-child, .sixteen.colgrid .row .pull_eight.one.cols:first-child, .sixteen.colgrid .row .pull_eight.two.cols:first-child, .sixteen.colgrid .row .pull_eight.three.cols:first-child, .sixteen.colgrid .row .pull_eight.four.cols:first-child, .sixteen.colgrid .row .pull_eight.five.cols:first-child, .sixteen.colgrid .row .pull_eight.six.cols:first-child, .sixteen.colgrid .row .pull_eight.seven.cols:first-child, .sixteen.colgrid .row .pull_eight.nine.cols:first-child, .sixteen.colgrid .row .pull_eight.ten.cols:first-child, .sixteen.colgrid .row .pull_eight.eleven.cols:first-child, .sixteen.colgrid .row .pull_eight.twelve.cols:first-child, .sixteen.colgrid .row .pull_eight.thirteen.cols:first-child, .sixteen.colgrid .row .pull_eight.fourteen.cols:first-child, .sixteen.colgrid .row .pull_eight.fifteen.cols:first-child, .sixteen.colgrid .row .pull_nine.one.cols:first-child, .sixteen.colgrid .row .pull_nine.two.cols:first-child, .sixteen.colgrid .row .pull_nine.three.cols:first-child, .sixteen.colgrid .row .pull_nine.four.cols:first-child, .sixteen.colgrid .row .pull_nine.five.cols:first-child, .sixteen.colgrid .row .pull_nine.six.cols:first-child, .sixteen.colgrid .row .pull_nine.eight.cols:first-child, .sixteen.colgrid .row .pull_nine.nine.cols:first-child, .sixteen.colgrid .row .pull_nine.ten.cols:first-child, .sixteen.colgrid .row .pull_nine.eleven.cols:first-child, .sixteen.colgrid .row .pull_nine.twelve.cols:first-child, .sixteen.colgrid .row .pull_nine.thirteen.cols:first-child, .sixteen.colgrid .row .pull_nine.fourteen.cols:first-child, .sixteen.colgrid .row .pull_nine.fifteen.cols:first-child, .sixteen.colgrid .row .pull_ten.one.cols:first-child, .sixteen.colgrid .row .pull_ten.two.cols:first-child, .sixteen.colgrid .row .pull_ten.three.cols:first-child, .sixteen.colgrid .row .pull_ten.four.cols:first-child, .sixteen.colgrid .row .pull_ten.five.cols:first-child, .sixteen.colgrid .row .pull_ten.seven.cols:first-child, .sixteen.colgrid .row .pull_ten.eight.cols:first-child, .sixteen.colgrid .row .pull_ten.nine.cols:first-child, .sixteen.colgrid .row .pull_ten.ten.cols:first-child, .sixteen.colgrid .row .pull_ten.eleven.cols:first-child, .sixteen.colgrid .row .pull_ten.twelve.cols:first-child, .sixteen.colgrid .row .pull_ten.thirteen.cols:first-child, .sixteen.colgrid .row .pull_ten.fourteen.cols:first-child, .sixteen.colgrid .row .pull_ten.fifteen.cols:first-child, .sixteen.colgrid .row .pull_eleven.one.cols:first-child, .sixteen.colgrid .row .pull_eleven.two.cols:first-child, .sixteen.colgrid .row .pull_eleven.three.cols:first-child, .sixteen.colgrid .row .pull_eleven.four.cols:first-child, .sixteen.colgrid .row .pull_eleven.six.cols:first-child, .sixteen.colgrid .row .pull_eleven.seven.cols:first-child, .sixteen.colgrid .row .pull_eleven.eight.cols:first-child, .sixteen.colgrid .row .pull_eleven.nine.cols:first-child, .sixteen.colgrid .row .pull_eleven.ten.cols:first-child, .sixteen.colgrid .row .pull_eleven.eleven.cols:first-child, .sixteen.colgrid .row .pull_eleven.twelve.cols:first-child, .sixteen.colgrid .row .pull_eleven.thirteen.cols:first-child, .sixteen.colgrid .row .pull_eleven.fourteen.cols:first-child, .sixteen.colgrid .row .pull_eleven.fifteen.cols:first-child, .sixteen.colgrid .row .pull_twelve.one.cols:first-child, .sixteen.colgrid .row .pull_twelve.two.cols:first-child, .sixteen.colgrid .row .pull_twelve.three.cols:first-child, .sixteen.colgrid .row .pull_twelve.five.cols:first-child, .sixteen.colgrid .row .pull_twelve.six.cols:first-child, .sixteen.colgrid .row .pull_twelve.seven.cols:first-child, .sixteen.colgrid .row .pull_twelve.eight.cols:first-child, .sixteen.colgrid .row .pull_twelve.nine.cols:first-child, .sixteen.colgrid .row .pull_twelve.ten.cols:first-child, .sixteen.colgrid .row .pull_twelve.eleven.cols:first-child, .sixteen.colgrid .row .pull_twelve.twelve.cols:first-child, .sixteen.colgrid .row .pull_twelve.thirteen.cols:first-child, .sixteen.colgrid .row .pull_twelve.fourteen.cols:first-child, .sixteen.colgrid .row .pull_twelve.fifteen.cols:first-child, .sixteen.colgrid .row .pull_thirteen.one.cols:first-child, .sixteen.colgrid .row .pull_thirteen.two.cols:first-child, .sixteen.colgrid .row .pull_thirteen.four.cols:first-child, .sixteen.colgrid .row .pull_thirteen.five.cols:first-child, .sixteen.colgrid .row .pull_thirteen.six.cols:first-child, .sixteen.colgrid .row .pull_thirteen.seven.cols:first-child, .sixteen.colgrid .row .pull_thirteen.eight.cols:first-child, .sixteen.colgrid .row .pull_thirteen.nine.cols:first-child, .sixteen.colgrid .row .pull_thirteen.ten.cols:first-child, .sixteen.colgrid .row .pull_thirteen.eleven.cols:first-child, .sixteen.colgrid .row .pull_thirteen.twelve.cols:first-child, .sixteen.colgrid .row .pull_thirteen.thirteen.cols:first-child, .sixteen.colgrid .row .pull_thirteen.fourteen.cols:first-child, .sixteen.colgrid .row .pull_thirteen.fifteen.cols:first-child, .sixteen.colgrid .row .pull_fourteen.one.cols:first-child, .sixteen.colgrid .row .pull_fourteen.three.cols:first-child, .sixteen.colgrid .row .pull_fourteen.four.cols:first-child, .sixteen.colgrid .row .pull_fourteen.five.cols:first-child, .sixteen.colgrid .row .pull_fourteen.six.cols:first-child, .sixteen.colgrid .row .pull_fourteen.seven.cols:first-child, .sixteen.colgrid .row .pull_fourteen.eight.cols:first-child, .sixteen.colgrid .row .pull_fourteen.nine.cols:first-child, .sixteen.colgrid .row .pull_fourteen.ten.cols:first-child, .sixteen.colgrid .row .pull_fourteen.eleven.cols:first-child, .sixteen.colgrid .row .pull_fourteen.twelve.cols:first-child, .sixteen.colgrid .row .pull_fourteen.thirteen.cols:first-child, .sixteen.colgrid .row .pull_fourteen.fourteen.cols:first-child, .sixteen.colgrid .row .pull_fourteen.fifteen.cols:first-child, .sixteen.colgrid .row .pull_fifteen.two.cols:first-child, .sixteen.colgrid .row .pull_fifteen.three.cols:first-child, .sixteen.colgrid .row .pull_fifteen.four.cols:first-child, .sixteen.colgrid .row .pull_fifteen.five.cols:first-child, .sixteen.colgrid .row .pull_fifteen.six.cols:first-child, .sixteen.colgrid .row .pull_fifteen.seven.cols:first-child, .sixteen.colgrid .row .pull_fifteen.eight.cols:first-child, .sixteen.colgrid .row .pull_fifteen.nine.cols:first-child, .sixteen.colgrid .row .pull_fifteen.ten.cols:first-child, .sixteen.colgrid .row .pull_fifteen.eleven.cols:first-child, .sixteen.colgrid .row .pull_fifteen.twelve.cols:first-child, .sixteen.colgrid .row .pull_fifteen.thirteen.cols:first-child, .sixteen.colgrid .row .pull_fifteen.fourteen.cols:first-child, .sixteen.colgrid .row .pull_fifteen.fifteen.cols:first-child {
+  margin-left: 0; }
+
+/*.container {
+	padding: 0 $gutter-in-px;
+}*/
+.row {
+  width: 100%;
+  max-width: 1406px;
+  min-width: 0px !important;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px; }
+  .row .row {
+    min-width: 0;
+    padding-left: 0;
+    padding-right: 0; }
+
+.cols, .cols {
+  margin-left: 1.90337%;
+  float: left;
+  min-height: 1px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.cols:first-child, .cols:first-child, .alpha {
+  margin-left: 0; }
+
+/* cols Clases */
+.row .one.cols {
+  width: 6.58858%; }
+.row .one.cols {
+  width: 6.58858%; }
+.row .two.cols {
+  width: 15.08053%; }
+.row .three.cols {
+  width: 23.57247%; }
+.row .four.cols {
+  width: 32.06442%; }
+.row .five.cols {
+  width: 40.55637%; }
+.row .six.cols {
+  width: 49.04832%; }
+.row .seven.cols {
+  width: 57.54026%; }
+.row .eight.cols {
+  width: 66.03221%; }
+.row .nine.cols {
+  width: 74.52416%; }
+.row .ten.cols {
+  width: 83.01611%; }
+.row .eleven.cols {
+  width: 91.50805%; }
+.row .twelve.cols {
+  width: 100%; }
+
+/* Clases PULL y PUSH */
+.row .push_one {
+  margin-left: 10.39531%; }
+  .row .push_one:first-child {
+    margin-left: 8.49195%; }
+.row .pull_one.one.cols {
+  margin-left: -15.08053%; }
+.row .pull_one.two.cols {
+  margin-left: -23.57247%; }
+.row .pull_one.three.cols {
+  margin-left: -32.06442%; }
+.row .pull_one.four.cols {
+  margin-left: -40.55637%; }
+.row .pull_one.five.cols {
+  margin-left: -49.04832%; }
+.row .pull_one.six.cols {
+  margin-left: -57.54026%; }
+.row .pull_one.seven.cols {
+  margin-left: -66.03221%; }
+.row .pull_one.eight.cols {
+  margin-left: -74.52416%; }
+.row .pull_one.nine.cols {
+  margin-left: -83.01611%; }
+.row .pull_one.ten.cols {
+  margin-left: -91.50805%; }
+.row .push_two {
+  margin-left: 18.88726%; }
+  .row .push_two:first-child {
+    margin-left: 16.98389%; }
+.row .pull_two.one.cols {
+  margin-left: -23.57247%; }
+.row .pull_two.two.cols {
+  margin-left: -32.06442%; }
+.row .pull_two.three.cols {
+  margin-left: -40.55637%; }
+.row .pull_two.four.cols {
+  margin-left: -49.04832%; }
+.row .pull_two.five.cols {
+  margin-left: -57.54026%; }
+.row .pull_two.six.cols {
+  margin-left: -66.03221%; }
+.row .pull_two.seven.cols {
+  margin-left: -74.52416%; }
+.row .pull_two.eight.cols {
+  margin-left: -83.01611%; }
+.row .pull_two.nine.cols {
+  margin-left: -91.50805%; }
+.row .pull_two.eleven.cols {
+  margin-left: -108.49195%; }
+.row .push_three {
+  margin-left: 27.37921%; }
+  .row .push_three:first-child {
+    margin-left: 25.47584%; }
+.row .pull_three.one.cols {
+  margin-left: -32.06442%; }
+.row .pull_three.two.cols {
+  margin-left: -40.55637%; }
+.row .pull_three.three.cols {
+  margin-left: -49.04832%; }
+.row .pull_three.four.cols {
+  margin-left: -57.54026%; }
+.row .pull_three.five.cols {
+  margin-left: -66.03221%; }
+.row .pull_three.six.cols {
+  margin-left: -74.52416%; }
+.row .pull_three.seven.cols {
+  margin-left: -83.01611%; }
+.row .pull_three.eight.cols {
+  margin-left: -91.50805%; }
+.row .pull_three.ten.cols {
+  margin-left: -108.49195%; }
+.row .pull_three.eleven.cols {
+  margin-left: -116.98389%; }
+.row .push_four {
+  margin-left: 35.87116%; }
+  .row .push_four:first-child {
+    margin-left: 33.96779%; }
+.row .pull_four.one.cols {
+  margin-left: -40.55637%; }
+.row .pull_four.two.cols {
+  margin-left: -49.04832%; }
+.row .pull_four.three.cols {
+  margin-left: -57.54026%; }
+.row .pull_four.four.cols {
+  margin-left: -66.03221%; }
+.row .pull_four.five.cols {
+  margin-left: -74.52416%; }
+.row .pull_four.six.cols {
+  margin-left: -83.01611%; }
+.row .pull_four.seven.cols {
+  margin-left: -91.50805%; }
+.row .pull_four.nine.cols {
+  margin-left: -108.49195%; }
+.row .pull_four.ten.cols {
+  margin-left: -116.98389%; }
+.row .pull_four.eleven.cols {
+  margin-left: -125.47584%; }
+.row .push_five {
+  margin-left: 44.3631%; }
+  .row .push_five:first-child {
+    margin-left: 42.45974%; }
+.row .pull_five.one.cols {
+  margin-left: -49.04832%; }
+.row .pull_five.two.cols {
+  margin-left: -57.54026%; }
+.row .pull_five.three.cols {
+  margin-left: -66.03221%; }
+.row .pull_five.four.cols {
+  margin-left: -74.52416%; }
+.row .pull_five.five.cols {
+  margin-left: -83.01611%; }
+.row .pull_five.six.cols {
+  margin-left: -91.50805%; }
+.row .pull_five.eight.cols {
+  margin-left: -108.49195%; }
+.row .pull_five.nine.cols {
+  margin-left: -116.98389%; }
+.row .pull_five.ten.cols {
+  margin-left: -125.47584%; }
+.row .pull_five.eleven.cols {
+  margin-left: -133.96779%; }
+.row .push_six {
+  margin-left: 52.85505%; }
+  .row .push_six:first-child {
+    margin-left: 50.95168%; }
+.row .pull_six.one.cols {
+  margin-left: -57.54026%; }
+.row .pull_six.two.cols {
+  margin-left: -66.03221%; }
+.row .pull_six.three.cols {
+  margin-left: -74.52416%; }
+.row .pull_six.four.cols {
+  margin-left: -83.01611%; }
+.row .pull_six.five.cols {
+  margin-left: -91.50805%; }
+.row .pull_six.seven.cols {
+  margin-left: -108.49195%; }
+.row .pull_six.eight.cols {
+  margin-left: -116.98389%; }
+.row .pull_six.nine.cols {
+  margin-left: -125.47584%; }
+.row .pull_six.ten.cols {
+  margin-left: -133.96779%; }
+.row .pull_six.eleven.cols {
+  margin-left: -142.45974%; }
+.row .push_seven {
+  margin-left: 61.347%; }
+  .row .push_seven:first-child {
+    margin-left: 59.44363%; }
+.row .pull_seven.one.cols {
+  margin-left: -66.03221%; }
+.row .pull_seven.two.cols {
+  margin-left: -74.52416%; }
+.row .pull_seven.three.cols {
+  margin-left: -83.01611%; }
+.row .pull_seven.four.cols {
+  margin-left: -91.50805%; }
+.row .pull_seven.six.cols {
+  margin-left: -108.49195%; }
+.row .pull_seven.seven.cols {
+  margin-left: -116.98389%; }
+.row .pull_seven.eight.cols {
+  margin-left: -125.47584%; }
+.row .pull_seven.nine.cols {
+  margin-left: -133.96779%; }
+.row .pull_seven.ten.cols {
+  margin-left: -142.45974%; }
+.row .pull_seven.eleven.cols {
+  margin-left: -150.95168%; }
+.row .push_eight {
+  margin-left: 69.83895%; }
+  .row .push_eight:first-child {
+    margin-left: 67.93558%; }
+.row .pull_eight.one.cols {
+  margin-left: -74.52416%; }
+.row .pull_eight.two.cols {
+  margin-left: -83.01611%; }
+.row .pull_eight.three.cols {
+  margin-left: -91.50805%; }
+.row .pull_eight.five.cols {
+  margin-left: -108.49195%; }
+.row .pull_eight.six.cols {
+  margin-left: -116.98389%; }
+.row .pull_eight.seven.cols {
+  margin-left: -125.47584%; }
+.row .pull_eight.eight.cols {
+  margin-left: -133.96779%; }
+.row .pull_eight.nine.cols {
+  margin-left: -142.45974%; }
+.row .pull_eight.ten.cols {
+  margin-left: -150.95168%; }
+.row .pull_eight.eleven.cols {
+  margin-left: -159.44363%; }
+.row .push_nine {
+  margin-left: 78.33089%; }
+  .row .push_nine:first-child {
+    margin-left: 76.42753%; }
+.row .pull_nine.one.cols {
+  margin-left: -83.01611%; }
+.row .pull_nine.two.cols {
+  margin-left: -91.50805%; }
+.row .pull_nine.four.cols {
+  margin-left: -108.49195%; }
+.row .pull_nine.five.cols {
+  margin-left: -116.98389%; }
+.row .pull_nine.six.cols {
+  margin-left: -125.47584%; }
+.row .pull_nine.seven.cols {
+  margin-left: -133.96779%; }
+.row .pull_nine.eight.cols {
+  margin-left: -142.45974%; }
+.row .pull_nine.nine.cols {
+  margin-left: -150.95168%; }
+.row .pull_nine.ten.cols {
+  margin-left: -159.44363%; }
+.row .pull_nine.eleven.cols {
+  margin-left: -167.93558%; }
+.row .push_ten {
+  margin-left: 86.82284%; }
+  .row .push_ten:first-child {
+    margin-left: 84.91947%; }
+.row .pull_ten.one.cols {
+  margin-left: -91.50805%; }
+.row .pull_ten.three.cols {
+  margin-left: -108.49195%; }
+.row .pull_ten.four.cols {
+  margin-left: -116.98389%; }
+.row .pull_ten.five.cols {
+  margin-left: -125.47584%; }
+.row .pull_ten.six.cols {
+  margin-left: -133.96779%; }
+.row .pull_ten.seven.cols {
+  margin-left: -142.45974%; }
+.row .pull_ten.eight.cols {
+  margin-left: -150.95168%; }
+.row .pull_ten.nine.cols {
+  margin-left: -159.44363%; }
+.row .pull_ten.ten.cols {
+  margin-left: -167.93558%; }
+.row .pull_ten.eleven.cols {
+  margin-left: -176.42753%; }
+.row .push_eleven {
+  margin-left: 95.31479%; }
+  .row .push_eleven:first-child {
+    margin-left: 93.41142%; }
+.row .pull_eleven.two.cols {
+  margin-left: -108.49195%; }
+.row .pull_eleven.three.cols {
+  margin-left: -116.98389%; }
+.row .pull_eleven.four.cols {
+  margin-left: -125.47584%; }
+.row .pull_eleven.five.cols {
+  margin-left: -133.96779%; }
+.row .pull_eleven.six.cols {
+  margin-left: -142.45974%; }
+.row .pull_eleven.seven.cols {
+  margin-left: -150.95168%; }
+.row .pull_eleven.eight.cols {
+  margin-left: -159.44363%; }
+.row .pull_eleven.nine.cols {
+  margin-left: -167.93558%; }
+.row .pull_eleven.ten.cols {
+  margin-left: -176.42753%; }
+.row .pull_eleven.eleven.cols {
+  margin-left: -184.91947%; }
+
+/* Clases centradas */
+.row .one.centered {
+  margin-left: 46.70571%; }
+.row .two.centered {
+  margin-left: 42.45974%; }
+.row .three.centered {
+  margin-left: 38.21376%; }
+.row .four.centered {
+  margin-left: 33.96779%; }
+.row .five.centered {
+  margin-left: 29.72182%; }
+.row .six.centered {
+  margin-left: 25.47584%; }
+.row .seven.centered {
+  margin-left: 21.22987%; }
+.row .eight.centered {
+  margin-left: 16.98389%; }
+.row .nine.centered {
+  margin-left: 12.73792%; }
+.row .ten.centered {
+  margin-left: 8.49195%; }
+.row .eleven.centered {
+  margin-left: 4.24597%; }
+
+/* Columnas del grid hibrido */
+.sixteen.colgrid .row .one.cols {
+  width: 4.46559%; }
+.sixteen.colgrid .row .one.cols {
+  width: 4.46559%; }
+.sixteen.colgrid .row .two.cols {
+  width: 10.83455%; }
+.sixteen.colgrid .row .three.cols {
+  width: 17.20351%; }
+.sixteen.colgrid .row .four.cols {
+  width: 23.57247%; }
+.sixteen.colgrid .row .five.cols {
+  width: 29.94143%; }
+.sixteen.colgrid .row .six.cols {
+  width: 36.3104%; }
+.sixteen.colgrid .row .seven.cols {
+  width: 42.67936%; }
+.sixteen.colgrid .row .eight.cols {
+  width: 49.04832%; }
+.sixteen.colgrid .row .nine.cols {
+  width: 55.41728%; }
+.sixteen.colgrid .row .ten.cols {
+  width: 61.78624%; }
+.sixteen.colgrid .row .eleven.cols {
+  width: 68.1552%; }
+.sixteen.colgrid .row .twelve.cols {
+  width: 74.52416%; }
+.sixteen.colgrid .row .thirteen.cols {
+  width: 80.89312%; }
+.sixteen.colgrid .row .fourteen.cols {
+  width: 87.26208%; }
+.sixteen.colgrid .row .fifteen.cols {
+  width: 93.63104%; }
+.sixteen.colgrid .row .sixteen.cols {
+  width: 100%; }
+
+/*Clases Hybrid Push y Pull */
+.sixteen.colgrid .row .push_one {
+  margin-left: 8.27233%; }
+  .sixteen.colgrid .row .push_one:first-child {
+    margin-left: 6.36896%; }
+.sixteen.colgrid .row .pull_one.one.cols {
+  margin-left: -10.83455%; }
+.sixteen.colgrid .row .pull_one.two.cols {
+  margin-left: -17.20351%; }
+.sixteen.colgrid .row .pull_one.three.cols {
+  margin-left: -23.57247%; }
+.sixteen.colgrid .row .pull_one.four.cols {
+  margin-left: -29.94143%; }
+.sixteen.colgrid .row .pull_one.five.cols {
+  margin-left: -36.3104%; }
+.sixteen.colgrid .row .pull_one.six.cols {
+  margin-left: -42.67936%; }
+.sixteen.colgrid .row .pull_one.seven.cols {
+  margin-left: -49.04832%; }
+.sixteen.colgrid .row .pull_one.eight.cols {
+  margin-left: -55.41728%; }
+.sixteen.colgrid .row .pull_one.nine.cols {
+  margin-left: -61.78624%; }
+.sixteen.colgrid .row .pull_one.ten.cols {
+  margin-left: -68.1552%; }
+.sixteen.colgrid .row .pull_one.eleven.cols {
+  margin-left: -74.52416%; }
+.sixteen.colgrid .row .pull_one.twelve.cols {
+  margin-left: -80.89312%; }
+.sixteen.colgrid .row .pull_one.thirteen.cols {
+  margin-left: -87.26208%; }
+.sixteen.colgrid .row .pull_one.fourteen.cols {
+  margin-left: -93.63104%; }
+.sixteen.colgrid .row .push_two {
+  margin-left: 14.64129%; }
+  .sixteen.colgrid .row .push_two:first-child {
+    margin-left: 12.73792%; }
+.sixteen.colgrid .row .pull_two.one.cols {
+  margin-left: -17.20351%; }
+.sixteen.colgrid .row .pull_two.two.cols {
+  margin-left: -23.57247%; }
+.sixteen.colgrid .row .pull_two.three.cols {
+  margin-left: -29.94143%; }
+.sixteen.colgrid .row .pull_two.four.cols {
+  margin-left: -36.3104%; }
+.sixteen.colgrid .row .pull_two.five.cols {
+  margin-left: -42.67936%; }
+.sixteen.colgrid .row .pull_two.six.cols {
+  margin-left: -49.04832%; }
+.sixteen.colgrid .row .pull_two.seven.cols {
+  margin-left: -55.41728%; }
+.sixteen.colgrid .row .pull_two.eight.cols {
+  margin-left: -61.78624%; }
+.sixteen.colgrid .row .pull_two.nine.cols {
+  margin-left: -68.1552%; }
+.sixteen.colgrid .row .pull_two.ten.cols {
+  margin-left: -74.52416%; }
+.sixteen.colgrid .row .pull_two.eleven.cols {
+  margin-left: -80.89312%; }
+.sixteen.colgrid .row .pull_two.twelve.cols {
+  margin-left: -87.26208%; }
+.sixteen.colgrid .row .pull_two.thirteen.cols {
+  margin-left: -93.63104%; }
+.sixteen.colgrid .row .pull_two.fifteen.cols {
+  margin-left: -106.36896%; }
+.sixteen.colgrid .row .push_three {
+  margin-left: 21.01025%; }
+  .sixteen.colgrid .row .push_three:first-child {
+    margin-left: 19.10688%; }
+.sixteen.colgrid .row .pull_three.one.cols {
+  margin-left: -23.57247%; }
+.sixteen.colgrid .row .pull_three.two.cols {
+  margin-left: -29.94143%; }
+.sixteen.colgrid .row .pull_three.three.cols {
+  margin-left: -36.3104%; }
+.sixteen.colgrid .row .pull_three.four.cols {
+  margin-left: -42.67936%; }
+.sixteen.colgrid .row .pull_three.five.cols {
+  margin-left: -49.04832%; }
+.sixteen.colgrid .row .pull_three.six.cols {
+  margin-left: -55.41728%; }
+.sixteen.colgrid .row .pull_three.seven.cols {
+  margin-left: -61.78624%; }
+.sixteen.colgrid .row .pull_three.eight.cols {
+  margin-left: -68.1552%; }
+.sixteen.colgrid .row .pull_three.nine.cols {
+  margin-left: -74.52416%; }
+.sixteen.colgrid .row .pull_three.ten.cols {
+  margin-left: -80.89312%; }
+.sixteen.colgrid .row .pull_three.eleven.cols {
+  margin-left: -87.26208%; }
+.sixteen.colgrid .row .pull_three.twelve.cols {
+  margin-left: -93.63104%; }
+.sixteen.colgrid .row .pull_three.fourteen.cols {
+  margin-left: -106.36896%; }
+.sixteen.colgrid .row .pull_three.fifteen.cols {
+  margin-left: -112.73792%; }
+.sixteen.colgrid .row .push_four {
+  margin-left: 27.37921%; }
+  .sixteen.colgrid .row .push_four:first-child {
+    margin-left: 25.47584%; }
+.sixteen.colgrid .row .pull_four.one.cols {
+  margin-left: -29.94143%; }
+.sixteen.colgrid .row .pull_four.two.cols {
+  margin-left: -36.3104%; }
+.sixteen.colgrid .row .pull_four.three.cols {
+  margin-left: -42.67936%; }
+.sixteen.colgrid .row .pull_four.four.cols {
+  margin-left: -49.04832%; }
+.sixteen.colgrid .row .pull_four.five.cols {
+  margin-left: -55.41728%; }
+.sixteen.colgrid .row .pull_four.six.cols {
+  margin-left: -61.78624%; }
+.sixteen.colgrid .row .pull_four.seven.cols {
+  margin-left: -68.1552%; }
+.sixteen.colgrid .row .pull_four.eight.cols {
+  margin-left: -74.52416%; }
+.sixteen.colgrid .row .pull_four.nine.cols {
+  margin-left: -80.89312%; }
+.sixteen.colgrid .row .pull_four.ten.cols {
+  margin-left: -87.26208%; }
+.sixteen.colgrid .row .pull_four.eleven.cols {
+  margin-left: -93.63104%; }
+.sixteen.colgrid .row .pull_four.thirteen.cols {
+  margin-left: -106.36896%; }
+.sixteen.colgrid .row .pull_four.fourteen.cols {
+  margin-left: -112.73792%; }
+.sixteen.colgrid .row .pull_four.fifteen.cols {
+  margin-left: -119.10688%; }
+.sixteen.colgrid .row .push_five {
+  margin-left: 33.74817%; }
+  .sixteen.colgrid .row .push_five:first-child {
+    margin-left: 31.8448%; }
+.sixteen.colgrid .row .pull_five.one.cols {
+  margin-left: -36.3104%; }
+.sixteen.colgrid .row .pull_five.two.cols {
+  margin-left: -42.67936%; }
+.sixteen.colgrid .row .pull_five.three.cols {
+  margin-left: -49.04832%; }
+.sixteen.colgrid .row .pull_five.four.cols {
+  margin-left: -55.41728%; }
+.sixteen.colgrid .row .pull_five.five.cols {
+  margin-left: -61.78624%; }
+.sixteen.colgrid .row .pull_five.six.cols {
+  margin-left: -68.1552%; }
+.sixteen.colgrid .row .pull_five.seven.cols {
+  margin-left: -74.52416%; }
+.sixteen.colgrid .row .pull_five.eight.cols {
+  margin-left: -80.89312%; }
+.sixteen.colgrid .row .pull_five.nine.cols {
+  margin-left: -87.26208%; }
+.sixteen.colgrid .row .pull_five.ten.cols {
+  margin-left: -93.63104%; }
+.sixteen.colgrid .row .pull_five.twelve.cols {
+  margin-left: -106.36896%; }
+.sixteen.colgrid .row .pull_five.thirteen.cols {
+  margin-left: -112.73792%; }
+.sixteen.colgrid .row .pull_five.fourteen.cols {
+  margin-left: -119.10688%; }
+.sixteen.colgrid .row .pull_five.fifteen.cols {
+  margin-left: -125.47584%; }
+.sixteen.colgrid .row .push_six {
+  margin-left: 40.11713%; }
+  .sixteen.colgrid .row .push_six:first-child {
+    margin-left: 38.21376%; }
+.sixteen.colgrid .row .pull_six.one.cols {
+  margin-left: -42.67936%; }
+.sixteen.colgrid .row .pull_six.two.cols {
+  margin-left: -49.04832%; }
+.sixteen.colgrid .row .pull_six.three.cols {
+  margin-left: -55.41728%; }
+.sixteen.colgrid .row .pull_six.four.cols {
+  margin-left: -61.78624%; }
+.sixteen.colgrid .row .pull_six.five.cols {
+  margin-left: -68.1552%; }
+.sixteen.colgrid .row .pull_six.six.cols {
+  margin-left: -74.52416%; }
+.sixteen.colgrid .row .pull_six.seven.cols {
+  margin-left: -80.89312%; }
+.sixteen.colgrid .row .pull_six.eight.cols {
+  margin-left: -87.26208%; }
+.sixteen.colgrid .row .pull_six.nine.cols {
+  margin-left: -93.63104%; }
+.sixteen.colgrid .row .pull_six.eleven.cols {
+  margin-left: -106.36896%; }
+.sixteen.colgrid .row .pull_six.twelve.cols {
+  margin-left: -112.73792%; }
+.sixteen.colgrid .row .pull_six.thirteen.cols {
+  margin-left: -119.10688%; }
+.sixteen.colgrid .row .pull_six.fourteen.cols {
+  margin-left: -125.47584%; }
+.sixteen.colgrid .row .pull_six.fifteen.cols {
+  margin-left: -131.8448%; }
+.sixteen.colgrid .row .push_seven {
+  margin-left: 46.48609%; }
+  .sixteen.colgrid .row .push_seven:first-child {
+    margin-left: 44.58272%; }
+.sixteen.colgrid .row .pull_seven.one.cols {
+  margin-left: -49.04832%; }
+.sixteen.colgrid .row .pull_seven.two.cols {
+  margin-left: -55.41728%; }
+.sixteen.colgrid .row .pull_seven.three.cols {
+  margin-left: -61.78624%; }
+.sixteen.colgrid .row .pull_seven.four.cols {
+  margin-left: -68.1552%; }
+.sixteen.colgrid .row .pull_seven.five.cols {
+  margin-left: -74.52416%; }
+.sixteen.colgrid .row .pull_seven.six.cols {
+  margin-left: -80.89312%; }
+.sixteen.colgrid .row .pull_seven.seven.cols {
+  margin-left: -87.26208%; }
+.sixteen.colgrid .row .pull_seven.eight.cols {
+  margin-left: -93.63104%; }
+.sixteen.colgrid .row .pull_seven.ten.cols {
+  margin-left: -106.36896%; }
+.sixteen.colgrid .row .pull_seven.eleven.cols {
+  margin-left: -112.73792%; }
+.sixteen.colgrid .row .pull_seven.twelve.cols {
+  margin-left: -119.10688%; }
+.sixteen.colgrid .row .pull_seven.thirteen.cols {
+  margin-left: -125.47584%; }
+.sixteen.colgrid .row .pull_seven.fourteen.cols {
+  margin-left: -131.8448%; }
+.sixteen.colgrid .row .pull_seven.fifteen.cols {
+  margin-left: -138.21376%; }
+.sixteen.colgrid .row .push_eight {
+  margin-left: 52.85505%; }
+  .sixteen.colgrid .row .push_eight:first-child {
+    margin-left: 50.95168%; }
+.sixteen.colgrid .row .pull_eight.one.cols {
+  margin-left: -55.41728%; }
+.sixteen.colgrid .row .pull_eight.two.cols {
+  margin-left: -61.78624%; }
+.sixteen.colgrid .row .pull_eight.three.cols {
+  margin-left: -68.1552%; }
+.sixteen.colgrid .row .pull_eight.four.cols {
+  margin-left: -74.52416%; }
+.sixteen.colgrid .row .pull_eight.five.cols {
+  margin-left: -80.89312%; }
+.sixteen.colgrid .row .pull_eight.six.cols {
+  margin-left: -87.26208%; }
+.sixteen.colgrid .row .pull_eight.seven.cols {
+  margin-left: -93.63104%; }
+.sixteen.colgrid .row .pull_eight.nine.cols {
+  margin-left: -106.36896%; }
+.sixteen.colgrid .row .pull_eight.ten.cols {
+  margin-left: -112.73792%; }
+.sixteen.colgrid .row .pull_eight.eleven.cols {
+  margin-left: -119.10688%; }
+.sixteen.colgrid .row .pull_eight.twelve.cols {
+  margin-left: -125.47584%; }
+.sixteen.colgrid .row .pull_eight.thirteen.cols {
+  margin-left: -131.8448%; }
+.sixteen.colgrid .row .pull_eight.fourteen.cols {
+  margin-left: -138.21376%; }
+.sixteen.colgrid .row .pull_eight.fifteen.cols {
+  margin-left: -144.58272%; }
+.sixteen.colgrid .row .push_nine {
+  margin-left: 59.22401%; }
+  .sixteen.colgrid .row .push_nine:first-child {
+    margin-left: 57.32064%; }
+.sixteen.colgrid .row .pull_nine.one.cols {
+  margin-left: -61.78624%; }
+.sixteen.colgrid .row .pull_nine.two.cols {
+  margin-left: -68.1552%; }
+.sixteen.colgrid .row .pull_nine.three.cols {
+  margin-left: -74.52416%; }
+.sixteen.colgrid .row .pull_nine.four.cols {
+  margin-left: -80.89312%; }
+.sixteen.colgrid .row .pull_nine.five.cols {
+  margin-left: -87.26208%; }
+.sixteen.colgrid .row .pull_nine.six.cols {
+  margin-left: -93.63104%; }
+.sixteen.colgrid .row .pull_nine.eight.cols {
+  margin-left: -106.36896%; }
+.sixteen.colgrid .row .pull_nine.nine.cols {
+  margin-left: -112.73792%; }
+.sixteen.colgrid .row .pull_nine.ten.cols {
+  margin-left: -119.10688%; }
+.sixteen.colgrid .row .pull_nine.eleven.cols {
+  margin-left: -125.47584%; }
+.sixteen.colgrid .row .pull_nine.twelve.cols {
+  margin-left: -131.8448%; }
+.sixteen.colgrid .row .pull_nine.thirteen.cols {
+  margin-left: -138.21376%; }
+.sixteen.colgrid .row .pull_nine.fourteen.cols {
+  margin-left: -144.58272%; }
+.sixteen.colgrid .row .pull_nine.fifteen.cols {
+  margin-left: -150.95168%; }
+.sixteen.colgrid .row .push_ten {
+  margin-left: 65.59297%; }
+  .sixteen.colgrid .row .push_ten:first-child {
+    margin-left: 63.6896%; }
+.sixteen.colgrid .row .pull_ten.one.cols {
+  margin-left: -68.1552%; }
+.sixteen.colgrid .row .pull_ten.two.cols {
+  margin-left: -74.52416%; }
+.sixteen.colgrid .row .pull_ten.three.cols {
+  margin-left: -80.89312%; }
+.sixteen.colgrid .row .pull_ten.four.cols {
+  margin-left: -87.26208%; }
+.sixteen.colgrid .row .pull_ten.five.cols {
+  margin-left: -93.63104%; }
+.sixteen.colgrid .row .pull_ten.seven.cols {
+  margin-left: -106.36896%; }
+.sixteen.colgrid .row .pull_ten.eight.cols {
+  margin-left: -112.73792%; }
+.sixteen.colgrid .row .pull_ten.nine.cols {
+  margin-left: -119.10688%; }
+.sixteen.colgrid .row .pull_ten.ten.cols {
+  margin-left: -125.47584%; }
+.sixteen.colgrid .row .pull_ten.eleven.cols {
+  margin-left: -131.8448%; }
+.sixteen.colgrid .row .pull_ten.twelve.cols {
+  margin-left: -138.21376%; }
+.sixteen.colgrid .row .pull_ten.thirteen.cols {
+  margin-left: -144.58272%; }
+.sixteen.colgrid .row .pull_ten.fourteen.cols {
+  margin-left: -150.95168%; }
+.sixteen.colgrid .row .pull_ten.fifteen.cols {
+  margin-left: -157.32064%; }
+.sixteen.colgrid .row .push_eleven {
+  margin-left: 71.96193%; }
+  .sixteen.colgrid .row .push_eleven:first-child {
+    margin-left: 70.05857%; }
+.sixteen.colgrid .row .pull_eleven.one.cols {
+  margin-left: -74.52416%; }
+.sixteen.colgrid .row .pull_eleven.two.cols {
+  margin-left: -80.89312%; }
+.sixteen.colgrid .row .pull_eleven.three.cols {
+  margin-left: -87.26208%; }
+.sixteen.colgrid .row .pull_eleven.four.cols {
+  margin-left: -93.63104%; }
+.sixteen.colgrid .row .pull_eleven.six.cols {
+  margin-left: -106.36896%; }
+.sixteen.colgrid .row .pull_eleven.seven.cols {
+  margin-left: -112.73792%; }
+.sixteen.colgrid .row .pull_eleven.eight.cols {
+  margin-left: -119.10688%; }
+.sixteen.colgrid .row .pull_eleven.nine.cols {
+  margin-left: -125.47584%; }
+.sixteen.colgrid .row .pull_eleven.ten.cols {
+  margin-left: -131.8448%; }
+.sixteen.colgrid .row .pull_eleven.eleven.cols {
+  margin-left: -138.21376%; }
+.sixteen.colgrid .row .pull_eleven.twelve.cols {
+  margin-left: -144.58272%; }
+.sixteen.colgrid .row .pull_eleven.thirteen.cols {
+  margin-left: -150.95168%; }
+.sixteen.colgrid .row .pull_eleven.fourteen.cols {
+  margin-left: -157.32064%; }
+.sixteen.colgrid .row .pull_eleven.fifteen.cols {
+  margin-left: -163.6896%; }
+.sixteen.colgrid .row .push_twelve {
+  margin-left: 78.33089%; }
+  .sixteen.colgrid .row .push_twelve:first-child {
+    margin-left: 76.42753%; }
+.sixteen.colgrid .row .pull_twelve.one.cols {
+  margin-left: -80.89312%; }
+.sixteen.colgrid .row .pull_twelve.two.cols {
+  margin-left: -87.26208%; }
+.sixteen.colgrid .row .pull_twelve.three.cols {
+  margin-left: -93.63104%; }
+.sixteen.colgrid .row .pull_twelve.five.cols {
+  margin-left: -106.36896%; }
+.sixteen.colgrid .row .pull_twelve.six.cols {
+  margin-left: -112.73792%; }
+.sixteen.colgrid .row .pull_twelve.seven.cols {
+  margin-left: -119.10688%; }
+.sixteen.colgrid .row .pull_twelve.eight.cols {
+  margin-left: -125.47584%; }
+.sixteen.colgrid .row .pull_twelve.nine.cols {
+  margin-left: -131.8448%; }
+.sixteen.colgrid .row .pull_twelve.ten.cols {
+  margin-left: -138.21376%; }
+.sixteen.colgrid .row .pull_twelve.eleven.cols {
+  margin-left: -144.58272%; }
+.sixteen.colgrid .row .pull_twelve.twelve.cols {
+  margin-left: -150.95168%; }
+.sixteen.colgrid .row .pull_twelve.thirteen.cols {
+  margin-left: -157.32064%; }
+.sixteen.colgrid .row .pull_twelve.fourteen.cols {
+  margin-left: -163.6896%; }
+.sixteen.colgrid .row .pull_twelve.fifteen.cols {
+  margin-left: -170.05857%; }
+.sixteen.colgrid .row .push_thirteen {
+  margin-left: 84.69985%; }
+  .sixteen.colgrid .row .push_thirteen:first-child {
+    margin-left: 82.79649%; }
+.sixteen.colgrid .row .pull_thirteen.one.cols {
+  margin-left: -87.26208%; }
+.sixteen.colgrid .row .pull_thirteen.two.cols {
+  margin-left: -93.63104%; }
+.sixteen.colgrid .row .pull_thirteen.four.cols {
+  margin-left: -106.36896%; }
+.sixteen.colgrid .row .pull_thirteen.five.cols {
+  margin-left: -112.73792%; }
+.sixteen.colgrid .row .pull_thirteen.six.cols {
+  margin-left: -119.10688%; }
+.sixteen.colgrid .row .pull_thirteen.seven.cols {
+  margin-left: -125.47584%; }
+.sixteen.colgrid .row .pull_thirteen.eight.cols {
+  margin-left: -131.8448%; }
+.sixteen.colgrid .row .pull_thirteen.nine.cols {
+  margin-left: -138.21376%; }
+.sixteen.colgrid .row .pull_thirteen.ten.cols {
+  margin-left: -144.58272%; }
+.sixteen.colgrid .row .pull_thirteen.eleven.cols {
+  margin-left: -150.95168%; }
+.sixteen.colgrid .row .pull_thirteen.twelve.cols {
+  margin-left: -157.32064%; }
+.sixteen.colgrid .row .pull_thirteen.thirteen.cols {
+  margin-left: -163.6896%; }
+.sixteen.colgrid .row .pull_thirteen.fourteen.cols {
+  margin-left: -170.05857%; }
+.sixteen.colgrid .row .pull_thirteen.fifteen.cols {
+  margin-left: -176.42753%; }
+.sixteen.colgrid .row .push_fourteen {
+  margin-left: 91.06881%; }
+  .sixteen.colgrid .row .push_fourteen:first-child {
+    margin-left: 89.16545%; }
+.sixteen.colgrid .row .pull_fourteen.one.cols {
+  margin-left: -93.63104%; }
+.sixteen.colgrid .row .pull_fourteen.three.cols {
+  margin-left: -106.36896%; }
+.sixteen.colgrid .row .pull_fourteen.four.cols {
+  margin-left: -112.73792%; }
+.sixteen.colgrid .row .pull_fourteen.five.cols {
+  margin-left: -119.10688%; }
+.sixteen.colgrid .row .pull_fourteen.six.cols {
+  margin-left: -125.47584%; }
+.sixteen.colgrid .row .pull_fourteen.seven.cols {
+  margin-left: -131.8448%; }
+.sixteen.colgrid .row .pull_fourteen.eight.cols {
+  margin-left: -138.21376%; }
+.sixteen.colgrid .row .pull_fourteen.nine.cols {
+  margin-left: -144.58272%; }
+.sixteen.colgrid .row .pull_fourteen.ten.cols {
+  margin-left: -150.95168%; }
+.sixteen.colgrid .row .pull_fourteen.eleven.cols {
+  margin-left: -157.32064%; }
+.sixteen.colgrid .row .pull_fourteen.twelve.cols {
+  margin-left: -163.6896%; }
+.sixteen.colgrid .row .pull_fourteen.thirteen.cols {
+  margin-left: -170.05857%; }
+.sixteen.colgrid .row .pull_fourteen.fourteen.cols {
+  margin-left: -176.42753%; }
+.sixteen.colgrid .row .pull_fourteen.fifteen.cols {
+  margin-left: -182.79649%; }
+.sixteen.colgrid .row .push_fifteen {
+  margin-left: 97.43777%; }
+  .sixteen.colgrid .row .push_fifteen:first-child {
+    margin-left: 95.53441%; }
+.sixteen.colgrid .row .pull_fifteen.two.cols {
+  margin-left: -106.36896%; }
+.sixteen.colgrid .row .pull_fifteen.three.cols {
+  margin-left: -112.73792%; }
+.sixteen.colgrid .row .pull_fifteen.four.cols {
+  margin-left: -119.10688%; }
+.sixteen.colgrid .row .pull_fifteen.five.cols {
+  margin-left: -125.47584%; }
+.sixteen.colgrid .row .pull_fifteen.six.cols {
+  margin-left: -131.8448%; }
+.sixteen.colgrid .row .pull_fifteen.seven.cols {
+  margin-left: -138.21376%; }
+.sixteen.colgrid .row .pull_fifteen.eight.cols {
+  margin-left: -144.58272%; }
+.sixteen.colgrid .row .pull_fifteen.nine.cols {
+  margin-left: -150.95168%; }
+.sixteen.colgrid .row .pull_fifteen.ten.cols {
+  margin-left: -157.32064%; }
+.sixteen.colgrid .row .pull_fifteen.eleven.cols {
+  margin-left: -163.6896%; }
+.sixteen.colgrid .row .pull_fifteen.twelve.cols {
+  margin-left: -170.05857%; }
+.sixteen.colgrid .row .pull_fifteen.thirteen.cols {
+  margin-left: -176.42753%; }
+.sixteen.colgrid .row .pull_fifteen.fourteen.cols {
+  margin-left: -182.79649%; }
+.sixteen.colgrid .row .pull_fifteen.fifteen.cols {
+  margin-left: -189.16545%; }
+
+.row .pull_one.one.cols:first-child, .row .pull_one.two.cols:first-child, .row .pull_one.three.cols:first-child, .row .pull_one.four.cols:first-child, .row .pull_one.five.cols:first-child, .row .pull_one.six.cols:first-child, .row .pull_one.seven.cols:first-child, .row .pull_one.eight.cols:first-child, .row .pull_one.nine.cols:first-child, .row .pull_one.ten.cols:first-child, .row .pull_two.one.cols:first-child, .row .pull_two.two.cols:first-child, .row .pull_two.three.cols:first-child, .row .pull_two.four.cols:first-child, .row .pull_two.five.cols:first-child, .row .pull_two.six.cols:first-child, .row .pull_two.seven.cols:first-child, .row .pull_two.eight.cols:first-child, .row .pull_two.nine.cols:first-child, .row .pull_two.eleven.cols:first-child, .row .pull_three.one.cols:first-child, .row .pull_three.two.cols:first-child, .row .pull_three.three.cols:first-child, .row .pull_three.four.cols:first-child, .row .pull_three.five.cols:first-child, .row .pull_three.six.cols:first-child, .row .pull_three.seven.cols:first-child, .row .pull_three.eight.cols:first-child, .row .pull_three.ten.cols:first-child, .row .pull_three.eleven.cols:first-child, .row .pull_four.one.cols:first-child, .row .pull_four.two.cols:first-child, .row .pull_four.three.cols:first-child, .row .pull_four.four.cols:first-child, .row .pull_four.five.cols:first-child, .row .pull_four.six.cols:first-child, .row .pull_four.seven.cols:first-child, .row .pull_four.nine.cols:first-child, .row .pull_four.ten.cols:first-child, .row .pull_four.eleven.cols:first-child, .row .pull_five.one.cols:first-child, .row .pull_five.two.cols:first-child, .row .pull_five.three.cols:first-child, .row .pull_five.four.cols:first-child, .row .pull_five.five.cols:first-child, .row .pull_five.six.cols:first-child, .row .pull_five.eight.cols:first-child, .row .pull_five.nine.cols:first-child, .row .pull_five.ten.cols:first-child, .row .pull_five.eleven.cols:first-child, .row .pull_six.one.cols:first-child, .row .pull_six.two.cols:first-child, .row .pull_six.three.cols:first-child, .row .pull_six.four.cols:first-child, .row .pull_six.five.cols:first-child, .row .pull_six.seven.cols:first-child, .row .pull_six.eight.cols:first-child, .row .pull_six.nine.cols:first-child, .row .pull_six.ten.cols:first-child, .row .pull_six.eleven.cols:first-child, .row .pull_seven.one.cols:first-child, .row .pull_seven.two.cols:first-child, .row .pull_seven.three.cols:first-child, .row .pull_seven.four.cols:first-child, .row .pull_seven.six.cols:first-child, .row .pull_seven.seven.cols:first-child, .row .pull_seven.eight.cols:first-child, .row .pull_seven.nine.cols:first-child, .row .pull_seven.ten.cols:first-child, .row .pull_seven.eleven.cols:first-child, .row .pull_eight.one.cols:first-child, .row .pull_eight.two.cols:first-child, .row .pull_eight.three.cols:first-child, .row .pull_eight.five.cols:first-child, .row .pull_eight.six.cols:first-child, .row .pull_eight.seven.cols:first-child, .row .pull_eight.eight.cols:first-child, .row .pull_eight.nine.cols:first-child, .row .pull_eight.ten.cols:first-child, .row .pull_eight.eleven.cols:first-child, .row .pull_nine.one.cols:first-child, .row .pull_nine.two.cols:first-child, .row .pull_nine.four.cols:first-child, .row .pull_nine.five.cols:first-child, .row .pull_nine.six.cols:first-child, .row .pull_nine.seven.cols:first-child, .row .pull_nine.eight.cols:first-child, .row .pull_nine.nine.cols:first-child, .row .pull_nine.ten.cols:first-child, .row .pull_nine.eleven.cols:first-child, .row .pull_ten.one.cols:first-child, .row .pull_ten.three.cols:first-child, .row .pull_ten.four.cols:first-child, .row .pull_ten.five.cols:first-child, .row .pull_ten.six.cols:first-child, .row .pull_ten.seven.cols:first-child, .row .pull_ten.eight.cols:first-child, .row .pull_ten.nine.cols:first-child, .row .pull_ten.ten.cols:first-child, .row .pull_ten.eleven.cols:first-child, .row .pull_eleven.two.cols:first-child, .row .pull_eleven.three.cols:first-child, .row .pull_eleven.four.cols:first-child, .row .pull_eleven.five.cols:first-child, .row .pull_eleven.six.cols:first-child, .row .pull_eleven.seven.cols:first-child, .row .pull_eleven.eight.cols:first-child, .row .pull_eleven.nine.cols:first-child, .row .pull_eleven.ten.cols:first-child, .row .pull_eleven.eleven.cols:first-child, .sixteen.colgrid .row .pull_one.one.cols:first-child, .sixteen.colgrid .row .pull_one.two.cols:first-child, .sixteen.colgrid .row .pull_one.three.cols:first-child, .sixteen.colgrid .row .pull_one.four.cols:first-child, .sixteen.colgrid .row .pull_one.five.cols:first-child, .sixteen.colgrid .row .pull_one.six.cols:first-child, .sixteen.colgrid .row .pull_one.seven.cols:first-child, .sixteen.colgrid .row .pull_one.eight.cols:first-child, .sixteen.colgrid .row .pull_one.nine.cols:first-child, .sixteen.colgrid .row .pull_one.ten.cols:first-child, .sixteen.colgrid .row .pull_one.eleven.cols:first-child, .sixteen.colgrid .row .pull_one.twelve.cols:first-child, .sixteen.colgrid .row .pull_one.thirteen.cols:first-child, .sixteen.colgrid .row .pull_one.fourteen.cols:first-child, .sixteen.colgrid .row .pull_two.one.cols:first-child, .sixteen.colgrid .row .pull_two.two.cols:first-child, .sixteen.colgrid .row .pull_two.three.cols:first-child, .sixteen.colgrid .row .pull_two.four.cols:first-child, .sixteen.colgrid .row .pull_two.five.cols:first-child, .sixteen.colgrid .row .pull_two.six.cols:first-child, .sixteen.colgrid .row .pull_two.seven.cols:first-child, .sixteen.colgrid .row .pull_two.eight.cols:first-child, .sixteen.colgrid .row .pull_two.nine.cols:first-child, .sixteen.colgrid .row .pull_two.ten.cols:first-child, .sixteen.colgrid .row .pull_two.eleven.cols:first-child, .sixteen.colgrid .row .pull_two.twelve.cols:first-child, .sixteen.colgrid .row .pull_two.thirteen.cols:first-child, .sixteen.colgrid .row .pull_two.fifteen.cols:first-child, .sixteen.colgrid .row .pull_three.one.cols:first-child, .sixteen.colgrid .row .pull_three.two.cols:first-child, .sixteen.colgrid .row .pull_three.three.cols:first-child, .sixteen.colgrid .row .pull_three.four.cols:first-child, .sixteen.colgrid .row .pull_three.five.cols:first-child, .sixteen.colgrid .row .pull_three.six.cols:first-child, .sixteen.colgrid .row .pull_three.seven.cols:first-child, .sixteen.colgrid .row .pull_three.eight.cols:first-child, .sixteen.colgrid .row .pull_three.nine.cols:first-child, .sixteen.colgrid .row .pull_three.ten.cols:first-child, .sixteen.colgrid .row .pull_three.eleven.cols:first-child, .sixteen.colgrid .row .pull_three.twelve.cols:first-child, .sixteen.colgrid .row .pull_three.fourteen.cols:first-child, .sixteen.colgrid .row .pull_three.fifteen.cols:first-child, .sixteen.colgrid .row .pull_four.one.cols:first-child, .sixteen.colgrid .row .pull_four.two.cols:first-child, .sixteen.colgrid .row .pull_four.three.cols:first-child, .sixteen.colgrid .row .pull_four.four.cols:first-child, .sixteen.colgrid .row .pull_four.five.cols:first-child, .sixteen.colgrid .row .pull_four.six.cols:first-child, .sixteen.colgrid .row .pull_four.seven.cols:first-child, .sixteen.colgrid .row .pull_four.eight.cols:first-child, .sixteen.colgrid .row .pull_four.nine.cols:first-child, .sixteen.colgrid .row .pull_four.ten.cols:first-child, .sixteen.colgrid .row .pull_four.eleven.cols:first-child, .sixteen.colgrid .row .pull_four.thirteen.cols:first-child, .sixteen.colgrid .row .pull_four.fourteen.cols:first-child, .sixteen.colgrid .row .pull_four.fifteen.cols:first-child, .sixteen.colgrid .row .pull_five.one.cols:first-child, .sixteen.colgrid .row .pull_five.two.cols:first-child, .sixteen.colgrid .row .pull_five.three.cols:first-child, .sixteen.colgrid .row .pull_five.four.cols:first-child, .sixteen.colgrid .row .pull_five.five.cols:first-child, .sixteen.colgrid .row .pull_five.six.cols:first-child, .sixteen.colgrid .row .pull_five.seven.cols:first-child, .sixteen.colgrid .row .pull_five.eight.cols:first-child, .sixteen.colgrid .row .pull_five.nine.cols:first-child, .sixteen.colgrid .row .pull_five.ten.cols:first-child, .sixteen.colgrid .row .pull_five.twelve.cols:first-child, .sixteen.colgrid .row .pull_five.thirteen.cols:first-child, .sixteen.colgrid .row .pull_five.fourteen.cols:first-child, .sixteen.colgrid .row .pull_five.fifteen.cols:first-child, .sixteen.colgrid .row .pull_six.one.cols:first-child, .sixteen.colgrid .row .pull_six.two.cols:first-child, .sixteen.colgrid .row .pull_six.three.cols:first-child, .sixteen.colgrid .row .pull_six.four.cols:first-child, .sixteen.colgrid .row .pull_six.five.cols:first-child, .sixteen.colgrid .row .pull_six.six.cols:first-child, .sixteen.colgrid .row .pull_six.seven.cols:first-child, .sixteen.colgrid .row .pull_six.eight.cols:first-child, .sixteen.colgrid .row .pull_six.nine.cols:first-child, .sixteen.colgrid .row .pull_six.eleven.cols:first-child, .sixteen.colgrid .row .pull_six.twelve.cols:first-child, .sixteen.colgrid .row .pull_six.thirteen.cols:first-child, .sixteen.colgrid .row .pull_six.fourteen.cols:first-child, .sixteen.colgrid .row .pull_six.fifteen.cols:first-child, .sixteen.colgrid .row .pull_seven.one.cols:first-child, .sixteen.colgrid .row .pull_seven.two.cols:first-child, .sixteen.colgrid .row .pull_seven.three.cols:first-child, .sixteen.colgrid .row .pull_seven.four.cols:first-child, .sixteen.colgrid .row .pull_seven.five.cols:first-child, .sixteen.colgrid .row .pull_seven.six.cols:first-child, .sixteen.colgrid .row .pull_seven.seven.cols:first-child, .sixteen.colgrid .row .pull_seven.eight.cols:first-child, .sixteen.colgrid .row .pull_seven.ten.cols:first-child, .sixteen.colgrid .row .pull_seven.eleven.cols:first-child, .sixteen.colgrid .row .pull_seven.twelve.cols:first-child, .sixteen.colgrid .row .pull_seven.thirteen.cols:first-child, .sixteen.colgrid .row .pull_seven.fourteen.cols:first-child, .sixteen.colgrid .row .pull_seven.fifteen.cols:first-child, .sixteen.colgrid .row .pull_eight.one.cols:first-child, .sixteen.colgrid .row .pull_eight.two.cols:first-child, .sixteen.colgrid .row .pull_eight.three.cols:first-child, .sixteen.colgrid .row .pull_eight.four.cols:first-child, .sixteen.colgrid .row .pull_eight.five.cols:first-child, .sixteen.colgrid .row .pull_eight.six.cols:first-child, .sixteen.colgrid .row .pull_eight.seven.cols:first-child, .sixteen.colgrid .row .pull_eight.nine.cols:first-child, .sixteen.colgrid .row .pull_eight.ten.cols:first-child, .sixteen.colgrid .row .pull_eight.eleven.cols:first-child, .sixteen.colgrid .row .pull_eight.twelve.cols:first-child, .sixteen.colgrid .row .pull_eight.thirteen.cols:first-child, .sixteen.colgrid .row .pull_eight.fourteen.cols:first-child, .sixteen.colgrid .row .pull_eight.fifteen.cols:first-child, .sixteen.colgrid .row .pull_nine.one.cols:first-child, .sixteen.colgrid .row .pull_nine.two.cols:first-child, .sixteen.colgrid .row .pull_nine.three.cols:first-child, .sixteen.colgrid .row .pull_nine.four.cols:first-child, .sixteen.colgrid .row .pull_nine.five.cols:first-child, .sixteen.colgrid .row .pull_nine.six.cols:first-child, .sixteen.colgrid .row .pull_nine.eight.cols:first-child, .sixteen.colgrid .row .pull_nine.nine.cols:first-child, .sixteen.colgrid .row .pull_nine.ten.cols:first-child, .sixteen.colgrid .row .pull_nine.eleven.cols:first-child, .sixteen.colgrid .row .pull_nine.twelve.cols:first-child, .sixteen.colgrid .row .pull_nine.thirteen.cols:first-child, .sixteen.colgrid .row .pull_nine.fourteen.cols:first-child, .sixteen.colgrid .row .pull_nine.fifteen.cols:first-child, .sixteen.colgrid .row .pull_ten.one.cols:first-child, .sixteen.colgrid .row .pull_ten.two.cols:first-child, .sixteen.colgrid .row .pull_ten.three.cols:first-child, .sixteen.colgrid .row .pull_ten.four.cols:first-child, .sixteen.colgrid .row .pull_ten.five.cols:first-child, .sixteen.colgrid .row .pull_ten.seven.cols:first-child, .sixteen.colgrid .row .pull_ten.eight.cols:first-child, .sixteen.colgrid .row .pull_ten.nine.cols:first-child, .sixteen.colgrid .row .pull_ten.ten.cols:first-child, .sixteen.colgrid .row .pull_ten.eleven.cols:first-child, .sixteen.colgrid .row .pull_ten.twelve.cols:first-child, .sixteen.colgrid .row .pull_ten.thirteen.cols:first-child, .sixteen.colgrid .row .pull_ten.fourteen.cols:first-child, .sixteen.colgrid .row .pull_ten.fifteen.cols:first-child, .sixteen.colgrid .row .pull_eleven.one.cols:first-child, .sixteen.colgrid .row .pull_eleven.two.cols:first-child, .sixteen.colgrid .row .pull_eleven.three.cols:first-child, .sixteen.colgrid .row .pull_eleven.four.cols:first-child, .sixteen.colgrid .row .pull_eleven.six.cols:first-child, .sixteen.colgrid .row .pull_eleven.seven.cols:first-child, .sixteen.colgrid .row .pull_eleven.eight.cols:first-child, .sixteen.colgrid .row .pull_eleven.nine.cols:first-child, .sixteen.colgrid .row .pull_eleven.ten.cols:first-child, .sixteen.colgrid .row .pull_eleven.eleven.cols:first-child, .sixteen.colgrid .row .pull_eleven.twelve.cols:first-child, .sixteen.colgrid .row .pull_eleven.thirteen.cols:first-child, .sixteen.colgrid .row .pull_eleven.fourteen.cols:first-child, .sixteen.colgrid .row .pull_eleven.fifteen.cols:first-child, .sixteen.colgrid .row .pull_twelve.one.cols:first-child, .sixteen.colgrid .row .pull_twelve.two.cols:first-child, .sixteen.colgrid .row .pull_twelve.three.cols:first-child, .sixteen.colgrid .row .pull_twelve.five.cols:first-child, .sixteen.colgrid .row .pull_twelve.six.cols:first-child, .sixteen.colgrid .row .pull_twelve.seven.cols:first-child, .sixteen.colgrid .row .pull_twelve.eight.cols:first-child, .sixteen.colgrid .row .pull_twelve.nine.cols:first-child, .sixteen.colgrid .row .pull_twelve.ten.cols:first-child, .sixteen.colgrid .row .pull_twelve.eleven.cols:first-child, .sixteen.colgrid .row .pull_twelve.twelve.cols:first-child, .sixteen.colgrid .row .pull_twelve.thirteen.cols:first-child, .sixteen.colgrid .row .pull_twelve.fourteen.cols:first-child, .sixteen.colgrid .row .pull_twelve.fifteen.cols:first-child, .sixteen.colgrid .row .pull_thirteen.one.cols:first-child, .sixteen.colgrid .row .pull_thirteen.two.cols:first-child, .sixteen.colgrid .row .pull_thirteen.four.cols:first-child, .sixteen.colgrid .row .pull_thirteen.five.cols:first-child, .sixteen.colgrid .row .pull_thirteen.six.cols:first-child, .sixteen.colgrid .row .pull_thirteen.seven.cols:first-child, .sixteen.colgrid .row .pull_thirteen.eight.cols:first-child, .sixteen.colgrid .row .pull_thirteen.nine.cols:first-child, .sixteen.colgrid .row .pull_thirteen.ten.cols:first-child, .sixteen.colgrid .row .pull_thirteen.eleven.cols:first-child, .sixteen.colgrid .row .pull_thirteen.twelve.cols:first-child, .sixteen.colgrid .row .pull_thirteen.thirteen.cols:first-child, .sixteen.colgrid .row .pull_thirteen.fourteen.cols:first-child, .sixteen.colgrid .row .pull_thirteen.fifteen.cols:first-child, .sixteen.colgrid .row .pull_fourteen.one.cols:first-child, .sixteen.colgrid .row .pull_fourteen.three.cols:first-child, .sixteen.colgrid .row .pull_fourteen.four.cols:first-child, .sixteen.colgrid .row .pull_fourteen.five.cols:first-child, .sixteen.colgrid .row .pull_fourteen.six.cols:first-child, .sixteen.colgrid .row .pull_fourteen.seven.cols:first-child, .sixteen.colgrid .row .pull_fourteen.eight.cols:first-child, .sixteen.colgrid .row .pull_fourteen.nine.cols:first-child, .sixteen.colgrid .row .pull_fourteen.ten.cols:first-child, .sixteen.colgrid .row .pull_fourteen.eleven.cols:first-child, .sixteen.colgrid .row .pull_fourteen.twelve.cols:first-child, .sixteen.colgrid .row .pull_fourteen.thirteen.cols:first-child, .sixteen.colgrid .row .pull_fourteen.fourteen.cols:first-child, .sixteen.colgrid .row .pull_fourteen.fifteen.cols:first-child, .sixteen.colgrid .row .pull_fifteen.two.cols:first-child, .sixteen.colgrid .row .pull_fifteen.three.cols:first-child, .sixteen.colgrid .row .pull_fifteen.four.cols:first-child, .sixteen.colgrid .row .pull_fifteen.five.cols:first-child, .sixteen.colgrid .row .pull_fifteen.six.cols:first-child, .sixteen.colgrid .row .pull_fifteen.seven.cols:first-child, .sixteen.colgrid .row .pull_fifteen.eight.cols:first-child, .sixteen.colgrid .row .pull_fifteen.nine.cols:first-child, .sixteen.colgrid .row .pull_fifteen.ten.cols:first-child, .sixteen.colgrid .row .pull_fifteen.eleven.cols:first-child, .sixteen.colgrid .row .pull_fifteen.twelve.cols:first-child, .sixteen.colgrid .row .pull_fifteen.thirteen.cols:first-child, .sixteen.colgrid .row .pull_fifteen.fourteen.cols:first-child, .sixteen.colgrid .row .pull_fifteen.fifteen.cols:first-child {
+  margin-left: 0; }
+
+.row .pull_one.eleven.cols, .row .pull_two.ten.cols, .row .pull_three.nine.cols, .row .pull_four.eight.cols, .row .pull_five.seven.cols, .row .pull_six.six.cols, .row .pull_seven.five.cols, .row .pull_eight.four.cols, .row .pull_nine.three.cols, .row .pull_ten.two.cols, .row .pull_eleven.one.cols, .sixteen.colgrid .row .pull_one.fifteen.cols, .sixteen.colgrid .row .pull_two.fourteen.cols, .sixteen.colgrid .row .pull_three.thirteen.cols, .sixteen.colgrid .row .pull_four.twelve.cols, .sixteen.colgrid .row .pull_five.eleven.cols, .sixteen.colgrid .row .pull_six.ten.cols, .sixteen.colgrid .row .pull_seven.nine.cols, .sixteen.colgrid .row .pull_eight.eight.cols, .sixteen.colgrid .row .pull_nine.seven.cols, .sixteen.colgrid .row .pull_ten.six.cols, .sixteen.colgrid .row .pull_eleven.five.cols, .sixteen.colgrid .row .pull_twelve.four.cols, .sixteen.colgrid .row .pull_thirteen.three.cols, .sixteen.colgrid .row .pull_fourteen.two.cols, .sixteen.colgrid .row .pull_fifteen.one.cols {
+  margin-left: -100%; }
+
+/* clases Hybrid Centered  */
+.sixteen.colgrid .row .one.centered {
+  margin-left: 47.7672%; }
+.sixteen.colgrid .row .two.centered {
+  margin-left: 44.58272%; }
+.sixteen.colgrid .row .three.centered {
+  margin-left: 41.39824%; }
+.sixteen.colgrid .row .four.centered {
+  margin-left: 38.21376%; }
+.sixteen.colgrid .row .five.centered {
+  margin-left: 35.02928%; }
+.sixteen.colgrid .row .six.centered {
+  margin-left: 31.8448%; }
+.sixteen.colgrid .row .seven.centered {
+  margin-left: 28.66032%; }
+.sixteen.colgrid .row .eight.centered {
+  margin-left: 25.47584%; }
+.sixteen.colgrid .row .nine.centered {
+  margin-left: 22.29136%; }
+.sixteen.colgrid .row .ten.centered {
+  margin-left: 19.10688%; }
+.sixteen.colgrid .row .eleven.centered {
+  margin-left: 15.9224%; }
+.sixteen.colgrid .row .twelve.centered {
+  margin-left: 12.73792%; }
+.sixteen.colgrid .row .thirteen.centered {
+  margin-left: 9.55344%; }
+.sixteen.colgrid .row .fourteen.centered {
+  margin-left: 6.36896%; }
+.sixteen.colgrid .row .fifteen.centered {
+  margin-left: 3.18448%; }
+
+img, object, embed {
+  max-width: 100%;
+  height: auto; }
+
+img {
+  -ms-interpolation-mode: bicubic; }
+
+#map_canvas img, .map_canvas img {
+  max-width: none !important; }
+
+/* Grid apilado */
+.tiles {
+  display: block;
+  overflow: hidden; }
+  .tiles > li, .tiles > .tile {
+    display: block;
+    height: auto;
+    float: left;
+    padding-bottom: 0; }
+  .tiles.two_up {
+    margin-left: -4%; }
+    .tiles.two_up > li, .tiles.two_up > .tile {
+      margin-left: 4%;
+      width: 46%; }
+  .tiles.three_up, .tiles.four_up {
+    margin-left: -2%; }
+  .tiles.three_up > li, .tiles.three_up > .tile {
+    margin-left: 2%;
+    width: 31.3%; }
+  .tiles.four_up > li, .tiles.four_up > .tile {
+    margin-left: 2%;
+    width: 23%; }
+  .tiles.five_up {
+    margin-left: -1.5%; }
+    .tiles.five_up > li, .tiles.five_up > .tile {
+      margin-left: 1.5%;
+      width: 18.5%; }
+
+.clearfix {
+  *zoom: 1; }
+  .clearfix:before, .clearfix:after {
+    content: "";
+    display: table; }
+  .clearfix:after {
+    clear: both; }
+
+.row {
+  *zoom: 1; }
+  .row:before, .row:after {
+    content: "";
+    display: table; }
+  .row:after {
+    clear: both; }
+
+.valign:before {
+  content: ' ';
+  display: inline-block;
+  height: 400px;
+  vertical-align: middle;
+  margin-right: -0.25em; }
+.valign > div, .valign > article, .valign > section, .valign > figure {
+  display: inline-block;
+  vertical-align: middle; }
+
+@media (max-width: 768px) {
+  body {
+    -webkit-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+    width: 100%;
+    min-width: 0; }
+
+  .container {
+    min-width: 0;
+    margin-left: 0;
+    margin-right: 0; }
+
+  .row {
+    width: 100%;
+    min-width: 0;
+    margin-left: 0;
+    margin-right: 0; }
+    .row .row .cols, .row .row .cols {
+      padding: 0; }
+    .row .centered {
+      margin-left: 0 !important; }
+
+  .cols, .cols {
+    width: auto !important;
+    float: none;
+    margin-left: 0;
+    margin-right: 0; }
+
+  .cols:last-child, .cols:last-child {
+    margin-right: 0;
+    float: none; }
+
+  [class*="cols"]:before {
+    display: table; }
+  [class*="cols"]:after {
+    display: table;
+    clear: both; }
+
+  [class^="push_"],
+  [class*="push_"],
+  [class^="pull_"],
+  [class*="pull_"] {
+    margin-left: 0 !important; } }
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+html {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+q, blockquote {
+  quotes: none; }
+
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none; }
+
+a img {
+  border: none; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block; }
+
+.pull_right {
+  float: right; }
+
+.pull_left {
+  float: left; }
+
+/*************************************************** BASE MINIMA *************************************************/
+* html {
+  font-size: 100%; }
+
+html {
+  font-size: 16px;
+  line-height: 1.625em; }
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+@media only screen and (max-width: 767px) {
+  body {
+    -webkit-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+    width: 100%;
+    min-width: 0; } }
+html, body {
+  height: 100%; }
+
+/*************************************************** Elementos globales ************************************************/
+body {
+  font-feature-settings: "kern" 1;
+  -moz-font-feature-settings: "kern" 1;
+  line-height: calc(1.3em + (1.5 - 1.3) * ((100vw - 21em)/(35 - 21))); }
+
+a {
+  text–decoration–skip: ink; }
+
+::-moz-selection {
+  background: #4871D1;
+  /* Gecko Browsers */ }
+
+.br {
+  line-height: 2.5em; }
+
+.fixed {
+  position: fixed !important;
+  margin-top: 0 !important; }
+
+.pagina {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 4% 8%; }
+
+.seccion {
+  position: relative;
+  display: block;
+  padding: 4% 8%;
+  width: 100%;
+  margin: 20vh auto; }
+  @media (max-width: 768px) {
+    .seccion {
+      padding: 4% 15px; } }
+  @media (min-width: 1366px) {
+    .seccion {
+      padding: 4% 0; } }
+
+.full-page {
+  position: absolute;
+  width: 200vw;
+  margin-left: -100vw; }
+
+.footer {
+  background-color: white;
+  padding: 4em;
+  border-top: 10px solid black;
+  position: relative; }
+  .footer a {
+    color: black !important;
+    text-align: center;
+    display: block;
+    font-family: arial; }
+
+.go_home {
+  position: fixed;
+  top: 2vh;
+  left: 2vw;
+  z-index: 200;
+  font-family: arial; }
+
+.yo-big {
+  font-family: "Calluna", "Times New Roman", Times, serif;
+  color: #494949;
+  font-size: 4vw;
+  line-height: 1.29em; }
+
+.yo-big-parr {
+  font-family: "Calluna", "Times New Roman", Times, serif;
+  color: #494949;
+  font-size: 3vw;
+  line-height: 1.5; }
+
+.yo-med-parr {
+  font-family: "Calluna", "Times New Roman", Times, serif;
+  color: #494949;
+  font-size: 2vw;
+  line-height: 1.5; }
+
+.yo-parr {
+  font-family: "Calluna", "Times New Roman", Times, serif;
+  color: #494949;
+  font-size: 1.72vw;
+  line-height: 1.7; }
+
+.dato-big {
+  font-family: "akzidenz", Helvetica, Arial, sans-serif;
+  color: white;
+  font-size: 3vw;
+  font-weight: bold; }
+
+.dato-med {
+  font-family: "akzidenz", Helvetica, Arial, sans-serif;
+  color: white;
+  font-size: 1.5vw;
+  font-weight: bold; }
+
+.dato-sm {
+  font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;
+  color: #009444;
+  font-size: 1.3vw;
+  line-height: 1.58em;
+  font-weight: 300; }
+
+.display-big {
+  font-family: "arabella", "Times New Roman", Times, serif;
+  color: #009444;
+  font-size: 5vw;
+  font-weight: 900;
+  text-align: center; }
+
+.display-sm {
+  font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;
+  color: #009444;
+  font-size: 3vw;
+  line-height: 1.5em;
+  font-weight: 500; }
+
+em {
+  font-size: 1.2em; }
+
+b {
+  font-weight: bold;
+  font-size: 1.1em; }
+
+@media (max-width: 768px) {
+  .yo-big {
+    font-size: calc(15px + 3vw); }
+
+  .yo-big-parr {
+    font-size: calc(15px + 1vw); }
+
+  .yo-med-parr {
+    font-size: calc(12px + 1vw); }
+
+  .yo-parr {
+    font-size: calc(10px + 1.5vw); }
+
+  .dato-big {
+    font-size: calc(20px + 1.5vw); }
+
+  .dato-med {
+    font-size: calc(13px + 1.5vw); }
+
+  .dato-sm {
+    font-size: calc(13px + 1vw); }
+
+  .display-big {
+    font-size: calc(19px + 4vw); }
+
+  .display-sm {
+    font-size: calc(15px + 3vw); }
+
+  .nota-us {
+    font-size: calc(10px + 1.5vw); }
+
+  small {
+    font-size: calc(10px + 1vw); } }
+@media (min-width: 1366px) {
+  .yo-big {
+    font-size: calc(30px + 1.5vw); }
+
+  .yo-big-parr {
+    font-size: calc(25px + 1.2vw); }
+
+  .yo-med-parr {
+    font-size: calc(22px + 1vw); }
+
+  .yo-parr {
+    font-size: calc(10px + 1.2vw); }
+
+  .dato-big {
+    font-size: calc(20px + 1.5vw); }
+
+  .dato-med {
+    font-size: calc(13px + 1.5vw); }
+
+  .dato-sm {
+    font-size: calc(10px + 1.2vw); }
+
+  .display-big {
+    font-size: calc(15px + 4vw); }
+
+  .display-sm {
+    font-size: calc(15px + 2vw); }
+
+  .nota-us {
+    font-size: calc(10px + 1.5vw); }
+
+  small {
+    font-size: calc(10px + 1vw); } }
+/*************************************************** BASE MINIMA ************************************************/
+* html {
+  font-size: 100%;
+  line-height: inherit; }
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+@media only screen and (max-width: 767px) {
+  body {
+    -webkit-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+    width: 100%;
+    min-width: 0; } }
+html, body {
+  height: 100%; }
+
+body {
+  background-color: white;
+  overflow-x: hidden !important;
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none !important;
+  color: inherit;
+  cursor: pointer; }
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+html {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+q, blockquote {
+  quotes: none; }
+
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none; }
+
+a img {
+  border: none; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block; }
+
+.pull_right {
+  float: right; }
+
+.pull_left {
+  float: left; }
+
+img[src=""] {
+  background: rgba(0, 0, 0, 0.5);
+  display: block;
+  min-width: 200px;
+  min-height: 200px;
+  margin: 0 auto; }
+
+.titulo {
+  font-family: "akzidenz", Helvetica, Arial, sans-serif;
+  color: white;
+  font-size: 3vw;
+  font-weight: bold; }
+
+.titulo_med {
+  font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;
+  color: #88BCA2;
+  font-size: 1.5vw;
+  font-weight: bold; }
+
+.parr {
+  font-family: Gotham;
+  color: #494949;
+  font-size: 1.72vw;
+  line-height: 1.7;
+  font-weight: normal; }
+
+@media (max-width: 768px) {
+  .parr {
+    font-size: calc(10px + 1.5vw); }
+
+  .titulo {
+    font-size: calc(20px + 1.5vw); }
+
+  .titulo_med {
+    font-size: calc(13px + 1.5vw); } }
+@media (min-width: 1366px) {
+  .parr {
+    font-size: calc(10px + 1vw); }
+
+  .titulo {
+    font-size: calc(20px + 1.5vw); }
+
+  .titulo_med {
+    font-size: calc(13px + 1.5vw); } }
+.container {
+  position: relative;
+  width: 100vw;
+  overflow: hidden; }
+  .container ::selection {
+    background-color: #0862C2;
+    /* WebKit/Blink Browsers */
+    color: white; }
+  .container #abuelapp {
+    max-width: 1366px;
+    margin: 0 auto; }
+    .container #abuelapp .app_mockup {
+      position: fixed;
+      width: 50%;
+      height: 100vh;
+      text-align: center;
+      z-index: 100; }
+      .container #abuelapp .app_mockup .mockup {
+        position: relative;
+        height: 90%;
+        margin-top: 7%;
+        margin-left: -5%; }
+    .container #abuelapp .diapo {
+      position: relative;
+      display: block;
+      padding: 4% 8%;
+      height: 83vh;
+      width: 100%;
+      margin: 0 auto;
+      padding-left: 45%;
+      background: url(../images/abuelapp_fondo.png) fixed; }
+    .container #abuelapp .front {
+      position: relative;
+      color: white;
+      text-align: center;
+      top: 17vh; }
+      .container #abuelapp .front .parr {
+        color: white;
+        margin-top: 5vh;
+        margin-bottom: 2em;
+        font-family: Armonioso;
+        font-size: 28px; }
+      .container #abuelapp .front .titulo {
+        font-family: Gotham;
+        font-weight: normal;
+        font-size: 5vw; }
+    .container #abuelapp .claim {
+      background: white;
+      height: 65.5vh; }
+      .container #abuelapp .claim p {
+        font-family: Gotham;
+        color: #88BCA2;
+        font-size: 30px;
+        position: relative;
+        -moz-transform: translate(0, -50%);
+        -o-transform: translate(0, -50%);
+        -ms-transform: translate(0, -50%);
+        -webkit-transform: translate(0, -50%);
+        transform: translate(0, -50%);
+        top: 50%; }
+        .container #abuelapp .claim p b {
+          font-weight: bold; }
+    .container #abuelapp .funciona p {
+      color: white; }
+      .container #abuelapp .funciona p:first-child {
+        font-weight: bold;
+        margin-bottom: 2em; }
+
+/*# sourceMappingURL=style_abuelapp.css.map */
