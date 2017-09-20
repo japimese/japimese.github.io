@@ -1416,28 +1416,7 @@ body {
       .container.index .uno a[href^="porfolio/ucipplus.html"], .container.index .dos a[href^="porfolio/ucipplus.html"] {
         color: rgba(0, 0, 0, 0.8);
         background-color: white;
-        padding: .1em;
-        text-shadow: 0.03em 0 white, -0.03em 0 white, 0 0.03em white, 0 -0.03em white, 0.06em 0 white, -0.06em 0 white, 0.09em 0 white, -0.09em 0 white, 0.12em 0 white, -0.12em 0 white, 0.15em 0 white, -0.15em 0 white;
-        background-image: linear-gradient(#333, #333);
-        background-size: 3px 3px;
-        background-repeat: repeat-x;
-        background-position: 0% 92%;
-        color: #333;
-        text-decoration: none; }
-        .container.index .uno a[href^="porfolio/ucipplus.html"]::selection, .container.index .dos a[href^="porfolio/ucipplus.html"]::selection {
-          text-shadow: 0.03em 0 red, -0.03em 0 red, 0 0.03em red, 0 -0.03em red, 0.06em 0 red, -0.06em 0 red, 0.09em 0 red, -0.09em 0 red, 0.12em 0 red, -0.12em 0 red, 0.15em 0 red, -0.15em 0 red;
-          background: red; }
-        .container.index .uno a[href^="porfolio/ucipplus.html"]::-moz-selection, .container.index .dos a[href^="porfolio/ucipplus.html"]::-moz-selection {
-          text-shadow: 0.03em 0 red, -0.03em 0 red, 0 0.03em red, 0 -0.03em red, 0.06em 0 red, -0.06em 0 red, 0.09em 0 red, -0.09em 0 red, 0.12em 0 red, -0.12em 0 red, 0.15em 0 red, -0.15em 0 red;
-          background: red; }
-        .container.index .uno a[href^="porfolio/ucipplus.html"] *,
-        .container.index .uno a[href^="porfolio/ucipplus.html"] *:after, .container.index .uno a[href^="porfolio/ucipplus.html"]:after,
-        .container.index .uno a[href^="porfolio/ucipplus.html"] *:before, .container.index .uno a[href^="porfolio/ucipplus.html"]:before, .container.index .dos a[href^="porfolio/ucipplus.html"] *,
-        .container.index .dos a[href^="porfolio/ucipplus.html"] *:after, .container.index .dos a[href^="porfolio/ucipplus.html"]:after,
-        .container.index .dos a[href^="porfolio/ucipplus.html"] *:before, .container.index .dos a[href^="porfolio/ucipplus.html"]:before {
-          text-shadow: none; }
-        .container.index .uno a[href^="porfolio/ucipplus.html"]:visited, .container.index .dos a[href^="porfolio/ucipplus.html"]:visited {
-          color: #333; }
+        padding: .1em; }
         .container.index .uno a[href^="porfolio/ucipplus.html"]:hover, .container.index .dos a[href^="porfolio/ucipplus.html"]:hover {
           cursor: url(../images/cursor_case.png), auto; }
   .container.index .tres {
