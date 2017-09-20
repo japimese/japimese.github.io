@@ -17,16 +17,22 @@
 	<div class="container index">
 		<div class="uno">
 			<p><b>Hola <span id="origen"></span></b><br><br class="br">
-			Soy un creativo/diseñador tecnológico muy versátil con un porfolio inacabado y un poco feo.</p>
+			Soy un creativo multidisciplinar muy versátil con un porfolio inacabado y un poco feo.</p>
 		</div>
 		<div class="dos">
 			<p>
-				Si quieres ir viendo un poco mi estilo y capacidades puedes echarle un ojo a este "<a href="ucipplus.html">case study</a>" sobre el rediseño, programación y rebranding que hice de la web de UCIPlus.<br class="br">
+				En este momento me encuentro rediseñando esta web.<br>
+				Si quieres ir viendo un poco mi estilo y capacidades puedes echarle un ojo a este "<a href="porfolio/ucipplus.html" class="uciplus">case study</a>" <em>sobre el rediseño, programación y rebranding</em> que hice de la web de UCIPlus.<br class="br">
 				Para esa misma empresa también participé en el diseño y programación de <a href="https://hipotecas.com/" target="blank">Hipotecas.com</a>, que quedó bastante bien.
 			</p>
 		</div>
 		<div class="tres">
 			<p>Soy bastante proactivo, así que también estoy desarrollando algunas de las ideas que se me van ocurriendo. Estas son algunas de ellas:</p>
+			<!-- <ul class="lista_proyectos">
+				<li><img src="images/abuelapp_icono.png"/></li>
+				<li><img src="images/abuelapp_icono.png"/></li>
+				<li><img src="images/grupi_icono.png"/></li>
+			</ul> -->
 			<ul>
 				<li id="abuelapp">
 					<p>
@@ -77,9 +83,10 @@
 	</script>
 	<script src="js/jquery-2.2.4.min.js"></script>
 
-	<script>
+	<script>		
 
-		
+		//mockup abuelapp
+
 		$(".mock_app img").click(function() { 
 		    if($(this).attr("src") === "images/app_4.png") {
 		    	$("#app_1").show();
@@ -90,6 +97,15 @@
 		        $(this).hide().next().show();
 		    }
 		    //$(".mock_app:after").css("content", "Mientras carga los datos la abuela te contesta con una Frase Típica de Abuela")
+		});
+
+
+		//enlace uciplus
+
+		$(".uciplus").on('mouseenter', function() {
+				$(".index").css("background-image", "url(images/uciplus/mok_mac2.png)");
+			}).on('mouseleave', function(){
+				$(".index").css("background-image", "initial");
 		});
 
 

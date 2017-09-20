@@ -56,7 +56,7 @@ $(window).scroll(function () {
 //cargar imagenes al ppio
 $(document).ready(function() {
 	for (var i =0; i<145; i++) {
-		$("#mok_1").append("<img class='mockup_in' src='images/nar/nar_" + i + ".jpg' />");	
+		$("#mok_1").append("<img class='mockup_in' src='../images/uciplus/nar/nar_" + i + ".jpg' />");	
 	}
 });
 //avanzar gif en scroll
@@ -66,9 +66,9 @@ $(window).scroll(function () {
 	var i = parseInt($(window).scrollTop() / 5);
 	
 	if ($(window).scrollTop() < fin ) {
-		$("#mok_1").attr("src", "images/nar/nar_"+ i +".jpg");
+		$("#mok_1").attr("src", "../images/uciplus/nar/nar_"+ i +".jpg");
 	} else {
-		$("#mok_1").attr("src", "images/nar/nar_0.jpg");
+		$("#mok_1").attr("src", "../images/uciplus/nar/nar_0.jpg");
 	}  
 })
 
@@ -77,7 +77,7 @@ $(window).scroll(function () {
 //cargar imagenes al ppio
 $(document).ready(function() {
 	for (var i =0; i<12; i++) {
-		$("#mok_2").append("<img class='mockup_col' src='images/mundo_uciplus/mundo_uciplus_" + i + ".png' />");	
+		$("#mok_2").append("<img class='mockup_col' src='../images/uciplus/mundo_uciplus/mundo_uciplus_" + i + ".png' />");	
 	}
 });
 //avanzar gif en scroll
@@ -92,17 +92,17 @@ $(document).ready(function () {
 		var i = parseInt(($(window).scrollTop() - ini) / 30);
 		if ( ($(window).scrollTop() > ini) && ($(window).scrollTop() < med) ) {
 			console.log(i);
-			$("#mok_2").attr("src", "images/mundo_uciplus/mundo_uciplus_"+ i +".png");
+			$("#mok_2").attr("src", "../images/uciplus/mundo_uciplus/mundo_uciplus_"+ i +".png");
 		} else if ( ($(window).scrollTop() > med) && ($(window).scrollTop() < med2) ) {
 			console.log(i);
-			$("#mok_2").attr("src", "images/nar/nar_"+ i +".jpg");
+			$("#mok_2").attr("src", "../images/uciplus/nar/nar_"+ i +".jpg");
 		} else if ( ($(window).scrollTop() > med2) && ($(window).scrollTop() < fin) ) {
 			console.log(i);
 			i -= 20;
-			$("#mok_2").attr("src", "images/gif_usuario/mundo_uciplus_"+ i +".png");
+			$("#mok_2").attr("src", "../images/uciplus/gif_usuario/mundo_uciplus_"+ i +".png");
 		} else {
 			console.log("else");
-			$("#mok_2").attr("src", "images//mundo_uciplus/mundo_uciplus_0.png");
+			$("#mok_2").attr("src", "../images//uciplus/mundo_uciplus/mundo_uciplus_0.png");
 		}  
 	})
 });
@@ -199,49 +199,9 @@ $(document).ready(function() {
 	});
 });
 
-//version email/no mail
-
-// var getUrlParameter = function getUrlParameter(sParam) {
-//     var sPageURL = decodeURIComponent(window.location.search.substring(1)),
-//         sURLVariables = sPageURL.split('&'),
-//         sParameterName,
-//         i;
-
-//     for (i = 0; i < sURLVariables.length; i++) {
-//         sParameterName = sURLVariables[i].split('=');
-
-//         if (sParameterName[0] === sParam) {
-//             return sParameterName[1] === undefined ? true : sParameterName[1];
-//         }
-//     }
-// };
 
 
-// $(document).ready(function() {
-// 	var origen = getUrlParameter('origen');
-// 	console.log(origen);
-// 	if (origen==="mail_bipolar") {
-// 		debugger;
-// 	    $("#origen").html("Bipolar");
-// 	} else {
-// 	    $("#origen").html("");
-// 	}
-// });
 
-var getUrlParameter = function getUrlParameter(sParam) {
-    var sPageURL = decodeURIComponent(window.location.search.substring(1)),
-        sURLVariables = sPageURL.split('&'),
-        sParameterName,
-        i;
-
-    for (i = 0; i < sURLVariables.length; i++) {
-        sParameterName = sURLVariables[i].split('=');
-
-        if (sParameterName[0] === sParam) {
-            return sParameterName[1] === undefined ? true : sParameterName[1];
-        }
-    }
-};
 
 var origen = getUrlParameter('origen');
 

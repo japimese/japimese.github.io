@@ -1553,7 +1553,7 @@ img[src=""] {
         .container.uciplus #uciplus .propuesta .mi_propuesta .mockup_gif .mockup_mac {
           top: 5%; }
         .container.uciplus #uciplus .propuesta .mi_propuesta .mockup_gif .mockup_in {
-          background-image: url(../images/uciplus_home.jpg);
+          background-image: url(../images/uciplus/uciplus_home.jpg);
           background-size: 100% auto;
           top: 12%;
           height: 59%; }
@@ -1603,7 +1603,7 @@ img[src=""] {
       /* WebKit/Blink Browsers */
       color: white; }
     .container.uciplus #uciplus .propuesta .propuesta_color .fondo_nar {
-      background-image: url(../images/fondo_nar.jpg);
+      background-image: url(../images/uciplus/fondo_nar.jpg);
       background-size: cover;
       position: absolute;
       margin-left: -10%;
@@ -1627,7 +1627,7 @@ img[src=""] {
           opacity: 0;
           position: absolute; }
       .container.uciplus #uciplus .propuesta .propuesta_color .fondo_nar .titulo_color {
-        background-image: url(../images/mundo_color_tit.png);
+        background-image: url(../images/uciplus/mundo_color_tit.png);
         background-repeat: no-repeat;
         background-size: 100% 100%;
         position: relative;
