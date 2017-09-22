@@ -1402,15 +1402,15 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   background-image: url(../images/mundi/relojmundi.gif);
   background-size: 75%;
   background-position: center top;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
   .mundi .front .dato-big {
     text-align: center;
     margin-top: 60vh;
     font-size: calc(8vw + 20px);
     font-family: "Lato-Regular", Helvetica, Arial, sans-serif;
     font-weight: 800;
-    background-color: rgba(255, 255, 255, 0.3);
-    background-attachment: fixed; }
+    background-color: rgba(255, 255, 255, 0.3); }
   @media (max-width: 768px) {
     .mundi .front {
       background-size: 260%; } }
