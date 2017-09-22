@@ -1416,7 +1416,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
       background-size: 260%; } }
 .mundi .resum .display-big {
   position: relative;
-  color: #3FCA56; }
+  color: #3FCA56;
+  margin-top: .5em; }
 .mundi .resum img {
   width: 50%;
   margin: 5em 25%; }
