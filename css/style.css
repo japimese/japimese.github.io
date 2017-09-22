@@ -1415,11 +1415,14 @@ img[src=""] {
     .container.index .dos a img {
       display: block;
       margin: 0 auto -2.5em; }
+    .container.index .dos small {
+      font-size: 2em; }
+      @media (max-width: 768px) {
+        .container.index .dos small {
+          font-size: 1.2em; } }
     .container.index .dos em {
       text-decoration: underline !important;
       text-shadow: 0.03em 0 white, -0.03em 0 white, 0 0.03em white, 0 -0.03em white, 0.06em 0 white, -0.06em 0 white, 0.09em 0 white, -0.09em 0 white, 0.12em 0 white, -0.12em 0 white, 0.15em 0 white, -0.15em 0 white; }
-    .container.index .dos small {
-      font-size: 2em; }
     .container.index .dos a {
       font-weight: bold; }
       .container.index .dos a.uciplus {
@@ -1443,9 +1446,11 @@ img[src=""] {
         margin-bottom: 2em;
         font-weight: bold; }
         .container.index .tres ul li small {
-          font-size: .9em;
           font-weight: normal;
           text-decoration: none; }
+          @media (max-width: 768px) {
+            .container.index .tres ul li small {
+              font-size: .7em; } }
         .container.index .tres ul li p {
           font-size: 2em; }
         .container.index .tres ul li a[href^="abuelapp/index.html"] {
@@ -1455,8 +1460,8 @@ img[src=""] {
             position: absolute;
             left: 75%;
             top: -250%;
-            width: 102px;
-            height: 123px;
+            width: 2.45em;
+            height: 3em;
             background-size: cover;
             background-image: url(../images/ic_abuelapp.png);
             -webkit-animation: globo 3s alternate infinite;
@@ -1472,8 +1477,8 @@ img[src=""] {
             position: absolute;
             left: 60%;
             top: -260%;
-            width: 102px;
-            height: 123px;
+            width: 2.45em;
+            height: 3em;
             background-size: cover;
             background-image: url(../images/ic_mundi.png);
             -webkit-animation: globo 3s 2s alternate infinite;
