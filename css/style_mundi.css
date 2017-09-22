@@ -1412,8 +1412,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     background-color: rgba(255, 255, 255, 0.3);
     background-attachment: fixed; }
   @media (max-width: 768px) {
-    .mundi .front .dato-big {
-      margin-top: 70%; } }
+    .mundi .front {
+      background-size: 260%; } }
 .mundi .resum .display-big {
   position: relative;
   color: #3FCA56; }
