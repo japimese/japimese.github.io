@@ -1377,27 +1377,26 @@ img[src=""] {
   min-height: 200px;
   margin: 0 auto; }
 
-body {
-  background-color: rgba(0, 0, 0, 0.8); }
-
 .container.index {
   padding: 5vh 2vw;
-  background-size: contain;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-position: center; }
-  .container.index p, .container.index a {
+  background-color: rgba(0, 0, 0, 0.8);
+  -webkit-transition: background-color 1s cubic-bezier(0.81, 0.15, 0.71, 0.95);
+  -moz-transition: background-color 1s cubic-bezier(0.81, 0.15, 0.71, 0.95);
+  -ms-transition: background-color 1s cubic-bezier(0.81, 0.15, 0.71, 0.95);
+  -o-transition: background-color 1s cubic-bezier(0.81, 0.15, 0.71, 0.95);
+  transition: background-color 1s cubic-bezier(0.81, 0.15, 0.71, 0.95); }
+  .container.index p, .container.index a, .container.index small {
     font-size: 3vw;
     line-height: 1.5em;
     font-family: arial;
     color: white; }
     @media (max-width: 768px) {
-      .container.index p, .container.index a {
+      .container.index p, .container.index a, .container.index small {
         font-size: calc(18px + 1vw); } }
-  .container.index .uno, .container.index .dos {
+  .container.index .uno {
     height: 100vh;
     display: block; }
-    .container.index .uno p, .container.index .dos p {
+    .container.index .uno p {
       position: relative;
       -moz-transform: translate(0, -50%);
       -o-transform: translate(0, -50%);
@@ -1405,19 +1404,29 @@ body {
       -webkit-transform: translate(0, -50%);
       transform: translate(0, -50%);
       top: 35%; }
-    .container.index .uno em, .container.index .dos em {
-      text-decoration: underline !important;
-      text-shadow: 0.03em 0 #333, -0.03em 0 #333, 0 0.03em #333, 0 -0.03em #333, 0.06em 0 #333, -0.06em 0 #333, 0.09em 0 #333, -0.09em 0 #333, 0.12em 0 #333, -0.12em 0 #333, 0.15em 0 #333, -0.15em 0 #333; }
-    .container.index .uno b, .container.index .dos b {
+    .container.index .uno b {
       font-weight: bold;
       font-size: 2em; }
-    .container.index .uno a, .container.index .dos a {
+  .container.index .dos {
+    margin-bottom: 25vh;
+    display: block; }
+    .container.index .dos p, .container.index .dos a, .container.index .dos small {
+      color: #333; }
+    .container.index .dos a img {
+      display: block;
+      margin: 0 auto -2.5em; }
+    .container.index .dos em {
+      text-decoration: underline !important;
+      text-shadow: 0.03em 0 white, -0.03em 0 white, 0 0.03em white, 0 -0.03em white, 0.06em 0 white, -0.06em 0 white, 0.09em 0 white, -0.09em 0 white, 0.12em 0 white, -0.12em 0 white, 0.15em 0 white, -0.15em 0 white; }
+    .container.index .dos small {
+      font-size: 2em; }
+    .container.index .dos a {
       font-weight: bold; }
-      .container.index .uno a[href^="porfolio/ucipplus.html"], .container.index .dos a[href^="porfolio/ucipplus.html"] {
-        color: rgba(0, 0, 0, 0.8);
-        background-color: white;
+      .container.index .dos a.uciplus {
+        color: white;
+        background-color: rgba(255, 0, 152, 0.8);
         padding: .1em; }
-        .container.index .uno a[href^="porfolio/ucipplus.html"]:hover, .container.index .dos a[href^="porfolio/ucipplus.html"]:hover {
+        .container.index .dos a.uciplus:hover {
           cursor: url(../images/cursor_case.png), auto; }
   .container.index .tres {
     min-height: 100vh;
@@ -1434,13 +1443,45 @@ body {
         margin-bottom: 2em;
         font-weight: bold; }
         .container.index .tres ul li small {
-          font-size: .7em;
+          font-size: .9em;
           font-weight: normal;
           text-decoration: none; }
-        .container.index .tres ul li#abuelapp a {
-          display: block;
-          text-align: center;
-          font-weight: normal; }
+        .container.index .tres ul li p {
+          font-size: 2em; }
+        .container.index .tres ul li a[href^="abuelapp/index.html"] {
+          position: relative; }
+          .container.index .tres ul li a[href^="abuelapp/index.html"]:after {
+            content: '';
+            position: absolute;
+            left: 75%;
+            top: -250%;
+            width: 102px;
+            height: 123px;
+            background-size: cover;
+            background-image: url(../images/ic_abuelapp.png);
+            -webkit-animation: globo 3s alternate infinite;
+            -moz-animation: globo 3s alternate infinite;
+            -ms-animation: globo 3s alternate infinite;
+            -o-animation: globo 3s alternate infinite;
+            animation: globo 3s alternate infinite;
+            transform-origin: bottom center; }
+        .container.index .tres ul li#mundi a {
+          position: relative; }
+          .container.index .tres ul li#mundi a:after {
+            content: '';
+            position: absolute;
+            left: 60%;
+            top: -260%;
+            width: 102px;
+            height: 123px;
+            background-size: cover;
+            background-image: url(../images/ic_mundi.png);
+            -webkit-animation: globo 3s 2s alternate infinite;
+            -moz-animation: globo 3s 2s alternate infinite;
+            -ms-animation: globo 3s 2s alternate infinite;
+            -o-animation: globo 3s 2s alternate infinite;
+            animation: globo 3s 2s alternate infinite;
+            transform-origin: bottom center; }
         .container.index .tres ul li .mock {
           background-color: white;
           display: block;
@@ -1528,5 +1569,27 @@ body {
     right: 2vw; }
     .container.index aside a {
       font-weight: normal; }
+  .container.index.blanco {
+    -webkit-transition: all 2s cubic-bezier(0.81, 0.15, 0.71, 0.95);
+    -moz-transition: all 2s cubic-bezier(0.81, 0.15, 0.71, 0.95);
+    -ms-transition: all 2s cubic-bezier(0.81, 0.15, 0.71, 0.95);
+    -o-transition: all 2s cubic-bezier(0.81, 0.15, 0.71, 0.95);
+    transition: all 2s cubic-bezier(0.81, 0.15, 0.71, 0.95);
+    background-color: white; }
+    .container.index.blanco aside a {
+      color: #333; }
+@keyframes globo {
+  0% {
+    -moz-transform: rotate(-15deg);
+    -o-transform: rotate(-15deg);
+    -ms-transform: rotate(-15deg);
+    -webkit-transform: rotate(-15deg);
+    transform: rotate(-15deg); }
+  100% {
+    -moz-transform: rotate(15deg);
+    -o-transform: rotate(15deg);
+    -ms-transform: rotate(15deg);
+    -webkit-transform: rotate(15deg);
+    transform: rotate(15deg); } }
 
 /*# sourceMappingURL=style.css.map */

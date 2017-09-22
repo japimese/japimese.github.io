@@ -22,9 +22,12 @@
 		<div class="dos">
 			<p>
 				En este momento me encuentro rediseñando esta web.<br>
-				Si quieres ir viendo un poco mi estilo y capacidades puedes echarle un ojo a este "<a href="porfolio/ucipplus.html" class="uciplus">case study</a>" <em>sobre el rediseño, programación y rebranding</em> que hice de la web de UCIPlus.<br class="br">
-				Para esa misma empresa también participé en el diseño y programación de <a href="https://hipotecas.com/" target="blank">Hipotecas.com</a>, que quedó bastante bien.
+				Si quieres ir viendo un poco mi estilo y capacidades puedes echarle un ojo a este <a href="porfolio/ucipplus.html" class="uciplus">"case study" sobre el rediseño, programación y rebranding</a> que hice de la web de UCIPlus.
 			</p>
+			<a href="porfolio/ucipplus.html"><img src="images/uciplus/desk_nar.png"></a>
+			<small>
+				Para esa misma empresa también participé en el diseño y programación de <a href="https://hipotecas.com/" target="blank">Hipotecas.com</a>, que quedó bastante bien.
+			</small>
 		</div>
 		<div class="tres">
 			<p>Soy bastante proactivo, así que también estoy desarrollando algunas de las ideas que se me van ocurriendo. Estas son algunas de ellas:</p>
@@ -36,32 +39,36 @@
 			<ul>
 				<li id="abuelapp">
 					<p>
-						.Abuelapp - wisdom weather <small>una abuela, una app, y un metereólogo entran en un bar y... </small>
+						<small>.una abuela, una app, y<br>
+						un metereólogoentran en un bar y... </small><a href="abuelapp/index.html" target="blank">Abuelapp</a>
 					</p>
-					<span class="mock mock_app">
+					<!-- <span class="mock mock_app">
 						<p>PREVIEW <br><small>(click)</small></p>
 						<img src="images/app_1.png" id="app_1">
 						<img src="images/app_2.png">
 						<img src="images/app_3.png">
 						<img src="images/app_4.png">
 					</span>
-					<a href="abuelapp/index.html" target="blank">probar version beta</a>
+					<a href="abuelapp/index.html" target="blank">probar version beta</a> -->
 				</li>
 				<li id="mundi">
-					<p>.Mundi <small>"¿se podrá hacer un reloj para ver la hora en todo el mundo a la vez?"</small></p>
-					<span class="mock mock_mun">
+					<p>
+						<small>."¿se podrá hacer un reloj<br>
+					para ver la hora en todo el mundo a la vez?"...</small><a>MUNDI</a>
+					</p>
+					<!-- <span class="mock mock_mun">
 						<p>PREVIEW</p>
 						<p class="fyi"><span>Forma sencilla de ver qué hora es en cualquier parte del mundo de un sólo vistazo</span></p>
 						<img src="images/relojmundi.gif" id="mundi">
-					</span>
-				</a>
+					</span> -->
+				</li>
 				<li>
 					<a href="https://invis.io/PZCC7ESJT#/240958124_1" target="blank" id="band">.montemosun.gr <small></small></a>
-					<span class="mock mock_gr">
+					<!-- <span class="mock mock_gr">
 						<p>preview</p>
 						<p class="fyi"><span>Solución visual, sencilla, y efectiva de poner en contacto músicos y grupos</span></p>
 						<img src="images/montemos1.gif" />
-					</span>
+					</span> -->
 				</li>
 			</ul>
 		</div>
@@ -87,26 +94,44 @@
 
 		//mockup abuelapp
 
-		$(".mock_app img").click(function() { 
-		    if($(this).attr("src") === "images/app_4.png") {
-		    	$("#app_1").show();
-		    	$(this).hide();
-		        // $(".mock_app").hide();
+		// $(".mock_app img").click(function() { 
+		//     if($(this).attr("src") === "images/app_4.png") {
+		//     	$("#app_1").show();
+		//     	$(this).hide();
+		//         // $(".mock_app").hide();
 		        
+		//     } else {
+		//         $(this).hide().next().show();
+		//     }
+		//     //$(".mock_app:after").css("content", "Mientras carga los datos la abuela te contesta con una Frase Típica de Abuela")
+		// });
+
+		//cambio de color del fondo
+		var unheight = $(window).height();
+		var dos = $(".dos").offset().top - unheight*0.8;
+		var tres = $(".tres").offset().top - unheight*0.7;
+
+		$(window).scroll(function () {
+			console.log(dos);
+		    if ( ($(window).scrollTop() > dos) && ($(window).scrollTop() < tres) ) {
+		        $(".container").addClass("blanco");
 		    } else {
-		        $(this).hide().next().show();
+		      	$(".container").removeClass("blanco");
 		    }
-		    //$(".mock_app:after").css("content", "Mientras carga los datos la abuela te contesta con una Frase Típica de Abuela")
-		});
+		})
+		//al llegar a .dos
+
+
+		//cambiar a blanco
 
 
 		//enlace uciplus
 
-		$(".uciplus").on('mouseenter', function() {
-				$(".index").css("background-image", "url(images/uciplus/mok_mac2.png)");
-			}).on('mouseleave', function(){
-				$(".index").css("background-image", "initial");
-		});
+		// $(".uciplus").on('mouseenter', function() {
+		// 		$(".index").css("background-image", "url(images/uciplus/mok_mac2.png)");
+		// 	}).on('mouseleave', function(){
+		// 		$(".index").css("background-image", "initial");
+		// });
 
 
 		var getUrlParameter = function getUrlParameter(sParam) {
