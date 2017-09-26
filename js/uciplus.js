@@ -54,23 +54,47 @@ $(window).scroll(function () {
 //gif del mockup en la home de ucip
 
 //cargar imagenes al ppio
-$(document).ready(function() {
-	for (var i =0; i<145; i++) {
-		$("#mok_1").append("<img class='mockup_in' src='../images/uciplus/nar/nar_" + i + ".jpg' />");	
-	}
-});
-//avanzar gif en scroll
+// $(document).ready(function() {
+// 	for (var i =0; i<145; i++) {
+// 		$("#mok_1").append("<img class='mockup_in' src='../images/uciplus/nar/nar_" + i + ".jpg' />");	
+// 	}
+// });
+// //avanzar gif en scroll
+// $(window).scroll(function () {
+
+// 	var fin = $("#frontmok .mockup_mac").offset().top + $("#frontmok .mockup_mac").height();
+// 	var i = parseInt($(window).scrollTop() / 5);
+	
+// 	if ($(window).scrollTop() < fin ) {
+// 		$("#mok_1").attr("src", "../images/uciplus/nar/nar_"+ i +".jpg");
+// 	} else {
+// 		$("#mok_1").attr("src", "../images/uciplus/nar/nar_0.jpg");
+// 	}  
+// })
+
+
+//gif del mockup en la home de ucip
+
+//cargar imagenes al ppio
+// $(document).ready(function() {
+// 	for (var i =0; i<145; i++) {
+// 		$("#midmok .mockup_in").append("<img class='mockup_in' src='../images/uciplus/nar/nar_" + i + ".jpg' />");	
+// 	}
+// });
+// //avanzar gif en scroll
 $(window).scroll(function () {
 
-	var fin = $("#frontmok .mockup_mac").offset().top + $("#frontmok .mockup_mac").height();
-	var i = parseInt($(window).scrollTop() / 5);
+	var ini = $("#midmok .mockup_mac").offset().top - unheight*0.5; ;
+	var fin = ini + unheight;
+	var i = parseInt(($(window).scrollTop() - ini) / 2.5);
 	
-	if ($(window).scrollTop() < fin ) {
-		$("#mok_1").attr("src", "../images/uciplus/nar/nar_"+ i +".jpg");
+	if (($(window).scrollTop() > ini) && ($(window).scrollTop() < fin) ) {
+		$("#midmok .mockup_in").css("background-image", "url(../images/uciplus/gif_home/ucip"+ i +".jpg)");
 	} else {
-		$("#mok_1").attr("src", "../images/uciplus/nar/nar_0.jpg");
+		$("#midmok .mockup_in").css("background-image", "url(../images/uciplus/gif_home/ucip0.jpg)");
 	}  
 })
+
 
 //gif del mockup del mundo ucip
 
@@ -199,17 +223,6 @@ $(document).ready(function() {
 	});
 });
 
-
-
-
-
-var origen = getUrlParameter('origen');
-
-if (origen==="email") {
-    $(".container").addClass("email_or");
-} else {
-    $(".container").removeClass("email_or");
-}
 
 
 
