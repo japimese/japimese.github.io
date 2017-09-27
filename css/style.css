@@ -1380,11 +1380,11 @@ img[src=""] {
 .container.index {
   padding: 5vh 2vw;
   background-color: rgba(0, 0, 0, 0.8);
-  -webkit-transition: background-color 1s cubic-bezier(0.81, 0.15, 0.71, 0.95);
-  -moz-transition: background-color 1s cubic-bezier(0.81, 0.15, 0.71, 0.95);
-  -ms-transition: background-color 1s cubic-bezier(0.81, 0.15, 0.71, 0.95);
-  -o-transition: background-color 1s cubic-bezier(0.81, 0.15, 0.71, 0.95);
-  transition: background-color 1s cubic-bezier(0.81, 0.15, 0.71, 0.95); }
+  -webkit-transition: background-color 0.7s cubic-bezier(0.81, 0.15, 0.71, 0.95);
+  -moz-transition: background-color 0.7s cubic-bezier(0.81, 0.15, 0.71, 0.95);
+  -ms-transition: background-color 0.7s cubic-bezier(0.81, 0.15, 0.71, 0.95);
+  -o-transition: background-color 0.7s cubic-bezier(0.81, 0.15, 0.71, 0.95);
+  transition: background-color 0.7s cubic-bezier(0.81, 0.15, 0.71, 0.95); }
   .container.index p, .container.index a, .container.index small {
     font-size: 3vw;
     line-height: 1.5em;
@@ -1575,11 +1575,11 @@ img[src=""] {
     .container.index aside a {
       font-weight: normal; }
   .container.index.blanco {
-    -webkit-transition: all 2s cubic-bezier(0.81, 0.15, 0.71, 0.95);
-    -moz-transition: all 2s cubic-bezier(0.81, 0.15, 0.71, 0.95);
-    -ms-transition: all 2s cubic-bezier(0.81, 0.15, 0.71, 0.95);
-    -o-transition: all 2s cubic-bezier(0.81, 0.15, 0.71, 0.95);
-    transition: all 2s cubic-bezier(0.81, 0.15, 0.71, 0.95);
+    -webkit-transition: all 0.7s cubic-bezier(0.81, 0.15, 0.71, 0.95);
+    -moz-transition: all 0.7s cubic-bezier(0.81, 0.15, 0.71, 0.95);
+    -ms-transition: all 0.7s cubic-bezier(0.81, 0.15, 0.71, 0.95);
+    -o-transition: all 0.7s cubic-bezier(0.81, 0.15, 0.71, 0.95);
+    transition: all 0.7s cubic-bezier(0.81, 0.15, 0.71, 0.95);
     background-color: white; }
     .container.index.blanco aside a {
       color: #333; }

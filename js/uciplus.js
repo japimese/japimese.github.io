@@ -38,7 +38,7 @@ var parao = function (cosa, top, duration) {
 	    }
 	})
 }
-parao($(".propuesta_color .mockup_gif"), 7, 400 )
+parao($(".propuesta_color .mockup_gif"), 7, 450 )
 
 //titulo fixed
 $(window).scroll(function () {
@@ -84,14 +84,16 @@ $(window).scroll(function () {
 // //avanzar gif en scroll
 $(window).scroll(function () {
 
-	var ini = $("#midmok .mockup_mac").offset().top - unheight*0.5; ;
+	var ini = $("#midmok .mockup_mac").offset().top - unheight*0.4; ;
 	var fin = ini + unheight;
 	var i = parseInt(($(window).scrollTop() - ini) / 2.5);
 	
-	if (($(window).scrollTop() > ini) && ($(window).scrollTop() < fin) ) {
-		$("#midmok .mockup_in").css("background-image", "url(../images/uciplus/gif_home/ucip"+ i +".jpg)");
+	if ($(window).scrollTop() > ini) {
+		$("#midmok .mockup_in").attr("src", "../images/uciplus/gif_home/ucip"+ i +".jpg");
+	} else if ($(window).scrollTop() > fin)  {
+		$("#midmok .mockup_in").attr("src", "../images/uciplus/gif_home/ucip209.jpg");
 	} else {
-		$("#midmok .mockup_in").css("background-image", "url(../images/uciplus/gif_home/ucip0.jpg)");
+		$("#midmok .mockup_in").attr("src", "../images/uciplus/gif_home/ucip0.jpg");
 	}  
 })
 

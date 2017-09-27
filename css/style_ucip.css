@@ -1553,8 +1553,6 @@ img[src=""] {
         .container.uciplus #uciplus .propuesta .mi_propuesta .mockup_gif .mockup_mac {
           top: 5%; }
         .container.uciplus #uciplus .propuesta .mi_propuesta .mockup_gif .mockup_in {
-          background-image: url(../images/uciplus/uciplus_home.jpg);
-          background-size: 100% auto;
           top: 12%;
           height: 59%; }
       @media (max-width: 768px) {
@@ -1724,7 +1722,8 @@ img[src=""] {
             .container.uciplus #uciplus .detalles .caja #mock_detalles .mockup_cont img {
               display: none; }
             .container.uciplus #uciplus .detalles .caja #mock_detalles .mockup_cont img.active {
-              display: initial; }
+              display: initial;
+              width: 100%; }
         .container.uciplus #uciplus .detalles .caja .puntos {
           margin-top: 50%;
           margin-left: -5%;
