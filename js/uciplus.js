@@ -85,16 +85,17 @@ $(window).scroll(function () {
 $(window).scroll(function () {
 
 	var ini = $("#midmok .mockup_mac").offset().top - unheight*0.4; ;
-	var fin = ini + unheight;
+	// var fin = ini + unheight;
 	var i = parseInt(($(window).scrollTop() - ini) / 2.5);
 	
 	if ($(window).scrollTop() > ini) {
 		$("#midmok .mockup_in").attr("src", "../images/uciplus/gif_home/ucip"+ i +".jpg");
-	} else if ($(window).scrollTop() > fin)  {
-		$("#midmok .mockup_in").attr("src", "../images/uciplus/gif_home/ucip209.jpg");
 	} else {
 		$("#midmok .mockup_in").attr("src", "../images/uciplus/gif_home/ucip0.jpg");
 	}  
+	if (i > 209)  {
+		$("#midmok .mockup_in").attr("src", "../images/uciplus/gif_home/ucip209.jpg");
+	}
 })
 
 
@@ -111,7 +112,7 @@ $(document).ready(function () {
 	var ini = $("#mok_2").offset().top - unheight*0.5; 
 	var med = $("#mok_2").offset().top - unheight*0.1; 
 	var med2 = $("#mok_2").offset().top + unheight*2.5; 
-	var fin = $("#mok_2").offset().top + $(".mundo").height() + unheight*0.5;
+	var fin = $("#mok_2").offset().top + $(".mundo").height() + unheight;
 	console.log("ini: " + ini + ", med2: " + med2 + ", fin: " + fin);
 	
 	$(window).scroll(function () {
@@ -124,12 +125,15 @@ $(document).ready(function () {
 			$("#mok_2").attr("src", "../images/uciplus/nar/nar_"+ i +".jpg");
 		} else if ( ($(window).scrollTop() > med2) && ($(window).scrollTop() < fin) ) {
 			console.log(i);
-			i -= 20;
-			$("#mok_2").attr("src", "../images/uciplus/gif_usuario/mundo_uciplus_"+ i +".png");
+			y = i - 30;
+			$("#mok_2").attr("src", "../images/uciplus/gif_usuario/mundo_uciplus_"+ y +".png");
 		} else {
 			console.log("else");
 			$("#mok_2").attr("src", "../images//uciplus/mundo_uciplus/mundo_uciplus_0.png");
 		}  
+		if (y > 80)  {
+			$("#mok_2").attr("src", "../images/uciplus/gif_usuario/mundo_uciplus_80.png");
+		}
 	})
 });
 

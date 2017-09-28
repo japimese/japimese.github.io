@@ -1434,7 +1434,7 @@ img[src=""] {
   top: 36vh; }
 .mockup_gif .mockup_in {
   position: absolute;
-  width: 50%;
+  width: 49.5%;
   left: 25.5%;
   top: 42vh;
   z-index: 1; }
@@ -1553,8 +1553,7 @@ img[src=""] {
         .container.uciplus #uciplus .propuesta .mi_propuesta .mockup_gif .mockup_mac {
           top: 5%; }
         .container.uciplus #uciplus .propuesta .mi_propuesta .mockup_gif .mockup_in {
-          top: 12%;
-          height: 59%; }
+          top: 12%; }
       @media (max-width: 768px) {
         .container.uciplus #uciplus .propuesta .mi_propuesta .mockup_gif {
           height: 50vh; }
