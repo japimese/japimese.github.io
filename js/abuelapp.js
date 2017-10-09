@@ -6,20 +6,21 @@ var unwidth = $(window).width();
 //iluminar
 
 
-// $(window).scroll(function () { 
-// 	var paso_active = $(".historia .active");
-// 	var ini = paso_active.offset().top - unheight*0.7;
-// 	var fin = ini + unheight*0.5;
+$(".derecha").scroll(function () { 
+	var paso_active = $(".active");
+	var ini = paso_active.offset().top - unheight*0.7;
+	var fin = ini + unheight*0.5;
 
-// 	if($(window).scrollTop() < $(".historia .pri").offset().top ) {
-// 		$(".historia .pri").addClass("active").siblings().removeClass("active");
-// 	} else if ($(window).scrollTop() > fin)  {
-// 		paso_active.removeClass("active").next().addClass("active");
+	if($(window).scrollTop() < $(".pri").offset().top ) {
+		console.log("asdfasda");
+		$(".pri").addClass("active").siblings().removeClass("active");
+	} else if ($(window).scrollTop() > fin)  {
+		paso_active.removeClass("active").next().addClass("active");
 
-// 	} else if ($(window).scrollTop() < ini) {
-// 		paso_active.removeClass("active").prev().addClass("active");
-// 	}
-// });
+	} else if ($(window).scrollTop() < ini) {
+		paso_active.removeClass("active").prev().addClass("active");
+	}
+});
 
 //gifs
 

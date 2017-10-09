@@ -1419,7 +1419,11 @@ img[src=""] {
   width: 100vw;
   overflow: hidden;
   max-width: 1366px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  scroll-snap-type: mandatory;
+  scroll-snap-destination: 50% 50%;
+  overflow-y: scroll;
+  height: 100vh; }
   .container ::selection {
     background-color: #0862C2;
     /* WebKit/Blink Browsers */
@@ -1435,74 +1439,69 @@ img[src=""] {
       height: 90%;
       margin-top: 7%;
       margin-left: -5%; }
-  .container .derecha {
-    scroll-snap-type: mandatory;
-    /* older spec implementation */
-    scroll-snap-destination: 0% 100%;
-    scroll-snap-points-x: repeat(100%); }
-    .container .derecha .diapo {
-      position: relative;
-      display: block;
-      padding: 4% 8%;
-      width: 100%;
-      margin: 0 auto;
-      padding-left: 45%;
-      height: 100vh !important;
-      background: url(../images/abuelapp/abuelapp_fondo.png) fixed; }
-    .container .derecha .front {
-      position: relative;
+  .container .derecha .diapo {
+    position: relative;
+    display: block;
+    padding: 4% 8%;
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 45%;
+    background: url(../images/abuelapp/abuelapp_fondo.png) fixed;
+    scroll-snap-coordinate: 50% 50%; }
+  .container .derecha .front {
+    position: relative;
+    color: white;
+    text-align: center;
+    top: 17vh;
+    height: 83vh; }
+    .container .derecha .front .parr {
       color: white;
-      text-align: center;
-      top: 17vh;
-      height: 83vh; }
-      .container .derecha .front .parr {
-        color: white;
-        margin-top: 5vh;
-        margin-bottom: 2em;
-        font-family: Armonioso;
-        font-size: 28px; }
-      .container .derecha .front .titulo {
-        font-family: Gotham;
-        font-weight: normal;
-        font-size: 5vw; }
-    .container .derecha .claim {
-      background: white;
-      height: 65.5vh; }
-      .container .derecha .claim p {
-        font-family: Gotham;
-        color: #88BCA2;
-        font-size: 30px;
-        position: relative;
-        -moz-transform: translate(0, -50%);
-        -o-transform: translate(0, -50%);
-        -ms-transform: translate(0, -50%);
-        -webkit-transform: translate(0, -50%);
-        transform: translate(0, -50%);
-        top: 50%; }
-        .container .derecha .claim p b {
-          font-weight: bold; }
-    .container .derecha .funciona p {
+      margin-top: 5vh;
+      margin-bottom: 2em;
+      font-family: Armonioso;
+      font-size: 28px; }
+    .container .derecha .front .titulo {
       font-family: Gotham;
-      color: white;
-      font-size: 20px; }
-    .container .derecha .funciona .intro {
-      height: 83vh;
-      position: relative; }
-      .container .derecha .funciona .intro p {
-        font-weight: bold;
-        position: relative;
-        -moz-transform: translate(0, -50%);
-        -o-transform: translate(0, -50%);
-        -ms-transform: translate(0, -50%);
-        -webkit-transform: translate(0, -50%);
-        transform: translate(0, -50%);
-        top: 50%; }
-    .container .derecha .funciona .historia p {
-      height: 40vh;
-      font-weight: light;
-      opacity: .5; }
-    .container .derecha .funciona .historia .active {
+      font-weight: normal;
+      font-size: 5vw; }
+  .container .derecha .claim {
+    background: white;
+    height: 65.5vh; }
+    .container .derecha .claim p {
+      font-family: Gotham;
+      color: #88BCA2;
+      font-size: 30px;
+      position: relative;
+      -moz-transform: translate(0, -50%);
+      -o-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+      -webkit-transform: translate(0, -50%);
+      transform: translate(0, -50%);
+      top: 50%; }
+      .container .derecha .claim p b {
+        font-weight: bold; }
+  .container .derecha .funciona p {
+    font-family: Gotham;
+    color: white;
+    font-size: 20px; }
+  .container .derecha .funciona.intro {
+    height: 83vh;
+    position: relative; }
+    .container .derecha .funciona.intro p {
       font-weight: bold;
-      opacity: 1; }
+      position: relative;
+      -moz-transform: translate(0, -50%);
+      -o-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+      -webkit-transform: translate(0, -50%);
+      transform: translate(0, -50%);
+      top: 50%; }
+  .container .derecha .funciona.historia p {
+    height: 40vh;
+    font-weight: light;
+    opacity: .5; }
+  .container .derecha .funciona.historia.active p {
+    font-weight: bold;
+    opacity: 1; }
 
 /*# sourceMappingURL=style_abuelapp2.css.map */
