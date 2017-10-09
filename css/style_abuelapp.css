@@ -1493,8 +1493,11 @@ img[src=""] {
         transform: translate(0, -50%);
         top: 50%; }
     .container #abuelapp .funciona .historia p {
-      height: 40vh; }
+      height: 40vh;
+      font-weight: light;
+      opacity: .5; }
     .container #abuelapp .funciona .historia .active {
-      font-weight: bold; }
+      font-weight: bold;
+      opacity: 1; }
 
 /*# sourceMappingURL=style_abuelapp.css.map */
