@@ -1378,7 +1378,7 @@ img[src=""] {
   margin: 0 auto; }
 
 .container.index {
-  padding: 5vh 2vw;
+  padding: 5vh 3vw;
   background-color: rgba(0, 0, 0, 0.8);
   -webkit-transition: background-color 0.7s cubic-bezier(0.81, 0.15, 0.71, 0.95);
   -moz-transition: background-color 0.7s cubic-bezier(0.81, 0.15, 0.71, 0.95);
@@ -1386,16 +1386,17 @@ img[src=""] {
   -o-transition: background-color 0.7s cubic-bezier(0.81, 0.15, 0.71, 0.95);
   transition: background-color 0.7s cubic-bezier(0.81, 0.15, 0.71, 0.95); }
   .container.index p, .container.index a, .container.index small {
+    font-family: "Lato-Regular", Helvetica, Arial, sans-serif;
+    color: white;
     font-size: 3vw;
-    line-height: 1.5em;
-    font-family: arial;
-    color: white; }
+    line-height: 1.5em; }
     @media (max-width: 768px) {
       .container.index p, .container.index a, .container.index small {
         font-size: calc(18px + 1vw); } }
   .container.index .uno {
     height: 100vh;
-    display: block; }
+    display: block;
+    text-align: center; }
     .container.index .uno p {
       position: relative;
       -moz-transform: translate(0, -50%);
@@ -1403,10 +1404,11 @@ img[src=""] {
       -ms-transform: translate(0, -50%);
       -webkit-transform: translate(0, -50%);
       transform: translate(0, -50%);
-      top: 35%; }
+      top: 40%; }
     .container.index .uno b {
       font-weight: bold;
-      font-size: 2em; }
+      font-size: 3em;
+      font-family: "Calluna", "Times New Roman", Times, serif; }
   .container.index .dos {
     margin-bottom: 25vh;
     display: block; }
