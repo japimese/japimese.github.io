@@ -1,0 +1,133 @@
+@import "main";
+
+img[src=""] { background: rgba(0,0,0,.5); display: block; min-width: 200px; min-height: 200px; margin: 0 auto;}
+
+$verde: #88BCA2;
+
+.titulo {
+	@include typo($akzi, 3vw, white);
+	font-weight: bold;
+}
+
+
+.titulo_med {
+	@include typo($helvetica, 1.5vw, $verde);
+	font-weight: bold;
+}
+
+.parr {
+	@include typo(Gotham, 1.72vw, $gris-typo);
+	line-height: 1.7;
+	font-weight: normal;
+}
+
+
+@media #{$mobile} {
+	.parr { font-size: calc(10px + 1.5vw); }
+	.titulo { font-size: calc(20px + 1.5vw); }
+	.titulo_med { font-size: calc(13px + 1.5vw); }
+}
+@media #{$Bigdesktop} {
+	.parr { font-size: calc(10px + 1vw); }
+	.titulo { font-size: calc(20px + 1.5vw);}
+	.titulo_med { font-size: calc(13px + 1.5vw); }
+}
+
+.container {
+	::selection {
+		background-color: $azul-up; /* WebKit/Blink Browsers */
+		color: white;
+	}
+
+	position: relative;
+	width: 100vw;
+	overflow: hidden;
+	#abuelapp {
+		max-width: 1366px;
+		margin: 0 auto;
+		.app_mockup {
+			position: fixed;
+			width: 50%;
+			height: 100vh;
+			text-align: center;
+			z-index: 100;
+			.mockup {
+				position: relative;
+				height: 90%;
+				margin-top: 7%;
+				margin-left: -5%;
+			}
+		}
+		.diapo {
+			position: relative;
+		    display: block;
+		    padding: 4% 8%;
+		    width: 100%;
+		    margin: 0 auto;
+			padding-left: 45%;
+			background: url(../images/abuelapp/abuelapp_fondo.png) fixed;
+		}
+		.front {
+			position: relative;
+			color: white;
+			text-align: center;
+		    top: 17vh;	
+		    height: 83vh;
+			.parr {
+				color: white;
+				margin-top: 5vh;
+				margin-bottom: 2em;
+				font-family: Armonioso;
+				font-size: 28px;
+			}
+			.titulo {
+				font-family: Gotham;
+				font-weight: normal;
+				font-size: 5vw;
+			}
+		}
+		.claim {
+			background: white;
+			height: 65.5vh;
+			p {
+				@include typo(Gotham, 30px, $verde);
+				position: relative;
+				@include translate (0, -50%);
+				top: 50%;
+				b {font-weight: bold;}
+			}
+		}
+
+		.funciona {
+			p {
+				@include typo(Gotham, 20px, white);
+			}
+			.intro {
+				height: 83vh;
+				position: relative;
+				p {
+					font-weight: bold;
+					position: relative;
+					@include translate (0, -50%);
+					top: 50%;
+				}
+			}
+			.historia {
+				p {
+					height: 40vh;
+					font-weight: light;
+					opacity: .5;
+				} 
+				.active {
+					font-weight: bold;
+					opacity: 1;
+				}
+			}
+			
+		}
+		
+	}
+}
+
+
+
