@@ -15,10 +15,10 @@ $(".abuelapp").scroll(function () {
     if($(window).scrollTop() < $(".pri").offset().top ) {
         console.log("prepri");
         $(".pri").addClass("active").siblings().removeClass("active");
+        $(".mockup").attr("src", "../images/abuelapp/abuelapp_frontmok.png");
     } else if ($(window).scrollTop() > fin)  {
         paso_active.removeClass("active").next().addClass("active");
         console.log("in");
-
     } else if ($(window).scrollTop() < ini) {
         paso_active.removeClass("active").prev().addClass("active");
     }
@@ -28,16 +28,17 @@ $(".abuelapp").scroll(function () {
 
 //gifs
 
-// $(window).scroll(function () {
+$(".abuelapp").scroll(function () {
+	var pri = $(".intro").offset().top + unheight*0.3;
 
-// 	if($(".historia .sec").hasClass("active")) {
-// 		$(".mockup").attr("src", "../images/abuelapp/abp_1.gif");
-// 	} else if ($(".historia .sec").hasClass("active")) {
-// 		$(".mockup").attr("src", "../images/abuelapp/abp_2.gif");
-// 	} else if ($(".historia .ter").hasClass("active")) {
-// 		$(".mockup").attr("src", "../images/abuelapp/abp_3.gif");
-// 	}
-// })
+	if(($(window).scrollTop() > pri) && ($(".pri").hasClass("active")))  {
+		$(".mockup_in").attr("src", "../images/abuelapp/abp_1.gif");
+	} else if ($(".sec").hasClass("active")) {
+		$(".mockup_in").attr("src", "../images/abuelapp/abp_2.gif");
+	} else if ($(".ter").hasClass("active")) {
+		$(".mockup_in").attr("src", "../images/abuelapp/abp_3.gif");
+	}
+})
 
 
 

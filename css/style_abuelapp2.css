@@ -1434,11 +1434,18 @@ img[src=""] {
     height: 100vh;
     text-align: center;
     z-index: 100; }
-    .container .app_mockup .mockup {
+    .container .app_mockup .mockup_mob {
       position: relative;
       height: 90%;
       margin-top: 7%;
-      margin-left: -5%; }
+      margin-left: -5%;
+      z-index: 1; }
+    .container .app_mockup .mockup_in {
+      position: absolute;
+      height: 65%;
+      margin-top: 20%;
+      margin-left: 1.5%;
+      z-index: 2; }
   .container .derecha .diapo {
     position: relative;
     display: block;

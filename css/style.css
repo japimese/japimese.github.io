@@ -1512,7 +1512,7 @@ img[src=""] {
     -ms-transition: all 0.7s cubic-bezier(0.81, 0.15, 0.71, 0.95);
     -o-transition: all 0.7s cubic-bezier(0.81, 0.15, 0.71, 0.95);
     transition: all 0.7s cubic-bezier(0.81, 0.15, 0.71, 0.95);
-    background-color: rgba(253, 191, 0, 0.82); }
+    background-color: #f7c23e; }
     .container.index.blanco aside a {
       color: #333; }
 @keyframes globo {
