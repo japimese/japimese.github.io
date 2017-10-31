@@ -1460,10 +1460,10 @@ img[src=""] {
     color: white;
     text-align: center;
     top: 17vh;
-    height: 83vh; }
+    height: 85vh; }
     .container .derecha .front .parr {
       color: white;
-      margin-top: 5vh;
+      margin-top: 2vh;
       margin-bottom: 2em;
       font-family: Armonioso;
       font-size: 28px; }
@@ -1471,13 +1471,17 @@ img[src=""] {
       font-family: Gotham;
       font-weight: normal;
       font-size: 5vw; }
+    .container .derecha .front img {
+      width: 16vw;
+      display: block;
+      margin: 5% auto; }
   .container .derecha .claim {
     background: white;
     height: 65.5vh; }
     .container .derecha .claim p {
       font-family: Gotham;
       color: #88BCA2;
-      font-size: 30px;
+      font-size: 27px;
       position: relative;
       -moz-transform: translate(0, -50%);
       -o-transform: translate(0, -50%);
@@ -1511,4 +1515,4 @@ img[src=""] {
     font-weight: bold;
     opacity: 1; }
 
-/*# sourceMappingURL=style_abuelapp2.css.map */
+/*# sourceMappingURL=style_abuelapp.css.map */
