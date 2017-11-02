@@ -1457,9 +1457,9 @@ img[src=""] {
               font-size: .7em; } }
         .container.index .tres ul li p {
           font-size: 2em; }
-        .container.index .tres ul li a[href^="porfolio/abuelapp.html"] {
+        .container.index .tres ul li#abuelapp a {
           position: relative; }
-          .container.index .tres ul li a[href^="porfolio/abuelapp.html"]:after {
+          .container.index .tres ul li#abuelapp a:after {
             content: '';
             position: absolute;
             left: 75%;

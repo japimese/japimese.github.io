@@ -143,6 +143,12 @@
 		    }
 		};
 
+		$(document).ready(function(){
+			if($(window).width() < 768) {
+				$("#abuelapp a").attr("href", "abuelapp/index.html");
+			} 
+		});
+
 
 		//personalizar para email
 		
