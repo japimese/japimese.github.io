@@ -1415,6 +1415,7 @@ img[src=""] {
   .titulo_med {
     font-size: calc(13px + 1.5vw); } }
 .container {
+  background: url(../images/abuelapp/abuelapp_fondo.png) fixed;
   position: relative;
   width: 100vw;
   overflow: hidden;
@@ -1452,18 +1453,17 @@ img[src=""] {
     padding: 4% 8%;
     width: 100%;
     margin: 0 auto;
+    margin-bottom: 10%;
     padding-left: 45%;
-    background: url(../images/abuelapp/abuelapp_fondo.png) fixed;
     scroll-snap-coordinate: 50% 50%; }
   .container .derecha .front {
     position: relative;
     color: white;
     text-align: center;
-    top: 17vh;
-    height: 85vh; }
+    height: 100vh; }
     .container .derecha .front .parr {
       color: white;
-      margin-top: 2vh;
+      margin-top: 20vh;
       margin-bottom: 2em;
       font-family: Armonioso;
       font-size: 28px; }
@@ -1474,45 +1474,80 @@ img[src=""] {
     .container .derecha .front img {
       width: 16vw;
       display: block;
-      margin: 5% auto; }
+      margin: 8% auto; }
   .container .derecha .claim {
     background: white;
-    height: 65.5vh; }
+    -moz-transform: rotate(10.37deg);
+    -o-transform: rotate(10.37deg);
+    -ms-transform: rotate(10.37deg);
+    -webkit-transform: rotate(10.37deg);
+    transform: rotate(10.37deg);
+    width: 200%;
+    margin-left: -5%;
+    height: 90vh;
+    padding-left: 52%; }
     .container .derecha .claim p {
+      -moz-transform: rotate(-10.37deg) translate(0, -50%);
+      -o-transform: rotate(-10.37deg) translate(0, -50%);
+      -ms-transform: rotate(-10.37deg) translate(0, -50%);
+      -webkit-transform: rotate(-10.37deg) translate(0, -50%);
+      transform: rotate(-10.37deg) translate(0, -50%);
       font-family: Gotham;
       color: #88BCA2;
       font-size: 27px;
       position: relative;
-      -moz-transform: translate(0, -50%);
-      -o-transform: translate(0, -50%);
-      -ms-transform: translate(0, -50%);
-      -webkit-transform: translate(0, -50%);
-      transform: translate(0, -50%);
       top: 50%; }
       .container .derecha .claim p b {
-        font-weight: bold; }
-  .container .derecha .funciona p {
-    font-family: Gotham;
-    color: white;
-    font-size: 20px; }
-  .container .derecha .funciona.intro {
-    height: 83vh;
-    position: relative; }
-    .container .derecha .funciona.intro p {
+        font-weight: bold;
+        color: #364958;
+        margin-top: 5%;
+        display: block; }
+  .container .derecha .funciona {
+    margin-bottom: 0; }
+    .container .derecha .funciona p {
+      font-family: Gotham;
+      color: white;
+      font-size: 20px; }
+    .container .derecha .funciona.intro {
+      height: 83vh;
+      position: relative; }
+      .container .derecha .funciona.intro h3 {
+        font-family: Gotham;
+        color: white;
+        font-size: 25px;
+        font-style: italic;
+        text-align: right;
+        margin: 5% auto -5%;
+        line-height: 1.2em; }
+      .container .derecha .funciona.intro p {
+        position: relative;
+        -moz-transform: translate(0, -50%);
+        -o-transform: translate(0, -50%);
+        -ms-transform: translate(0, -50%);
+        -webkit-transform: translate(0, -50%);
+        transform: translate(0, -50%);
+        top: 50%; }
+        .container .derecha .funciona.intro p b {
+          font-weight: bold; }
+    .container .derecha .funciona.titulo {
+      margin: 10% auto 10%; }
+      .container .derecha .funciona.titulo h3 {
+        font-family: Armonioso;
+        color: white;
+        font-size: 30px;
+        text-align: center; }
+    .container .derecha .funciona.historia p {
+      height: 40vh;
+      font-weight: light;
+      opacity: .5; }
+      .container .derecha .funciona.historia p span {
+        display: block;
+        font-family: Armonioso;
+        color: white;
+        font-size: 35px;
+        margin-left: -.7em; }
+    .container .derecha .funciona.historia.active p {
       font-weight: bold;
-      position: relative;
-      -moz-transform: translate(0, -50%);
-      -o-transform: translate(0, -50%);
-      -ms-transform: translate(0, -50%);
-      -webkit-transform: translate(0, -50%);
-      transform: translate(0, -50%);
-      top: 50%; }
-  .container .derecha .funciona.historia p {
-    height: 40vh;
-    font-weight: light;
-    opacity: .5; }
-  .container .derecha .funciona.historia.active p {
-    font-weight: bold;
-    opacity: 1; }
+      opacity: 1; }
 
 /*# sourceMappingURL=style_abuelapp.css.map */
