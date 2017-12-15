@@ -1383,6 +1383,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   line-height: 1.7;
   font-weight: normal; }
 
+.display-big {
+  font-family: "Lato-Regular", Helvetica, Arial, sans-serif; }
+
 @media (max-width: 768px) {
   .parr {
     font-size: calc(10px + 1.5vw); }
@@ -1408,7 +1411,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     text-align: center;
     margin-top: 60vh;
     font-size: calc(8vw + 20px);
-    font-family: "Lato-Regular", Helvetica, Arial, sans-serif;
+    font-family: Yatra One;
     font-weight: 800;
     background-color: rgba(255, 255, 255, 0.3); }
   @media (max-width: 768px) {
