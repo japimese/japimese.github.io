@@ -1534,16 +1534,16 @@ img[src=""] {
       padding-top: 3vw;
       background-color: #3B6064; }
       .container.index .proyectos .abuelapp .titulo {
-        font-family: Gotham;
+        font-family: "Gotham", Helvetica, Arial, sans-serif;
         color: white;
         font-weight: normal;
         text-align: center;
         margin: 15% auto 5%; }
       .container.index .proyectos .abuelapp .subtit {
-        font-family: Armonioso;
+        font-family: "Armonioso", Times, serif;
         color: white; }
       .container.index .proyectos .abuelapp .parr {
-        font-family: Gotham;
+        font-family: "Gotham", Helvetica, Arial, sans-serif;
         color: white;
         font-weight: bold;
         margin-top: 10%;
@@ -1562,14 +1562,14 @@ img[src=""] {
       padding-top: 5vw;
       padding-bottom: 5vw; }
       .container.index .proyectos .mundi .titulo {
-        font-family: Yatra One;
+        font-family: "YatraOne", Helvetica, Arial, sans-serif;
         color: #3FCA56;
         font-weight: normal;
         text-align: left;
         margin: 15% auto 5%; }
       .container.index .proyectos .mundi .subtit {
         color: #3FCA56;
-        font-family: Yatra One; }
+        font-family: "YatraOne", Helvetica, Arial, sans-serif; }
       .container.index .proyectos .mundi .parr-grande {
         color: #3FCA56;
         font-family: "Lato-Regular", Helvetica, Arial, sans-serif;

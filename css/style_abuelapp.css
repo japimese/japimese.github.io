@@ -1390,7 +1390,7 @@ img[src=""] {
   font-weight: bold; }
 
 .parr {
-  font-family: Gotham;
+  font-family: "Gotham", Helvetica, Arial, sans-serif;
   color: #494949;
   font-size: 1.72vw;
   line-height: 1.7;
@@ -1465,10 +1465,10 @@ img[src=""] {
       color: white;
       margin-top: 20vh;
       margin-bottom: 2em;
-      font-family: Armonioso;
+      font-family: "Armonioso", Times, serif;
       font-size: 28px; }
     .container .derecha .front .titulo {
-      font-family: Gotham;
+      font-family: "Gotham", Helvetica, Arial, sans-serif;
       font-weight: normal;
       font-size: 5vw; }
     .container .derecha .front img {
@@ -1492,7 +1492,7 @@ img[src=""] {
       -ms-transform: rotate(-10.37deg) translate(0, -50%);
       -webkit-transform: rotate(-10.37deg) translate(0, -50%);
       transform: rotate(-10.37deg) translate(0, -50%);
-      font-family: Gotham;
+      font-family: "Gotham", Helvetica, Arial, sans-serif;
       color: #88BCA2;
       font-size: 27px;
       position: relative;
@@ -1505,14 +1505,14 @@ img[src=""] {
   .container .derecha .funciona {
     margin-bottom: 0; }
     .container .derecha .funciona p {
-      font-family: Gotham;
+      font-family: "Gotham", Helvetica, Arial, sans-serif;
       color: white;
       font-size: 20px; }
     .container .derecha .funciona.intro {
       height: 83vh;
       position: relative; }
       .container .derecha .funciona.intro h3 {
-        font-family: Gotham;
+        font-family: "Gotham", Helvetica, Arial, sans-serif;
         color: white;
         font-size: 25px;
         font-style: italic;
@@ -1532,7 +1532,7 @@ img[src=""] {
     .container .derecha .funciona.titulo {
       margin: 10% auto 10%; }
       .container .derecha .funciona.titulo h3 {
-        font-family: Armonioso;
+        font-family: "Armonioso", Times, serif;
         color: white;
         font-size: 30px;
         text-align: center; }
@@ -1542,7 +1542,7 @@ img[src=""] {
       opacity: .5; }
       .container .derecha .funciona.historia p span {
         display: block;
-        font-family: Armonioso;
+        font-family: "Armonioso", Times, serif;
         color: white;
         font-size: 35px;
         margin-left: -.7em; }

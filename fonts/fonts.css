@@ -176,4 +176,19 @@
     font-weight: bold;
     font-style: normal;
 }
+@font-face {
+	font-family: 'Gotham';
+	src: url('gotham.ttf');
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Armonioso';
+	src: url('armonioso.otf');
+	font-style: normal;
+}
+@font-face {
+	font-family: 'YatraOne';
+	src: url('YatraOne.ttf');
+	font-style: normal;
+}
 

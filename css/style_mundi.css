@@ -1411,7 +1411,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     text-align: center;
     margin-top: 60vh;
     font-size: calc(8vw + 20px);
-    font-family: Yatra One;
+    font-family: "YatraOne", Helvetica, Arial, sans-serif;
     font-weight: 800;
     background-color: rgba(255, 255, 255, 0.3); }
   @media (max-width: 768px) {
