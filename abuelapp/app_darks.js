@@ -39,8 +39,10 @@ abuelApp.service("cityService", function() {
 abuelApp.controller("homeController" , ["$scope", "cityService",
 function($scope, cityService) {
 	console.log("home controller!");
-	$scope.latitude = cityService.latitude;
-	$scope.longitude = cityService.longitude;
+	// $scope.latitude = cityService.latitude;
+	// $scope.longitude = cityService.longitude;
+	$scope.latitude = "43°21'11.4";
+	$scope.longitude = "8°23'25.9";
 
 	// $scope.$watch("city", function() {
 	// 	cityService.city = $scope.city;

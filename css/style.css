@@ -1110,6 +1110,9 @@ body {
 a {
   text–decoration–skip: ink; }
 
+img {
+  image-rendering: -webkit-optimize-contrast; }
+
 ::-moz-selection {
   background: #4871D1;
   /* Gecko Browsers */ }
