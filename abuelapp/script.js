@@ -91,14 +91,21 @@ var browserGeolocationFail = function(error) {
   switch (error.code) {
     case error.TIMEOUT:
       console.log("Browser geolocation error !\n\nTimeout.");
+      latitud = 43.21114;
+	  longitud = -8.23259;
       break;
     case error.PERMISSION_DENIED:
       if(error.message.indexOf("Only secure origins are allowed") == 0) {
         tryAPIGeolocation();
+      } else {
+      	latitud = 43.21114;
+	    longitud = -8.23259;
       }
       break;
     case error.POSITION_UNAVAILABLE:
       console.log("Browser geolocation error !\n\nPosition unavailable.");
+      latitud = 43.21114;
+	  longitud = -8.23259;
       break;
   }
 };
@@ -110,6 +117,9 @@ var tryGeolocation = function() {
 	      	browserGeolocationFail,
 	      	{maximumAge: 20000, timeout: 10000, enableHighAccuracy: false}
 	    );
+  	} else {
+  		latitud = 43.21114;
+	    longitud = -8.23259;
   	}
 };
 

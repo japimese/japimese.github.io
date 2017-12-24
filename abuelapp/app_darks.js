@@ -41,8 +41,8 @@ function($scope, cityService) {
 	console.log("home controller!");
 	// $scope.latitude = cityService.latitude;
 	// $scope.longitude = cityService.longitude;
-	$scope.latitude = "43°21'11.4";
-	$scope.longitude = "8°23'25.9";
+	$scope.latitude = 43.21114;
+	$scope.longitude = -8.23259;
 
 	// $scope.$watch("city", function() {
 	// 	cityService.city = $scope.city;
