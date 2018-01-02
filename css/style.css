@@ -1446,7 +1446,7 @@ img[src=""] {
     margin: 0 auto;
     padding: .8em 1.2em;
     display: table;
-    margin: 4% auto;
+    margin: 2em auto;
     border-radius: 2em;
     border: 2px solid #333;
     font-family: "Lato-Regular", Helvetica, Arial, sans-serif;
@@ -1549,8 +1549,7 @@ img[src=""] {
         font-family: "Gotham", Helvetica, Arial, sans-serif;
         color: white;
         font-weight: bold;
-        margin-top: 10%;
-        margin-left: 10%; }
+        margin-top: 10%; }
       .container.index .proyectos .abuelapp .boton {
         color: white;
         border-color: white; }
@@ -1559,7 +1558,13 @@ img[src=""] {
           background-color: white; }
         @media (max-width: 768px) {
           .container.index .proyectos .abuelapp .boton {
-            margin: 30vw 10% -30vw; } }
+            margin: 10vw 0 -25vw;
+            position: relative; } }
+      .container.index .proyectos .abuelapp img {
+        margin-left: -15%; }
+        @media (max-width: 768px) {
+          .container.index .proyectos .abuelapp img {
+            margin-left: 0; } }
     .container.index .proyectos .mundi {
       background-color: #fff;
       padding-top: 5vw;
