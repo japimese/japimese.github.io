@@ -1110,6 +1110,9 @@ body {
 a {
   text–decoration–skip: ink; }
 
+img {
+  image-rendering: -webkit-optimize-contrast; }
+
 ::-moz-selection {
   background: #4871D1;
   /* Gecko Browsers */ }
@@ -1416,6 +1419,7 @@ img[src=""] {
     font-size: calc(13px + 1.5vw); } }
 .container {
   background: url(../images/abuelapp/abuelapp_fondo.png) fixed;
+  background-size: cover;
   position: relative;
   width: 100vw;
   overflow: hidden;
@@ -1477,31 +1481,38 @@ img[src=""] {
       margin: 8% auto; }
   .container .derecha .claim {
     background: white;
+    margin-top: -10vh;
     -moz-transform: rotate(10.37deg);
     -o-transform: rotate(10.37deg);
     -ms-transform: rotate(10.37deg);
     -webkit-transform: rotate(10.37deg);
     transform: rotate(10.37deg);
-    width: 200%;
-    margin-left: -5%;
+    width: 110vw;
+    margin-left: -5vw;
+    max-width: none;
     height: 90vh;
     padding-left: 52%; }
     .container .derecha .claim p {
-      -moz-transform: rotate(-10.37deg) translate(0, -50%);
-      -o-transform: rotate(-10.37deg) translate(0, -50%);
-      -ms-transform: rotate(-10.37deg) translate(0, -50%);
-      -webkit-transform: rotate(-10.37deg) translate(0, -50%);
-      transform: rotate(-10.37deg) translate(0, -50%);
+      -moz-transform: rotate(-10.37deg) translate(0, -60%);
+      -o-transform: rotate(-10.37deg) translate(0, -60%);
+      -ms-transform: rotate(-10.37deg) translate(0, -60%);
+      -webkit-transform: rotate(-10.37deg) translate(0, -60%);
+      transform: rotate(-10.37deg) translate(0, -60%);
       font-family: "Gotham", Helvetica, Arial, sans-serif;
       color: #88BCA2;
       font-size: 27px;
       position: relative;
-      top: 50%; }
+      top: 50%;
+      width: 80%; }
       .container .derecha .claim p b {
         font-weight: bold;
         color: #364958;
         margin-top: 5%;
         display: block; }
+    .container .derecha .claim .iconos {
+      top: 25%; }
+      .container .derecha .claim .iconos img {
+        margin-left: 5%; }
   .container .derecha .funciona {
     margin-bottom: 0; }
     .container .derecha .funciona p {
@@ -1549,5 +1560,7 @@ img[src=""] {
     .container .derecha .funciona.historia.active p {
       font-weight: bold;
       opacity: 1; }
+  .container .derecha > :last-child {
+    margin-bottom: 10%; }
 
 /*# sourceMappingURL=style_abuelapp.css.map */
