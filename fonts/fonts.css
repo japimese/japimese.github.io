@@ -177,6 +177,12 @@
     font-style: normal;
 }
 @font-face {
+    font-family: 'lato';
+    src: url('Lato/Lato-Black.ttf') format('truetype');
+    font-weight: black;
+    font-style: normal;
+}
+@font-face {
 	font-family: 'Gotham';
 	src: url('gotham.ttf');
 	font-style: normal;
@@ -189,6 +195,11 @@
 @font-face {
 	font-family: 'YatraOne';
 	src: url('YatraOne.ttf');
+	font-style: normal;
+}
+@font-face {
+	font-family: 'LeituraNews';
+	src: url('LeituraNews-Italic1.ttf');
 	font-style: normal;
 }
 
