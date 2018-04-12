@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="dClapp">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>dClapp</title>
+	<link rel="icon" type="image/jpg" href="images/icon.png">
+	<!-- <link rel="stylesheet" href="css/style.css"> -->
+	<meta name="p:domain_verify" content="010c67b82d18bca303e35e8b40011654"/>
+	<link rel="stylesheet" href="css/dclapp.css">
+	<style>
+		.container {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100vw;
+			height: 100vh;
+			background-color: #f1f1f1; 
+			overflow: hidden;
+		}
+		.uno {
+			background-image: url(images/dclapp/fondo_1.png);
+			background-size: contain;
+			background-position: center;
+			width: 100%;
+			height: 100%;
+			display: block;	
+		}
+		.uno a {
+			position: absolute;
+			display: block;
+			top: 75vh;
+			left: calc(50% - 65px);
+			padding: 1em;
+			color: white;
+			font-family: Roboto, Arial, sans-serif;
+			font-size: 20px;
+			background-color: #FC5130;
+			box-shadow: 0px 5px 20px rgba(0,0,0,.3);
+		}
+
+		.uno a:hover {
+			box-shadow: 0px 1px 7px rgba(0,0,0,.6);
+			top: calc(75vh + 5px);
+		}
+		.dos {
+			position: absolute;
+			top: 0;
+			background-image: url(images/dclapp/fondo_2.png);
+			background-size: contain;
+			background-position: center;
+			width: 100%;
+			height: 100%;
+			display: none;	
+		}
+		.tres {
+			position: absolute;
+			bottom: 0;
+			background-image: url(images/dclapp/fondo_3.png);
+			background-size: contain;
+			background-position: top center;
+			width: 100%;
+			height: 100%;
+			display: none;	
+		}
+		.tres a {
+			position: absolute;
+			display: block;
+			top: 65vh;
+			width: 40vw;
+			left: 30vw;
+		}
+		.tres .clap img {
+			width: 40vw;
+		}
+		.tres a:hover {
+
+		}
+
+	</style>
+</head>
+
+<body>
+		<div class="container">
+			<div class="uno">
+				<a class="boton">CLAPPEAR</a>
+			</div>
+			<div class="dos">
+
+			</div>
+			<div class="tres">
+				<!-- <a class="clapp"><img src="images/dclapp/clapp.png"></a> -->
+				<div class="clap">
+				  <div class="hover-effect"></div>
+				  <div class="confetti-effect">
+				    <div class="confetti-wrap">
+				      <div class="group group-1">
+				        <span class="circle"></span>
+				        <span class="triangle"></span>
+				      </div>
+				      <div class="group group-2">
+				        <span class="circle"></span>
+				        <span class="triangle"></span>
+				      </div>
+				      <div class="group group-3">
+				        <span class="circle"></span>
+				        <span class="triangle"></span>
+				      </div>
+				      <div class="group group-4">
+				        <span class="circle"></span>
+				        <span class="triangle"></span>
+				      </div>
+				      <div class="group group-5">
+				        <span class="circle"></span>
+				        <span class="triangle"></span>
+				      </div>  
+				    </div>
+				  </div>
+				  <div class="clap-icon"><img src="images/dclapp/clapp.png"></div>
+				</div>
+			</div>
+			
+		</div>
+
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-56677487-1', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
+
+	<script src="js/jquery-2.2.4.min.js"></script>
+	<script type="text/javascript">
+		$(".boton").click(function(){
+			$(".uno").hide();
+			$(".dos").show();
+			setTimeout(function(){
+				$(".dos").hide();
+				$(".tres").show();
+			}, 1000);
+		});
+	</script>
+	<script type="text/javascript">
+		$(function() {
+  function randomNum(m, n) {
+    m = parseInt(m);
+    n = parseInt(n);
+    return Math.floor(Math.random() * (n - m + 1)) + m;
+  }
+  
+  var clap = $('.clap');
+  var confetti = $('.confetti-effect');
+  
+  clap.on('click', function() {
+    
+    confetti.css('transform', 'rotate('+randomNum(0, 180)+'deg)')
+    
+    confetti.children('.confetti-wrap').stop().addClass('expand');
+    setTimeout(function() {
+      confetti.children('.confetti-wrap').removeClass('expand');
+    }, 700)
+  });
+});
+	</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
