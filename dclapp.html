@@ -17,7 +17,7 @@
 			top: 30px;
 			left: 0;
 			width: 100vw;
-			height: calc(100% - 30px);
+			height: 100%;
 			background-color: #f1f1f1; 
 			overflow: hidden;
 		}
@@ -60,12 +60,42 @@
 		.tres {
 			position: absolute;
 			bottom: 0;
-			background-image: url(images/dclapp/fondo_3.png);
-			background-size: cover;
-			background-position: bottom center;
+			/*background-image: url(images/dclapp/foto.png);
+			background-size: contain;
+			background-position: top center;*/
 			width: 100%;
 			height: 100%;
 			display: none;	
+		}
+		/*.menu {
+			position: absolute;
+			bottom: 0;
+			background-image: url(images/dclapp/menu_3.png);
+			background-size: contain;
+			background-position: bottom center;
+			background-repeat: no-repeat;
+			width: 100%;
+		}*/
+		.tres .menu {
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+			height: 60%;
+			background-image: url(images/dclapp/menu_3.png);
+			background-size: contain;
+			background-position: bottom center;
+			background-repeat: no-repeat;
+			z-index: 1;
+		}
+		.tres .marx {
+			position: absolute;
+			bottom: 40%;
+			width: 100%;
+			height: 60%;
+			background-image: url(images/dclapp/foto.png);
+			background-size: cover;
+			background-position: top center;
+			background-repeat: no-repeat;
 		}
 		.tres a {
 			position: absolute;
@@ -73,7 +103,31 @@
 			bottom: 12%;
 			width: 40vw;
 			left: 30vw;
+			z-index: 2;
+			-webkit-transition: all ease-in .5s; /* Safari */
+    		transition: all ease-in .5s;
 		}
+		.tres p {
+			font-family: Roboto, Arial, sans-serif;
+			font-size: 20px;
+		    position: absolute;
+		    opacity: 0;
+		    bottom: 27%;
+		    z-index: 2;
+		    color: white;
+		    width: 100%;
+		    text-align: center;
+		    -webkit-transition: all ease-in .5s; /* Safari */
+    		transition: all ease-in .5s;
+		}
+
+		.tres p.active {
+			opacity: 1;
+			bottom: 30%;
+			-webkit-transition: all ease-in .5s; /* Safari */
+    		transition: all ease-in .2s;
+		}
+		
 		.tres .clap img {
 			width: 40vw;
 		}
@@ -93,35 +147,13 @@
 
 			</div>
 			<div class="tres">
-				<a class="clapp"><img src="images/dclapp/clapp.png"></a>
-				<!-- <div class="clap">
-				  <div class="hover-effect"></div>
-				  <div class="confetti-effect">
-				    <div class="confetti-wrap">
-				      <div class="group group-1">
-				        <span class="circle"></span>
-				        <span class="triangle"></span>
-				      </div>
-				      <div class="group group-2">
-				        <span class="circle"></span>
-				        <span class="triangle"></span>
-				      </div>
-				      <div class="group group-3">
-				        <span class="circle"></span>
-				        <span class="triangle"></span>
-				      </div>
-				      <div class="group group-4">
-				        <span class="circle"></span>
-				        <span class="triangle"></span>
-				      </div>
-				      <div class="group group-5">
-				        <span class="circle"></span>
-				        <span class="triangle"></span>
-				      </div>  
-				    </div>
-				  </div>
-				  <div class="clap-icon"><img src="images/dclapp/clapp.png"></div>
-				</div> -->
+				<div class="menu"></div>
+				<div class="marx"></div>
+				<p>+1 clapp</p>
+				<a class="clapp">
+					<img src="images/dclapp/clapp.png">
+				</a>
+
 			</div>
 			
 		</div>
@@ -147,29 +179,17 @@
 				$(".tres").show();
 			}, 1000);
 		});
-	</script>
-	<!-- <script type="text/javascript">
-		$(function() {
-		  function randomNum(m, n) {
-		    m = parseInt(m);
-		    n = parseInt(n);
-		    return Math.floor(Math.random() * (n - m + 1)) + m;
-		  }
-		  
-		  var clap = $('.clap');
-		  var confetti = $('.confetti-effect');
-		  
-		  clap.on('click', function() {
-		    
-		    confetti.css('transform', 'rotate('+randomNum(0, 180)+'deg)')
-		    
-		    confetti.children('.confetti-wrap').stop().addClass('expand');
-		    setTimeout(function() {
-		      confetti.children('.confetti-wrap').removeClass('expand');
-		    }, 700)
-		  });
+
+		$(".clapp").click(function() {
+			$("p").addClass("active");
+			$(".clapp img").attr("src", "images/dclapp/clapp_2.png");
+			setTimeout(function(){
+				$("p").removeClass("active");
+				$(".clapp img").attr("src", "images/dclapp/clapp.png");
+			}, 1000);
 		});
-	</script>-->
+	</script>
+	
  </body>
 </html>
 
