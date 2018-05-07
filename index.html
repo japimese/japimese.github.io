@@ -16,12 +16,24 @@
 	<div class="container index">
 		<div class="uno">
 			<p class="tit-grande">
-				<b id="esp">Hola</b> <b>  / </b> <b id="eng">hello</b><br><br class="br">
-				<span class="introd esp">Soy un creativo multidisciplinar muy versátil<br>con un porfolio inacabado y un poco feo.</span>
-				<span class="introd eng">I am a multidisciplinary creative,<br> with and unfinished ugly portfolio</span>
+				<span class="hola">
+					<b id="esp">Hola</b> <b>  / </b> <b id="eng">hello</b><br><br class="br">
+				</span>
+				<span class="introd esp">
+					Soy un.....un.....<br>
+					en realidad no sé lo que soy<br class="br">
+					sólo que me encanta <em class="love">crear</em>
+				</span>
+				<span class="introd eng">I am Mese,<br> and I love creating within teams</span>
 			</p>
 		</div>
 		<div class="esp">
+			<!-- <div class="row about">
+				<p>
+					¿Qué puedo crear?<br>
+					Web (diseño/programación) / 
+				</p>
+			</div> -->
 			<div class="row porfoficial">
 				<h3 class="row narrador parr-grande">
 					Tengo más experiencia que porfolio, pero te he recopilado algunos de los trabajos que he ido haciendo:
@@ -240,7 +252,7 @@
 		$(window).scroll(function () {
 			console.log(ucip);
 			if ( ($(window).scrollTop() > ucip) && ($(window).scrollTop() < abuap) ) {
-		        $(".container").addClass("fondo_color");
+		        //$(".container").addClass("fondo_color");
 		        $(".fondo_color").css("background-color", "#f7c23e");
 		    } 
 		    else if ( ($(window).scrollTop() > abuap) && ($(window).scrollTop() < mundi) ) {
@@ -250,7 +262,8 @@
 		      	$(".fondo_color").css("background-color", "#fff");
 		    } 
 		    else {
-		      	$(".container").removeClass("fondo_color").css("background-color", "#333");;
+		    	$(".fondo_color").css("background-color", "#fff");
+		      	//$(".container").removeClass("fondo_color").css("background-color", "#333");
 		    }
 		})
 		//al llegar a .dos
@@ -301,20 +314,27 @@
 		}
 
 		//IDIOMA
+		$("#esp, #eng").click(function() {
+			$(".container").addClass("fondo_color");
+		    $(".fondo_color").css("background-color", "#ffffff");    
+		});
+
 		$("#esp").click(function(){
 			$(".esp").show();
 			$(".eng").hide();
-			$(".introd").css("top", 0).css("opacity", 1);
+			$(this).siblings().hide();
+			$(".introd").css("top", "8vh").css("opacity", 1);
 
 			unheight = $(window).height();
-			ucip = $(".porfoficial").offset().top - unheight*0.8;
+			ucip = $(".porfoficial").offset().top - unheight*0.2;
 			abuap = $(".abuelapp").offset().top - unheight;
 			mundi = $(".mundi").offset().top - unheight*0.3;
 		})
 		$("#eng").click(function(){
 			$(".eng").show();
 			$(".esp").hide();
-			$(".introd").css("top", 0).css("opacity", 1);
+			$(this).siblings().hide();
+			$(".introd").css("top", "8vh").css("opacity", 1);
 
 			unheight = $(window).height();
 			ucip = $(".eng .porfoficial").offset().top - unheight*0.8;
@@ -322,7 +342,21 @@
 			mundi = $(".eng .mundi").offset().top - unheight*0.3;
 		})
 
+	 	var love = ["crear", "diseñar", "programar", "cocinar"];
+		var counter = 0;
+		var fin = love.length - 1;
 
+		function cambio_texto() {
+		    if (counter == fin){
+		        counter = 0;    
+		    }
+		    else {
+		        counter++;
+		    }
+		    $(".love").text(love[counter]);
+		    setTimeout(cambio_texto, 2000);
+		}
+		setTimeout(cambio_texto, 2000);
 
 	</script>
 

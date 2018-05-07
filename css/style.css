@@ -1484,32 +1484,37 @@ img[src=""] {
       -webkit-transform: translate(0, -50%);
       transform: translate(0, -50%);
       top: 40%; }
-      .container.index .uno p b {
-        font-size: 3em;
-        font-family: "Calluna", "Times New Roman", Times, serif;
-        display: inline-block; }
-        .container.index .uno p b:first-letter {
-          text-transform: lowercase; }
-        .container.index .uno p b:hover {
-          text-decoration: underline;
-          cursor: pointer; }
-          .container.index .uno p b:hover:first-letter {
-            text-transform: uppercase; }
+      .container.index .uno p .hola {
+        display: block; }
+        .container.index .uno p .hola b {
+          font-size: 3em;
+          font-family: "Lato-Regular", Helvetica, Arial, sans-serif;
+          font-weight: black;
+          display: inline-block; }
+          .container.index .uno p .hola b:first-letter {
+            text-transform: lowercase; }
+          .container.index .uno p .hola b#esp:hover, .container.index .uno p .hola b#eng:hover {
+            text-decoration: underline;
+            cursor: pointer; }
+            .container.index .uno p .hola b#esp:hover:first-letter, .container.index .uno p .hola b#eng:hover:first-letter {
+              text-transform: uppercase; }
       .container.index .uno p .introd {
         position: relative;
         top: 50px;
         opacity: 0;
+        font-weight: bold;
         -webkit-transition: all 1s ease;
         -moz-transition: all 1s ease;
         -ms-transition: all 1s ease;
         -o-transition: all 1s ease;
         transition: all 1s ease; }
+        .container.index .uno p .introd .love {
+          font-family: "LeituraNews", times, serif; }
   .container.index .esp, .container.index .eng {
     display: none; }
   .container.index .narrador {
     margin-bottom: 8em;
-    color: #333;
-    border: 3px solid #333;
+    color: #f7c23e;
     border-radius: .2em;
     text-align: center;
     padding: .7em 2em; }
@@ -1545,6 +1550,8 @@ img[src=""] {
   .container.index .proyectos {
     min-height: 100vh;
     display: block; }
+    .container.index .proyectos .narrador {
+      color: #3B6064; }
     .container.index .proyectos .proyecto {
       display: block;
       min-height: 100vh;
@@ -1700,5 +1707,7 @@ img[src=""] {
     -ms-transform: rotate(15deg);
     -webkit-transform: rotate(15deg);
     transform: rotate(15deg); } }
+.fondo_color .uno .tit-grande {
+  color: #333 !important; }
 
 /*# sourceMappingURL=style.css.map */
