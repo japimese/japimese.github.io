@@ -1620,6 +1620,9 @@ img[src=""] {
         .container.index .proyectos .mundi .boton:hover {
           color: white;
           background-color: #3FCA56; }
+      .container.index .proyectos .mundi .pull_right {
+        max-height: 85vh;
+        overflow: hidden; }
       @media (min-width: 769px) and (max-width: 1024px) {
         .container.index .proyectos .mundi .pull_right {
           width: 100% !important; }
