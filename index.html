@@ -244,11 +244,91 @@
 		// });
 
 		//cambio de color del fondo
-		var unheight = $(window).height();
-		var ucip = $(".porfoficial").offset().top - unheight*0.8;
-		var abuap = $(".abuelapp").offset().top - unheight;
-		var mundi = $(".mundi").offset().top - unheight*0.3;
+		
+		//al llegar a .dos
 
+
+		//cambiar a blanco
+
+
+		//enlace uciplus
+
+		// $(".uciplus").on('mouseenter', function() {
+		// 		$(".index").css("background-image", "url(images/uciplus/mok_mac2.png)");
+		// 	}).on('mouseleave', function(){
+		// 		$(".index").css("background-image", "initial");
+		// });
+		
+
+		$(document).ready(function(){
+			if($(window).width() < 768) {
+				$(".abuelapp a").attr("href", "abuelapp/index.html");
+			} 
+		});
+
+		var getUrlParameter = function getUrlParameter(sParam) {
+		    var sPageURL = decodeURIComponent(window.location.search.substring(1)),
+		        sURLVariables = sPageURL.split('&'),
+		        sParameterName,
+		        i;
+
+		    for (i = 0; i < sURLVariables.length; i++) {
+		        sParameterName = sURLVariables[i].split('=');
+
+		        if (sParameterName[0] === sParam) {
+		            return sParameterName[1] === undefined ? true : sParameterName[1];
+		        }
+		    }
+		};
+
+		
+
+
+		//personalizar para email
+		
+		var origen = getUrlParameter('origen');
+
+		if (origen==="mail_bipolar") {
+		    $("#origen").html("Bipolar Agency");
+		} else {
+		    $("#origen").html("");
+		}
+
+		//IDIOMA y color de fondo
+
+		var unheight,
+		ucip,
+		abuap,
+		mundi;
+
+		
+		$("#esp, #eng").click(function() {
+			$(".container").addClass("fondo_color");
+		    $(".fondo_color").css("background-color", "#ffffff");    
+		});
+
+		$("#esp").click(function(){
+			$(".esp").show();
+			$(".eng").hide();
+			$(this).siblings().hide();
+			$(".introd").css("top", "8vh").css("opacity", 1);
+
+			unheight = $(window).height();
+			ucip = $(".porfoficial").offset().top - unheight*0.2;
+			abuap = $(".abuelapp").offset().top - unheight*0.9;
+			mundi = $(".mundi").offset().top - unheight*0.3;
+		})
+		$("#eng").click(function(){
+			$(".eng").show();
+			$(".esp").hide();
+			$(this).siblings().hide();
+			$(".introd").css("top", "8vh").css("opacity", 1);
+
+			unheight = $(window).height();
+			ucip = $(".eng .porfoficial").offset().top - unheight*0.2;
+			abuap = $(".eng .abuelapp").offset().top - unheight*0.9;
+			mundi = $(".eng .mundi").offset().top - unheight*0.3;
+		})
 		$(window).scroll(function () {
 			console.log(ucip);
 			if ( ($(window).scrollTop() > ucip) && ($(window).scrollTop() < abuap) ) {
@@ -266,81 +346,8 @@
 		      	//$(".container").removeClass("fondo_color").css("background-color", "#333");
 		    }
 		})
-		//al llegar a .dos
 
-
-		//cambiar a blanco
-
-
-		//enlace uciplus
-
-		// $(".uciplus").on('mouseenter', function() {
-		// 		$(".index").css("background-image", "url(images/uciplus/mok_mac2.png)");
-		// 	}).on('mouseleave', function(){
-		// 		$(".index").css("background-image", "initial");
-		// });
-
-
-		var getUrlParameter = function getUrlParameter(sParam) {
-		    var sPageURL = decodeURIComponent(window.location.search.substring(1)),
-		        sURLVariables = sPageURL.split('&'),
-		        sParameterName,
-		        i;
-
-		    for (i = 0; i < sURLVariables.length; i++) {
-		        sParameterName = sURLVariables[i].split('=');
-
-		        if (sParameterName[0] === sParam) {
-		            return sParameterName[1] === undefined ? true : sParameterName[1];
-		        }
-		    }
-		};
-
-		$(document).ready(function(){
-			if($(window).width() < 768) {
-				$(".abuelapp a").attr("href", "abuelapp/index.html");
-			} 
-		});
-
-
-		//personalizar para email
-		
-		var origen = getUrlParameter('origen');
-
-		if (origen==="mail_bipolar") {
-		    $("#origen").html("Bipolar Agency");
-		} else {
-		    $("#origen").html("");
-		}
-
-		//IDIOMA
-		$("#esp, #eng").click(function() {
-			$(".container").addClass("fondo_color");
-		    $(".fondo_color").css("background-color", "#ffffff");    
-		});
-
-		$("#esp").click(function(){
-			$(".esp").show();
-			$(".eng").hide();
-			$(this).siblings().hide();
-			$(".introd").css("top", "8vh").css("opacity", 1);
-
-			unheight = $(window).height();
-			ucip = $(".porfoficial").offset().top - unheight*0.2;
-			abuap = $(".abuelapp").offset().top - unheight;
-			mundi = $(".mundi").offset().top - unheight*0.3;
-		})
-		$("#eng").click(function(){
-			$(".eng").show();
-			$(".esp").hide();
-			$(this).siblings().hide();
-			$(".introd").css("top", "8vh").css("opacity", 1);
-
-			unheight = $(window).height();
-			ucip = $(".eng .porfoficial").offset().top - unheight*0.8;
-			abuap = $(".eng .abuelapp").offset().top - unheight;
-			mundi = $(".eng .mundi").offset().top - unheight*0.3;
-		})
+		//CAMBIO DE TEXTO EN HERO
 
 	 	var love = ["crear", "diseñar", "programar", "cocinar"];
 		var counter = 0;
