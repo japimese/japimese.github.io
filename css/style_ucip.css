@@ -1110,6 +1110,9 @@ body {
 a {
   text–decoration–skip: ink; }
 
+img {
+  image-rendering: -webkit-optimize-contrast; }
+
 ::-moz-selection {
   background: #4871D1;
   /* Gecko Browsers */ }
@@ -1535,7 +1538,8 @@ img[src=""] {
         .container.uciplus #uciplus .contexto .problema > :first-child {
           margin-bottom: 1.2em; } }
     .container.uciplus #uciplus .propuesta .mi_propuesta {
-      text-align: center; }
+      text-align: center;
+      padding: 0; }
       .container.uciplus #uciplus .propuesta .mi_propuesta .titulo_gris {
         color: #0862C2;
         border: 1px solid #0862C2;

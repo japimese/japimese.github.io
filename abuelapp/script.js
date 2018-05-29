@@ -49,17 +49,19 @@ $(document).ready(function() {
 				}
 				window.setTimeout(function() {
 					$(".adios").hide();
-					$(".salir").show();
 					$(".logo_home").attr("src", "images/app_consejo.png");
+					$(".salir").show();
 				}, 700);
+
 				trans = setTimeout(function(){
 					cambio();
 				}, 4000);
+
 				if (typeof latitud != 'undefined') {
 					console.log("cargado");
 					clearTimeout(trans);
 					cambio();
-				} else {console.log("cargando");}
+				} else {console.log("no se encuentran las coordenadas");}
 			}
 		});
 
