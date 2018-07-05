@@ -202,4 +202,15 @@
 	src: url('LeituraNews-Italic1.ttf');
 	font-style: normal;
 }
+@font-face {
+	font-family: 'Righteous';
+	src: url('Righteous-Regular.ttf');
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Raleway';
+	src: url('raleway-medium.ttf');
+	font-style: normal;
+}
+
 

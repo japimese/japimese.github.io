@@ -20,7 +20,7 @@
 					<b id="esp">Hola</b> <b>  / </b> <b id="eng">hello</b><br><br class="br">
 				</span>
 				<span class="introd esp">
-					Soy un.....un.....<br>
+					Soy Roberto Mesejo, un...<br>un...<br>
 					en realidad no sé lo que soy<br class="br">
 					sólo que me encanta <em class="love">crear</em>
 				</span>
@@ -34,12 +34,15 @@
 					Web (diseño/programación) / 
 				</p>
 			</div> -->
+			
 			<div class="row porfoficial">
-				<h3 class="row narrador parr-grande">
+				<!-- <h3 class="row narrador parr-grande">
 					Tengo más experiencia que porfolio, pero te he recopilado algunos de los trabajos que he ido haciendo:
-				</h3>
+				</h3> -->
+				<div class="row narrador tit-grande">
+					<h3>PROYECTOS</h3>
+				</div>
 				<div class="trabajo uciplus">
-					<h3 class="titulo"><b>UCI</b>PLUS</h3>
 					<div class="row">
 						<div class="six cols pull_right">
 							<a href="porfolio/ucipplus.html" class="uci_mock">
@@ -48,6 +51,7 @@
 							</a>
 						</div>
 						<div class="six cols">
+							<h3 class="titulo"><b>UCI</b>PLUS</h3>
 							<p class="parr">
 								Es de los trabajos de diseño más completos que he hecho. Lo realicé mientras trabajaba en el departamento creativo de una gran empresa de crédito inmobiliario que quería refrescar su imagen.<br class="br">
 								Para ello, me hicieron responsable de <br>
@@ -60,14 +64,15 @@
 						</div>
 					</div>
 				</div>
-				<!-- <div class="trabajo compo">
+				<div class="trabajo compo">
 					<div class="row">
 						<div class="six cols pull_right">
 							<a href="#" class="compo_mock">
-								<img src="images/compo_mock.gif" class="mock">
+								<img src="images/compo_mock.png" class="mock">
 							</a>
 						</div>
 						<div class="six cols">
+							<h3 class="titulo">*******</h3>
 							<p class="parr">
 								Se trata de un rediseño de una aplicación similar a Wallapop, pero para un mercado distinto.<br>
 								He creado una marca adaptada a este nuevo mercado, y le he dado una vuelta a algunas cosas más =)<br class="br">
@@ -76,12 +81,29 @@
 							<a href="porfolio/ucipplus.html" class="boton">case study</a>
 						</div>
 					</div>
-				</div> -->
+				</div>
+				<div class="trabajo nbl">
+					<div class="row">
+						<div class="six cols pull_right nbl_mock">
+							<!-- <a href="#" class="nbl_mock">
+								<img src="images/nbl_mock.jpeg" class="mock">
+							</a> -->
+						</div>
+						<div class="six cols">
+							<h3 class="titulo">NBLexhibits</h3>
+							<p class="parr">
+								Rediseño y desarrollo integral de la web de esta empresa de proyectos de stands de diseño y demás. <br>
+								Me he reunido varias veces con ellos para crear un espacio óptimo, y que cumpla todas las posibles necesidades
+							</p>
+							<a href="#" class="boton proximamente">próximamente</a>
+						</div>
+					</div>
+				</div>
 			</div>
 			<div class="proyectos">
-				<h3 class="row narrador parr-grande">
+				<!-- <h3 class="row narrador parr-grande">
 					Soy bastante proactivo, así que también estoy desarrollando algunas de las ideas que se me van ocurriendo:
-				</h3>
+				</h3> -->
 				<div class="proyecto abuelapp">
 					
 					<h3 class="subtit">Una abuela, una app, y un meteorólogo<br>
@@ -94,6 +116,20 @@
 						</div>
 						<div class="six cols">
 							<img src="images/abuelapp_mock.png">
+						</div>
+					</div>
+				</div>
+				<div class="proyecto dclapp">
+					
+					<h3 class="subtit">¿Cómo llegar a petarlo siendo músico?</h3>
+					<div class="row">
+						<div class="six cols">
+							<h2 class="titulo">dCLAPP</h2>
+							<p class="parr">Queremos que cualquier músico de forma simple y gratuita pueda promocionarse y prosperar sólo teniendo que preocuparse de salir y tocar.</p>
+							<a href="https://www.dclappmusic.com" class="boton">landing page</a>
+						</div>
+						<div class="six cols">
+							<img src="images/dclapp_mock1.jpeg">
 						</div>
 					</div>
 				</div>
@@ -130,7 +166,7 @@
 								Es una web para músicos que buscan grupo, o para grupos que buscan músicos.<br>
 								Para hacerlo, en vez de una lista con anuncios (que es la única solución que he visto), he creado un "mapa" con todos los músicos/grupos que buscan a alguien, que se va segmentando y simplificando con simples preguntas.
 							</p>
-							<a href="#" class="boton">próximamente</a>
+							<a href="#" class="boton proximamente">próximamente</a>
 						</div>
 						
 					</div>
@@ -325,6 +361,7 @@
 		
 		$("#esp, #eng").click(function() {
 			$(".container").addClass("fondo_color");
+			$(this).hide();
 		    $(".fondo_color").css("background-color", "#ffffff");    
 		});
 
@@ -336,6 +373,8 @@
 
 			unheight = $(window).height();
 			ucip = $(".porfoficial").offset().top - unheight*0.2;
+			compo = $(".compo").offset().top - unheight*0.2;
+			nbl = $(".nbl").offset().top - unheight*0.2;
 			abuap = $(".abuelapp").offset().top - unheight*0.9;
 			mundi = $(".mundi").offset().top - unheight*0.3;
 		})
@@ -347,22 +386,25 @@
 
 			unheight = $(window).height();
 			ucip = $(".eng .porfoficial").offset().top - unheight*0.2;
+
 			abuap = $(".eng .abuelapp").offset().top - unheight*0.9;
 			mundi = $(".eng .mundi").offset().top - unheight*0.3;
 		})
 		$(window).scroll(function () {
 			console.log(ucip);
-			if ( ($(window).scrollTop() > ucip) && ($(window).scrollTop() < abuap) ) {
+			if ( ($(window).scrollTop() > ucip) && ($(window).scrollTop() < compo) ) {
 		        //$(".container").addClass("fondo_color");
-		        $(".fondo_color").css("background-color", "#f7c23e");
-		    } 
-		    else if ( ($(window).scrollTop() > abuap) && ($(window).scrollTop() < mundi) ) {
+		        $(".fondo_color").css("background-color", "#E4E5E6");
+		    } else if ( ($(window).scrollTop() > compo) && ($(window).scrollTop() < nbl) ) {
+		        //$(".container").addClass("fondo_color");
+		        $(".fondo_color").css("background-color", "#F7CF44");
+		    } else if ( ($(window).scrollTop() > nbl) && ($(window).scrollTop() < abuap) ) {
+		    	$(".fondo_color").css("background-color", "#000000");
+		    } else if ( ($(window).scrollTop() > abuap) && ($(window).scrollTop() < mundi) ) {
 		    	$(".fondo_color").css("background-color", "#3B6064");
-		    } 
-		    else if ($(window).scrollTop() > mundi) {
+		    } else if ($(window).scrollTop() > mundi) {
 		      	$(".fondo_color").css("background-color", "#fff");
-		    } 
-		    else {
+		    } else {
 		    	$(".fondo_color").css("background-color", "#fff");
 		      	//$(".container").removeClass("fondo_color").css("background-color", "#333");
 		    }
@@ -370,7 +412,7 @@
 
 		//CAMBIO DE TEXTO EN HERO
 
-	 	var love = ["crear", "diseñar", "programar", "cocinar"];
+	 	var love = ["crear", "aprender", "diseñar", "programar", "cocinar", "conceptualizar", "guitarrear", "fotografiar", "baterear", "probar"];
 		var counter = 0;
 		var fin = love.length - 1;
 
