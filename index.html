@@ -20,15 +20,14 @@
 					<b id="esp">Hola</b> <b>  / </b> <b id="eng">hello</b><br><br class="br">
 				</span>
 				<span class="introd esp">
-					Soy Roberto Mesejo, un...<br>un...<br>
-					en realidad no sé lo que soy<br class="br">
-					sólo que me encanta <em class="love">crear</em>
+					Soy Roberto Mesejo, y me encanta<br>
+					<em class="love">crear</em>
 				</span>
 				<span class="introd eng">
 					I am Mese,<br> and I love creating within teams
 				</span>
 			</p>
-			<a class="narrador dato-big">PORTFOLIO</a>
+			<div class="narrador dato-big">PORTFOLIO<br><span>v</span></div>
 		</div>
 		<div class="esp">
 			<!-- <div class="row about">
@@ -72,7 +71,7 @@
 					<div class="row">
 						<div class="five cols titulo">
 							<h3>*******</h3>
-							<small>APP Y MARCA | diseño UI/UX</small>
+							<small>APP Y MARCA | Branding y diseño UI/UX</small>
 						</div>
 						<div class="six cols pull_right">
 							<a class="compo_mock">
@@ -96,9 +95,9 @@
 						</div>
 						<div class="five cols">
 							<p class="parr">
-								Se trata de un rediseño de una aplicación similar a Wallapop, pero para un mercado distinto.<br>
-								He creado una marca adaptada a este nuevo mercado, y le he dado una vuelta a algunas cosas más =)<br class="br">
-								Aún no ha acabado de desarrollarse, por lo que me han pedido que no publique el logo ni otros detalles, pero podéis ir echándole un ojo.
+								Se trata del diseño de una aplicación similar a Wallapop, para un mercado distinto.<br>
+								He creado la marca adaptada a este nuevo mercado, y le he dado una vuelta al UI/UX.<br class="br">
+								Aún no ha acabado de desarrollarse, por lo que me han pedido que no publique el logo ni otros detalles, pero podéis ir echándole un vistazo.
 							</p>
 							<a href="porfolio/riceandtech.html" class="boton">case study</a>
 						</div>
@@ -110,13 +109,16 @@
 					<div class="row">
 						<div class="five cols titulo">
 							<h2>dCLAPP</h2>
-							<small>STARTUP | Diseño de producto y branding</small>
+							<small>STARTUP | Diseño integral (branding, UI/UX, desarollo web y app)</small>
 						</div>
 						<div class="six cols pull_right dclapp_mock">
 							<img src="images/dclapp_mock2.png">
 						</div>
 						<div class="five cols">
-							<p class="parr">Queremos que cualquier músico de forma simple y gratuita pueda promocionarse y prosperar sólo teniendo que preocuparse de salir y tocar.</p>
+							<p class="parr">
+								Queremos que cualquier músico de forma simple y gratuita pueda promocionarse y prosperar sólo teniendo que preocuparse de salir y tocar.<br>
+								Para ello, estamos desarrollando una plataforma (App y web), ocupándome yo del diseño y la programación de esta.
+							</p>
 							<a href="https://www.dclappmusic.com" target="blank" class="boton">landing page</a>
 						</div>
 					</div>
@@ -134,8 +136,7 @@
 						</div>
 						<div class="five cols">
 							<p class="parr">
-								Rediseño y desarrollo integral de la web de esta empresa de proyectos de stands de diseño y demás. <br>
-								Me he reunido varias veces con ellos para crear un espacio óptimo, y que cumpla todas las posibles necesidades
+								He llevado el proyecto del <b>rediseño y desarrollo integral de la web corporativa con CMS</b> como freelance.
 							</p>
 							<a href="#" class="boton proximamente">próximamente</a>
 						</div>
@@ -304,7 +305,10 @@
 		</div>
 
 		<aside class="tit-grande">
-			<a href="http://www.linkedin.com/in/robertomesejo" target="blank">linkedIn</a> | <a href="http://www.flickr.com/japimes" target="blank">flickr</a> | <a href="http://www.pinterest.com/japimes" target="blank">pinterest</a> | <a href="mailto:japimes@gmail.com?subject=Estaba echandole un ojo a tu web y...&body=Estaba echandole un ojo a tu web y...">@</a>
+			<a href="http://www.linkedin.com/in/robertomesejo" target="blank">linkedIn</a>
+			<a href="http://www.flickr.com/japimes" target="blank">flickr</a>
+			<a href="http://www.pinterest.com/japimes" target="blank">pinterest</a>
+			<a href="mailto:japimes@gmail.com?subject=Estaba echandole un ojo a tu web y...&body=Estaba echandole un ojo a tu web y...">email</a>
 		</aside>
 	</div>
 
@@ -399,7 +403,8 @@
 			$(".container").addClass("fondo_color");
 			$(this).hide();
 			$(".uno .narrador").css("display", "block")
-		    $(".fondo_color").css("background-color", "#ffffff");    
+		    $(".fondo_color").css("background-color", "#ffffff");  
+		    setTimeout(cambio_texto, 2000);  
 		});
 
 		$("#esp").click(function(){
@@ -449,7 +454,9 @@
 
 		//CAMBIO DE TEXTO EN HERO
 
-	 	var love = ["crear", "aprender", "diseñar", "programar", "cocinar", "conceptualizar", "guitarrear", "fotografiar", "baterear", "probar"];
+	 	var love = ["crear", "diseñar productos", "desarrollar webs", "la innovación", "trabajar en equipo", "cerrar conceptos", "experimentar con IOT"];
+
+	 	// "la creatividad", "la innovación", "aprender contínuamente", "la programación", "el diseño de producto", "los conceptos bien pensados", "la fotografía", "las soluciones originales"
 		var counter = 0;
 		var fin = love.length - 1;
 
@@ -463,7 +470,7 @@
 		    $(".love").text(love[counter]);
 		    setTimeout(cambio_texto, 2000);
 		}
-		setTimeout(cambio_texto, 2000);
+		
 
 
 		$(".uno .narrador").click(function() {

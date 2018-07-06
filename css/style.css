@@ -1488,6 +1488,7 @@ img[src=""] {
         cursor: default; }
   .container.index .uno {
     height: 100vh;
+    max-height: 100vh;
     position: relative;
     display: block;
     text-align: center; }
@@ -1533,7 +1534,8 @@ img[src=""] {
     text-align: center;
     position: absolute;
     bottom: 10%;
-    width: 100%; }
+    width: 100%;
+    cursor: pointer; }
   .container.index .porfoficial {
     margin-bottom: 25vh;
     display: block; }
@@ -1821,10 +1823,14 @@ img[src=""] {
   .container.index aside {
     display: block;
     position: fixed;
-    bottom: 5vh;
+    top: 1vh;
     right: 2vw; }
     .container.index aside a {
-      font-weight: normal; }
+      font-weight: normal;
+      display: block;
+      font-size: 0.7em;
+      text-align: right;
+      margin-bottom: -.7em; }
   .container.index.fondo_color {
     -webkit-transition: all 0.7s cubic-bezier(0.81, 0.15, 0.71, 0.95);
     -moz-transition: all 0.7s cubic-bezier(0.81, 0.15, 0.71, 0.95);
