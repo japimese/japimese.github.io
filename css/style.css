@@ -1488,6 +1488,7 @@ img[src=""] {
         cursor: default; }
   .container.index .uno {
     height: 100vh;
+    position: relative;
     display: block;
     text-align: center; }
     .container.index .uno p {
@@ -1527,17 +1528,12 @@ img[src=""] {
   .container.index .esp, .container.index .eng {
     display: none; }
   .container.index .narrador {
-    margin-bottom: 8em;
+    display: none;
     color: black;
-    border-radius: .2em;
     text-align: center;
-    padding: .7em 2em; }
-    .container.index .narrador .dato-big {
-      color: black;
-      font-size: 4vw; }
-    @media (max-width: 768px) {
-      .container.index .narrador {
-        padding: .7em 1em; } }
+    position: absolute;
+    bottom: 10%;
+    width: 100%; }
   .container.index .porfoficial {
     margin-bottom: 25vh;
     display: block; }
@@ -1548,6 +1544,10 @@ img[src=""] {
       margin-left: -4%;
       padding-left: 4%;
       width: 108%; }
+      @media (max-width: 768px) {
+        .container.index .porfoficial .trabajo, .container.index .porfoficial .proyecto {
+          width: 100vw;
+          margin-left: -12%; } }
       .container.index .porfoficial .trabajo > div, .container.index .porfoficial .proyecto > div {
         position: absolute;
         -moz-transform: translate(0, -50%);
@@ -1556,6 +1556,12 @@ img[src=""] {
         -webkit-transform: translate(0, -50%);
         transform: translate(0, -50%);
         top: 50%; }
+        @media (max-width: 768px) {
+          .container.index .porfoficial .trabajo > div, .container.index .porfoficial .proyecto > div {
+            position: relative;
+            transform: none;
+            top: 0;
+            padding: 2em 0; } }
       .container.index .porfoficial .trabajo .titulo, .container.index .porfoficial .proyecto .titulo {
         text-align: left;
         margin: 5% auto; }
@@ -1606,19 +1612,50 @@ img[src=""] {
           .container.index .porfoficial .trabajo.compo .boton:hover, .container.index .porfoficial .proyecto.compo .boton:hover {
             background-color: #5C31F1;
             color: white; }
+        .container.index .porfoficial .trabajo.compo .compo_mock, .container.index .porfoficial .proyecto.compo .compo_mock {
+          display: block;
+          height: 100vh; }
+          .container.index .porfoficial .trabajo.compo .compo_mock img, .container.index .porfoficial .proyecto.compo .compo_mock img {
+            z-index: 100;
+            position: absolute;
+            height: 90%;
+            right: 0;
+            top: 5%; }
+          .container.index .porfoficial .trabajo.compo .compo_mock svg, .container.index .porfoficial .proyecto.compo .compo_mock svg {
+            position: absolute;
+            height: 80%;
+            top: 10%; }
+        @media (max-width: 768px) {
+          .container.index .porfoficial .trabajo.compo, .container.index .porfoficial .proyecto.compo {
+            position: relative;
+            height: auto; }
+            .container.index .porfoficial .trabajo.compo .compo_mock, .container.index .porfoficial .proyecto.compo .compo_mock {
+              height: auto;
+              position: relative; }
+              .container.index .porfoficial .trabajo.compo .compo_mock img, .container.index .porfoficial .proyecto.compo .compo_mock img {
+                position: relative;
+                height: auto; }
+              .container.index .porfoficial .trabajo.compo .compo_mock svg, .container.index .porfoficial .proyecto.compo .compo_mock svg {
+                position: absolute;
+                height: 100%;
+                top: 0;
+                width: 100%;
+                left: 0; } }
       .container.index .porfoficial .trabajo.dclapp, .container.index .porfoficial .proyecto.dclapp {
         background-color: #F1F1F1; }
         .container.index .porfoficial .trabajo.dclapp .dclapp_mock img, .container.index .porfoficial .proyecto.dclapp .dclapp_mock img {
           width: 35vw;
           margin: 0 auto;
           display: block; }
-        .container.index .porfoficial .trabajo.dclapp .titulo h2, .container.index .porfoficial .proyecto.dclapp .titulo h2 {
-          font-family: "Changa", Helvetica, Arial, sans-serif;
-          color: #FB5130;
-          font-weight: normal;
-          text-align: center; }
-        .container.index .porfoficial .trabajo.dclapp .titulo small, .container.index .porfoficial .proyecto.dclapp .titulo small {
-          color: #FB5130; }
+        .container.index .porfoficial .trabajo.dclapp .titulo, .container.index .porfoficial .proyecto.dclapp .titulo {
+          margin: 5% auto; }
+          .container.index .porfoficial .trabajo.dclapp .titulo h2, .container.index .porfoficial .proyecto.dclapp .titulo h2 {
+            font-family: "Changa", Helvetica, Arial, sans-serif;
+            color: #FB5130;
+            font-weight: normal;
+            text-align: center; }
+          .container.index .porfoficial .trabajo.dclapp .titulo small, .container.index .porfoficial .proyecto.dclapp .titulo small {
+            color: #FB5130; }
         .container.index .porfoficial .trabajo.dclapp .parr, .container.index .porfoficial .proyecto.dclapp .parr {
           color: #0C3847; }
         .container.index .porfoficial .trabajo.dclapp .boton, .container.index .porfoficial .proyecto.dclapp .boton {
@@ -1627,6 +1664,9 @@ img[src=""] {
           .container.index .porfoficial .trabajo.dclapp .boton:hover, .container.index .porfoficial .proyecto.dclapp .boton:hover {
             color: white;
             background-color: #FB5130; }
+        @media (max-width: 768px) {
+          .container.index .porfoficial .trabajo.dclapp .dclapp_mock img, .container.index .porfoficial .proyecto.dclapp .dclapp_mock img {
+            width: auto; } }
       .container.index .porfoficial .trabajo.nbl, .container.index .porfoficial .proyecto.nbl {
         background-color: black; }
         .container.index .porfoficial .trabajo.nbl .nbl_mock, .container.index .porfoficial .proyecto.nbl .nbl_mock {
@@ -1648,6 +1688,10 @@ img[src=""] {
           .container.index .porfoficial .trabajo.nbl .boton:hover, .container.index .porfoficial .proyecto.nbl .boton:hover {
             background-color: initial;
             color: #3CC630; }
+        @media (max-width: 768px) {
+          .container.index .porfoficial .trabajo.nbl .nbl_mock, .container.index .porfoficial .proyecto.nbl .nbl_mock {
+            width: 100% !important;
+            height: 50vh; } }
       .container.index .porfoficial .trabajo.abuelapp, .container.index .porfoficial .proyecto.abuelapp {
         padding-top: 3vw;
         background-color: #3B6064; }
