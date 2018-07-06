@@ -212,5 +212,11 @@
 	src: url('raleway-medium.ttf');
 	font-style: normal;
 }
+@font-face {
+	font-family: 'Changa';
+	src: url('Changa-Medium.ttf');
+	font-style: normal;
+}
+
 
 
