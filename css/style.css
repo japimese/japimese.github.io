@@ -1571,15 +1571,27 @@ img[src=""] {
           text-align: center;
           margin-bottom: .2em; }
         .container.index .porfoficial .trabajo .titulo small, .container.index .porfoficial .proyecto .titulo small {
-          font-size: 15px;
+          font-size: 18px;
           display: block;
           text-align: center; }
+          .container.index .porfoficial .trabajo .titulo small span:after, .container.index .porfoficial .proyecto .titulo small span:after {
+            position: absolute;
+            display: block;
+            left: 0;
+            width: 100%;
+            font-size: .8em; }
       .container.index .porfoficial .trabajo.uciplus, .container.index .porfoficial .proyecto.uciplus {
         background-color: #E4E5E6; }
         .container.index .porfoficial .trabajo.uciplus .parr, .container.index .porfoficial .proyecto.uciplus .parr {
           color: #333; }
         .container.index .porfoficial .trabajo.uciplus .titulo small, .container.index .porfoficial .proyecto.uciplus .titulo small {
           color: black; }
+          .container.index .porfoficial .trabajo.uciplus .titulo small span, .container.index .porfoficial .proyecto.uciplus .titulo small span {
+            position: relative; }
+            .container.index .porfoficial .trabajo.uciplus .titulo small span.disen:after, .container.index .porfoficial .proyecto.uciplus .titulo small span.disen:after {
+              content: ".ai .psd"; }
+            .container.index .porfoficial .trabajo.uciplus .titulo small span.program:after, .container.index .porfoficial .proyecto.uciplus .titulo small span.program:after {
+              content: ".aspx .js .scss"; }
         .container.index .porfoficial .trabajo.uciplus .uci_mock, .container.index .porfoficial .proyecto.uciplus .uci_mock {
           position: relative;
           display: block;
@@ -1660,6 +1672,8 @@ img[src=""] {
             color: #FB5130; }
         .container.index .porfoficial .trabajo.dclapp .parr, .container.index .porfoficial .proyecto.dclapp .parr {
           color: #0C3847; }
+          .container.index .porfoficial .trabajo.dclapp .parr a, .container.index .porfoficial .proyecto.dclapp .parr a {
+            color: #0C3847; }
         .container.index .porfoficial .trabajo.dclapp .boton, .container.index .porfoficial .proyecto.dclapp .boton {
           color: #FB5130;
           border-color: #FB5130; }
@@ -1824,7 +1838,13 @@ img[src=""] {
     display: block;
     position: fixed;
     top: 1vh;
-    right: 2vw; }
+    right: 0;
+    padding: .2em .3em .5em;
+    -webkit-transition: top 0.2s ease-in-out;
+    -moz-transition: top 0.2s ease-in-out;
+    -ms-transition: top 0.2s ease-in-out;
+    -o-transition: top 0.2s ease-in-out;
+    transition: top 0.2s ease-in-out; }
     .container.index aside a {
       font-weight: normal;
       display: block;
@@ -1838,21 +1858,9 @@ img[src=""] {
     -o-transition: all 0.7s cubic-bezier(0.81, 0.15, 0.71, 0.95);
     transition: all 0.7s cubic-bezier(0.81, 0.15, 0.71, 0.95);
     background-color: #f7c23e; }
-    .container.index.fondo_color aside, .container.index.fondo_color aside a {
-      color: #333; }
-@keyframes globo {
-  0% {
-    -moz-transform: rotate(-15deg);
-    -o-transform: rotate(-15deg);
-    -ms-transform: rotate(-15deg);
-    -webkit-transform: rotate(-15deg);
-    transform: rotate(-15deg); }
-  100% {
-    -moz-transform: rotate(15deg);
-    -o-transform: rotate(15deg);
-    -ms-transform: rotate(15deg);
-    -webkit-transform: rotate(15deg);
-    transform: rotate(15deg); } }
+    .container.index.fondo_color aside a {
+      color: #666; }
+
 .fondo_color .uno .tit-grande {
   color: #333 !important; }
 
