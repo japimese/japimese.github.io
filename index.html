@@ -40,17 +40,17 @@
 			<div class="row porfoficial">			
 				<div class="trabajo uciplus">
 					<div class="row">
-						<div class="five cols titulo">
+						<div class="six cols titulo">
 							<h3><b>UCI</b>PLUS</h3>
 							<small>WEB | <span class="disen">Diseño</span> y <span class="program">programación</span></small>
 						</div>
-						<div class="six cols pull_right">
+						<div class="five cols pull_right">
 							<a href="porfolio/ucipplus.html" class="uci_mock">
 								<img src="images/uci_mock.gif" class="mock">
 								<!-- <img src="images/uciplus/detalles_prem.gif" class="mock_in"> -->
 							</a>
 						</div>
-						<div class="five cols">
+						<div class="six cols">
 							<p class="parr">
 								Es de los trabajos de diseño más completos que he hecho. Lo realicé mientras trabajaba en el departamento creativo de una gran empresa de crédito inmobiliario que quería refrescar su imagen.<br class="br">
 								Para ello, me hicieron responsable de <br>
@@ -71,7 +71,7 @@
 						</div>
 						<div class="six cols pull_right">
 							<a class="compo_mock">
-								<img src="images/compo_mock.png" class="mock">
+								<img src="images/compo_mock.gif" class="mock">
 								<svg width="789" height="659" viewBox="0 0 789 659" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<linearGradient id="paint0_linear" x2="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(746.775 -142.967 225.377 653.158 17.245 13.2073)">
 										<stop stop-color="#5C31F1"/>
@@ -563,7 +563,7 @@
 	      			if (currentScroll > previousScroll){
 	        			window.setTimeout($("aside").css("top", "-5em"), 300);
 	      			} else {
-	       				 window.setTimeout($("aside").css("top", "0"), 300);
+	       				 window.setTimeout($("aside").css({"top": "0", "background": "white"}), 300);
 	      			}
 		      		previousScroll = currentScroll;
 	   			}

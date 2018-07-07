@@ -1388,7 +1388,6 @@ img[src=""] {
   margin: 0 auto; }
 
 .container.index {
-  padding: 5vh 3vw 0;
   background-color: rgba(0, 0, 0, 0.8);
   -webkit-transition: background-color 0.7s cubic-bezier(0.81, 0.15, 0.71, 0.95);
   -moz-transition: background-color 0.7s cubic-bezier(0.81, 0.15, 0.71, 0.95);
@@ -1537,19 +1536,17 @@ img[src=""] {
     width: 100%;
     cursor: pointer; }
   .container.index .porfoficial {
-    margin-bottom: 25vh;
-    display: block; }
+    display: block;
+    padding: 0; }
     .container.index .porfoficial .trabajo, .container.index .porfoficial .proyecto {
       position: relative;
       min-height: 100vh;
       display: block;
-      margin-left: -4%;
-      padding-left: 4%;
-      width: 108%; }
+      width: 100%; }
       @media (max-width: 768px) {
         .container.index .porfoficial .trabajo, .container.index .porfoficial .proyecto {
           width: 100vw;
-          margin-left: -12%; } }
+          padding: 0 10px; } }
       .container.index .porfoficial .trabajo > div, .container.index .porfoficial .proyecto > div {
         position: absolute;
         -moz-transform: translate(0, -50%);
@@ -1557,7 +1554,8 @@ img[src=""] {
         -ms-transform: translate(0, -50%);
         -webkit-transform: translate(0, -50%);
         transform: translate(0, -50%);
-        top: 50%; }
+        top: 50%;
+        padding: 0 2vw; }
         @media (max-width: 768px) {
           .container.index .porfoficial .trabajo > div, .container.index .porfoficial .proyecto > div {
             position: relative;
@@ -1632,8 +1630,8 @@ img[src=""] {
           .container.index .porfoficial .trabajo.compo .compo_mock img, .container.index .porfoficial .proyecto.compo .compo_mock img {
             z-index: 100;
             position: absolute;
-            height: 90%;
-            right: 0;
+            height: 85%;
+            right: 10%;
             top: 5%; }
           .container.index .porfoficial .trabajo.compo .compo_mock svg, .container.index .porfoficial .proyecto.compo .compo_mock svg {
             position: absolute;
@@ -1859,7 +1857,7 @@ img[src=""] {
     transition: all 0.7s cubic-bezier(0.81, 0.15, 0.71, 0.95);
     background-color: #f7c23e; }
     .container.index.fondo_color aside a {
-      color: #666; }
+      color: #333; }
 
 .fondo_color .uno .tit-grande {
   color: #333 !important; }
