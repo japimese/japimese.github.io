@@ -117,6 +117,7 @@ $(document).ready(function () {
 	
 	$(window).scroll(function () {
 		var i = parseInt(($(window).scrollTop() - ini) / 30);
+		var y;
 		if ( ($(window).scrollTop() > ini) && ($(window).scrollTop() < med) ) {
 			console.log(i);
 			$("#mok_2").attr("src", "../images/uciplus/mundo_uciplus/mundo_uciplus_"+ i +".png");

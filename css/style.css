@@ -1420,12 +1420,15 @@ img[src=""] {
   .container.index .subtit {
     font-size: 2vw;
     color: #333;
-    margin: 0 auto 2.5%;
+    margin: 1.5em auto 2.5%;
     line-height: 1.5em;
     text-align: center; }
     @media (max-width: 768px) {
       .container.index .subtit {
         font-size: calc(10px + 4vw); } }
+    @media (min-width: 1366px) {
+      .container.index .subtit {
+        font-size: calc(18px + .3vw); } }
   .container.index .parr {
     font-family: "Lato-Regular", Helvetica, Arial, sans-serif;
     color: white;
@@ -1434,6 +1437,9 @@ img[src=""] {
     @media (max-width: 768px) {
       .container.index .parr {
         font-size: calc(12px + 1.2vw); } }
+    @media (min-width: 1366px) {
+      .container.index .parr {
+        font-size: calc(20px + .2vw); } }
   .container.index b {
     font-weight: bold !important; }
   .container.index .parr_sm {
@@ -1462,6 +1468,9 @@ img[src=""] {
     @media (max-width: 768px) {
       .container.index .boton {
         font-size: calc(12px + 1vw); } }
+    @media (min-width: 1366px) {
+      .container.index .boton {
+        font-size: calc(20px + .3vw); } }
     .container.index .boton:hover {
       background-color: #333;
       color: white;
@@ -1537,7 +1546,8 @@ img[src=""] {
     cursor: pointer; }
   .container.index .porfoficial {
     display: block;
-    padding: 0; }
+    padding: 0;
+    max-width: unset; }
     .container.index .porfoficial .trabajo, .container.index .porfoficial .proyecto {
       position: relative;
       min-height: 100vh;
@@ -1549,18 +1559,20 @@ img[src=""] {
           padding: 0 10px; } }
       .container.index .porfoficial .trabajo > div, .container.index .porfoficial .proyecto > div {
         position: absolute;
-        -moz-transform: translate(0, -50%);
-        -o-transform: translate(0, -50%);
-        -ms-transform: translate(0, -50%);
-        -webkit-transform: translate(0, -50%);
-        transform: translate(0, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
         top: 50%;
+        left: 50%;
         padding: 0 2vw; }
         @media (max-width: 768px) {
           .container.index .porfoficial .trabajo > div, .container.index .porfoficial .proyecto > div {
             position: relative;
             transform: none;
             top: 0;
+            left: 0;
             padding: 2em 0; } }
       .container.index .porfoficial .trabajo .titulo, .container.index .porfoficial .proyecto .titulo {
         text-align: left;
@@ -1571,15 +1583,19 @@ img[src=""] {
         .container.index .porfoficial .trabajo .titulo small, .container.index .porfoficial .proyecto .titulo small {
           font-size: 18px;
           display: block;
-          text-align: center; }
+          text-align: center;
+          font-family: "Lato-Regular", Helvetica, Arial, sans-serif; }
           .container.index .porfoficial .trabajo .titulo small span:after, .container.index .porfoficial .proyecto .titulo small span:after {
             position: absolute;
             display: block;
             left: 0;
             width: 100%;
-            font-size: .8em; }
+            font-size: .8em;
+            opacity: .75; }
       .container.index .porfoficial .trabajo.uciplus, .container.index .porfoficial .proyecto.uciplus {
         background-color: #E4E5E6; }
+        .container.index .porfoficial .trabajo.uciplus div > :last-child, .container.index .porfoficial .proyecto.uciplus div > :last-child {
+          margin-bottom: 5%; }
         .container.index .porfoficial .trabajo.uciplus .parr, .container.index .porfoficial .proyecto.uciplus .parr {
           color: #333; }
         .container.index .porfoficial .trabajo.uciplus .titulo small, .container.index .porfoficial .proyecto.uciplus .titulo small {
@@ -1596,7 +1612,7 @@ img[src=""] {
           margin-bottom: 3em; }
           .container.index .porfoficial .trabajo.uciplus .uci_mock img, .container.index .porfoficial .proyecto.uciplus .uci_mock img {
             display: block;
-            margin: 0 auto -2.5em; }
+            margin: 10% auto -1em; }
           .container.index .porfoficial .trabajo.uciplus .uci_mock .mock, .container.index .porfoficial .proyecto.uciplus .uci_mock .mock {
             width: 100%; }
         .container.index .porfoficial .trabajo.uciplus .parr_sm, .container.index .porfoficial .proyecto.uciplus .parr_sm {
@@ -1615,6 +1631,10 @@ img[src=""] {
             font-family: "Righteous", Helvetica, Arial, sans-serif; }
           .container.index .porfoficial .trabajo.compo .titulo small, .container.index .porfoficial .proyecto.compo .titulo small {
             color: #5C31F1; }
+            .container.index .porfoficial .trabajo.compo .titulo small span, .container.index .porfoficial .proyecto.compo .titulo small span {
+              position: relative; }
+              .container.index .porfoficial .trabajo.compo .titulo small span.disen:after, .container.index .porfoficial .proyecto.compo .titulo small span.disen:after {
+                content: ".fig"; }
         .container.index .porfoficial .trabajo.compo .parr, .container.index .porfoficial .proyecto.compo .parr {
           color: #333;
           font-family: "Raleway", Helvetica, Arial, sans-serif; }
@@ -1624,6 +1644,15 @@ img[src=""] {
           .container.index .porfoficial .trabajo.compo .boton:hover, .container.index .porfoficial .proyecto.compo .boton:hover {
             background-color: #5C31F1;
             color: white; }
+        .container.index .porfoficial .trabajo.compo .proximamente, .container.index .porfoficial .proyecto.compo .proximamente {
+          box-shadow: none;
+          opacity: .5;
+          margin: 7% 0; }
+          .container.index .porfoficial .trabajo.compo .proximamente:hover, .container.index .porfoficial .proyecto.compo .proximamente:hover {
+            color: #5C31F1;
+            background-color: initial;
+            top: 0;
+            cursor: default; }
         .container.index .porfoficial .trabajo.compo .compo_mock, .container.index .porfoficial .proyecto.compo .compo_mock {
           display: block;
           height: 100vh; }
@@ -1643,10 +1672,13 @@ img[src=""] {
             height: auto; }
             .container.index .porfoficial .trabajo.compo .compo_mock, .container.index .porfoficial .proyecto.compo .compo_mock {
               height: auto;
-              position: relative; }
+              position: relative;
+              width: 100vw;
+              text-align: center; }
               .container.index .porfoficial .trabajo.compo .compo_mock img, .container.index .porfoficial .proyecto.compo .compo_mock img {
                 position: relative;
-                height: auto; }
+                height: 60vh;
+                right: 0; }
               .container.index .porfoficial .trabajo.compo .compo_mock svg, .container.index .porfoficial .proyecto.compo .compo_mock svg {
                 position: absolute;
                 height: 100%;
@@ -1693,6 +1725,12 @@ img[src=""] {
           font-family: Helvetica, Arial, sans-serif; }
           .container.index .porfoficial .trabajo.nbl .titulo small, .container.index .porfoficial .proyecto.nbl .titulo small {
             color: white; }
+            .container.index .porfoficial .trabajo.nbl .titulo small span, .container.index .porfoficial .proyecto.nbl .titulo small span {
+              position: relative; }
+              .container.index .porfoficial .trabajo.nbl .titulo small span.disen:after, .container.index .porfoficial .proyecto.nbl .titulo small span.disen:after {
+                content: ".fig"; }
+              .container.index .porfoficial .trabajo.nbl .titulo small span.program:after, .container.index .porfoficial .proyecto.nbl .titulo small span.program:after {
+                content: ".php .js .scss"; }
         .container.index .porfoficial .trabajo.nbl .parr, .container.index .porfoficial .proyecto.nbl .parr {
           color: white;
           font-family: Helvetica, Arial, sans-serif; }
@@ -1714,7 +1752,15 @@ img[src=""] {
           color: white;
           font-weight: normal;
           text-align: center;
-          margin: 15% auto 5%; }
+          margin: 10% auto 5%; }
+          .container.index .porfoficial .trabajo.abuelapp .titulo small, .container.index .porfoficial .proyecto.abuelapp .titulo small {
+            color: white; }
+            .container.index .porfoficial .trabajo.abuelapp .titulo small span, .container.index .porfoficial .proyecto.abuelapp .titulo small span {
+              position: relative; }
+              .container.index .porfoficial .trabajo.abuelapp .titulo small span.disen:after, .container.index .porfoficial .proyecto.abuelapp .titulo small span.disen:after {
+                content: ".fig"; }
+              .container.index .porfoficial .trabajo.abuelapp .titulo small span.program:after, .container.index .porfoficial .proyecto.abuelapp .titulo small span.program:after {
+                content: "angularjs"; }
         .container.index .porfoficial .trabajo.abuelapp .subtit, .container.index .porfoficial .proyecto.abuelapp .subtit {
           font-family: "Armonioso", Times, serif;
           color: white; }
@@ -1734,19 +1780,29 @@ img[src=""] {
               margin: 10vw 0 -25vw;
               position: relative; } }
         .container.index .porfoficial .trabajo.abuelapp img, .container.index .porfoficial .proyecto.abuelapp img {
-          margin-left: -15%; }
+          height: 80vh;
+          margin-top: 10vh; }
           @media (max-width: 768px) {
             .container.index .porfoficial .trabajo.abuelapp img, .container.index .porfoficial .proyecto.abuelapp img {
-              margin-left: 0; } }
+              margin-left: 15%;
+              width: 70%;
+              height: auto; } }
       .container.index .porfoficial .trabajo.mundi, .container.index .porfoficial .proyecto.mundi {
-        background-color: #fff;
-        padding-top: 5vw;
-        padding-bottom: 5vw; }
+        background-color: #fff; }
         .container.index .porfoficial .trabajo.mundi .titulo, .container.index .porfoficial .proyecto.mundi .titulo {
           font-family: "YatraOne", Helvetica, Arial, sans-serif;
           color: #3FCA56;
           font-weight: normal;
           text-align: center; }
+          .container.index .porfoficial .trabajo.mundi .titulo small, .container.index .porfoficial .proyecto.mundi .titulo small {
+            color: #3FCA56;
+            font-family: "Lato-Regular", Helvetica, Arial, sans-serif; }
+            .container.index .porfoficial .trabajo.mundi .titulo small span, .container.index .porfoficial .proyecto.mundi .titulo small span {
+              position: relative; }
+              .container.index .porfoficial .trabajo.mundi .titulo small span.disen:after, .container.index .porfoficial .proyecto.mundi .titulo small span.disen:after {
+                content: ".ai .psd"; }
+              .container.index .porfoficial .trabajo.mundi .titulo small span.program:after, .container.index .porfoficial .proyecto.mundi .titulo small span.program:after {
+                content: "arduino"; }
         .container.index .porfoficial .trabajo.mundi .subtit, .container.index .porfoficial .proyecto.mundi .subtit {
           color: #3FCA56;
           font-family: "YatraOne", Helvetica, Arial, sans-serif; }
@@ -1767,11 +1823,11 @@ img[src=""] {
             color: white;
             background-color: #3FCA56; }
         .container.index .porfoficial .trabajo.mundi .mundi_mock img, .container.index .porfoficial .proyecto.mundi .mundi_mock img {
-          width: 35vw;
+          width: 100%;
           margin: 0 auto;
           display: block; }
         .container.index .porfoficial .trabajo.mundi .pull_right, .container.index .porfoficial .proyecto.mundi .pull_right {
-          max-height: 85vh;
+          max-height: 90vh;
           overflow: hidden; }
         @media (min-width: 769px) and (max-width: 1024px) {
           .container.index .porfoficial .trabajo.mundi .pull_right, .container.index .porfoficial .proyecto.mundi .pull_right {
@@ -1788,6 +1844,11 @@ img[src=""] {
           font-weight: bold;
           color: #333;
           text-align: center; }
+          .container.index .porfoficial .trabajo.grupi .titulo small, .container.index .porfoficial .proyecto.grupi .titulo small {
+            color: #333;
+            font-family: "Lato-Regular", Helvetica, Arial, sans-serif; }
+            .container.index .porfoficial .trabajo.grupi .titulo small span, .container.index .porfoficial .proyecto.grupi .titulo small span {
+              position: relative; }
         .container.index .porfoficial .trabajo.grupi .subtit, .container.index .porfoficial .proyecto.grupi .subtit {
           color: #fff;
           font-family: "akzidenz", Helvetica, Arial, sans-serif; }
