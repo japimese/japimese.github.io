@@ -1692,12 +1692,10 @@ img[src=""] {
           margin: 0 auto;
           display: block; }
         .container.index .porfoficial .trabajo.dclapp .titulo, .container.index .porfoficial .proyecto.dclapp .titulo {
-          margin: 5% auto; }
-          .container.index .porfoficial .trabajo.dclapp .titulo h2, .container.index .porfoficial .proyecto.dclapp .titulo h2 {
-            font-family: "Changa", Helvetica, Arial, sans-serif;
-            color: #FB5130;
-            font-weight: normal;
-            text-align: center; }
+          margin: 5% auto;
+          text-align: center; }
+          .container.index .porfoficial .trabajo.dclapp .titulo img, .container.index .porfoficial .proyecto.dclapp .titulo img {
+            width: 3em; }
           .container.index .porfoficial .trabajo.dclapp .titulo small, .container.index .porfoficial .proyecto.dclapp .titulo small {
             color: #FB5130; }
         .container.index .porfoficial .trabajo.dclapp .parr, .container.index .porfoficial .proyecto.dclapp .parr {
@@ -1712,7 +1710,8 @@ img[src=""] {
             background-color: #FB5130; }
         @media (max-width: 768px) {
           .container.index .porfoficial .trabajo.dclapp .dclapp_mock img, .container.index .porfoficial .proyecto.dclapp .dclapp_mock img {
-            width: auto; } }
+            width: auto;
+            margin-bottom: 2em; } }
       .container.index .porfoficial .trabajo.nbl, .container.index .porfoficial .proyecto.nbl {
         background-color: black; }
         .container.index .porfoficial .trabajo.nbl .nbl_mock, .container.index .porfoficial .proyecto.nbl .nbl_mock {
@@ -1743,7 +1742,8 @@ img[src=""] {
         @media (max-width: 768px) {
           .container.index .porfoficial .trabajo.nbl .nbl_mock, .container.index .porfoficial .proyecto.nbl .nbl_mock {
             width: 100% !important;
-            height: 50vh; } }
+            height: 50vh;
+            margin-bottom: 2em; } }
       .container.index .porfoficial .trabajo.abuelapp, .container.index .porfoficial .proyecto.abuelapp {
         padding-top: 3vw;
         background-color: #3B6064; }
@@ -1834,7 +1834,7 @@ img[src=""] {
             width: 100% !important; }
             .container.index .porfoficial .trabajo.mundi .pull_right img, .container.index .porfoficial .proyecto.mundi .pull_right img {
               display: block;
-              margin: 0 auto; } }
+              margin: 0 auto 2em; } }
       .container.index .porfoficial .trabajo.grupi, .container.index .porfoficial .proyecto.grupi {
         background-color: #D47B7B;
         padding-top: 5vw;
