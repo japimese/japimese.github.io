@@ -24,7 +24,8 @@
 					<em class="love">crear</em>
 				</span>
 				<span class="introd eng">
-					I am Mese,<br> and I love creating within teams
+					I am Mese, and I love to <br>
+					<em class="love">co-create</em>
 				</span>
 			</p>
 			<div class="narrador dato-big">PORTFOLIO<br><span>v</span></div>
@@ -86,7 +87,6 @@
 										M56.0528 280.085C-43.5636 178.44 11.0279 118.171 56.0528 98.1202C101.078 78.0689 613.438 -107.034 814.203 89.8491C966.988 239.679 897.001 606.419 897.001 606.419C902.81 555.539 795.699 492.879 538.622 599.652C187.275 745.577 110.523 583.109 119.233 529.723C128.018 475.878 181.328 407.912 56.0528 280.085Z"/>
 									</path>
 								</svg>
-
 							</a>
 						</div>
 						<div class="five cols">
@@ -247,12 +247,12 @@
 							<a class="compo_mock">
 								<img src="images/compo_mock.gif" class="mock">
 								<svg width="789" height="659" viewBox="0 0 789 659" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<linearGradient id="paint0_linear" x2="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(746.775 -142.967 225.377 653.158 17.245 13.2073)">
+									<linearGradient id="paint1_linear" x2="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(746.775 -142.967 225.377 653.158 17.245 13.2073)">
 										<stop stop-color="#5C31F1"/>
 										<stop offset="1" stop-color="#5138A8"/>
 									</linearGradient>
-									<path fill="url(#paint0_linear)">
-										<animate id="animation-to-check" repeatCount="indefinite" fill="freeze" attributeName="d" dur="25s"
+									<path fill="url(#paint1_linear)">
+										<animate id="animation-to-check1" repeatCount="indefinite" fill="freeze" attributeName="d" dur="25s"
 										values="M56.0528 280.085C-43.5636 178.44 11.0279 118.171 56.0528 98.1202C101.078 78.0689 613.438 -107.034 814.203 89.8491C966.988 239.679 897.001 606.419 897.001 606.419C902.81 555.539 795.699 492.879 538.622 599.652C187.275 745.577 110.523 583.109 119.233 529.723C128.018 475.878 181.328 407.912 56.0528 280.085Z;
 
 										M85.9919 160.428C179.992 51.4282 298.492 -10.3496 414.992 1.42823C531.492 13.2061 525.992 78.2773 741.195 78.2774C955.186 78.2774 823.992 594.847 823.992 594.847C829.802 543.967 738.343 532.332 465.613 588.08C96.9917 663.428 -8.21886 463.315 0.491434 409.928C9.27654 356.083 -14.2554 276.673 85.9919 160.428Z;
@@ -260,7 +260,6 @@
 										M56.0528 280.085C-43.5636 178.44 11.0279 118.171 56.0528 98.1202C101.078 78.0689 613.438 -107.034 814.203 89.8491C966.988 239.679 897.001 606.419 897.001 606.419C902.81 555.539 795.699 492.879 538.622 599.652C187.275 745.577 110.523 583.109 119.233 529.723C128.018 475.878 181.328 407.912 56.0528 280.085Z"/>
 									</path>
 								</svg>
-
 							</a>
 						</div>
 						<div class="five cols">
@@ -481,7 +480,7 @@
 			$(this).hide();
 			$(".uno .narrador").css("display", "block")
 		    $(".fondo_color").css("background-color", "#ffffff");  
-		    setTimeout(cambio_texto, 2000);  
+		     
 		});
 
 		$("#esp").click(function(){
@@ -489,25 +488,28 @@
 			$(".eng").hide();
 			$(this).siblings().hide();
 			$(".introd").css("top", "0").css("opacity", 1);
+			setTimeout(cambio_texto, 2000);
+		    
 
 			unheight = $(window).height();
-			ucip = $(".porfoficial").offset().top - unheight*0.2;
-			compo = $(".compo").offset().top - unheight*0.2;
-			nbl = $(".nbl").offset().top - unheight*0.2;
-			abuap = $(".abuelapp").offset().top - unheight*0.9;
-			mundi = $(".mundi").offset().top - unheight*0.3;
+			// ucip = $(".porfoficial").offset().top - unheight*0.2;
+			// compo = $(".compo").offset().top - unheight*0.2;
+			// nbl = $(".nbl").offset().top - unheight*0.2;
+			// abuap = $(".abuelapp").offset().top - unheight*0.9;
+			// mundi = $(".mundi").offset().top - unheight*0.3;
 		})
 		$("#eng").click(function(){
 			$(".eng").show();
 			$(".esp").hide();
 			$(this).siblings().hide();
 			$(".introd").css("top", "0").css("opacity", 1);
+			setTimeout(cambio_texto_en, 2000);
 
 			unheight = $(window).height();
-			ucip = $(".eng .porfoficial").offset().top - unheight*0.2;
+			// ucip = $(".eng .porfoficial").offset().top - unheight*0.2;
 
-			abuap = $(".eng .abuelapp").offset().top - unheight*0.9;
-			mundi = $(".eng .mundi").offset().top - unheight*0.3;
+			// abuap = $(".eng .abuelapp").offset().top - unheight*0.9;
+			// mundi = $(".eng .mundi").offset().top - unheight*0.3;
 		})
 		// $(window).scroll(function () {
 		// 	console.log(ucip);
@@ -531,7 +533,9 @@
 
 		//CAMBIO DE TEXTO EN HERO
 
-	 	var love = ["crear", "diseñar productos", "desarrollar webs", "la innovación", "trabajar en equipo", "cerrar conceptos", "experimentar con IOT", "aprender cosas nuevas"];
+	 	var love = ["crear", "diseñar productos", "desarrollar webs", "llevar a la práctica ideas", "la innovación", "trabajar en equipo", "cerrar conceptos", "experimentar con IOT", "aprender cosas nuevas"];
+
+	 	var love_en = ["co-create", "design products and services", "develop webs", "bring ideas to life", "innovation", "fine concepts", "experiment with IOT", "LEARN"];
 
 	 	// "la creatividad", "la innovación", "aprender contínuamente", "la programación", "el diseño de producto", "los conceptos bien pensados", "la fotografía", "las soluciones originales"
 		var counter = 0;
@@ -546,6 +550,16 @@
 		    }
 		    $(".love").text(love[counter]);
 		    setTimeout(cambio_texto, 2000);
+		}
+		function cambio_texto_en() {
+		    if (counter == fin){
+		        counter = 0;    
+		    }
+		    else {
+		        counter++;
+		    }
+		    $(".love").text(love_en[counter]);
+		    setTimeout(cambio_texto_en, 2000);
 		}
 		
 
