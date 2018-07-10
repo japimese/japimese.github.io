@@ -1587,7 +1587,7 @@ img[src=""] {
           font-family: "Lato-Regular", Helvetica, Arial, sans-serif; }
           .container.index .porfoficial .trabajo .titulo small span:after, .container.index .porfoficial .proyecto .titulo small span:after {
             position: absolute;
-            display: block;
+            top: 1.7em;
             left: 0;
             width: 100%;
             font-size: .8em;
