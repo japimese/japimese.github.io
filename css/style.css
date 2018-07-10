@@ -1594,7 +1594,7 @@ img[src=""] {
             opacity: .75; }
       .container.index .porfoficial .trabajo.uciplus, .container.index .porfoficial .proyecto.uciplus {
         background-color: #E4E5E6; }
-        .container.index .porfoficial .trabajo.uciplus div > :last-child, .container.index .porfoficial .proyecto.uciplus div > :last-child {
+        .container.index .porfoficial .trabajo.uciplus .row > :last-child, .container.index .porfoficial .proyecto.uciplus .row > :last-child {
           margin-bottom: 5%; }
         .container.index .porfoficial .trabajo.uciplus .parr, .container.index .porfoficial .proyecto.uciplus .parr {
           color: #333; }
@@ -1609,12 +1609,8 @@ img[src=""] {
         .container.index .porfoficial .trabajo.uciplus .uci_mock, .container.index .porfoficial .proyecto.uciplus .uci_mock {
           position: relative;
           display: block;
-          margin-bottom: 3em; }
-          .container.index .porfoficial .trabajo.uciplus .uci_mock img, .container.index .porfoficial .proyecto.uciplus .uci_mock img {
-            display: block;
-            margin: 10% auto -1em; }
-          .container.index .porfoficial .trabajo.uciplus .uci_mock .mock, .container.index .porfoficial .proyecto.uciplus .uci_mock .mock {
-            width: 100%; }
+          width: 125%;
+          margin: 15% 0 0 -10%; }
         .container.index .porfoficial .trabajo.uciplus .parr_sm, .container.index .porfoficial .proyecto.uciplus .parr_sm {
           color: #333; }
           .container.index .porfoficial .trabajo.uciplus .parr_sm a, .container.index .porfoficial .proyecto.uciplus .parr_sm a {
@@ -1623,6 +1619,9 @@ img[src=""] {
             color: red; }
         .container.index .porfoficial .trabajo.uciplus .boton, .container.index .porfoficial .proyecto.uciplus .boton {
           border: 2px solid #333; }
+        @media (max-width: 768px) {
+          .container.index .porfoficial .trabajo.uciplus .uci_mock, .container.index .porfoficial .proyecto.uciplus .uci_mock {
+            margin-left: -5%; } }
       .container.index .porfoficial .trabajo.compo, .container.index .porfoficial .proyecto.compo {
         background-color: #F7CF44; }
         .container.index .porfoficial .trabajo.compo .titulo, .container.index .porfoficial .proyecto.compo .titulo {

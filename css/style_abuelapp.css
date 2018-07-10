@@ -1223,6 +1223,13 @@ img {
   line-height: 1.5em;
   font-weight: 500; }
 
+small {
+  font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;
+  color: #009444;
+  font-size: 1.4vw;
+  line-height: 1.2em;
+  font-weight: 300; }
+
 em {
   font-size: 1.2em; }
 
@@ -1417,13 +1424,14 @@ img[src=""] {
 
   .titulo_med {
     font-size: calc(13px + 1.5vw); } }
-.container {
+body {
   background: url(../images/abuelapp/abuelapp_fondo.png) fixed;
-  background-size: cover;
+  background-size: cover; }
+
+.container {
   position: relative;
   width: 100vw;
   overflow: hidden;
-  max-width: 1366px;
   margin: 0 auto;
   scroll-snap-type: mandatory;
   scroll-snap-destination: 50% 50%;
@@ -1449,7 +1457,7 @@ img[src=""] {
       position: absolute;
       height: 65%;
       margin-top: 20%;
-      margin-left: 1.5%;
+      margin-left: 1.8vh;
       z-index: 2; }
   .container .derecha .diapo {
     position: relative;
