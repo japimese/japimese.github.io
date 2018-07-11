@@ -1161,9 +1161,10 @@ img {
 
 .go_home {
   position: fixed;
-  top: 2rem;
-  left: 2rem;
+  top: 1rem;
+  left: 1rem;
   z-index: 200;
+  opacity: .75;
   font-family: "Lato-Regular", Helvetica, Arial, sans-serif;
   font-size: 1.2em; }
 
@@ -1586,10 +1587,11 @@ img[src=""] {
           font-size: 18px;
           display: block;
           text-align: center;
-          font-family: "Lato-Regular", Helvetica, Arial, sans-serif; }
+          font-family: "Lato-Regular", Helvetica, Arial, sans-serif;
+          line-height: 1.4em; }
           .container.index .porfoficial .trabajo .titulo small span:after, .container.index .porfoficial .proyecto .titulo small span:after {
             position: absolute;
-            top: 1.7em;
+            top: 1.3em;
             left: 0;
             width: 100%;
             font-size: .8em;
@@ -1688,10 +1690,13 @@ img[src=""] {
                 left: 0; } }
       .container.index .porfoficial .trabajo.dclapp, .container.index .porfoficial .proyecto.dclapp {
         background-color: #F1F1F1; }
-        .container.index .porfoficial .trabajo.dclapp .dclapp_mock img, .container.index .porfoficial .proyecto.dclapp .dclapp_mock img {
-          width: 35vw;
-          margin: 0 auto;
-          display: block; }
+        .container.index .porfoficial .trabajo.dclapp .dclapp_mock, .container.index .porfoficial .proyecto.dclapp .dclapp_mock {
+          height: 100vh;
+          background-image: url(../images/dclapp_mock2.png);
+          background-position: right center;
+          background-size: cover;
+          margin: 0 -2%;
+          max-height: 70em; }
         .container.index .porfoficial .trabajo.dclapp .titulo, .container.index .porfoficial .proyecto.dclapp .titulo {
           margin: 5% auto;
           text-align: center; }
@@ -1712,6 +1717,10 @@ img[src=""] {
         @media (max-width: 768px) {
           .container.index .porfoficial .trabajo.dclapp .dclapp_mock img, .container.index .porfoficial .proyecto.dclapp .dclapp_mock img {
             width: auto;
+            margin-bottom: 2em; }
+          .container.index .porfoficial .trabajo.dclapp .dclapp_mock, .container.index .porfoficial .proyecto.dclapp .dclapp_mock {
+            width: 100% !important;
+            height: 50vh;
             margin-bottom: 2em; } }
       .container.index .porfoficial .trabajo.nbl, .container.index .porfoficial .proyecto.nbl {
         background-color: black; }
@@ -1719,7 +1728,8 @@ img[src=""] {
           height: 100vh;
           background-image: url(../images/nbl_mock.jpeg);
           background-position: right top;
-          background-size: cover; }
+          background-size: cover;
+          max-height: 70em; }
         .container.index .porfoficial .trabajo.nbl .titulo, .container.index .porfoficial .proyecto.nbl .titulo {
           color: white;
           font-family: Helvetica, Arial, sans-serif; }
@@ -1775,6 +1785,8 @@ img[src=""] {
           .container.index .porfoficial .trabajo.abuelapp .boton:hover, .container.index .porfoficial .proyecto.abuelapp .boton:hover {
             color: #3B6064;
             background-color: white; }
+        .container.index .porfoficial .trabajo.abuelapp .five, .container.index .porfoficial .proyecto.abuelapp .five {
+          text-align: center; }
         .container.index .porfoficial .trabajo.abuelapp img, .container.index .porfoficial .proyecto.abuelapp img {
           height: 80vh;
           margin-top: 10vh; }
