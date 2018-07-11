@@ -1110,6 +1110,9 @@ body {
 a {
   text–decoration–skip: ink; }
 
+img {
+  image-rendering: -webkit-optimize-contrast; }
+
 ::-moz-selection {
   background: #4871D1;
   /* Gecko Browsers */ }
@@ -1158,10 +1161,12 @@ a {
 
 .go_home {
   position: fixed;
-  top: 2vh;
-  left: 2vw;
+  top: 1rem;
+  left: 1rem;
   z-index: 200;
-  font-family: arial; }
+  opacity: .75;
+  font-family: "Lato-Regular", Helvetica, Arial, sans-serif;
+  font-size: 1.2em; }
 
 .yo-big {
   font-family: "Calluna", "Times New Roman", Times, serif;
@@ -1219,6 +1224,13 @@ a {
   font-size: 3vw;
   line-height: 1.5em;
   font-weight: 500; }
+
+small {
+  font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;
+  color: #009444;
+  font-size: 1.4vw;
+  line-height: 1.2em;
+  font-weight: 300; }
 
 em {
   font-size: 1.2em; }

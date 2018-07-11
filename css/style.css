@@ -1161,10 +1161,11 @@ img {
 
 .go_home {
   position: fixed;
-  top: 2vh;
-  left: 2vw;
+  top: 2rem;
+  left: 2rem;
   z-index: 200;
-  font-family: arial; }
+  font-family: "Lato-Regular", Helvetica, Arial, sans-serif;
+  font-size: 1.2em; }
 
 .yo-big {
   font-family: "Calluna", "Times New Roman", Times, serif;
@@ -1389,6 +1390,7 @@ img[src=""] {
 
 .container.index {
   background-color: rgba(0, 0, 0, 0.8);
+  overflow-x: hidden;
   -webkit-transition: background-color 0.7s cubic-bezier(0.81, 0.15, 0.71, 0.95);
   -moz-transition: background-color 0.7s cubic-bezier(0.81, 0.15, 0.71, 0.95);
   -ms-transition: background-color 0.7s cubic-bezier(0.81, 0.15, 0.71, 0.95);
