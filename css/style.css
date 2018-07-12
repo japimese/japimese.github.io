@@ -1721,7 +1721,7 @@ img[src=""] {
           .container.index .porfoficial .trabajo.dclapp .dclapp_mock, .container.index .porfoficial .proyecto.dclapp .dclapp_mock {
             width: 100% !important;
             height: 50vh;
-            margin-bottom: 2em; } }
+            margin: 0 0 2em; } }
       .container.index .porfoficial .trabajo.nbl, .container.index .porfoficial .proyecto.nbl {
         background-color: black; }
         .container.index .porfoficial .trabajo.nbl .nbl_mock, .container.index .porfoficial .proyecto.nbl .nbl_mock {
@@ -1792,7 +1792,6 @@ img[src=""] {
           margin-top: 10vh; }
           @media (max-width: 768px) {
             .container.index .porfoficial .trabajo.abuelapp img, .container.index .porfoficial .proyecto.abuelapp img {
-              margin-left: 15%;
               width: 70%;
               height: auto; } }
       .container.index .porfoficial .trabajo.mundi, .container.index .porfoficial .proyecto.mundi {
