@@ -1523,8 +1523,6 @@ img[src=""] {
           .container.index .uno p .hola b#esp:hover, .container.index .uno p .hola b#eng:hover {
             text-decoration: underline;
             cursor: pointer; }
-            .container.index .uno p .hola b#esp:hover:first-letter, .container.index .uno p .hola b#eng:hover:first-letter {
-              text-transform: uppercase; }
       .container.index .uno p .introd {
         position: relative;
         top: 50px;
@@ -1647,6 +1645,8 @@ img[src=""] {
           .container.index .porfoficial .trabajo.compo .boton:hover, .container.index .porfoficial .proyecto.compo .boton:hover {
             background-color: #5C31F1;
             color: white; }
+        .container.index .porfoficial .trabajo.compo small, .container.index .porfoficial .proyecto.compo small {
+          color: #333; }
         .container.index .porfoficial .trabajo.compo .proximamente, .container.index .porfoficial .proyecto.compo .proximamente {
           box-shadow: none;
           opacity: .5;
