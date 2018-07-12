@@ -20,11 +20,11 @@
 					<b id="esp">Hola</b> <b>  / </b> <b id="eng">hello</b><br><br class="br">
 				</span>
 				<span class="introd esp">
-					Soy Roberto Mesejo, y me encanta<br>
+					Soy Roberto Mesejo y me encanta<br>
 					<em class="love">crear</em>
 				</span>
 				<span class="introd eng">
-					I am Mese, and I love to <br>
+					I am Mese and I love to <br>
 					<em class="love">co-create</em>
 				</span>
 			</p>
@@ -38,7 +38,7 @@
 				</p>
 			</div> -->
 			
-			<div class="row porfoficial">
+			<div class="row porfoficial" id="es">
 				<div class="proyecto dclapp">
 					
 					<!-- <h3 class="subtit">¿Cómo llegar a petarlo siendo músico?</h3> -->
@@ -90,6 +90,7 @@
 							<p class="parr">
 								Se trata del diseño de una aplicación similar a Wallapop, para un mercado distinto.<br>
 								He creado la marca adaptada a este nuevo mercado y diseñado y prototipado todo el UI.<br class="br">
+								Cuando se lance la app subiré
 								El producto aún no ha ha sido lanzado, por lo que me han pedido que no divulgue el logo ni otros detalles.
 							</p>
 							<a class="boton proximamente">próximamente</a>
@@ -110,8 +111,8 @@
 						</div>
 						<div class="six cols">
 							<p class="parr">
-								Este trabajo lo realicé mientras trabajaba en el departamento creativo de una gran empresa de crédito inmobiliario que quería refrescar su imagen.<br class="br">
-								Para ello, me hicieron responsable de <br>
+								Este trabajo lo realicé dentro del departamento creativo de una gran empresa de crédito inmobiliario que quería refrescar su imagen.<br class="br">
+								Para ello, fui responsable de<br>
 								<b>rediseñar y programar la web de su programa de puntos para profesionales inmobiliarios</b>.
 							</p>
 							<a href="porfolio/ucipplus.html" class="boton">case study</a>
@@ -136,7 +137,7 @@
 						</div>
 						<div class="five cols">
 							<p class="parr">
-								He llevado el proyecto del <b>rediseño y desarrollo integral de la web corporativa con CMS</b> como freelance.
+								Proyecto de <b>rediseño y desarrollo integral de la web corporativa con CMS</b> como freelance.
 							</p>
 							<a href="#" class="boton proximamente">próximamente</a>
 						</div>
@@ -162,7 +163,7 @@
 						</div>
 						<div class="six cols">
 							<!-- <h2 class="titulo"><span class="ab_ic"></span>ABUELAPP</h2> -->
-							<p class="parr">Queremos que esta app sea como una abuela virtual (Appuela ;) ) que, usando datos metereológicos (algo menos certeros que el “supersentido abuelil”, pero bastante fiables), te aconseje como lo haría ella.</p>
+							<p class="parr">Queremos que esta app sea como una abuela virtual (Appuela ;) ) que, usando datos metereológicos -algo menos certeros que el “supersentido abuelil”, pero bastante fiables- te aconseje como lo haría ella.</p>
 							<a href="porfolio/abuelapp.html" class="boton">case study</a>
 						</div>
 					</div>
@@ -213,7 +214,7 @@
 			</div>
 		</div>
 		<div class="eng">
-			<div class="row porfoficial">
+			<div class="row porfoficial" id="en">
 				<div class="proyecto dclapp">
 					
 					<!-- <h3 class="subtit">¿Cómo llegar a petarlo siendo músico?</h3> -->
@@ -484,6 +485,8 @@
 		});
 
 		$("#esp").click(function(){
+			var url = document.location.href+"#es";
+      		document.location = url;
 			$(".esp").show();
 			$(".eng").hide();
 			$(this).siblings().hide();
@@ -499,6 +502,8 @@
 			// mundi = $(".mundi").offset().top - unheight*0.3;
 		})
 		$("#eng").click(function(){
+			var url = document.location.href+"#en";
+      		document.location = url;
 			$(".eng").show();
 			$(".esp").hide();
 			$(this).siblings().hide();
