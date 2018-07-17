@@ -1452,16 +1452,16 @@ body {
     .container .app_mockup .mockup_mob {
       position: relative;
       height: 90%;
-      margin-top: 7%;
+      margin-top: 5vh;
       margin-left: -4.1vh;
       z-index: 1; }
     .container .app_mockup .mockup_in {
       position: absolute;
       height: 65%;
-      margin-top: 20%;
+      margin-top: 16vh;
       margin-left: 1.8vh;
       z-index: 2; }
-    @media (max-width: 768px) {
+    @media (max-width: 1200px) {
       .container .app_mockup {
         display: none; } }
   .container .derecha .diapo {
@@ -1473,7 +1473,7 @@ body {
     margin-bottom: 10%;
     padding-left: 45%;
     scroll-snap-coordinate: 50% 50%; }
-    @media (max-width: 768px) {
+    @media (max-width: 1200px) {
       .container .derecha .diapo {
         padding: 4% 8%; } }
   .container .derecha .front {
@@ -1529,7 +1529,7 @@ body {
       top: 25%; }
       .container .derecha .claim .iconos img {
         margin-left: 5%; }
-    @media (max-width: 768px) {
+    @media (max-width: 1200px) {
       .container .derecha .claim {
         padding-left: 30%; }
         .container .derecha .claim p {
