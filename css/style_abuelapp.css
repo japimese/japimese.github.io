@@ -1584,6 +1584,7 @@ body {
   .container .derecha > :last-child {
     margin-bottom: 10%; }
   .container .footer {
-    z-index: 200; }
+    z-index: 200;
+    scroll-snap-coordinate: 50% 50%; }
 
 /*# sourceMappingURL=style_abuelapp.css.map */
