@@ -1445,5 +1445,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   .mundi .contexto .problema {
     border: 5px solid #3FCA56;
     padding: 2em; }
+    .mundi .contexto .problema b {
+      font-weight: bold; }
 
 /*# sourceMappingURL=style_mundi.css.map */
