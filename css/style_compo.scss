@@ -1,0 +1,169 @@
+@import "main";
+
+$compo_morado: #5C31F1;
+$compo_parr: #333333;
+
+img[src=""] { background: rgba(0,0,0,.5); display: block; min-width: 200px; min-height: 200px; margin: 0 auto;}
+
+.titulo {
+	@include typo(Righteous, 3vw, $compo_morado);
+	font-weight: bold;
+}
+
+
+.parr {
+	@include typo(Raleway, 1.72vw, $compo_parr);
+	line-height: 1.7;
+	font-weight: normal;
+}
+
+
+.display-big {
+	@include typo(Righteous, 3vw, $compo_morado);
+}
+
+@media #{$mobile} {
+	.parr { font-size: calc(10px + 1.5vw); }
+	.titulo { font-size: calc(20px + 1.5vw); }
+}
+@media #{$Bigdesktop} {
+	.parr { font-size: calc(10px + 1vw); }
+	.titulo { font-size: calc(20px + 1.5vw);}
+}
+
+.mockup_gif {
+	.mockup_mac {
+	    width: 70%;
+	    position: absolute;
+	    left: 15%;
+	    z-index: 2;
+	    top: 36vh;
+	}
+	.mockup_in {
+		position: absolute;
+	    width: 49.5%;
+	    left: 25.5%;
+	    top: 42vh;
+	    z-index: 1;
+	}
+}
+
+
+.container.compo {
+	::selection {
+		background-color: $azul-up; 
+		color: white;
+	}
+
+	position: relative;
+	width: 100vw;
+	overflow: hidden;
+	#compo {
+		@include transition (background-color 1s ease);
+		max-width: 1366px;
+		margin: 0 auto;
+		.front {
+			position: relative;
+			height: 120vh;
+			padding-top:1px;
+			.dato-big {
+				text-align: center;
+				margin: 12% auto -.2%;
+				position: fixed;
+				z-index: 1;
+				left: 32%;
+				font-size: calc(8vw + 20px);
+				font-family: Righteous;
+				font-weight: 800;
+				color: $compo_morado;
+				span {font-weight: normal;}
+			}
+			.mockup_in {
+				&>img {opacity: 0;}
+			}
+			.parr {
+				position: relative;
+				top: 5%;
+				color: #333;
+				font-size: 15px;
+				width: 90%;
+				margin: 2% auto;
+			}
+
+			.fondo {
+			    position: absolute;
+			    width: 100%;
+			    top: 60%;
+			    left: 0;
+			}
+			// .fondo {
+			// 	@extend .full-page;
+			// 	position: absolute;
+			// 	top: 0;
+			// 	height: 70%;
+			// 	z-index: 0;
+			// }
+			@media #{$mobile} {
+				.dato-big { margin-top: 70%; }
+				img {
+					top: 67vh;
+					left: 0;
+					width: 100%;
+				}
+				.mockup_in {
+					top: 70vh;
+					left: 15%;
+					width: 71%;
+				}
+				.fondo {height: 80%;}
+			}
+		}
+		.resum {
+			margin: 2em auto;
+			.display-big {
+				position: relative;
+				color: $compo_morado;
+				font-family: Righteous;
+				margin-bottom: 2em;
+			}
+			.labor {
+				.parr {color: $compo_morado;}
+				ul {
+					color: $compo_morado;
+				}
+			}
+
+			@media #{$mobile} {
+				img {width:100%; margin: 3em 0 4em;}
+			}
+		}
+		.contexto {
+			margin: 2em auto 1em;
+			b {
+				font-weight: bold; 
+				color: $compo_morado; 
+				padding: 0 .1em;
+			}
+		}
+
+		.propuesta {
+			margin: 1em auto;
+			&>img {    
+				width: 75%;
+			    display: block;
+			    margin: 0 12.5% 1em;
+			}	
+		}		
+	}
+}
+
+.fondo_amarillo {
+	background: $amarillo_up!important;
+	@include transition (all 1s ease);
+}
+.fondo_gris {
+	background: $gris_up!important;
+	@include transition (all 1s ease);
+}
+
+

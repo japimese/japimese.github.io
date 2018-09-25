@@ -2353,24 +2353,34 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   float: left;
 }
 
+img[src=""] {
+  background: rgba(0, 0, 0, 0.5);
+  display: block;
+  min-width: 200px;
+  min-height: 200px;
+  margin: 0 auto;
+}
+
 .titulo {
-  font-family: "Lato-Regular", Helvetica, Arial, sans-serif;
-  color: #333;
-  font-size: 3.5vw;
+  font-family: "akzidenz", Helvetica, Arial, sans-serif;
+  color: white;
+  font-size: 3vw;
+  font-weight: bold;
+}
+
+.titulo_med {
+  font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;
+  color: #88BCA2;
+  font-size: 1.5vw;
   font-weight: bold;
 }
 
 .parr {
-  font-family: "Calluna", "Times New Roman", Times, serif;
-  color: #333;
+  font-family: Gotham;
+  color: #494949;
   font-size: 1.72vw;
   line-height: 1.7;
   font-weight: normal;
-}
-
-.display-big {
-  font-family: "Calluna", "Times New Roman", Times, serif;
-  font-size: 2.5vw;
 }
 
 @media (max-width: 768px) {
@@ -2379,6 +2389,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   }
   .titulo {
     font-size: calc(20px + 1.5vw);
+  }
+  .titulo_med {
+    font-size: calc(13px + 1.5vw);
   }
 }
 
@@ -2389,38 +2402,127 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   .titulo {
     font-size: calc(20px + 1.5vw);
   }
+  .titulo_med {
+    font-size: calc(13px + 1.5vw);
+  }
 }
 
-.mundi .front {
+.container {
   position: relative;
-  height: 20vh;
-  min-height: 20vh;
-  padding-top: 1px;
+  width: 100vw;
+  overflow: hidden;
 }
 
-.mundi .front .dato-big {
+.container ::-moz-selection {
+  background-color: #0862C2;
+  /* WebKit/Blink Browsers */
+  color: white;
+}
+
+.container ::selection {
+  background-color: #0862C2;
+  /* WebKit/Blink Browsers */
+  color: white;
+}
+
+.container #abuelapp {
+  max-width: 1366px;
+  margin: 0 auto;
+}
+
+.container #abuelapp .app_mockup {
+  position: fixed;
+  width: 50%;
+  height: 100vh;
   text-align: center;
-  margin-top: 10vh;
-  color: #333;
-  font-size: calc(8vw + 20px);
+  z-index: 100;
 }
 
-.mundi .resum .display-big {
+.container #abuelapp .app_mockup .mockup {
   position: relative;
-  color: #333;
-  margin-top: 3em;
+  height: 90%;
+  margin-top: 7%;
+  margin-left: -5%;
 }
 
-.mundi .contexto {
-  margin: 0 auto 20vh;
+.container #abuelapp .diapo {
+  position: relative;
+  display: block;
+  padding: 4% 8%;
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 45%;
+  background: url(../images/abuelapp/abuelapp_fondo.png) fixed;
 }
 
-.mundi .contexto .problema {
-  border: 5px solid #333;
-  padding: 2em;
+.container #abuelapp .front {
+  position: relative;
+  color: white;
+  text-align: center;
+  top: 17vh;
+  height: 83vh;
 }
 
-.mundi .contexto .problema b {
+.container #abuelapp .front .parr {
+  color: white;
+  margin-top: 5vh;
+  margin-bottom: 2em;
+  font-family: Armonioso;
+  font-size: 28px;
+}
+
+.container #abuelapp .front .titulo {
+  font-family: Gotham;
+  font-weight: normal;
+  font-size: 5vw;
+}
+
+.container #abuelapp .claim {
+  background: white;
+  height: 65.5vh;
+}
+
+.container #abuelapp .claim p {
+  font-family: Gotham;
+  color: #88BCA2;
+  font-size: 30px;
+  position: relative;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  top: 50%;
+}
+
+.container #abuelapp .claim p b {
   font-weight: bold;
 }
-/*# sourceMappingURL=style_contrast.css.map */
+
+.container #abuelapp .funciona p {
+  font-family: Gotham;
+  color: white;
+  font-size: 20px;
+}
+
+.container #abuelapp .funciona .intro {
+  height: 83vh;
+  position: relative;
+}
+
+.container #abuelapp .funciona .intro p {
+  font-weight: bold;
+  position: relative;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  top: 50%;
+}
+
+.container #abuelapp .funciona .historia p {
+  height: 40vh;
+  font-weight: light;
+  opacity: .5;
+}
+
+.container #abuelapp .funciona .historia .active {
+  font-weight: bold;
+  opacity: 1;
+}
+/*# sourceMappingURL=style_abuelapp_old.css.map */
