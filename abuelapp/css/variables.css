@@ -2,11 +2,15 @@
 @font-face {
   font-family: 'Gotham';
   src: url("fonts/gotham_medium.ttf");
-  font-weight: normal; }
+  font-weight: normal;
+}
+
 @font-face {
   font-family: 'Gotham';
   src: url("fonts/gotham_light.ttf");
-  font-weight: 200; }
+  font-weight: 200;
+}
+
 /*********************** colores ***********************/
 /********************** resoluciones ********************/
 /********************** mixines *************************/
@@ -15,5 +19,4 @@
 /*// scale*/
 /*// translate*/
 /*// skew*/
-
 /*# sourceMappingURL=variables.css.map */

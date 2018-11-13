@@ -1,0 +1,144 @@
+@font-face {
+  font-family: 'Calluna';
+  src: url("../fonts/calluna/Calluna-SemiboldIt.eot");
+  src: url("../fonts/calluna/Calluna-SemiboldIt.eot?#iefix") format("embedded-opentype"), url("../fonts/calluna/Calluna-SemiboldIt.woff") format("woff"), url("../fonts/calluna/Calluna-SemiboldIt.ttf") format("truetype");
+  font-weight: 600;
+  font-style: italic; }
+@font-face {
+  font-family: 'Calluna';
+  src: url("../fonts/calluna/Calluna-Light.eot");
+  src: url("../fonts/calluna/Calluna-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/calluna/Calluna-Light.woff") format("woff"), url("../fonts/calluna/Calluna-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal; }
+@font-face {
+  font-family: 'Calluna';
+  src: url("../fonts/calluna/Calluna-Semibold.eot");
+  src: url("../fonts/calluna/Calluna-Semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/calluna/Calluna-Semibold.woff") format("woff"), url("../fonts/calluna/Calluna-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal; }
+@font-face {
+  font-family: 'Calluna';
+  src: url("../fonts/calluna/Calluna-It.eot");
+  src: url("../fonts/calluna/Calluna-It.eot?#iefix") format("embedded-opentype"), url("../fonts/calluna/Calluna-It.woff") format("woff"), url("../fonts/calluna/Calluna-It.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic; }
+@font-face {
+  font-family: 'Calluna';
+  src: url("../fonts/calluna/Calluna-Regular.eot");
+  src: url("../fonts/calluna/Calluna-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/calluna/Calluna-Regular.woff") format("woff"), url("../fonts/calluna/Calluna-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'Calluna';
+  src: url("../fonts/calluna/Calluna-Black.eot");
+  src: url("../fonts/calluna/Calluna-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/calluna/Calluna-Black.woff") format("woff"), url("../fonts/calluna/Calluna-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal; }
+@font-face {
+  font-family: 'Calluna';
+  src: url("../fonts/calluna/Calluna-Bold.eot");
+  src: url("../fonts/calluna/Calluna-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/calluna/Calluna-Bold.woff") format("woff"), url("../fonts/calluna/Calluna-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+@font-face {
+  font-family: 'Calluna';
+  src: url("../fonts/calluna/Calluna-BoldIt.eot");
+  src: url("../fonts/calluna/Calluna-BoldIt.eot?#iefix") format("embedded-opentype"), url("../fonts/calluna/Calluna-BoldIt.woff") format("woff"), url("../fonts/calluna/Calluna-BoldIt.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic; }
+@font-face {
+  font-family: 'arabella';
+  src: url("../fonts/arabella/arabella.eot");
+  src: url("../fonts/arabella/arabella.eot?#iefix") format("embedded-opentype"), url("../fonts/arabella/arabella.woff") format("woff"), url("../fonts/arabella/arabella.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'HelveticaNeue';
+  src: url("../fonts/helveticaneue/HelveticaNeueBold.eot");
+  src: local("HelveticaNeue Bold"), local("HelveticaNeueBold"), url("../fonts/helveticaneue/HelveticaNeueBold.eot?#iefix") format("embedded-opentype"), url("../fonts/helveticaneue/HelveticaNeueBold.woff") format("woff"), url("../fonts/helveticaneue/HelveticaNeueBold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+@font-face {
+  font-family: 'HelveticaNeue';
+  src: url("../fonts/helveticaneue/HelveticaNeueLight.eot");
+  src: local("HelveticaNeue Light"), local("HelveticaNeueLight"), url("../fonts/helveticaneue/HelveticaNeueLight.eot?#iefix") format("embedded-opentype"), url("../fonts/helveticaneue/HelveticaNeueLight.woff") format("woff"), url("../fonts/helveticaneue/HelveticaNeueLight.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal; }
+@font-face {
+  font-family: 'HelveticaNeue';
+  src: url("../fonts/helveticaneue/HelveticaNeueRegular.eot");
+  src: local("HelveticaNeue Regular"), local("HelveticaNeueRegular"), url("../fonts/helveticaneue/HelveticaNeueRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/helveticaneue/HelveticaNeueRegular.woff") format("woff"), url("../fonts/helveticaneue/HelveticaNeueRegular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'HelveticaNeue';
+  src: url("../fonts/helveticaneue/HelveticaNeueHeavy.eot");
+  src: local("HelveticaNeue Heavy"), local("HelveticaNeueHeavy"), url("../fonts/helveticaneue/HelveticaNeueHeavy.eot?#iefix") format("embedded-opentype"), url("../fonts/helveticaneue/HelveticaNeueHeavy.woff") format("woff"), url("../fonts/helveticaneue/HelveticaNeueHeavy.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal; }
+@font-face {
+  font-family: 'HelveticaNeue';
+  src: url("../fonts/helveticaneue/HelveticaNeue-Medium.eot");
+  src: local("Helvetica 65 Medium"), local("HelveticaNeue-Medium"), url("../fonts/helveticaneue/HelveticaNeue-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/helveticaneue/HelveticaNeue-Medium.woff") format("woff"), url("../fonts/helveticaneue/HelveticaNeue-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal; }
+@font-face {
+  font-family: 'HelveticaNeue';
+  src: url("../fonts/helveticaneue/helveticaneueThin.woff") format("woff"), url("../fonts/helveticaneue/helveticaneueThin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal; }
+@font-face {
+  font-family: 'akzidenz';
+  src: url("../fonts/akzidenz/AkzidenzGrotesk-Medium.otf") format("otf"), url("../fonts/akzidenz/AkzidenzGrotesk-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'akzidenz';
+  src: url("../fonts/akzidenz/AkzidenzGrotesk-Bold.otf") format("otf");
+  font-weight: bold;
+  font-style: normal; }
+@font-face {
+  font-family: 'lato';
+  src: url("../fonts/Lato/Lato-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'lato';
+  src: url("../fonts/Lato/Lato-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+@font-face {
+  font-family: 'lato';
+  src: url("../fonts/Lato/Lato-Black.ttf") format("truetype");
+  font-weight: black;
+  font-style: normal; }
+@font-face {
+  font-family: 'Gotham';
+  src: url("../fonts/gotham.ttf");
+  font-style: normal; }
+@font-face {
+  font-family: 'Armonioso';
+  src: url("../fonts/armonioso.otf");
+  font-style: normal; }
+@font-face {
+  font-family: 'YatraOne';
+  src: url("../fonts/YatraOne.ttf");
+  font-style: normal; }
+@font-face {
+  font-family: 'LeituraNews';
+  src: url("../fonts/LeituraNews-Italic1.ttf");
+  font-style: normal; }
+@font-face {
+  font-family: 'Righteous';
+  src: url("../fonts/Righteous-Regular.ttf");
+  font-style: normal; }
+@font-face {
+  font-family: 'Raleway';
+  src: url("../fonts/raleway-medium.ttf");
+  font-style: normal; }
+@font-face {
+  font-family: 'Changa';
+  src: url("../fonts/Changa-Medium.ttf");
+  font-style: normal; }
+
+/*# sourceMappingURL=fonts.css.map */
