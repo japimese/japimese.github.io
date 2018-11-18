@@ -1701,6 +1701,33 @@ img[src=""] {
     bottom: 10%;
     width: 100%;
     cursor: pointer; }
+  .container.index .dos {
+    height: 100vh;
+    max-height: 100vh;
+    position: relative;
+    display: block;
+    text-align: center; }
+    .container.index .dos .pregunta {
+      position: relative;
+      -moz-transform: translate(0, -50%);
+      -o-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+      -webkit-transform: translate(0, -50%);
+      transform: translate(0, -50%);
+      top: 45%;
+      font-family: "Lato-Regular", Helvetica, Arial, sans-serif;
+      color: black;
+      font-size: 3em; }
+      .container.index .dos .pregunta .filtros {
+        margin: .5em auto;
+        text-align: center;
+        top: 10px;
+        left: 11px;
+        z-index: 100; }
+        .container.index .dos .pregunta .filtros li {
+          display: inline-block;
+          cursor: pointer;
+          font-family: "LeituraNews", times, serif; }
   .container.index .porfoficial {
     display: block;
     padding: 0;
