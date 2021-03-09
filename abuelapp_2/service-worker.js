@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.ef5d1eea7caf2e66284d9c80dd380a24.js"
+  "/abuelapp_2/precache-manifest.be08a7fa949c4a03806c526bbdd39b28.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "abuelapp"});
