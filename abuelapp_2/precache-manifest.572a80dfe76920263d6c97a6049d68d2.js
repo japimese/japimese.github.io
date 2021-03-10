@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4511989d568b9bed9d10",
+    "revision": "0bf6c63063bc3cc1cf03",
     "url": "/abuelapp_2/css/app.6e641a11.css"
   },
   {
@@ -24,12 +24,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/abuelapp_2/img/guante.5cb28a70.svg"
   },
   {
-    "revision": "7fae776673181a60446c535289d5e998",
+    "revision": "b2da963068b6d3ac96b9b22b803e7fc1",
     "url": "/abuelapp_2/index.html"
   },
   {
-    "revision": "4511989d568b9bed9d10",
-    "url": "/abuelapp_2/js/app.b547ca60.js"
+    "revision": "0bf6c63063bc3cc1cf03",
+    "url": "/abuelapp_2/js/app.0b5f4b8a.js"
   },
   {
     "revision": "0846ad2e06f8476f0f0c",
