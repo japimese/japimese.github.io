@@ -1,7 +1,7 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7af6689bcf2363db4ffc",
-    "url": "/abuelapp_2/css/app.9361ee8c.css"
+    "revision": "36cb04ffded1d85a56c6",
+    "url": "/abuelapp_2/css/app.77971fe3.css"
   },
   {
     "revision": "e059ade26a46c3fb3aff219ae53d709e",
@@ -42,6 +42,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "6fe890b2bc2fab119200a15787516bc8",
     "url": "/abuelapp_2/img/abu_logo_text.svg"
+  },
+  {
+    "revision": "a718ecfe01c52115a5d0619f2ab677c5",
+    "url": "/abuelapp_2/img/brazo_abu.svg"
   },
   {
     "revision": "0144317e505f8e4e149fd4aa7f45a8d3",
@@ -104,12 +108,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/abuelapp_2/img/mano_slide.svg"
   },
   {
-    "revision": "adb65c9bb40ddd83886fc209fc40e14d",
+    "revision": "73b29f72c15b8d6f19cb32334444e293",
     "url": "/abuelapp_2/index.html"
   },
   {
-    "revision": "7af6689bcf2363db4ffc",
-    "url": "/abuelapp_2/js/app.b97a8560.js"
+    "revision": "36cb04ffded1d85a56c6",
+    "url": "/abuelapp_2/js/app.fc4980fb.js"
   },
   {
     "revision": "66fc33964cd304661bea",
