@@ -1,7 +1,7 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "36cb04ffded1d85a56c6",
-    "url": "/abuelapp_2/css/app.77971fe3.css"
+    "revision": "f0bc2ab18febc6432be8",
+    "url": "/abuelapp_2/css/app.e191e41e.css"
   },
   {
     "revision": "e059ade26a46c3fb3aff219ae53d709e",
@@ -101,19 +101,27 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   },
   {
     "revision": "410dd620b5e7d7f7422df233d8851c0e",
+    "url": "/abuelapp_2/img/mano.410dd620.svg"
+  },
+  {
+    "revision": "410dd620b5e7d7f7422df233d8851c0e",
     "url": "/abuelapp_2/img/mano.svg"
+  },
+  {
+    "revision": "546799a2fc42c9293372dcd04590a460",
+    "url": "/abuelapp_2/img/mano_slide.546799a2.svg"
   },
   {
     "revision": "546799a2fc42c9293372dcd04590a460",
     "url": "/abuelapp_2/img/mano_slide.svg"
   },
   {
-    "revision": "73b29f72c15b8d6f19cb32334444e293",
+    "revision": "6a20b242c75f65693d47bf59be021397",
     "url": "/abuelapp_2/index.html"
   },
   {
-    "revision": "36cb04ffded1d85a56c6",
-    "url": "/abuelapp_2/js/app.fc4980fb.js"
+    "revision": "f0bc2ab18febc6432be8",
+    "url": "/abuelapp_2/js/app.4072e059.js"
   },
   {
     "revision": "66fc33964cd304661bea",
