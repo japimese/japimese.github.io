@@ -1,7 +1,7 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f0bc2ab18febc6432be8",
-    "url": "/abuelapp_2/css/app.e191e41e.css"
+    "revision": "6a510dec5fba795880db",
+    "url": "/abuelapp_2/css/app.49b5559c.css"
   },
   {
     "revision": "e059ade26a46c3fb3aff219ae53d709e",
@@ -116,11 +116,11 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/abuelapp_2/img/mano_slide.svg"
   },
   {
-    "revision": "6a20b242c75f65693d47bf59be021397",
+    "revision": "bfe9503ae4a9f955802108a6d2c85c07",
     "url": "/abuelapp_2/index.html"
   },
   {
-    "revision": "f0bc2ab18febc6432be8",
+    "revision": "6a510dec5fba795880db",
     "url": "/abuelapp_2/js/app.4072e059.js"
   },
   {
@@ -128,7 +128,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/abuelapp_2/js/chunk-vendors.fb4b2c89.js"
   },
   {
-    "revision": "512a3af66ae3fbad82f7aee0449ecf48",
+    "revision": "8220517f617500ef3c1b5ab80ac83399",
     "url": "/abuelapp_2/manifest.json"
   },
   {
