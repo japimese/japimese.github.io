@@ -1,0 +1,40 @@
+<p><a href="#/">atrás</a></p>
+
+<!-- consejo para {{ city }}
+<hr>
+days: <a href="#/consejo/1" ng-class="{'bg-primary': days === '1'}" >1</a> | <a href="#/consejo/2" ng-class="{'bg-primary': days === '2'}">2</a> | <a href="#/consejo/3" ng-class="{'bg-primary': days === '3'}">3</a>
+<hr> -->
+<div>
+	<div class="row">
+
+		<div class="movil">
+			<img src="images/fondo_consejos.png" class="ini">
+			<img src="images/app_consejo.png" class="app_consejo">
+			<img src="images/app_bocadillo.png" class="app_bocadillo">
+			<div>
+				
+				<ul class="consejos">
+					<li id="temp" ng-if='weatherResult.daily.data["0"].precipProbability > 0.03' class="icons lluvia">
+					</li>
+					<li id="temp" ng-if='weatherResult.daily.data["0"].temperatureMax > 30' class="icons calor">
+					</li>
+					<li id="temp" ng-if='weatherResult.daily.data["0"].cloudCover < 0.1' class="icons sol">
+					</li>
+					<li id="temp" class="icons none">
+					</li>
+				</ul>
+
+				<div class="datos">
+					<p>
+						temperatura: {{ weatherResult.daily.data["0"].temperatureMax }}º <br>
+						lluvia: {{weatherResult.daily.data["0"].precipProbability * 100 }}% <br>
+						nubes: {{ weatherResult.daily.data["0"].cloudCover * 100}}% <br>
+						viento: {{ weatherResult.daily.data["0"].windGust}}m/s <br>
+					</p>
+				</div>
+			
+			</div>
+		</div>
+	</div>
+	
+</div>

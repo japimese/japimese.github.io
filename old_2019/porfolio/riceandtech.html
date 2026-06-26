@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>mese.es</title>
+	<link rel="icon" type="image/jpg" href="../images/icon.png">
+	<!-- <link rel="stylesheet" href="css/main.css"> -->
+	<link rel="stylesheet" href="../css/style_compo.css">
+	<!-- Global Site Tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-56677487-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments)};
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-56677487-1');
+	</script>
+</head>
+
+<body>
+	<a href="../index.html" class="go_home">home</a>
+	<div class="container compo">
+		<div id="compo">
+			<section class="pagina front">
+				<small class="parr">*El logo y otros elementos de la marca han sido modificados hasta el lanzamiento oficial de la plataforma, que se encuentra actualmente en producción.</small>
+				<h2 class="dato-big">*******</h2>
+				<div class="mockup_gif">
+					<img class="mockup_mac" src="../images/uciplus/macb.png"/>
+					<img class="mockup_in" src="../images/compota/compo_mock.jpg">
+				</div>
+				<span class="fondo"><img src="../images/compota/vector.svg" /></span>
+				
+			</section>
+			<section class="row seccion resum">
+				<h1 class="display-big">
+					Creación de una marca y una plataforma<br>
+					en sintonía con unos valores y un mercado
+				</h1>
+				<div class="row labor">
+					<p class="two cols parr">Mi labor:</p>
+					<ul class="ten cols">
+						<li class="parr">BRANDING</li>
+						<li class="parr">DISEÑO UI/UX<br><span>.figma .ai .ps</span></li>
+					</ul>
+				</div>
+			</section>
+			<section class="row seccion contexto">
+				<p class="parr">
+					******* se trata de una plataforma de compra-venta de productos entre particulares. Sí, es la idea es muy similar a Wallapop, pero está enfocada a otro mercado diferente.<br class="br">
+					Precisamente, mi labor principal, a parte de crear toda la interfaz, ha sido la de <b>adaptar el producto al mercado al que se dirige</b>, para lo que realicé un estudio de la cultura visual, las costumbres relacionadas con la tecnología móvil, y el tipo de comportamiento en este tipo de plataformas C2C.
+				</p>
+				
+			</section>
+
+			<section class="row seccion propuesta">
+				<img src="../images/compota/pantallas_mob.jpg"/>
+				<img src="../images/compota/pantallas_desk.jpg"/>
+			</section>
+			
+			
+			<section class="row footer">
+				<a href="../index.html" class="dato-big">volver al hogar</a>
+			</section>
+		</div>
+	</div>
+
+	
+	<script src="../js/jquery-2.2.4.min.js"></script>
+
+	<script type="text/javascript">
+
+		var unheight = $(window).height();
+		var unwidth = $(window).width();
+		//titulo fixed
+		$(window).scroll(function () {
+		    if ( $(window).scrollTop() > unheight*0.6) {
+		        $(".front .dato-big").hide();
+		    } else {
+		      	$(".front .dato-big").show();
+		    }
+		})
+	</script>
+
+</body>
+</html>
+
+
